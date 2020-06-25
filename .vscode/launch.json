@@ -5,13 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: autogenerate",
+            "type": "python",
+            "request": "launch",
+            "program": "autogenerate.py",
+            "console": "integratedTerminal",
+            "args": ["--xml_file", "mavlink\\common.xml","--base_dir", "tmp"]
+        },
+        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["mavlink/commom.xml"],
-            
+            "args": [
+                "mavlink\\commom.xml"
+            ],
         }
     ]
 }

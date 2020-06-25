@@ -4,10 +4,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "execute autogenerate for mavlink",
             "type": "shell",
-            "command": "F:/anaconda/python.exe ${file}",
-            "args": ["mavlink/common.xml"]
+            "command": "F:/anaconda/python.exe autogenerate.py",
+            "args": ["--xml","mavlink/common.xml","--base_dir","tmp"]
         }
     ]
 }

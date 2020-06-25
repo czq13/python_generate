@@ -15,7 +15,7 @@ from builtins import object
 import os
 import re
 import sys
-from . import mavparse
+import mavparse
 
 # XSD schema file
 schemaFile = os.path.join(os.path.dirname(os.path.realpath(__file__)), "mavschema.xsd")
@@ -163,41 +163,8 @@ def mavgen(opts, args):
 
     # convert language option to lowercase and validate
     opts.language = opts.language.lower()
-    if opts.language == 'python':
-        from . import mavgen_python
-        mavgen_python.generate(opts.output, xml)
-    elif opts.language == 'c':
-        from . import mavgen_c
-        mavgen_c.generate(opts.output, xml)
-    elif opts.language == 'lua':
-        from . import mavgen_lua
-        mavgen_lua.generate(opts.output, xml)
-    elif opts.language == 'wlua':
-        from . import mavgen_wlua
-        mavgen_wlua.generate(opts.output, xml)
-    elif opts.language == 'cs':
-        from . import mavgen_cs
-        mavgen_cs.generate(opts.output, xml)
-    elif opts.language == 'javascript':
-        from . import mavgen_javascript
-        mavgen_javascript.generate(opts.output, xml)
-    elif opts.language == 'typescript':
-        from . import mavgen_typescript
-        mavgen_typescript.generate(opts.output, xml)
-    elif opts.language == 'objc':
-        from . import mavgen_objc
-        mavgen_objc.generate(opts.output, xml)
-    elif opts.language == 'swift':
-        from . import mavgen_swift
-        mavgen_swift.generate(opts.output, xml)
-    elif opts.language == 'java':
-        from . import mavgen_java
-        mavgen_java.generate(opts.output, xml)
-    elif opts.language == 'c++11':
-        from . import mavgen_cpp11
-        mavgen_cpp11.generate(opts.output, xml)
-    else:
-        print("Unsupported language %s" % opts.language)
+    import mavgen_c
+    mavgen_c.generate(opts.output, xml)
 
     return True
 
