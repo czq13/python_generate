@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0dd60d25-0547-41e6-9458-4a318050b042" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pyutils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/checksum.h" beforeDir="false" afterPath="$PROJECT_DIR$/output/mavlink_for_28377/checksum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/mavlink_helpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/output/mavlink_for_28377/mavlink_helpers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/mavlink_sha256.h" beforeDir="false" afterPath="$PROJECT_DIR$/output/mavlink_for_28377/mavlink_sha256.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/mavlink_types.h" beforeDir="false" afterPath="$PROJECT_DIR$/output/mavlink_for_28377/mavlink_types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/protocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/output/mavlink_for_28377/protocol.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autogenerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/autogenerate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavcrc.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavcrc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavgen.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavgen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavgen_c.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavgen_c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavgenerate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavlink/common.xml" beforeDir="false" afterPath="$PROJECT_DIR$/definition/mavlink/common.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavparse.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavparse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavschema.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavschema.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mavtemplate.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyutils/mavtemplate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_actuator_control_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_actuator_output_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_adsb_vehicle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_ais_vessel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_altitude.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_att_pos_mocap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_attitude.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_attitude_quaternion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_attitude_quaternion_cov.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_attitude_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_auth_key.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_autopilot_state_for_gimbal_device.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_autopilot_version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_battery_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_button_change.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_camera_capture_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_camera_image_captured.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_camera_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_camera_settings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_camera_trigger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_cellular_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_change_operator_control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_change_operator_control_ack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_collision.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_command_ack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_command_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_command_long.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_component_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_control_system_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_data_stream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_data_transmission_handshake.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_debug_float_array.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_debug_vect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_distance_sensor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_encapsulated_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_estimator_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_extended_sys_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_fence_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_file_transfer_protocol.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_flight_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_follow_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_generator_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_device_attitude_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_device_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_device_set_attitude.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_manager_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_manager_set_attitude.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gimbal_manager_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_global_position_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_global_position_int_cov.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_global_vision_position_estimate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps2_raw.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps2_rtk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_global_origin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_inject_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_input.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_raw_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_rtcm_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_rtk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_gps_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_heartbeat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_high_latency.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_high_latency2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_highres_imu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_actuator_controls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_controls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_gps.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_optical_flow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_rc_inputs_raw.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_sensor.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_hil_state_quaternion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_home_position.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_isbd_link_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_landing_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_link_node_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_local_position_ned.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_local_position_ned_cov.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_local_position_ned_system_global_offset.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_entry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_erase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_request_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_request_end.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_log_request_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_logging_ack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_logging_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_logging_data_acked.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_manual_control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_manual_setpoint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_memory_vect.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_message_interval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_ack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_changed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_clear_all.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_count.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_current.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_item.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_item_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_item_reached.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_request.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_request_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_request_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_request_partial_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_set_current.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mission_write_partial_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_mount_orientation.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_named_value_float.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_named_value_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_nav_controller_output.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_obstacle_distance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_odometry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_onboard_computer_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_authentication.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_basic_id.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_location.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_message_pack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_operator_id.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_self_id.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_open_drone_id_system.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_optical_flow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_optical_flow_rad.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_orbit_execution_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_ext_ack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_ext_request_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_ext_request_read.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_ext_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_ext_value.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_map_rc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_request_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_request_read.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_param_value.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_ping.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_play_tune.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_play_tune_v2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_position_target_global_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_position_target_local_ned.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_power_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_protocol_version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_radio_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_raw_imu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_raw_pressure.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_raw_rpm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_rc_channels.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_rc_channels_override.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_rc_channels_raw.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_rc_channels_scaled.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_request_data_stream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_resource_request.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_safety_allowed_area.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_safety_set_allowed_area.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_imu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_imu2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_imu3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_pressure.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_pressure2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_scaled_pressure3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_serial_control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_servo_output_raw.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_actuator_control_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_attitude_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_gps_global_origin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_home_position.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_mode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_position_target_global_int.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_set_position_target_local_ned.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_setup_signing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_sim_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_smart_battery_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_smart_battery_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_statustext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_storage_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_supported_tunes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_sys_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_system_time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_terrain_check.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_terrain_data.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_terrain_report.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_terrain_request.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_time_estimate_to_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_timesync.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_trajectory_representation_bezier.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_trajectory_representation_waypoints.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_tunnel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_uavcan_node_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_uavcan_node_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_utm_global_position.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_v2_extension.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_vfr_hud.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_vibration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_vicon_position_estimate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_video_stream_information.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_video_stream_status.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_vision_position_estimate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_vision_speed_estimate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_wheel_distance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_wifi_config_ap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/mavlink_msg_wind_cov.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/testsuite.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/common/version.h" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2013337459">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="h" value="7" />
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C++" value="7" />
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="h" value="111" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C++" value="111" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyutils/mavcrc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/autogenerate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyutils/mavgen_c.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2355">
+              <caret line="425" column="24" lean-forward="true" selection-start-line="425" selection-start-column="24" selection-end-line="425" selection-end-column="24" />
+              <folding>
+                <element signature="e#428#923#0" />
+                <element signature="e#969#1765#0" />
+                <element signature="e#1808#3770#0" />
+                <element signature="e#9277#12473#0" />
+                <element signature="e#12519#13532#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink_msg_actuator_control_target.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1860" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/checksum.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-315" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/mavlink_helpers.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-853">
+              <caret line="214" column="69" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#36524#0" />
+                <element signature="e#0#36524#0" />
+                <element signature="e#0#36524#0" />
+                <element signature="e#0#36524#0" />
+                <element signature="e#0#36524#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/protocol.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1638">
+              <caret line="120" column="17" selection-start-line="120" selection-end-line="120" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#4502#0" />
+                <element signature="e#0#4502#0" />
+                <element signature="e#0#4502#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/common.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink_msg_actuator_output_status.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pylibs/mavtemplate.py" />
+        <option value="$PROJECT_DIR$/pyutils/mavtemplate.py" />
+        <option value="$PROJECT_DIR$/autogenerate.py" />
+        <option value="$PROJECT_DIR$/pyutils/mavgen_c.py" />
+        <option value="$PROJECT_DIR$/output/mavlink_for_28377/protocol.h" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="178" />
+    <option name="y" value="262" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="auto_generate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_generate" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/autogenerate.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pyutils" />
+      <recent name="$PROJECT_DIR$/pylibs" />
+      <recent name="$PROJECT_DIR$/definition" />
+      <recent name="$PROJECT_DIR$/output/mavlink_for_28377" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="auto_generate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autogenerate.py" />
+      <option name="PARAMETERS" value="--xml_file definition/mavlink/common.xml --base_dir output/mavlink_for_28377" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0dd60d25-0547-41e6-9458-4a318050b042" name="Default Changelist" comment="" />
+      <created>1593043853663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593043853663</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pyutils/mavtemplate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <element signature="e#152#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyutils/mavcrc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyutils/mavgen_c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="425" column="24" lean-forward="true" selection-start-line="425" selection-start-column="24" selection-end-line="425" selection-end-column="24" />
+          <folding>
+            <element signature="e#428#923#0" />
+            <element signature="e#969#1765#0" />
+            <element signature="e#1808#3770#0" />
+            <element signature="e#9277#12473#0" />
+            <element signature="e#12519#13532#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink_msg_actuator_control_target.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/checksum.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/mavlink_helpers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853">
+          <caret line="214" column="69" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#36524#0" />
+            <element signature="e#0#36524#0" />
+            <element signature="e#0#36524#0" />
+            <element signature="e#0#36524#0" />
+            <element signature="e#0#36524#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/protocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="120" column="17" selection-start-line="120" selection-end-line="120" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#4502#0" />
+            <element signature="e#0#4502#0" />
+            <element signature="e#0#4502#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/common.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/mavlink_for_28377/common/mavlink_msg_actuator_output_status.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autogenerate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
