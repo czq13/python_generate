@@ -21,6 +21,13 @@
             "args": [
                 "mavlink\\commom.xml"
             ],
+        },
+        {
+            "name": "g++: mavlink_udp.c",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/Auto_Generate_For_28377",
+            "cwd": "."
         }
     ]
 }

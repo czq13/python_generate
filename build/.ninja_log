@@ -1,0 +1,26 @@
+# ninja log v5
+1	55	0	build.ninja	629b89205fb5ac1e
+1	532	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+12	214	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+215	286	0	Auto_Generate_For_28377	7ec1a726379142f5
+17	936	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+936	1149	0	Auto_Generate_For_28377	7ec1a726379142f5
+35	229	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+229	273	0	Auto_Generate_For_28377	7ec1a726379142f5
+15	199	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+200	245	0	Auto_Generate_For_28377	7ec1a726379142f5
+11	200	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+200	251	0	Auto_Generate_For_28377	7ec1a726379142f5
+11	201	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+201	275	0	Auto_Generate_For_28377	7ec1a726379142f5
+15	189	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+48	256	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+256	282	0	Auto_Generate_For_28377	7ec1a726379142f5
+11	195	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+195	223	0	Auto_Generate_For_28377	7ec1a726379142f5
+13	229	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+229	259	0	Auto_Generate_For_28377	7ec1a726379142f5
+15	194	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+194	213	0	Auto_Generate_For_28377	7ec1a726379142f5
+11	196	0	CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o	c6cecf100e940497
+196	218	0	Auto_Generate_For_28377	7ec1a726379142f5

@@ -43,7 +43,6 @@ namespace mavlink {
  * and re-instanted on the receiving side using the
  * native type as well.
  */
-MAVPACKED(
 typedef struct param_union {
 	union {
 		float param_float;
@@ -56,7 +55,7 @@ typedef struct param_union {
 		uint8_t bytes[4];
 	};
 	uint8_t type;
-}) mavlink_param_union_t;
+} mavlink_param_union_t;
 
 
 /**
@@ -72,7 +71,6 @@ typedef struct param_union {
  * which should be the same as gcc on little-endian arm. When using shifts/masks the value will be treated as a 64 bit unsigned number,
  * and the bits pulled out using the shifts/masks.
 */
-MAVPACKED(
 typedef struct param_union_extended {
     union {
     struct {
@@ -92,19 +90,17 @@ typedef struct param_union_extended {
     };
     uint8_t data[8];
     };
-}) mavlink_param_union_double_t;
+} mavlink_param_union_double_t;
 
 /**
  * This structure is required to make the mavlink_send_xxx convenience functions
  * work, as it tells the library what the current system and component ID are.
  */
-MAVPACKED(
 typedef struct __mavlink_system {
     uint8_t sysid;   ///< Used by the MAVLink message_xx_send() convenience function
     uint8_t compid;  ///< Used by the MAVLink message_xx_send() convenience function
-}) mavlink_system_t;
+} mavlink_system_t;
 
-MAVPACKED(
 typedef struct __mavlink_message {
 	uint16_t checksum;      ///< sent at end of packet
 	uint8_t magic;          ///< protocol magic marker
@@ -115,10 +111,10 @@ typedef struct __mavlink_message {
 	uint8_t sysid;          ///< ID of message sender system/aircraft
 	uint8_t compid;         ///< ID of the message sender component
 	uint32_t msgid:24;      ///< ID of message in payload
-	uint64_t payloads[(MAVLINK_MAX_PAYLOAD_LEN+MAVLINK_NUM_CHECKSUM_BYTES+7)];
+	uint8_t payloads[(MAVLINK_MAX_PAYLOAD_LEN+MAVLINK_NUM_CHECKSUM_BYTES+7)];
 	uint8_t ck[2];          ///< incoming checksum bytes
 	uint8_t signature[MAVLINK_SIGNATURE_BLOCK_LEN];
-}) mavlink_message_t;
+} mavlink_message_t;
 
 typedef enum {
 	MAVLINK_TYPE_CHAR     = 0,
@@ -154,8 +150,8 @@ typedef struct __mavlink_message_info {
 	mavlink_field_info_t fields[MAVLINK_MAX_FIELDS];       // field information
 } mavlink_message_info_t;
 
-#define _MAV_PAYLOAD(msg) ((const char *)(&((msg)->payload64[0])))
-#define _MAV_PAYLOAD_NON_CONST(msg) ((char *)(&((msg)->payload64[0])))
+#define _MAV_PAYLOAD(msg) ((const char *)(&((msg)->payloads[0])))
+#define _MAV_PAYLOAD_NON_CONST(msg) ((char *)(&((msg)->payloads[0])))
 
 // checksum is immediately after the payload bytes
 #define mavlink_ck_a(msg) *((msg)->len + (uint8_t *)_MAV_PAYLOAD_NON_CONST(msg))

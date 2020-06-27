@@ -1,0 +1,41 @@
+[1/2] Building C object CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o
+FAILED: /usr/bin/x86_64-linux-gnu-gcc-5  -DPLATFORM_Ubuntu=2 -I../output/mavlink_for_28377 -I../output/mavlink_for_28377/common -g -MMD -MT CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o -MF CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o.d -o CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o   -c ../c_test/mavlink_udp.c
+In file included from ../output/mavlink_for_28377/common/common.h:30:0,
+                 from ../output/mavlink_for_28377/common/mavlink.h:32,
+                 from ../c_test/mavlink_udp.c:54:
+../output/mavlink_for_28377/common/../protocol.h:75:49: warning: backslash and newline separated by space
+   r = (r << 8) | (msg->payloads[ofs+i] & 0xff); \ 
+                                                 ^
+In file included from ../output/mavlink_for_28377/common/common.h:2175:0,
+                 from ../output/mavlink_for_28377/common/mavlink.h:32,
+                 from ../c_test/mavlink_udp.c:54:
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h: In function ‘mavlink_msg_heartbeat_pack’:
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h:77:12: warning: implicit declaration of function ‘mavlink_finalize_message’ [-Wimplicit-function-declaration]
+     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
+            ^
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h: In function ‘mavlink_msg_heartbeat_pack_chan’:
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h:107:12: warning: implicit declaration of function ‘mavlink_finalize_message_chan’ [-Wimplicit-function-declaration]
+     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
+            ^
+In file included from ../c_test/mavlink_udp.c:55:0:
+../output/mavlink_for_28377/mavlink_helpers.h: At top level:
+../output/mavlink_for_28377/mavlink_helpers.h:274:25: error: conflicting types for ‘mavlink_finalize_message_chan’
+ MAVLINK_HELPER uint16_t mavlink_finalize_message_chan(mavlink_message_t* msg, uint8_t system_id, uint8_t component_id,
+                         ^
+In file included from ../output/mavlink_for_28377/common/common.h:2175:0,
+                 from ../output/mavlink_for_28377/common/mavlink.h:32,
+                 from ../c_test/mavlink_udp.c:54:
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h:107:12: note: previous implicit declaration of ‘mavlink_finalize_message_chan’ was here
+     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
+            ^
+In file included from ../c_test/mavlink_udp.c:55:0:
+../output/mavlink_for_28377/mavlink_helpers.h:284:25: error: conflicting types for ‘mavlink_finalize_message’
+ MAVLINK_HELPER uint16_t mavlink_finalize_message(mavlink_message_t* msg, uint8_t system_id, uint8_t component_id, 
+                         ^
+In file included from ../output/mavlink_for_28377/common/common.h:2175:0,
+                 from ../output/mavlink_for_28377/common/mavlink.h:32,
+                 from ../c_test/mavlink_udp.c:54:
+../output/mavlink_for_28377/common/./mavlink_msg_heartbeat.h:77:12: note: previous implicit declaration of ‘mavlink_finalize_message’ was here
+     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
+            ^
+ninja: build stopped: subcommand failed.

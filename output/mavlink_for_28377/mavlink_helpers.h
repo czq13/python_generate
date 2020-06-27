@@ -3,7 +3,6 @@
 #include "string.h"
 #include "checksum.h"
 #include "mavlink_types.h"
-#include "mavlink_conversions.h"
 #include <stdio.h>
 
 #ifndef MAVLINK_HELPER
@@ -254,8 +253,11 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message_buffer(mavlink_message_t* msg, 
 	}
 	
 	uint16_t checksum = crc_calculate(&buf[1], header_len-1);
+	printf("checksum.1=%x\n",checksum);
 	crc_accumulate_buffer(&checksum, _MAV_PAYLOAD(msg), msg->len);
+	printf("checksum.2=%x\n",checksum);
 	crc_accumulate(crc_extra, &checksum);
+	printf("checksum.3=%x\n",checksum);
 	mavlink_ck_a(msg) = (uint8_t)(checksum & 0xFF);
 	mavlink_ck_b(msg) = (uint8_t)(checksum >> 8);
 
@@ -429,8 +431,8 @@ MAVLINK_HELPER uint16_t mavlink_msg_to_send_buffer(uint8_t *buf, const mavlink_m
 {
 	uint8_t signature_len, header_len;
 	uint8_t *ck;
-        uint8_t length = msg->len;
-        
+    uint8_t length = msg->len;
+    
 	if (msg->magic == MAVLINK_STX_MAVLINK1) {
 		signature_len = 0;
 		header_len = MAVLINK_CORE_HEADER_MAVLINK1_LEN;
@@ -455,7 +457,7 @@ MAVLINK_HELPER uint16_t mavlink_msg_to_send_buffer(uint8_t *buf, const mavlink_m
 		buf[7] = msg->msgid & 0xFF;
 		buf[8] = (msg->msgid >> 8) & 0xFF;
 		buf[9] = (msg->msgid >> 16) & 0xFF;
-		memcpy(&buf[10], _MAV_PAYLOAD(msg), length);
+		memcpy(&buf[10], (msg->payloads), length);
 		ck = buf + header_len + 1 + (uint16_t)length;
 		signature_len = (msg->incompat_flags & MAVLINK_IFLAG_SIGNED)?MAVLINK_SIGNATURE_BLOCK_LEN:0;
 	}
