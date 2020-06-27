@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_attitude
+#define MAVLINK_MSG_attitude
 // MESSAGE ATTITUDE PACKING
 
 #define MAVLINK_MSG_ID_ATTITUDE 30
@@ -230,3 +231,4 @@ static inline void mavlink_msg_attitude_decode(const mavlink_message_t* msg, mav
     attitude->pitchspeed = mavlink_msg_attitude_get_pitchspeed(msg);
     attitude->yawspeed = mavlink_msg_attitude_get_yawspeed(msg);
 }
+#endif

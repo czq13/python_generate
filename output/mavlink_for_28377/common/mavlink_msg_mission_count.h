@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_count
+#define MAVLINK_MSG_mission_count
 // MESSAGE MISSION_COUNT PACKING
 
 #define MAVLINK_MSG_ID_MISSION_COUNT 44
@@ -176,3 +177,4 @@ static inline void mavlink_msg_mission_count_decode(const mavlink_message_t* msg
     mission_count->target_component = mavlink_msg_mission_count_get_target_component(msg);
     mission_count->mission_type = mavlink_msg_mission_count_get_mission_type(msg);
 }
+#endif

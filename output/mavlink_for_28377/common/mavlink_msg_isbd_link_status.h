@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_isbd_link_status
+#define MAVLINK_MSG_isbd_link_status
 // MESSAGE ISBD_LINK_STATUS PACKING
 
 #define MAVLINK_MSG_ID_ISBD_LINK_STATUS 335
@@ -248,3 +249,4 @@ static inline void mavlink_msg_isbd_link_status_decode(const mavlink_message_t* 
     isbd_link_status->tx_session_pending = mavlink_msg_isbd_link_status_get_tx_session_pending(msg);
     isbd_link_status->rx_session_pending = mavlink_msg_isbd_link_status_get_rx_session_pending(msg);
 }
+#endif

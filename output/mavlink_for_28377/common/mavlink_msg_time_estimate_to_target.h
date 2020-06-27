@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_time_estimate_to_target
+#define MAVLINK_MSG_time_estimate_to_target
 // MESSAGE TIME_ESTIMATE_TO_TARGET PACKING
 
 #define MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET 380
@@ -194,3 +195,4 @@ static inline void mavlink_msg_time_estimate_to_target_decode(const mavlink_mess
     time_estimate_to_target->mission_end = mavlink_msg_time_estimate_to_target_get_mission_end(msg);
     time_estimate_to_target->commanded_action = mavlink_msg_time_estimate_to_target_get_commanded_action(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_sys_status
+#define MAVLINK_MSG_sys_status
 // MESSAGE SYS_STATUS PACKING
 
 #define MAVLINK_MSG_ID_SYS_STATUS 1
@@ -338,3 +339,4 @@ static inline void mavlink_msg_sys_status_decode(const mavlink_message_t* msg, m
     sys_status->errors_count4 = mavlink_msg_sys_status_get_errors_count4(msg);
     sys_status->battery_remaining = mavlink_msg_sys_status_get_battery_remaining(msg);
 }
+#endif

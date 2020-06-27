@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_statustext
+#define MAVLINK_MSG_statustext
 // MESSAGE STATUSTEXT PACKING
 
 #define MAVLINK_MSG_ID_STATUSTEXT 253
@@ -174,3 +175,4 @@ static inline void mavlink_msg_statustext_decode(const mavlink_message_t* msg, m
     statustext->id = mavlink_msg_statustext_get_id(msg);
     statustext->chunk_seq = mavlink_msg_statustext_get_chunk_seq(msg);
 }
+#endif

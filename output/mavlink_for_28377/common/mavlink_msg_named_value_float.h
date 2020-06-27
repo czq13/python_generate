@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_named_value_float
+#define MAVLINK_MSG_named_value_float
 // MESSAGE NAMED_VALUE_FLOAT PACKING
 
 #define MAVLINK_MSG_ID_NAMED_VALUE_FLOAT 251
@@ -156,3 +157,4 @@ static inline void mavlink_msg_named_value_float_decode(const mavlink_message_t*
     named_value_float->value = mavlink_msg_named_value_float_get_value(msg);
     mavlink_msg_named_value_float_get_name(msg, named_value_float->name);
 }
+#endif

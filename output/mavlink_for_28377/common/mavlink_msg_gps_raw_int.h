@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_raw_int
+#define MAVLINK_MSG_gps_raw_int
 // MESSAGE GPS_RAW_INT PACKING
 
 #define MAVLINK_MSG_ID_GPS_RAW_INT 24
@@ -392,3 +393,4 @@ static inline void mavlink_msg_gps_raw_int_decode(const mavlink_message_t* msg, 
     gps_raw_int->hdg_acc = mavlink_msg_gps_raw_int_get_hdg_acc(msg);
     gps_raw_int->yaw = mavlink_msg_gps_raw_int_get_yaw(msg);
 }
+#endif

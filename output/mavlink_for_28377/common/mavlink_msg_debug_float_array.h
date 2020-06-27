@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_debug_float_array
+#define MAVLINK_MSG_debug_float_array
 // MESSAGE DEBUG_FLOAT_ARRAY PACKING
 
 #define MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY 350
@@ -175,3 +176,4 @@ static inline void mavlink_msg_debug_float_array_decode(const mavlink_message_t*
     mavlink_msg_debug_float_array_get_name(msg, debug_float_array->name);
     mavlink_msg_debug_float_array_get_data(msg, debug_float_array->data);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_high_latency
+#define MAVLINK_MSG_high_latency
 // MESSAGE HIGH_LATENCY PACKING
 
 #define MAVLINK_MSG_ID_HIGH_LATENCY 234
@@ -536,3 +537,4 @@ static inline void mavlink_msg_high_latency_decode(const mavlink_message_t* msg,
     high_latency->failsafe = mavlink_msg_high_latency_get_failsafe(msg);
     high_latency->wp_num = mavlink_msg_high_latency_get_wp_num(msg);
 }
+#endif

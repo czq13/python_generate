@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_battery_status
+#define MAVLINK_MSG_battery_status
 // MESSAGE BATTERY_STATUS PACKING
 
 #define MAVLINK_MSG_ID_BATTERY_STATUS 147
@@ -300,3 +301,4 @@ static inline void mavlink_msg_battery_status_decode(const mavlink_message_t* ms
     battery_status->time_remaining = mavlink_msg_battery_status_get_time_remaining(msg);
     battery_status->charge_state = mavlink_msg_battery_status_get_charge_state(msg);
 }
+#endif

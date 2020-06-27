@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_attitude_target
+#define MAVLINK_MSG_set_attitude_target
 // MESSAGE SET_ATTITUDE_TARGET PACKING
 
 #define MAVLINK_MSG_ID_SET_ATTITUDE_TARGET 82
@@ -264,3 +265,4 @@ static inline void mavlink_msg_set_attitude_target_decode(const mavlink_message_
     set_attitude_target->target_component = mavlink_msg_set_attitude_target_get_target_component(msg);
     set_attitude_target->type_mask = mavlink_msg_set_attitude_target_get_type_mask(msg);
 }
+#endif

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/build",
-  "command": "/usr/bin/x86_64-linux-gnu-gcc-5  -DPLATFORM_Ubuntu=2 -I../output/mavlink_for_28377 -I../output/mavlink_for_28377/common  -g   -o CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o   -c /media/czq/蛋猪/chWorkSpace/code/auto_generate/c_test/mavlink_udp.c",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-5  -DPLATFORM_Ubuntu=2 -I../output/mavlink_for_28377 -I../output/mavlink_for_28377/common  -g   -fgnu89-inline -o CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o   -c /media/czq/蛋猪/chWorkSpace/code/auto_generate/c_test/mavlink_udp.c",
   "file": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/c_test/mavlink_udp.c"
 }
 ]

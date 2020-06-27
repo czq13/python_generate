@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_param_map_rc
+#define MAVLINK_MSG_param_map_rc
 // MESSAGE PARAM_MAP_RC PACKING
 
 #define MAVLINK_MSG_ID_PARAM_MAP_RC 50
@@ -264,3 +265,4 @@ static inline void mavlink_msg_param_map_rc_decode(const mavlink_message_t* msg,
     mavlink_msg_param_map_rc_get_param_id(msg, param_map_rc->param_id);
     param_map_rc->parameter_rc_channel_index = mavlink_msg_param_map_rc_get_parameter_rc_channel_index(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_local_position_ned_cov
+#define MAVLINK_MSG_local_position_ned_cov
 // MESSAGE LOCAL_POSITION_NED_COV PACKING
 
 #define MAVLINK_MSG_ID_LOCAL_POSITION_NED_COV 64
@@ -318,3 +319,4 @@ static inline void mavlink_msg_local_position_ned_cov_decode(const mavlink_messa
     mavlink_msg_local_position_ned_cov_get_covariance(msg, local_position_ned_cov->covariance);
     local_position_ned_cov->estimator_type = mavlink_msg_local_position_ned_cov_get_estimator_type(msg);
 }
+#endif

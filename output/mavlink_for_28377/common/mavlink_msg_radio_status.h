@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_radio_status
+#define MAVLINK_MSG_radio_status
 // MESSAGE RADIO_STATUS PACKING
 
 #define MAVLINK_MSG_ID_RADIO_STATUS 109
@@ -230,3 +231,4 @@ static inline void mavlink_msg_radio_status_decode(const mavlink_message_t* msg,
     radio_status->noise = mavlink_msg_radio_status_get_noise(msg);
     radio_status->remnoise = mavlink_msg_radio_status_get_remnoise(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_highres_imu
+#define MAVLINK_MSG_highres_imu
 // MESSAGE HIGHRES_IMU PACKING
 
 #define MAVLINK_MSG_ID_HIGHRES_IMU 105
@@ -392,3 +393,4 @@ static inline void mavlink_msg_highres_imu_decode(const mavlink_message_t* msg, 
     highres_imu->fields_updated = mavlink_msg_highres_imu_get_fields_updated(msg);
     highres_imu->id = mavlink_msg_highres_imu_get_id(msg);
 }
+#endif

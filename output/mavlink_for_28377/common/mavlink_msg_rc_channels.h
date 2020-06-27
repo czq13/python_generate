@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_rc_channels
+#define MAVLINK_MSG_rc_channels
 // MESSAGE RC_CHANNELS PACKING
 
 #define MAVLINK_MSG_ID_RC_CHANNELS 65
@@ -482,3 +483,4 @@ static inline void mavlink_msg_rc_channels_decode(const mavlink_message_t* msg, 
     rc_channels->chancount = mavlink_msg_rc_channels_get_chancount(msg);
     rc_channels->rssi = mavlink_msg_rc_channels_get_rssi(msg);
 }
+#endif

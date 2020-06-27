@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_power_status
+#define MAVLINK_MSG_power_status
 // MESSAGE POWER_STATUS PACKING
 
 #define MAVLINK_MSG_ID_POWER_STATUS 125
@@ -158,3 +159,4 @@ static inline void mavlink_msg_power_status_decode(const mavlink_message_t* msg,
     power_status->Vservo = mavlink_msg_power_status_get_Vservo(msg);
     power_status->flags = mavlink_msg_power_status_get_flags(msg);
 }
+#endif

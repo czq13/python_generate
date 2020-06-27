@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_terrain_report
+#define MAVLINK_MSG_terrain_report
 // MESSAGE TERRAIN_REPORT PACKING
 
 #define MAVLINK_MSG_ID_TERRAIN_REPORT 136
@@ -230,3 +231,4 @@ static inline void mavlink_msg_terrain_report_decode(const mavlink_message_t* ms
     terrain_report->pending = mavlink_msg_terrain_report_get_pending(msg);
     terrain_report->loaded = mavlink_msg_terrain_report_get_loaded(msg);
 }
+#endif

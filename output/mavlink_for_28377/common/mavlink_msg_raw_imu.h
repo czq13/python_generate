@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_raw_imu
+#define MAVLINK_MSG_raw_imu
 // MESSAGE RAW_IMU PACKING
 
 #define MAVLINK_MSG_ID_RAW_IMU 27
@@ -320,3 +321,4 @@ static inline void mavlink_msg_raw_imu_decode(const mavlink_message_t* msg, mavl
     raw_imu->id = mavlink_msg_raw_imu_get_id(msg);
     raw_imu->temperature = mavlink_msg_raw_imu_get_temperature(msg);
 }
+#endif

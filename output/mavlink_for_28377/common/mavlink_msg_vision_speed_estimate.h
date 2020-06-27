@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_vision_speed_estimate
+#define MAVLINK_MSG_vision_speed_estimate
 // MESSAGE VISION_SPEED_ESTIMATE PACKING
 
 #define MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE 103
@@ -210,3 +211,4 @@ static inline void mavlink_msg_vision_speed_estimate_decode(const mavlink_messag
     mavlink_msg_vision_speed_estimate_get_covariance(msg, vision_speed_estimate->covariance);
     vision_speed_estimate->reset_counter = mavlink_msg_vision_speed_estimate_get_reset_counter(msg);
 }
+#endif

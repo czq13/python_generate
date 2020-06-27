@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_param_request_list
+#define MAVLINK_MSG_param_request_list
 // MESSAGE PARAM_REQUEST_LIST PACKING
 
 #define MAVLINK_MSG_ID_PARAM_REQUEST_LIST 21
@@ -140,3 +141,4 @@ static inline void mavlink_msg_param_request_list_decode(const mavlink_message_t
     param_request_list->target_system = mavlink_msg_param_request_list_get_target_system(msg);
     param_request_list->target_component = mavlink_msg_param_request_list_get_target_component(msg);
 }
+#endif

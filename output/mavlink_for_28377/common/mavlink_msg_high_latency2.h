@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_high_latency2
+#define MAVLINK_MSG_high_latency2
 // MESSAGE HIGH_LATENCY2 PACKING
 
 #define MAVLINK_MSG_ID_HIGH_LATENCY2 235
@@ -590,3 +591,4 @@ static inline void mavlink_msg_high_latency2_decode(const mavlink_message_t* msg
     high_latency2->custom1 = mavlink_msg_high_latency2_get_custom1(msg);
     high_latency2->custom2 = mavlink_msg_high_latency2_get_custom2(msg);
 }
+#endif

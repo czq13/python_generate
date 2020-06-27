@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_self_id
+#define MAVLINK_MSG_open_drone_id_self_id
 // MESSAGE OPEN_DRONE_ID_SELF_ID PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_SELF_ID 12903
@@ -193,3 +194,4 @@ static inline void mavlink_msg_open_drone_id_self_id_decode(const mavlink_messag
     open_drone_id_self_id->description_type = mavlink_msg_open_drone_id_self_id_get_description_type(msg);
     mavlink_msg_open_drone_id_self_id_get_description(msg, open_drone_id_self_id->description);
 }
+#endif

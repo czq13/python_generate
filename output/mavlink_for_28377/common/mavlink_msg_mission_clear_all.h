@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_clear_all
+#define MAVLINK_MSG_mission_clear_all
 // MESSAGE MISSION_CLEAR_ALL PACKING
 
 #define MAVLINK_MSG_ID_MISSION_CLEAR_ALL 45
@@ -158,3 +159,4 @@ static inline void mavlink_msg_mission_clear_all_decode(const mavlink_message_t*
     mission_clear_all->target_component = mavlink_msg_mission_clear_all_get_target_component(msg);
     mission_clear_all->mission_type = mavlink_msg_mission_clear_all_get_mission_type(msg);
 }
+#endif

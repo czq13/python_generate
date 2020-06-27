@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_command_long
+#define MAVLINK_MSG_command_long
 // MESSAGE COMMAND_LONG PACKING
 
 #define MAVLINK_MSG_ID_COMMAND_LONG 76
@@ -302,3 +303,4 @@ static inline void mavlink_msg_command_long_decode(const mavlink_message_t* msg,
     command_long->target_component = mavlink_msg_command_long_get_target_component(msg);
     command_long->confirmation = mavlink_msg_command_long_get_confirmation(msg);
 }
+#endif

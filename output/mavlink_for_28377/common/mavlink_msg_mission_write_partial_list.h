@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_write_partial_list
+#define MAVLINK_MSG_mission_write_partial_list
 // MESSAGE MISSION_WRITE_PARTIAL_LIST PACKING
 
 #define MAVLINK_MSG_ID_MISSION_WRITE_PARTIAL_LIST 38
@@ -194,3 +195,4 @@ static inline void mavlink_msg_mission_write_partial_list_decode(const mavlink_m
     mission_write_partial_list->target_component = mavlink_msg_mission_write_partial_list_get_target_component(msg);
     mission_write_partial_list->mission_type = mavlink_msg_mission_write_partial_list_get_mission_type(msg);
 }
+#endif

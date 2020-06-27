@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_link_node_status
+#define MAVLINK_MSG_link_node_status
 // MESSAGE LINK_NODE_STATUS PACKING
 
 #define MAVLINK_MSG_ID_LINK_NODE_STATUS 8
@@ -302,3 +303,4 @@ static inline void mavlink_msg_link_node_status_decode(const mavlink_message_t* 
     link_node_status->tx_buf = mavlink_msg_link_node_status_get_tx_buf(msg);
     link_node_status->rx_buf = mavlink_msg_link_node_status_get_rx_buf(msg);
 }
+#endif

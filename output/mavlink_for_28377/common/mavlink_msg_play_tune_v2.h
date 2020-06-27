@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_play_tune_v2
+#define MAVLINK_MSG_play_tune_v2
 // MESSAGE PLAY_TUNE_V2 PACKING
 
 #define MAVLINK_MSG_ID_PLAY_TUNE_V2 400
@@ -174,3 +175,4 @@ static inline void mavlink_msg_play_tune_v2_decode(const mavlink_message_t* msg,
     play_tune_v2->target_component = mavlink_msg_play_tune_v2_get_target_component(msg);
     mavlink_msg_play_tune_v2_get_tune(msg, play_tune_v2->tune);
 }
+#endif

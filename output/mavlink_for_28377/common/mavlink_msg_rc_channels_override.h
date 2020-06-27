@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_rc_channels_override
+#define MAVLINK_MSG_rc_channels_override
 // MESSAGE RC_CHANNELS_OVERRIDE PACKING
 
 #define MAVLINK_MSG_ID_RC_CHANNELS_OVERRIDE 70
@@ -464,3 +465,4 @@ static inline void mavlink_msg_rc_channels_override_decode(const mavlink_message
     rc_channels_override->chan17_raw = mavlink_msg_rc_channels_override_get_chan17_raw(msg);
     rc_channels_override->chan18_raw = mavlink_msg_rc_channels_override_get_chan18_raw(msg);
 }
+#endif

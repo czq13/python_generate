@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_landing_target
+#define MAVLINK_MSG_landing_target
 // MESSAGE LANDING_TARGET PACKING
 
 #define MAVLINK_MSG_ID_LANDING_TARGET 149
@@ -354,3 +355,4 @@ static inline void mavlink_msg_landing_target_decode(const mavlink_message_t* ms
     landing_target->type = mavlink_msg_landing_target_get_type(msg);
     landing_target->position_valid = mavlink_msg_landing_target_get_position_valid(msg);
 }
+#endif

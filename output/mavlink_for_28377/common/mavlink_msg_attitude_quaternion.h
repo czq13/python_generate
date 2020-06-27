@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_attitude_quaternion
+#define MAVLINK_MSG_attitude_quaternion
 // MESSAGE ATTITUDE_QUATERNION PACKING
 
 #define MAVLINK_MSG_ID_ATTITUDE_QUATERNION 31
@@ -264,3 +265,4 @@ static inline void mavlink_msg_attitude_quaternion_decode(const mavlink_message_
     attitude_quaternion->yawspeed = mavlink_msg_attitude_quaternion_get_yawspeed(msg);
     mavlink_msg_attitude_quaternion_get_repr_offset_q(msg, attitude_quaternion->repr_offset_q);
 }
+#endif

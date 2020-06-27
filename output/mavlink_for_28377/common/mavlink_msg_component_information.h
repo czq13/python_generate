@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_component_information
+#define MAVLINK_MSG_component_information
 // MESSAGE COMPONENT_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_COMPONENT_INFORMATION 395
@@ -248,3 +249,4 @@ static inline void mavlink_msg_component_information_decode(const mavlink_messag
     mavlink_msg_component_information_get_model_name(msg, component_information->model_name);
     mavlink_msg_component_information_get_component_definition_uri(msg, component_information->component_definition_uri);
 }
+#endif

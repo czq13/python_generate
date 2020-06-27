@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_extended_sys_state
+#define MAVLINK_MSG_extended_sys_state
 // MESSAGE EXTENDED_SYS_STATE PACKING
 
 #define MAVLINK_MSG_ID_EXTENDED_SYS_STATE 245
@@ -140,3 +141,4 @@ static inline void mavlink_msg_extended_sys_state_decode(const mavlink_message_t
     extended_sys_state->vtol_state = mavlink_msg_extended_sys_state_get_vtol_state(msg);
     extended_sys_state->landed_state = mavlink_msg_extended_sys_state_get_landed_state(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_smart_battery_status
+#define MAVLINK_MSG_smart_battery_status
 // MESSAGE SMART_BATTERY_STATUS PACKING
 
 #define MAVLINK_MSG_ID_SMART_BATTERY_STATUS 371
@@ -246,3 +247,4 @@ static inline void mavlink_msg_smart_battery_status_decode(const mavlink_message
     smart_battery_status->cell_offset = mavlink_msg_smart_battery_status_get_cell_offset(msg);
     mavlink_msg_smart_battery_status_get_voltages(msg, smart_battery_status->voltages);
 }
+#endif

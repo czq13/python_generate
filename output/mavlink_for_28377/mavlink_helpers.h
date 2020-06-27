@@ -222,7 +222,8 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message_buffer(mavlink_message_t* msg, 
 	} else {
 		msg->magic = MAVLINK_STX;
 	}
-	msg->len = mavlink1?min_length:_mav_trim_payload(_MAV_PAYLOAD(msg), length);
+	//msg->len = mavlink1?min_length:_mav_trim_payload(_MAV_PAYLOAD(msg), length);
+  msg->len = length;
 	msg->sysid = system_id;
 	msg->compid = component_id;
 	msg->incompat_flags = 0;
@@ -253,11 +254,8 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message_buffer(mavlink_message_t* msg, 
 	}
 	
 	uint16_t checksum = crc_calculate(&buf[1], header_len-1);
-	printf("checksum.1=%x\n",checksum);
 	crc_accumulate_buffer(&checksum, _MAV_PAYLOAD(msg), msg->len);
-	printf("checksum.2=%x\n",checksum);
 	crc_accumulate(crc_extra, &checksum);
-	printf("checksum.3=%x\n",checksum);
 	mavlink_ck_a(msg) = (uint8_t)(checksum & 0xFF);
 	mavlink_ck_b(msg) = (uint8_t)(checksum >> 8);
 

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_position_target_global_int
+#define MAVLINK_MSG_position_target_global_int
 // MESSAGE POSITION_TARGET_GLOBAL_INT PACKING
 
 #define MAVLINK_MSG_ID_POSITION_TARGET_GLOBAL_INT 87
@@ -356,3 +357,4 @@ static inline void mavlink_msg_position_target_global_int_decode(const mavlink_m
     position_target_global_int->type_mask = mavlink_msg_position_target_global_int_get_type_mask(msg);
     position_target_global_int->coordinate_frame = mavlink_msg_position_target_global_int_get_coordinate_frame(msg);
 }
+#endif

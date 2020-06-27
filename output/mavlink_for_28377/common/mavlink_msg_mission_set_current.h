@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_set_current
+#define MAVLINK_MSG_mission_set_current
 // MESSAGE MISSION_SET_CURRENT PACKING
 
 #define MAVLINK_MSG_ID_MISSION_SET_CURRENT 41
@@ -158,3 +159,4 @@ static inline void mavlink_msg_mission_set_current_decode(const mavlink_message_
     mission_set_current->target_system = mavlink_msg_mission_set_current_get_target_system(msg);
     mission_set_current->target_component = mavlink_msg_mission_set_current_get_target_component(msg);
 }
+#endif

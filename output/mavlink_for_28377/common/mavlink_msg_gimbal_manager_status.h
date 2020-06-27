@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gimbal_manager_status
+#define MAVLINK_MSG_gimbal_manager_status
 // MESSAGE GIMBAL_MANAGER_STATUS PACKING
 
 #define MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS 281
@@ -158,3 +159,4 @@ static inline void mavlink_msg_gimbal_manager_status_decode(const mavlink_messag
     gimbal_manager_status->flags = mavlink_msg_gimbal_manager_status_get_flags(msg);
     gimbal_manager_status->gimbal_device_id = mavlink_msg_gimbal_manager_status_get_gimbal_device_id(msg);
 }
+#endif

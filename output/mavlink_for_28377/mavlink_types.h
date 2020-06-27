@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_TYPES_H
+#define MAVLINK_TYPES_H
 
 // Visual Studio versions before 2010 don't have stdint.h, so we just error out.
 #if (defined _MSC_VER) && (_MSC_VER < 1600)
@@ -292,4 +293,5 @@ typedef struct __mavlink_msg_entry {
 
 #ifdef MAVLINK_USE_CXX_NAMESPACE
 } // namespace mavlink
+#endif
 #endif

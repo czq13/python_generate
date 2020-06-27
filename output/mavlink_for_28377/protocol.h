@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
 #include "string.h"
 #include "mavlink_types.h"
 #ifdef PLATFORM_28377
@@ -20,10 +20,6 @@ static inline uint16_t mavlink_msg_get_send_buffer_length(const mavlink_message_
 	return msg->len + MAVLINK_NUM_NON_PAYLOAD_BYTES + signature_len;
 }
 
-static inline void byte_put_8 (char *dst,const char * src) {
-	dst[0] = src[0] & 0xff;
-}
-
 static inline void byte_put_n(char *dst,const char *src,char n) {
 	int i = 0,j = 0;
 	for (i = 0;i < n/CHAR_LEN;i++) {
@@ -34,9 +30,9 @@ static inline void byte_put_n(char *dst,const char *src,char n) {
 	}
 }
 
-#define _mav_put_uint8_t(buf, wire_offset, b) byte_put_8(&buf[wire_offset],(const char *)&b)
-#define _mav_put_int8_t(buf, wire_offset, b)  byte_put_8(&buf[wire_offset],(const char *)&b)
-#define _mav_put_char(buf, wire_offset, b)    byte_put_8(&buf[wire_offset],(const char *)&b)
+#define _mav_put_uint8_t(buf, wire_offset, b) buf[wire_offset]=b
+#define _mav_put_int8_t(buf, wire_offset, b)  buf[wire_offset]=b
+#define _mav_put_char(buf, wire_offset, b)    buf[wire_offset]=b
 
 #define _mav_put_uint16_t(buf, wire_offset, b) byte_put_n(&buf[wire_offset],(const char *)&b,16)
 #define _mav_put_int16_t(buf, wire_offset, b)  byte_put_n(&buf[wire_offset], (const char *)&b,16)
@@ -144,3 +140,4 @@ _MAV_RETURN_ARRAY(float,    32)
 _MAV_RETURN_ARRAY(double,   32)
 
 #include "mavlink_helpers.h"
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_serial_control
+#define MAVLINK_MSG_serial_control
 // MESSAGE SERIAL_CONTROL PACKING
 
 #define MAVLINK_MSG_ID_SERIAL_CONTROL 126
@@ -210,3 +211,4 @@ static inline void mavlink_msg_serial_control_decode(const mavlink_message_t* ms
     serial_control->count = mavlink_msg_serial_control_get_count(msg);
     mavlink_msg_serial_control_get_data(msg, serial_control->data);
 }
+#endif

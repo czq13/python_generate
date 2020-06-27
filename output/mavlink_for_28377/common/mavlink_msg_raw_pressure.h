@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_raw_pressure
+#define MAVLINK_MSG_raw_pressure
 // MESSAGE RAW_PRESSURE PACKING
 
 #define MAVLINK_MSG_ID_RAW_PRESSURE 28
@@ -194,3 +195,4 @@ static inline void mavlink_msg_raw_pressure_decode(const mavlink_message_t* msg,
     raw_pressure->press_diff2 = mavlink_msg_raw_pressure_get_press_diff2(msg);
     raw_pressure->temperature = mavlink_msg_raw_pressure_get_temperature(msg);
 }
+#endif

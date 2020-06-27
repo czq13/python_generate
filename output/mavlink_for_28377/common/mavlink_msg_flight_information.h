@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_flight_information
+#define MAVLINK_MSG_flight_information
 // MESSAGE FLIGHT_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_FLIGHT_INFORMATION 264
@@ -176,3 +177,4 @@ static inline void mavlink_msg_flight_information_decode(const mavlink_message_t
     flight_information->flight_uuid = mavlink_msg_flight_information_get_flight_uuid(msg);
     flight_information->time_boot_ms = mavlink_msg_flight_information_get_time_boot_ms(msg);
 }
+#endif

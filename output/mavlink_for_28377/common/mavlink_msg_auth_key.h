@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_auth_key
+#define MAVLINK_MSG_auth_key
 // MESSAGE AUTH_KEY PACKING
 
 #define MAVLINK_MSG_ID_AUTH_KEY 7
@@ -122,3 +123,4 @@ static inline void mavlink_msg_auth_key_decode(const mavlink_message_t* msg, mav
 {
     mavlink_msg_auth_key_get_key(msg, auth_key->key);
 }
+#endif

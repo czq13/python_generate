@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_encapsulated_data
+#define MAVLINK_MSG_encapsulated_data
 // MESSAGE ENCAPSULATED_DATA PACKING
 
 #define MAVLINK_MSG_ID_ENCAPSULATED_DATA 131
@@ -138,3 +139,4 @@ static inline void mavlink_msg_encapsulated_data_decode(const mavlink_message_t*
     encapsulated_data->seqnr = mavlink_msg_encapsulated_data_get_seqnr(msg);
     mavlink_msg_encapsulated_data_get_data(msg, encapsulated_data->data);
 }
+#endif

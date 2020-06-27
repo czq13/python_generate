@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_attitude_target
+#define MAVLINK_MSG_attitude_target
 // MESSAGE ATTITUDE_TARGET PACKING
 
 #define MAVLINK_MSG_ID_ATTITUDE_TARGET 83
@@ -228,3 +229,4 @@ static inline void mavlink_msg_attitude_target_decode(const mavlink_message_t* m
     attitude_target->thrust = mavlink_msg_attitude_target_get_thrust(msg);
     attitude_target->type_mask = mavlink_msg_attitude_target_get_type_mask(msg);
 }
+#endif

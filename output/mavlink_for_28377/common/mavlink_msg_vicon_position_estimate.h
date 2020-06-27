@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_vicon_position_estimate
+#define MAVLINK_MSG_vicon_position_estimate
 // MESSAGE VICON_POSITION_ESTIMATE PACKING
 
 #define MAVLINK_MSG_ID_VICON_POSITION_ESTIMATE 104
@@ -246,3 +247,4 @@ static inline void mavlink_msg_vicon_position_estimate_decode(const mavlink_mess
     vicon_position_estimate->yaw = mavlink_msg_vicon_position_estimate_get_yaw(msg);
     mavlink_msg_vicon_position_estimate_get_covariance(msg, vicon_position_estimate->covariance);
 }
+#endif

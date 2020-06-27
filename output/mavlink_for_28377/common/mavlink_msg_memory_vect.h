@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_memory_vect
+#define MAVLINK_MSG_memory_vect
 // MESSAGE MEMORY_VECT PACKING
 
 #define MAVLINK_MSG_ID_MEMORY_VECT 249
@@ -174,3 +175,4 @@ static inline void mavlink_msg_memory_vect_decode(const mavlink_message_t* msg, 
     memory_vect->type = mavlink_msg_memory_vect_get_type(msg);
     mavlink_msg_memory_vect_get_value(msg, memory_vect->value);
 }
+#endif

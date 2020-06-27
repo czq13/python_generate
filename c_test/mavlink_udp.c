@@ -53,6 +53,7 @@
  or in the same folder as this source file */
 #include <mavlink.h>
 #include <mavlink_helpers.h>
+#include <testsuite.h>
 
 
 #define BUFFER_LENGTH 2041 // minimum buffer size that can be used with qnx (I don't know why)
@@ -61,6 +62,8 @@ uint64_t microsSinceEpoch();
 
 int main(int argc, char* argv[])
 {
+	mavlink_message_t msg;
+	mavlink_test_common(1,1,&msg);
 	
 	char help[] = "--help";
 	
@@ -76,7 +79,6 @@ int main(int argc, char* argv[])
 	ssize_t recsize;
 	socklen_t fromlen = sizeof(gcAddr);
 	int bytes_sent;
-	mavlink_message_t msg;
 	uint16_t len;
 	int i = 0;
 	//int success = 0;

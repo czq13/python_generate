@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_debug
+#define MAVLINK_MSG_debug
 // MESSAGE DEBUG PACKING
 
 #define MAVLINK_MSG_ID_DEBUG 254
@@ -158,3 +159,4 @@ static inline void mavlink_msg_debug_decode(const mavlink_message_t* msg, mavlin
     debug->value = mavlink_msg_debug_get_value(msg);
     debug->ind = mavlink_msg_debug_get_ind(msg);
 }
+#endif

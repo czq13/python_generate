@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_optical_flow
+#define MAVLINK_MSG_hil_optical_flow
 // MESSAGE HIL_OPTICAL_FLOW PACKING
 
 #define MAVLINK_MSG_ID_HIL_OPTICAL_FLOW 114
@@ -320,3 +321,4 @@ static inline void mavlink_msg_hil_optical_flow_decode(const mavlink_message_t* 
     hil_optical_flow->sensor_id = mavlink_msg_hil_optical_flow_get_sensor_id(msg);
     hil_optical_flow->quality = mavlink_msg_hil_optical_flow_get_quality(msg);
 }
+#endif

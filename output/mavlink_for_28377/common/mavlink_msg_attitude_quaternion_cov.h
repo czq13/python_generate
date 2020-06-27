@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_attitude_quaternion_cov
+#define MAVLINK_MSG_attitude_quaternion_cov
 // MESSAGE ATTITUDE_QUATERNION_COV PACKING
 
 #define MAVLINK_MSG_ID_ATTITUDE_QUATERNION_COV 61
@@ -211,3 +212,4 @@ static inline void mavlink_msg_attitude_quaternion_cov_decode(const mavlink_mess
     attitude_quaternion_cov->yawspeed = mavlink_msg_attitude_quaternion_cov_get_yawspeed(msg);
     mavlink_msg_attitude_quaternion_cov_get_covariance(msg, attitude_quaternion_cov->covariance);
 }
+#endif

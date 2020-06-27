@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_v2_extension
+#define MAVLINK_MSG_v2_extension
 // MESSAGE V2_EXTENSION PACKING
 
 #define MAVLINK_MSG_ID_V2_EXTENSION 248
@@ -192,3 +193,4 @@ static inline void mavlink_msg_v2_extension_decode(const mavlink_message_t* msg,
     v2_extension->target_component = mavlink_msg_v2_extension_get_target_component(msg);
     mavlink_msg_v2_extension_get_payload(msg, v2_extension->payload);
 }
+#endif

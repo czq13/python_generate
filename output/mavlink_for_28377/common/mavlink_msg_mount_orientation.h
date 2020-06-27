@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mount_orientation
+#define MAVLINK_MSG_mount_orientation
 // MESSAGE MOUNT_ORIENTATION PACKING
 
 #define MAVLINK_MSG_ID_MOUNT_ORIENTATION 265
@@ -194,3 +195,4 @@ static inline void mavlink_msg_mount_orientation_decode(const mavlink_message_t*
     mount_orientation->yaw = mavlink_msg_mount_orientation_get_yaw(msg);
     mount_orientation->yaw_absolute = mavlink_msg_mount_orientation_get_yaw_absolute(msg);
 }
+#endif

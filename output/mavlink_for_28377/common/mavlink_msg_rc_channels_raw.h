@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_rc_channels_raw
+#define MAVLINK_MSG_rc_channels_raw
 // MESSAGE RC_CHANNELS_RAW PACKING
 
 #define MAVLINK_MSG_ID_RC_CHANNELS_RAW 35
@@ -302,3 +303,4 @@ static inline void mavlink_msg_rc_channels_raw_decode(const mavlink_message_t* m
     rc_channels_raw->port = mavlink_msg_rc_channels_raw_get_port(msg);
     rc_channels_raw->rssi = mavlink_msg_rc_channels_raw_get_rssi(msg);
 }
+#endif

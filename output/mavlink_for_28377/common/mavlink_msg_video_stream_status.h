@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_video_stream_status
+#define MAVLINK_MSG_video_stream_status
 // MESSAGE VIDEO_STREAM_STATUS PACKING
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS 270
@@ -248,3 +249,4 @@ static inline void mavlink_msg_video_stream_status_decode(const mavlink_message_
     video_stream_status->hfov = mavlink_msg_video_stream_status_get_hfov(msg);
     video_stream_status->stream_id = mavlink_msg_video_stream_status_get_stream_id(msg);
 }
+#endif

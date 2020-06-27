@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_authentication
+#define MAVLINK_MSG_open_drone_id_authentication
 // MESSAGE OPEN_DRONE_ID_AUTHENTICATION PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION 12902
@@ -265,3 +266,4 @@ static inline void mavlink_msg_open_drone_id_authentication_decode(const mavlink
     open_drone_id_authentication->length = mavlink_msg_open_drone_id_authentication_get_length(msg);
     mavlink_msg_open_drone_id_authentication_get_authentication_data(msg, open_drone_id_authentication->authentication_data);
 }
+#endif

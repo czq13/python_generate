@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_log_request_list
+#define MAVLINK_MSG_log_request_list
 // MESSAGE LOG_REQUEST_LIST PACKING
 
 #define MAVLINK_MSG_ID_LOG_REQUEST_LIST 117
@@ -176,3 +177,4 @@ static inline void mavlink_msg_log_request_list_decode(const mavlink_message_t* 
     log_request_list->target_system = mavlink_msg_log_request_list_get_target_system(msg);
     log_request_list->target_component = mavlink_msg_log_request_list_get_target_component(msg);
 }
+#endif

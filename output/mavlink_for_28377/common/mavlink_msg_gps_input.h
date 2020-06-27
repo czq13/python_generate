@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_input
+#define MAVLINK_MSG_gps_input
 // MESSAGE GPS_INPUT PACKING
 
 #define MAVLINK_MSG_ID_GPS_INPUT 232
@@ -446,3 +447,4 @@ static inline void mavlink_msg_gps_input_decode(const mavlink_message_t* msg, ma
     gps_input->satellites_visible = mavlink_msg_gps_input_get_satellites_visible(msg);
     gps_input->yaw = mavlink_msg_gps_input_get_yaw(msg);
 }
+#endif

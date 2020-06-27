@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_ping
+#define MAVLINK_MSG_ping
 // MESSAGE PING PACKING
 
 #define MAVLINK_MSG_ID_PING 4
@@ -176,3 +177,4 @@ static inline void mavlink_msg_ping_decode(const mavlink_message_t* msg, mavlink
     ping->target_system = mavlink_msg_ping_get_target_system(msg);
     ping->target_component = mavlink_msg_ping_get_target_component(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_state_quaternion
+#define MAVLINK_MSG_hil_state_quaternion
 // MESSAGE HIL_STATE_QUATERNION PACKING
 
 #define MAVLINK_MSG_ID_HIL_STATE_QUATERNION 115
@@ -390,3 +391,4 @@ static inline void mavlink_msg_hil_state_quaternion_decode(const mavlink_message
     hil_state_quaternion->yacc = mavlink_msg_hil_state_quaternion_get_yacc(msg);
     hil_state_quaternion->zacc = mavlink_msg_hil_state_quaternion_get_zacc(msg);
 }
+#endif

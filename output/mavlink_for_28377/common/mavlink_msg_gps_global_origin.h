@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_global_origin
+#define MAVLINK_MSG_gps_global_origin
 // MESSAGE GPS_GLOBAL_ORIGIN PACKING
 
 #define MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN 49
@@ -176,3 +177,4 @@ static inline void mavlink_msg_gps_global_origin_decode(const mavlink_message_t*
     gps_global_origin->altitude = mavlink_msg_gps_global_origin_get_altitude(msg);
     gps_global_origin->time_usec = mavlink_msg_gps_global_origin_get_time_usec(msg);
 }
+#endif

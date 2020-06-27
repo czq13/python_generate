@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_actuator_control_target
+#define MAVLINK_MSG_actuator_control_target
 // MESSAGE ACTUATOR_CONTROL_TARGET PACKING
 
 #define MAVLINK_MSG_ID_ACTUATOR_CONTROL_TARGET 140
@@ -156,3 +157,4 @@ static inline void mavlink_msg_actuator_control_target_decode(const mavlink_mess
     mavlink_msg_actuator_control_target_get_controls(msg, actuator_control_target->controls);
     actuator_control_target->group_mlx = mavlink_msg_actuator_control_target_get_group_mlx(msg);
 }
+#endif

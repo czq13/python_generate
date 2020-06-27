@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gimbal_device_information
+#define MAVLINK_MSG_gimbal_device_information
 // MESSAGE GIMBAL_DEVICE_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_GIMBAL_DEVICE_INFORMATION 283
@@ -301,3 +302,4 @@ static inline void mavlink_msg_gimbal_device_information_decode(const mavlink_me
     mavlink_msg_gimbal_device_information_get_vendor_name(msg, gimbal_device_information->vendor_name);
     mavlink_msg_gimbal_device_information_get_model_name(msg, gimbal_device_information->model_name);
 }
+#endif

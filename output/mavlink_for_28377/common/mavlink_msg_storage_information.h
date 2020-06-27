@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_storage_information
+#define MAVLINK_MSG_storage_information
 // MESSAGE STORAGE_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_STORAGE_INFORMATION 261
@@ -266,3 +267,4 @@ static inline void mavlink_msg_storage_information_decode(const mavlink_message_
     storage_information->storage_count = mavlink_msg_storage_information_get_storage_count(msg);
     storage_information->status = mavlink_msg_storage_information_get_status(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_altitude
+#define MAVLINK_MSG_altitude
 // MESSAGE ALTITUDE PACKING
 
 #define MAVLINK_MSG_ID_ALTITUDE 141
@@ -230,3 +231,4 @@ static inline void mavlink_msg_altitude_decode(const mavlink_message_t* msg, mav
     altitude->altitude_terrain = mavlink_msg_altitude_get_altitude_terrain(msg);
     altitude->bottom_clearance = mavlink_msg_altitude_get_bottom_clearance(msg);
 }
+#endif

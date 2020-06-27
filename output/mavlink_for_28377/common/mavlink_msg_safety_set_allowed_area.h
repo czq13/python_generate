@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_safety_set_allowed_area
+#define MAVLINK_MSG_safety_set_allowed_area
 // MESSAGE SAFETY_SET_ALLOWED_AREA PACKING
 
 #define MAVLINK_MSG_ID_SAFETY_SET_ALLOWED_AREA 54
@@ -266,3 +267,4 @@ static inline void mavlink_msg_safety_set_allowed_area_decode(const mavlink_mess
     safety_set_allowed_area->target_component = mavlink_msg_safety_set_allowed_area_get_target_component(msg);
     safety_set_allowed_area->frame = mavlink_msg_safety_set_allowed_area_get_frame(msg);
 }
+#endif

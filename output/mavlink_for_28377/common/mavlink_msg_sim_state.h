@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_sim_state
+#define MAVLINK_MSG_sim_state
 // MESSAGE SIM_STATE PACKING
 
 #define MAVLINK_MSG_ID_SIM_STATE 108
@@ -482,3 +483,4 @@ static inline void mavlink_msg_sim_state_decode(const mavlink_message_t* msg, ma
     sim_state->ve = mavlink_msg_sim_state_get_ve(msg);
     sim_state->vd = mavlink_msg_sim_state_get_vd(msg);
 }
+#endif

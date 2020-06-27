@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_global_position_int
+#define MAVLINK_MSG_global_position_int
 // MESSAGE GLOBAL_POSITION_INT PACKING
 
 #define MAVLINK_MSG_ID_GLOBAL_POSITION_INT 33
@@ -266,3 +267,4 @@ static inline void mavlink_msg_global_position_int_decode(const mavlink_message_
     global_position_int->vz = mavlink_msg_global_position_int_get_vz(msg);
     global_position_int->hdg = mavlink_msg_global_position_int_get_hdg(msg);
 }
+#endif

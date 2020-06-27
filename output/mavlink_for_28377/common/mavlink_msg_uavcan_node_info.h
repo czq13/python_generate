@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_uavcan_node_info
+#define MAVLINK_MSG_uavcan_node_info
 // MESSAGE UAVCAN_NODE_INFO PACKING
 
 #define MAVLINK_MSG_ID_UAVCAN_NODE_INFO 311
@@ -265,3 +266,4 @@ static inline void mavlink_msg_uavcan_node_info_decode(const mavlink_message_t* 
     uavcan_node_info->sw_version_major = mavlink_msg_uavcan_node_info_get_sw_version_major(msg);
     uavcan_node_info->sw_version_minor = mavlink_msg_uavcan_node_info_get_sw_version_minor(msg);
 }
+#endif

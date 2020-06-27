@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_rc_channels_scaled
+#define MAVLINK_MSG_rc_channels_scaled
 // MESSAGE RC_CHANNELS_SCALED PACKING
 
 #define MAVLINK_MSG_ID_RC_CHANNELS_SCALED 34
@@ -302,3 +303,4 @@ static inline void mavlink_msg_rc_channels_scaled_decode(const mavlink_message_t
     rc_channels_scaled->port = mavlink_msg_rc_channels_scaled_get_port(msg);
     rc_channels_scaled->rssi = mavlink_msg_rc_channels_scaled_get_rssi(msg);
 }
+#endif

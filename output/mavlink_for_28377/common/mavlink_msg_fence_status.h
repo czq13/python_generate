@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_fence_status
+#define MAVLINK_MSG_fence_status
 // MESSAGE FENCE_STATUS PACKING
 
 #define MAVLINK_MSG_ID_FENCE_STATUS 162
@@ -194,3 +195,4 @@ static inline void mavlink_msg_fence_status_decode(const mavlink_message_t* msg,
     fence_status->breach_type = mavlink_msg_fence_status_get_breach_type(msg);
     fence_status->breach_mitigation = mavlink_msg_fence_status_get_breach_mitigation(msg);
 }
+#endif

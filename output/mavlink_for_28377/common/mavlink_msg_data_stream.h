@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_data_stream
+#define MAVLINK_MSG_data_stream
 // MESSAGE DATA_STREAM PACKING
 
 #define MAVLINK_MSG_ID_DATA_STREAM 67
@@ -158,3 +159,4 @@ static inline void mavlink_msg_data_stream_decode(const mavlink_message_t* msg, 
     data_stream->stream_id = mavlink_msg_data_stream_get_stream_id(msg);
     data_stream->on_off = mavlink_msg_data_stream_get_on_off(msg);
 }
+#endif

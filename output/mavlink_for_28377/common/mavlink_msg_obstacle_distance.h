@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_obstacle_distance
+#define MAVLINK_MSG_obstacle_distance
 // MESSAGE OBSTACLE_DISTANCE PACKING
 
 #define MAVLINK_MSG_ID_OBSTACLE_DISTANCE 330
@@ -264,3 +265,4 @@ static inline void mavlink_msg_obstacle_distance_decode(const mavlink_message_t*
     obstacle_distance->angle_offset = mavlink_msg_obstacle_distance_get_angle_offset(msg);
     obstacle_distance->frame = mavlink_msg_obstacle_distance_get_frame(msg);
 }
+#endif

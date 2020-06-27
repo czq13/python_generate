@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_actuator_controls
+#define MAVLINK_MSG_hil_actuator_controls
 // MESSAGE HIL_ACTUATOR_CONTROLS PACKING
 
 #define MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS 93
@@ -174,3 +175,4 @@ static inline void mavlink_msg_hil_actuator_controls_decode(const mavlink_messag
     mavlink_msg_hil_actuator_controls_get_controls(msg, hil_actuator_controls->controls);
     hil_actuator_controls->mode = mavlink_msg_hil_actuator_controls_get_mode(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_att_pos_mocap
+#define MAVLINK_MSG_att_pos_mocap
 // MESSAGE ATT_POS_MOCAP PACKING
 
 #define MAVLINK_MSG_ID_ATT_POS_MOCAP 138
@@ -211,3 +212,4 @@ static inline void mavlink_msg_att_pos_mocap_decode(const mavlink_message_t* msg
     att_pos_mocap->z = mavlink_msg_att_pos_mocap_get_z(msg);
     mavlink_msg_att_pos_mocap_get_covariance(msg, att_pos_mocap->covariance);
 }
+#endif

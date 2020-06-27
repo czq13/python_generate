@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_logging_ack
+#define MAVLINK_MSG_logging_ack
 // MESSAGE LOGGING_ACK PACKING
 
 #define MAVLINK_MSG_ID_LOGGING_ACK 268
@@ -158,3 +159,4 @@ static inline void mavlink_msg_logging_ack_decode(const mavlink_message_t* msg, 
     logging_ack->target_system = mavlink_msg_logging_ack_get_target_system(msg);
     logging_ack->target_component = mavlink_msg_logging_ack_get_target_component(msg);
 }
+#endif

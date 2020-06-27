@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_actuator_control_target
+#define MAVLINK_MSG_set_actuator_control_target
 // MESSAGE SET_ACTUATOR_CONTROL_TARGET PACKING
 
 #define MAVLINK_MSG_ID_SET_ACTUATOR_CONTROL_TARGET 139
@@ -192,3 +193,4 @@ static inline void mavlink_msg_set_actuator_control_target_decode(const mavlink_
     set_actuator_control_target->target_system = mavlink_msg_set_actuator_control_target_get_target_system(msg);
     set_actuator_control_target->target_component = mavlink_msg_set_actuator_control_target_get_target_component(msg);
 }
+#endif

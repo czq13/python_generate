@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_supported_tunes
+#define MAVLINK_MSG_supported_tunes
 // MESSAGE SUPPORTED_TUNES PACKING
 
 #define MAVLINK_MSG_ID_SUPPORTED_TUNES 401
@@ -158,3 +159,4 @@ static inline void mavlink_msg_supported_tunes_decode(const mavlink_message_t* m
     supported_tunes->target_system = mavlink_msg_supported_tunes_get_target_system(msg);
     supported_tunes->target_component = mavlink_msg_supported_tunes_get_target_component(msg);
 }
+#endif

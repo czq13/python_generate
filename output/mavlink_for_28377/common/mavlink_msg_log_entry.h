@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_log_entry
+#define MAVLINK_MSG_log_entry
 // MESSAGE LOG_ENTRY PACKING
 
 #define MAVLINK_MSG_ID_LOG_ENTRY 118
@@ -194,3 +195,4 @@ static inline void mavlink_msg_log_entry_decode(const mavlink_message_t* msg, ma
     log_entry->num_logs = mavlink_msg_log_entry_get_num_logs(msg);
     log_entry->last_log_num = mavlink_msg_log_entry_get_last_log_num(msg);
 }
+#endif

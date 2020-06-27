@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_log_data
+#define MAVLINK_MSG_log_data
 // MESSAGE LOG_DATA PACKING
 
 #define MAVLINK_MSG_ID_LOG_DATA 120
@@ -174,3 +175,4 @@ static inline void mavlink_msg_log_data_decode(const mavlink_message_t* msg, mav
     log_data->count = mavlink_msg_log_data_get_count(msg);
     mavlink_msg_log_data_get_data(msg, log_data->data);
 }
+#endif

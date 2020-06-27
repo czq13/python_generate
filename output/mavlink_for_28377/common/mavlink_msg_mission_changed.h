@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_changed
+#define MAVLINK_MSG_mission_changed
 // MESSAGE MISSION_CHANGED PACKING
 
 #define MAVLINK_MSG_ID_MISSION_CHANGED 52
@@ -194,3 +195,4 @@ static inline void mavlink_msg_mission_changed_decode(const mavlink_message_t* m
     mission_changed->origin_compid = mavlink_msg_mission_changed_get_origin_compid(msg);
     mission_changed->mission_type = mavlink_msg_mission_changed_get_mission_type(msg);
 }
+#endif

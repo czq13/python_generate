@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_onboard_computer_status
+#define MAVLINK_MSG_onboard_computer_status
 // MESSAGE ONBOARD_COMPUTER_STATUS PACKING
 
 #define MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS 390
@@ -475,3 +476,4 @@ static inline void mavlink_msg_onboard_computer_status_decode(const mavlink_mess
     onboard_computer_status->temperature_board = mavlink_msg_onboard_computer_status_get_temperature_board(msg);
     mavlink_msg_onboard_computer_status_get_temperature_core(msg, onboard_computer_status->temperature_core);
 }
+#endif

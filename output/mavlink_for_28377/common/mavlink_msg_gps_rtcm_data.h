@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_rtcm_data
+#define MAVLINK_MSG_gps_rtcm_data
 // MESSAGE GPS_RTCM_DATA PACKING
 
 #define MAVLINK_MSG_ID_GPS_RTCM_DATA 233
@@ -156,3 +157,4 @@ static inline void mavlink_msg_gps_rtcm_data_decode(const mavlink_message_t* msg
     gps_rtcm_data->len = mavlink_msg_gps_rtcm_data_get_len(msg);
     mavlink_msg_gps_rtcm_data_get_data(msg, gps_rtcm_data->data);
 }
+#endif

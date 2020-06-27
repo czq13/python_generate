@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_timesync
+#define MAVLINK_MSG_timesync
 // MESSAGE TIMESYNC PACKING
 
 #define MAVLINK_MSG_ID_TIMESYNC 111
@@ -140,3 +141,4 @@ static inline void mavlink_msg_timesync_decode(const mavlink_message_t* msg, mav
     timesync->tc1 = mavlink_msg_timesync_get_tc1(msg);
     timesync->ts1 = mavlink_msg_timesync_get_ts1(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_vibration
+#define MAVLINK_MSG_vibration
 // MESSAGE VIBRATION PACKING
 
 #define MAVLINK_MSG_ID_VIBRATION 241
@@ -230,3 +231,4 @@ static inline void mavlink_msg_vibration_decode(const mavlink_message_t* msg, ma
     vibration->clipping_1 = mavlink_msg_vibration_get_clipping_1(msg);
     vibration->clipping_2 = mavlink_msg_vibration_get_clipping_2(msg);
 }
+#endif

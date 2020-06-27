@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_resource_request
+#define MAVLINK_MSG_resource_request
 // MESSAGE RESOURCE_REQUEST PACKING
 
 #define MAVLINK_MSG_ID_RESOURCE_REQUEST 142
@@ -193,3 +194,4 @@ static inline void mavlink_msg_resource_request_decode(const mavlink_message_t* 
     resource_request->transfer_type = mavlink_msg_resource_request_get_transfer_type(msg);
     mavlink_msg_resource_request_get_storage(msg, resource_request->storage);
 }
+#endif

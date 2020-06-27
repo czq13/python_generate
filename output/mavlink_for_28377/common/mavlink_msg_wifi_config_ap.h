@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_wifi_config_ap
+#define MAVLINK_MSG_wifi_config_ap
 // MESSAGE WIFI_CONFIG_AP PACKING
 
 #define MAVLINK_MSG_ID_WIFI_CONFIG_AP 299
@@ -175,3 +176,4 @@ static inline void mavlink_msg_wifi_config_ap_decode(const mavlink_message_t* ms
     wifi_config_ap->mode = mavlink_msg_wifi_config_ap_get_mode(msg);
     wifi_config_ap->response = mavlink_msg_wifi_config_ap_get_response(msg);
 }
+#endif

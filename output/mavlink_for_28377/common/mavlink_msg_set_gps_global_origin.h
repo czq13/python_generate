@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_gps_global_origin
+#define MAVLINK_MSG_set_gps_global_origin
 // MESSAGE SET_GPS_GLOBAL_ORIGIN PACKING
 
 #define MAVLINK_MSG_ID_SET_GPS_GLOBAL_ORIGIN 48
@@ -194,3 +195,4 @@ static inline void mavlink_msg_set_gps_global_origin_decode(const mavlink_messag
     set_gps_global_origin->target_system = mavlink_msg_set_gps_global_origin_get_target_system(msg);
     set_gps_global_origin->time_usec = mavlink_msg_set_gps_global_origin_get_time_usec(msg);
 }
+#endif

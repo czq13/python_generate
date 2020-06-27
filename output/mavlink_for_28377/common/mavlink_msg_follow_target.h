@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_follow_target
+#define MAVLINK_MSG_follow_target
 // MESSAGE FOLLOW_TARGET PACKING
 
 #define MAVLINK_MSG_ID_FOLLOW_TARGET 144
@@ -304,3 +305,4 @@ static inline void mavlink_msg_follow_target_decode(const mavlink_message_t* msg
     mavlink_msg_follow_target_get_position_cov(msg, follow_target->position_cov);
     follow_target->est_capabilities = mavlink_msg_follow_target_get_est_capabilities(msg);
 }
+#endif

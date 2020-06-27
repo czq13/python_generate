@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_sensor
+#define MAVLINK_MSG_hil_sensor
 // MESSAGE HIL_SENSOR PACKING
 
 #define MAVLINK_MSG_ID_HIL_SENSOR 107
@@ -374,3 +375,4 @@ static inline void mavlink_msg_hil_sensor_decode(const mavlink_message_t* msg, m
     hil_sensor->temperature = mavlink_msg_hil_sensor_get_temperature(msg);
     hil_sensor->fields_updated = mavlink_msg_hil_sensor_get_fields_updated(msg);
 }
+#endif

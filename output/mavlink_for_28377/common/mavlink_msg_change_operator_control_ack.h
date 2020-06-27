@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_change_operator_control_ack
+#define MAVLINK_MSG_change_operator_control_ack
 // MESSAGE CHANGE_OPERATOR_CONTROL_ACK PACKING
 
 #define MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK 6
@@ -158,3 +159,4 @@ static inline void mavlink_msg_change_operator_control_ack_decode(const mavlink_
     change_operator_control_ack->control_request = mavlink_msg_change_operator_control_ack_get_control_request(msg);
     change_operator_control_ack->ack = mavlink_msg_change_operator_control_ack_get_ack(msg);
 }
+#endif

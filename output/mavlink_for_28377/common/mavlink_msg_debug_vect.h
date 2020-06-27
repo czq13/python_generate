@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_debug_vect
+#define MAVLINK_MSG_debug_vect
 // MESSAGE DEBUG_VECT PACKING
 
 #define MAVLINK_MSG_ID_DEBUG_VECT 250
@@ -192,3 +193,4 @@ static inline void mavlink_msg_debug_vect_decode(const mavlink_message_t* msg, m
     debug_vect->z = mavlink_msg_debug_vect_get_z(msg);
     mavlink_msg_debug_vect_get_name(msg, debug_vect->name);
 }
+#endif

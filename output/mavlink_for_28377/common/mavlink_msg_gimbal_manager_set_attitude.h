@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gimbal_manager_set_attitude
+#define MAVLINK_MSG_gimbal_manager_set_attitude
 // MESSAGE GIMBAL_MANAGER_SET_ATTITUDE PACKING
 
 #define MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE 282
@@ -246,3 +247,4 @@ static inline void mavlink_msg_gimbal_manager_set_attitude_decode(const mavlink_
     gimbal_manager_set_attitude->target_component = mavlink_msg_gimbal_manager_set_attitude_get_target_component(msg);
     gimbal_manager_set_attitude->gimbal_device_id = mavlink_msg_gimbal_manager_set_attitude_get_gimbal_device_id(msg);
 }
+#endif

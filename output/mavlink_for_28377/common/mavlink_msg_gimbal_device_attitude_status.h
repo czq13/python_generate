@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gimbal_device_attitude_status
+#define MAVLINK_MSG_gimbal_device_attitude_status
 // MESSAGE GIMBAL_DEVICE_ATTITUDE_STATUS PACKING
 
 #define MAVLINK_MSG_ID_GIMBAL_DEVICE_ATTITUDE_STATUS 285
@@ -228,3 +229,4 @@ static inline void mavlink_msg_gimbal_device_attitude_status_decode(const mavlin
     gimbal_device_attitude_status->failure_flags = mavlink_msg_gimbal_device_attitude_status_get_failure_flags(msg);
     gimbal_device_attitude_status->flags = mavlink_msg_gimbal_device_attitude_status_get_flags(msg);
 }
+#endif

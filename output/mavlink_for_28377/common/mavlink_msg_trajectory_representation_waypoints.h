@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_trajectory_representation_waypoints
+#define MAVLINK_MSG_trajectory_representation_waypoints
 // MESSAGE TRAJECTORY_REPRESENTATION_WAYPOINTS PACKING
 
 #define MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS 332
@@ -365,3 +366,4 @@ static inline void mavlink_msg_trajectory_representation_waypoints_decode(const 
     mavlink_msg_trajectory_representation_waypoints_get_command(msg, trajectory_representation_waypoints->command);
     trajectory_representation_waypoints->valid_points = mavlink_msg_trajectory_representation_waypoints_get_valid_points(msg);
 }
+#endif

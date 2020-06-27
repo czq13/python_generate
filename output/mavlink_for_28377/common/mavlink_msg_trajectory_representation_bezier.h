@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_trajectory_representation_bezier
+#define MAVLINK_MSG_trajectory_representation_bezier
 // MESSAGE TRAJECTORY_REPRESENTATION_BEZIER PACKING
 
 #define MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER 333
@@ -232,3 +233,4 @@ static inline void mavlink_msg_trajectory_representation_bezier_decode(const mav
     mavlink_msg_trajectory_representation_bezier_get_pos_yaw(msg, trajectory_representation_bezier->pos_yaw);
     trajectory_representation_bezier->valid_points = mavlink_msg_trajectory_representation_bezier_get_valid_points(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_operator_id
+#define MAVLINK_MSG_open_drone_id_operator_id
 // MESSAGE OPEN_DRONE_ID_OPERATOR_ID PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID 12905
@@ -193,3 +194,4 @@ static inline void mavlink_msg_open_drone_id_operator_id_decode(const mavlink_me
     open_drone_id_operator_id->operator_id_type = mavlink_msg_open_drone_id_operator_id_get_operator_id_type(msg);
     mavlink_msg_open_drone_id_operator_id_get_operator_id(msg, open_drone_id_operator_id->operator_id);
 }
+#endif

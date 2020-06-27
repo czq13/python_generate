@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_message_interval
+#define MAVLINK_MSG_message_interval
 // MESSAGE MESSAGE_INTERVAL PACKING
 
 #define MAVLINK_MSG_ID_MESSAGE_INTERVAL 244
@@ -140,3 +141,4 @@ static inline void mavlink_msg_message_interval_decode(const mavlink_message_t* 
     message_interval->interval_us = mavlink_msg_message_interval_get_interval_us(msg);
     message_interval->message_id = mavlink_msg_message_interval_get_message_id(msg);
 }
+#endif

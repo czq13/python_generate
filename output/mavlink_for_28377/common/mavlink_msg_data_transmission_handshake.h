@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_data_transmission_handshake
+#define MAVLINK_MSG_data_transmission_handshake
 // MESSAGE DATA_TRANSMISSION_HANDSHAKE PACKING
 
 #define MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE 130
@@ -230,3 +231,4 @@ static inline void mavlink_msg_data_transmission_handshake_decode(const mavlink_
     data_transmission_handshake->payload = mavlink_msg_data_transmission_handshake_get_payload(msg);
     data_transmission_handshake->jpg_quality = mavlink_msg_data_transmission_handshake_get_jpg_quality(msg);
 }
+#endif

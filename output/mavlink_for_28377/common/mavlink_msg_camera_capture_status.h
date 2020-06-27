@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_camera_capture_status
+#define MAVLINK_MSG_camera_capture_status
 // MESSAGE CAMERA_CAPTURE_STATUS PACKING
 
 #define MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS 262
@@ -230,3 +231,4 @@ static inline void mavlink_msg_camera_capture_status_decode(const mavlink_messag
     camera_capture_status->video_status = mavlink_msg_camera_capture_status_get_video_status(msg);
     camera_capture_status->image_count = mavlink_msg_camera_capture_status_get_image_count(msg);
 }
+#endif

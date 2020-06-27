@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_position_target_local_ned
+#define MAVLINK_MSG_set_position_target_local_ned
 // MESSAGE SET_POSITION_TARGET_LOCAL_NED PACKING
 
 #define MAVLINK_MSG_ID_SET_POSITION_TARGET_LOCAL_NED 84
@@ -392,3 +393,4 @@ static inline void mavlink_msg_set_position_target_local_ned_decode(const mavlin
     set_position_target_local_ned->target_component = mavlink_msg_set_position_target_local_ned_get_target_component(msg);
     set_position_target_local_ned->coordinate_frame = mavlink_msg_set_position_target_local_ned_get_coordinate_frame(msg);
 }
+#endif

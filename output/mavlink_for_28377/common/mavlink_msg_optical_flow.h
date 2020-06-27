@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_optical_flow
+#define MAVLINK_MSG_optical_flow
 // MESSAGE OPTICAL_FLOW PACKING
 
 #define MAVLINK_MSG_ID_OPTICAL_FLOW 100
@@ -284,3 +285,4 @@ static inline void mavlink_msg_optical_flow_decode(const mavlink_message_t* msg,
     optical_flow->flow_rate_x = mavlink_msg_optical_flow_get_flow_rate_x(msg);
     optical_flow->flow_rate_y = mavlink_msg_optical_flow_get_flow_rate_y(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_setup_signing
+#define MAVLINK_MSG_setup_signing
 // MESSAGE SETUP_SIGNING PACKING
 
 #define MAVLINK_MSG_ID_SETUP_SIGNING 256
@@ -174,3 +175,4 @@ static inline void mavlink_msg_setup_signing_decode(const mavlink_message_t* msg
     setup_signing->target_component = mavlink_msg_setup_signing_get_target_component(msg);
     mavlink_msg_setup_signing_get_secret_key(msg, setup_signing->secret_key);
 }
+#endif

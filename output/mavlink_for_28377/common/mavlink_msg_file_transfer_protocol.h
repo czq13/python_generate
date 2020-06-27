@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_file_transfer_protocol
+#define MAVLINK_MSG_file_transfer_protocol
 // MESSAGE FILE_TRANSFER_PROTOCOL PACKING
 
 #define MAVLINK_MSG_ID_FILE_TRANSFER_PROTOCOL 110
@@ -174,3 +175,4 @@ static inline void mavlink_msg_file_transfer_protocol_decode(const mavlink_messa
     file_transfer_protocol->target_component = mavlink_msg_file_transfer_protocol_get_target_component(msg);
     mavlink_msg_file_transfer_protocol_get_payload(msg, file_transfer_protocol->payload);
 }
+#endif

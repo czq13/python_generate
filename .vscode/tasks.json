@@ -12,8 +12,8 @@
         {
             "label": "execute autogenerate for mavlink in ubuntu",
             "type": "shell",
-            "command": "/usr/bin/python3.6 autogenerate.py",
-            "args": ["--xml","definitions/mavlink/common.xml","--base_dir","output/mavlink_for_28377"]
+            "command": "/usr/bin/python3.6",
+            "args": ["autogenerate.py","--xml","definitions/mavlink/common.xml","--base_dir","output/mavlink_for_28377"]
         },
         {
             "label": "compile mavlink_udp.c",

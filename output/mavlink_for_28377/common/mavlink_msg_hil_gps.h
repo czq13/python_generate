@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_gps
+#define MAVLINK_MSG_hil_gps
 // MESSAGE HIL_GPS PACKING
 
 #define MAVLINK_MSG_ID_HIL_GPS 113
@@ -356,3 +357,4 @@ static inline void mavlink_msg_hil_gps_decode(const mavlink_message_t* msg, mavl
     hil_gps->satellites_visible = mavlink_msg_hil_gps_get_satellites_visible(msg);
     hil_gps->id = mavlink_msg_hil_gps_get_id(msg);
 }
+#endif

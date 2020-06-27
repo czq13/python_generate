@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_autopilot_version
+#define MAVLINK_MSG_autopilot_version
 // MESSAGE AUTOPILOT_VERSION PACKING
 
 #define MAVLINK_MSG_ID_AUTOPILOT_VERSION 148
@@ -321,3 +322,4 @@ static inline void mavlink_msg_autopilot_version_decode(const mavlink_message_t*
     mavlink_msg_autopilot_version_get_os_custom_version(msg, autopilot_version->os_custom_version);
     mavlink_msg_autopilot_version_get_uid2(msg, autopilot_version->uid2);
 }
+#endif

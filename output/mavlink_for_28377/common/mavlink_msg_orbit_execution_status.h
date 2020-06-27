@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_orbit_execution_status
+#define MAVLINK_MSG_orbit_execution_status
 // MESSAGE ORBIT_EXECUTION_STATUS PACKING
 
 #define MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS 360
@@ -212,3 +213,4 @@ static inline void mavlink_msg_orbit_execution_status_decode(const mavlink_messa
     orbit_execution_status->z = mavlink_msg_orbit_execution_status_get_z(msg);
     orbit_execution_status->frame = mavlink_msg_orbit_execution_status_get_frame(msg);
 }
+#endif

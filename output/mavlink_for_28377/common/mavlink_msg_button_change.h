@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_button_change
+#define MAVLINK_MSG_button_change
 // MESSAGE BUTTON_CHANGE PACKING
 
 #define MAVLINK_MSG_ID_BUTTON_CHANGE 257
@@ -158,3 +159,4 @@ static inline void mavlink_msg_button_change_decode(const mavlink_message_t* msg
     button_change->last_change_ms = mavlink_msg_button_change_get_last_change_ms(msg);
     button_change->state = mavlink_msg_button_change_get_state(msg);
 }
+#endif

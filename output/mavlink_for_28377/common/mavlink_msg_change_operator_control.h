@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_change_operator_control
+#define MAVLINK_MSG_change_operator_control
 // MESSAGE CHANGE_OPERATOR_CONTROL PACKING
 
 #define MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL 5
@@ -174,3 +175,4 @@ static inline void mavlink_msg_change_operator_control_decode(const mavlink_mess
     change_operator_control->version = mavlink_msg_change_operator_control_get_version(msg);
     mavlink_msg_change_operator_control_get_passkey(msg, change_operator_control->passkey);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_param_ext_ack
+#define MAVLINK_MSG_param_ext_ack
 // MESSAGE PARAM_EXT_ACK PACKING
 
 #define MAVLINK_MSG_ID_PARAM_EXT_ACK 324
@@ -175,3 +176,4 @@ static inline void mavlink_msg_param_ext_ack_decode(const mavlink_message_t* msg
     param_ext_ack->param_type = mavlink_msg_param_ext_ack_get_param_type(msg);
     param_ext_ack->param_result = mavlink_msg_param_ext_ack_get_param_result(msg);
 }
+#endif

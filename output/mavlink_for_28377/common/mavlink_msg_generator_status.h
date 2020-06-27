@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_generator_status
+#define MAVLINK_MSG_generator_status
 // MESSAGE GENERATOR_STATUS PACKING
 
 #define MAVLINK_MSG_ID_GENERATOR_STATUS 373
@@ -266,3 +267,4 @@ static inline void mavlink_msg_generator_status_decode(const mavlink_message_t* 
     generator_status->rectifier_temperature = mavlink_msg_generator_status_get_rectifier_temperature(msg);
     generator_status->generator_temperature = mavlink_msg_generator_status_get_generator_temperature(msg);
 }
+#endif

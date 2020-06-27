@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_rc_inputs_raw
+#define MAVLINK_MSG_hil_rc_inputs_raw
 // MESSAGE HIL_RC_INPUTS_RAW PACKING
 
 #define MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW 92
@@ -356,3 +357,4 @@ static inline void mavlink_msg_hil_rc_inputs_raw_decode(const mavlink_message_t*
     hil_rc_inputs_raw->chan12_raw = mavlink_msg_hil_rc_inputs_raw_get_chan12_raw(msg);
     hil_rc_inputs_raw->rssi = mavlink_msg_hil_rc_inputs_raw_get_rssi(msg);
 }
+#endif

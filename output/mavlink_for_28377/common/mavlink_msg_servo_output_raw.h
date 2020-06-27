@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_servo_output_raw
+#define MAVLINK_MSG_servo_output_raw
 // MESSAGE SERVO_OUTPUT_RAW PACKING
 
 #define MAVLINK_MSG_ID_SERVO_OUTPUT_RAW 36
@@ -428,3 +429,4 @@ static inline void mavlink_msg_servo_output_raw_decode(const mavlink_message_t* 
     servo_output_raw->servo15_raw = mavlink_msg_servo_output_raw_get_servo15_raw(msg);
     servo_output_raw->servo16_raw = mavlink_msg_servo_output_raw_get_servo16_raw(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_distance_sensor
+#define MAVLINK_MSG_distance_sensor
 // MESSAGE DISTANCE_SENSOR PACKING
 
 #define MAVLINK_MSG_ID_DISTANCE_SENSOR 132
@@ -318,3 +319,4 @@ static inline void mavlink_msg_distance_sensor_decode(const mavlink_message_t* m
     mavlink_msg_distance_sensor_get_quaternion(msg, distance_sensor->quaternion);
     distance_sensor->signal_quality = mavlink_msg_distance_sensor_get_signal_quality(msg);
 }
+#endif

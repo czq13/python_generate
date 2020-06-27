@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_local_position_ned_system_global_offset
+#define MAVLINK_MSG_local_position_ned_system_global_offset
 // MESSAGE LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET PACKING
 
 #define MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET 89
@@ -230,3 +231,4 @@ static inline void mavlink_msg_local_position_ned_system_global_offset_decode(co
     local_position_ned_system_global_offset->pitch = mavlink_msg_local_position_ned_system_global_offset_get_pitch(msg);
     local_position_ned_system_global_offset->yaw = mavlink_msg_local_position_ned_system_global_offset_get_yaw(msg);
 }
+#endif

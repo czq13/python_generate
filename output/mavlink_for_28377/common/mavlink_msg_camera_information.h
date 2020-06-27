@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_camera_information
+#define MAVLINK_MSG_camera_information
 // MESSAGE CAMERA_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_CAMERA_INFORMATION 259
@@ -338,3 +339,4 @@ static inline void mavlink_msg_camera_information_decode(const mavlink_message_t
     camera_information->lens_id = mavlink_msg_camera_information_get_lens_id(msg);
     mavlink_msg_camera_information_get_cam_definition_uri(msg, camera_information->cam_definition_uri);
 }
+#endif

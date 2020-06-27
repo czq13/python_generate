@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_odometry
+#define MAVLINK_MSG_odometry
 // MESSAGE ODOMETRY PACKING
 
 #define MAVLINK_MSG_ID_ODOMETRY 331
@@ -410,3 +411,4 @@ static inline void mavlink_msg_odometry_decode(const mavlink_message_t* msg, mav
     odometry->reset_counter = mavlink_msg_odometry_get_reset_counter(msg);
     odometry->estimator_type = mavlink_msg_odometry_get_estimator_type(msg);
 }
+#endif

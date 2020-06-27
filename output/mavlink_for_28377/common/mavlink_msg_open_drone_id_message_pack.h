@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_message_pack
+#define MAVLINK_MSG_open_drone_id_message_pack
 // MESSAGE OPEN_DRONE_ID_MESSAGE_PACK PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_MESSAGE_PACK 12915
@@ -192,3 +193,4 @@ static inline void mavlink_msg_open_drone_id_message_pack_decode(const mavlink_m
     open_drone_id_message_pack->msg_pack_size = mavlink_msg_open_drone_id_message_pack_get_msg_pack_size(msg);
     mavlink_msg_open_drone_id_message_pack_get_messages(msg, open_drone_id_message_pack->messages);
 }
+#endif

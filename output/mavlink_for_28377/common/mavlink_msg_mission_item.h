@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_item
+#define MAVLINK_MSG_mission_item
 // MESSAGE MISSION_ITEM PACKING
 
 #define MAVLINK_MSG_ID_MISSION_ITEM 39
@@ -374,3 +375,4 @@ static inline void mavlink_msg_mission_item_decode(const mavlink_message_t* msg,
     mission_item->autocontinue = mavlink_msg_mission_item_get_autocontinue(msg);
     mission_item->mission_type = mavlink_msg_mission_item_get_mission_type(msg);
 }
+#endif

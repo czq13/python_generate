@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_command_ack
+#define MAVLINK_MSG_command_ack
 // MESSAGE COMMAND_ACK PACKING
 
 #define MAVLINK_MSG_ID_COMMAND_ACK 77
@@ -212,3 +213,4 @@ static inline void mavlink_msg_command_ack_decode(const mavlink_message_t* msg, 
     command_ack->target_system = mavlink_msg_command_ack_get_target_system(msg);
     command_ack->target_component = mavlink_msg_command_ack_get_target_component(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_global_position_int_cov
+#define MAVLINK_MSG_global_position_int_cov
 // MESSAGE GLOBAL_POSITION_INT_COV PACKING
 
 #define MAVLINK_MSG_ID_GLOBAL_POSITION_INT_COV 63
@@ -282,3 +283,4 @@ static inline void mavlink_msg_global_position_int_cov_decode(const mavlink_mess
     mavlink_msg_global_position_int_cov_get_covariance(msg, global_position_int_cov->covariance);
     global_position_int_cov->estimator_type = mavlink_msg_global_position_int_cov_get_estimator_type(msg);
 }
+#endif

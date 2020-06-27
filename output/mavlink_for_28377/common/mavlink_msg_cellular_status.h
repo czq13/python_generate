@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_cellular_status
+#define MAVLINK_MSG_cellular_status
 // MESSAGE CELLULAR_STATUS PACKING
 
 #define MAVLINK_MSG_ID_CELLULAR_STATUS 334
@@ -230,3 +231,4 @@ static inline void mavlink_msg_cellular_status_decode(const mavlink_message_t* m
     cellular_status->type = mavlink_msg_cellular_status_get_type(msg);
     cellular_status->quality = mavlink_msg_cellular_status_get_quality(msg);
 }
+#endif

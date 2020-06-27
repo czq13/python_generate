@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_manual_setpoint
+#define MAVLINK_MSG_manual_setpoint
 // MESSAGE MANUAL_SETPOINT PACKING
 
 #define MAVLINK_MSG_ID_MANUAL_SETPOINT 81
@@ -230,3 +231,4 @@ static inline void mavlink_msg_manual_setpoint_decode(const mavlink_message_t* m
     manual_setpoint->mode_switch = mavlink_msg_manual_setpoint_get_mode_switch(msg);
     manual_setpoint->manual_override_switch = mavlink_msg_manual_setpoint_get_manual_override_switch(msg);
 }
+#endif

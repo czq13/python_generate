@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "autogenerate.py",
             "console": "integratedTerminal",
-            "args": ["--xml_file", "mavlink\\common.xml","--base_dir", "tmp"]
+            "args": ["--xml_file", "definition/mavlink/common.xml","--base_dir", "output/mavlink_for_28377"]
         },
         {
             "name": "Python: 当前文件",

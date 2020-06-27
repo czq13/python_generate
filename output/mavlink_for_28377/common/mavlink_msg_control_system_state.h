@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_control_system_state
+#define MAVLINK_MSG_control_system_state
 // MESSAGE CONTROL_SYSTEM_STATE PACKING
 
 #define MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE 146
@@ -410,3 +411,4 @@ static inline void mavlink_msg_control_system_state_decode(const mavlink_message
     control_system_state->pitch_rate = mavlink_msg_control_system_state_get_pitch_rate(msg);
     control_system_state->yaw_rate = mavlink_msg_control_system_state_get_yaw_rate(msg);
 }
+#endif

@@ -1,0 +1,1130 @@
+heartbeat.1 is ok!
+heartbeat.2 is ok!
+heartbeat.3 is ok!
+sys_status.1 is ok!
+sys_status.2 is ok!
+sys_status.3 is ok!
+system_time.1 is ok!
+system_time.2 is ok!
+system_time.3 is ok!
+ping.1 is ok!
+ping.2 is ok!
+ping.3 is ok!
+change_operator_control.1 is ok!
+change_operator_control.2 is ok!
+change_operator_control.3 is ok!
+change_operator_control_ack.1 is ok!
+change_operator_control_ack.2 is ok!
+change_operator_control_ack.3 is ok!
+auth_key.1 is ok!
+auth_key.2 is ok!
+auth_key.3 is ok!
+link_node_status.1 is ok!
+link_node_status.2 is ok!
+link_node_status.3 is ok!
+set_mode.1 is ok!
+set_mode.2 is ok!
+set_mode.3 is ok!
+param_request_read.1 is ok!
+param_request_read.2 is ok!
+param_request_read.3 is ok!
+param_request_list.1 is ok!
+param_request_list.2 is ok!
+param_request_list.3 is ok!
+param_value.1
+0 0 ffffff88 41 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+0 0 0 0 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+param_value.2
+0 0 ffffff88 41 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+0 0 0 0 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+param_value.3
+0 0 ffffff88 41 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+0 0 0 0 23 44 ffffff8b 44 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 0 4d 0 0 0 
+param_set.1
+0 0 ffffff88 41 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+0 0 0 0 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+param_set.2
+0 0 ffffff88 41 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+0 0 0 0 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+param_set.3
+0 0 ffffff88 41 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+0 0 0 0 11 54 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 0 ffffffc7 0 
+gps_raw_int.1 is ok!
+gps_raw_int.2 is ok!
+gps_raw_int.3 is ok!
+gps_status.1 is ok!
+gps_status.2 is ok!
+gps_status.3 is ok!
+scaled_imu.1 is ok!
+scaled_imu.2 is ok!
+scaled_imu.3 is ok!
+raw_imu.1 is ok!
+raw_imu.2 is ok!
+raw_imu.3 is ok!
+raw_pressure.1 is ok!
+raw_pressure.2 is ok!
+raw_pressure.3 is ok!
+scaled_pressure.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+attitude.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude_quaternion.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude_quaternion.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude_quaternion.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+local_position_ned.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+local_position_ned.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+local_position_ned.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+global_position_int.1 is ok!
+global_position_int.2 is ok!
+global_position_int.3 is ok!
+rc_channels_scaled.1 is ok!
+rc_channels_scaled.2 is ok!
+rc_channels_scaled.3 is ok!
+rc_channels_raw.1 is ok!
+rc_channels_raw.2 is ok!
+rc_channels_raw.3 is ok!
+servo_output_raw.1 is ok!
+servo_output_raw.2 is ok!
+servo_output_raw.3 is ok!
+mission_request_partial_list.1 is ok!
+mission_request_partial_list.2 is ok!
+mission_request_partial_list.3 is ok!
+mission_write_partial_list.1 is ok!
+mission_write_partial_list.2 is ok!
+mission_write_partial_list.3 is ok!
+mission_item.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+mission_item.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+mission_item.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+mission_request.1 is ok!
+mission_request.2 is ok!
+mission_request.3 is ok!
+mission_set_current.1 is ok!
+mission_set_current.2 is ok!
+mission_set_current.3 is ok!
+mission_current.1 is ok!
+mission_current.2 is ok!
+mission_current.3 is ok!
+mission_request_list.1 is ok!
+mission_request_list.2 is ok!
+mission_request_list.3 is ok!
+mission_count.1 is ok!
+mission_count.2 is ok!
+mission_count.3 is ok!
+mission_clear_all.1 is ok!
+mission_clear_all.2 is ok!
+mission_clear_all.3 is ok!
+mission_item_reached.1 is ok!
+mission_item_reached.2 is ok!
+mission_item_reached.3 is ok!
+mission_ack.1 is ok!
+mission_ack.2 is ok!
+mission_ack.3 is ok!
+set_gps_global_origin.1 is ok!
+set_gps_global_origin.2 is ok!
+set_gps_global_origin.3 is ok!
+gps_global_origin.1 is ok!
+gps_global_origin.2 is ok!
+gps_global_origin.3 is ok!
+param_map_rc.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+param_map_rc.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+param_map_rc.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 ffffffbb fffffffe 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 0 71 0 0 0 
+mission_request_int.1 is ok!
+mission_request_int.2 is ok!
+mission_request_int.3 is ok!
+mission_changed.1 is ok!
+mission_changed.2 is ok!
+mission_changed.3 is ok!
+safety_set_allowed_area.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+safety_set_allowed_area.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+safety_set_allowed_area.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+safety_allowed_area.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d 0 0 0 
+safety_allowed_area.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d 0 0 0 
+safety_allowed_area.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d 0 0 0 
+attitude_quaternion_cov.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude_quaternion_cov.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+attitude_quaternion_cov.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+nav_controller_output.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 33 48 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 33 48 0 0 
+nav_controller_output.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 33 48 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 33 48 0 0 
+nav_controller_output.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 33 48 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 33 48 0 0 
+global_position_int_cov.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 0 0 ffffff91 43 0 ffffff80 ffffff91 43 0 0 ffffff92 43 0 ffffff80 ffffff92 43 0 0 ffffff93 43 0 ffffff80 ffffff93 43 0 0 ffffff94 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 0 ffffff96 43 0 ffffff80 ffffff96 43 0 0 ffffff97 43 0 ffffff80 ffffff97 43 0 0 ffffff98 43 21 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 
+global_position_int_cov.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 0 0 ffffff91 43 0 ffffff80 ffffff91 43 0 0 ffffff92 43 0 ffffff80 ffffff92 43 0 0 ffffff93 43 0 ffffff80 ffffff93 43 0 0 ffffff94 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 0 ffffff96 43 0 ffffff80 ffffff96 43 0 0 ffffff97 43 0 ffffff80 ffffff97 43 0 0 ffffff98 43 21 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 
+global_position_int_cov.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 0 0 ffffff91 43 0 ffffff80 ffffff91 43 0 0 ffffff92 43 0 ffffff80 ffffff92 43 0 0 ffffff93 43 0 ffffff80 ffffff93 43 0 0 ffffff94 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 0 ffffff96 43 0 ffffff80 ffffff96 43 0 0 ffffff97 43 0 ffffff80 ffffff97 43 0 0 ffffff98 43 21 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21 0 0 0 
+local_position_ned_cov.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 0 ffffffa3 43 0 ffffff80 ffffffa3 43 0 0 ffffffa4 43 0 ffffff80 ffffffa4 43 0 0 ffffffa5 43 0 ffffff80 ffffffa5 43 0 0 ffffffa6 43 0 ffffff80 ffffffa6 43 0 0 ffffffa7 43 0 ffffff80 ffffffa7 43 0 0 ffffffa8 43 0 ffffff80 ffffffa8 43 0 0 ffffffa9 43 0 ffffff80 ffffffa9 43 0 0 ffffffaa 43 0 ffffff80 ffffffaa 43 0 0 ffffffab 43 0 ffffff80 ffffffab 43 0 0 ffffffac 43 0 ffffff80 ffffffac 43 0 0 ffffffad 43 0 ffffff80 ffffffad 43 0 0 ffffffae 43 0 ffffff80 ffffffae 43 0 0 ffffffaf 43 0 ffffff80 ffffffaf 43 0 0 ffffffb0 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 0 ffffffb3 43 0 ffffff80 ffffffb3 43 0 0 ffffffb4 43 0 ffffff80 ffffffb4 43 0 0 ffffffb5 43 0 ffffff80 ffffffb5 43 0 0 ffffffb6 43 0 ffffff80 ffffffb6 43 0 0 ffffffb7 43 0 ffffff80 ffffffb7 43 0 0 ffffffb8 43 0 ffffff80 ffffffb8 43 ffffffa5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa5 0 0 0 0 0 0 0 
+local_position_ned_cov.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 0 ffffffa3 43 0 ffffff80 ffffffa3 43 0 0 ffffffa4 43 0 ffffff80 ffffffa4 43 0 0 ffffffa5 43 0 ffffff80 ffffffa5 43 0 0 ffffffa6 43 0 ffffff80 ffffffa6 43 0 0 ffffffa7 43 0 ffffff80 ffffffa7 43 0 0 ffffffa8 43 0 ffffff80 ffffffa8 43 0 0 ffffffa9 43 0 ffffff80 ffffffa9 43 0 0 ffffffaa 43 0 ffffff80 ffffffaa 43 0 0 ffffffab 43 0 ffffff80 ffffffab 43 0 0 ffffffac 43 0 ffffff80 ffffffac 43 0 0 ffffffad 43 0 ffffff80 ffffffad 43 0 0 ffffffae 43 0 ffffff80 ffffffae 43 0 0 ffffffaf 43 0 ffffff80 ffffffaf 43 0 0 ffffffb0 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 0 ffffffb3 43 0 ffffff80 ffffffb3 43 0 0 ffffffb4 43 0 ffffff80 ffffffb4 43 0 0 ffffffb5 43 0 ffffff80 ffffffb5 43 0 0 ffffffb6 43 0 ffffff80 ffffffb6 43 0 0 ffffffb7 43 0 ffffff80 ffffffb7 43 0 0 ffffffb8 43 0 ffffff80 ffffffb8 43 ffffffa5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa5 0 0 0 0 0 0 0 
+local_position_ned_cov.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 0 ffffffa3 43 0 ffffff80 ffffffa3 43 0 0 ffffffa4 43 0 ffffff80 ffffffa4 43 0 0 ffffffa5 43 0 ffffff80 ffffffa5 43 0 0 ffffffa6 43 0 ffffff80 ffffffa6 43 0 0 ffffffa7 43 0 ffffff80 ffffffa7 43 0 0 ffffffa8 43 0 ffffff80 ffffffa8 43 0 0 ffffffa9 43 0 ffffff80 ffffffa9 43 0 0 ffffffaa 43 0 ffffff80 ffffffaa 43 0 0 ffffffab 43 0 ffffff80 ffffffab 43 0 0 ffffffac 43 0 ffffff80 ffffffac 43 0 0 ffffffad 43 0 ffffff80 ffffffad 43 0 0 ffffffae 43 0 ffffff80 ffffffae 43 0 0 ffffffaf 43 0 ffffff80 ffffffaf 43 0 0 ffffffb0 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 0 ffffffb3 43 0 ffffff80 ffffffb3 43 0 0 ffffffb4 43 0 ffffff80 ffffffb4 43 0 0 ffffffb5 43 0 ffffff80 ffffffb5 43 0 0 ffffffb6 43 0 ffffff80 ffffffb6 43 0 0 ffffffb7 43 0 ffffff80 ffffffb7 43 0 0 ffffffb8 43 0 ffffff80 ffffffb8 43 ffffffa5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa5 0 0 0 0 0 0 0 
+rc_channels.1 is ok!
+rc_channels.2 is ok!
+rc_channels.3 is ok!
+request_data_stream.1 is ok!
+request_data_stream.2 is ok!
+request_data_stream.3 is ok!
+data_stream.1 is ok!
+data_stream.2 is ok!
+data_stream.3 is ok!
+manual_control.1 is ok!
+manual_control.2 is ok!
+manual_control.3 is ok!
+rc_channels_override.1 is ok!
+rc_channels_override.2 is ok!
+rc_channels_override.3 is ok!
+mission_item_int.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+mission_item_int.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+mission_item_int.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 6b 49 65 ffffffa8 ffffffeb 2e 71 ffffffb4 0 0 
+vfr_hud.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 
+vfr_hud.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 
+vfr_hud.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 
+command_int.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+command_int.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+command_int.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 3 49 ffffffdf 22 65 ffffffa8 ffffffeb 0 
+command_long.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 65 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 65 0 0 0 
+command_long.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 65 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 65 0 0 0 
+command_long.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 65 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 65 0 0 0 
+command_ack.1 is ok!
+command_ack.2 is ok!
+command_ack.3 is ok!
+manual_setpoint.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 41 ffffff84 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 ffffff84 0 0 
+manual_setpoint.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 41 ffffff84 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 ffffff84 0 0 
+manual_setpoint.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 41 ffffff84 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 ffffff84 0 0 
+set_attitude_target.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 ffffffb4 fffffff7 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 ffffffb4 fffffff7 0 
+set_attitude_target.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 ffffffb4 fffffff7 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 ffffffb4 fffffff7 0 
+set_attitude_target.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 ffffffb4 fffffff7 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 ffffffb4 fffffff7 0 
+attitude_target.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 
+attitude_target.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 
+attitude_target.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 71 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71 0 0 0 
+set_position_target_local_ned.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+set_position_target_local_ned.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+set_position_target_local_ned.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+position_target_local_ned.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+position_target_local_ned.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+position_target_local_ned.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+set_position_target_global_int.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+set_position_target_global_int.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+set_position_target_global_int.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 5e ffffffa1 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 5e ffffffa1 0 0 0 
+position_target_global_int.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+position_target_global_int.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+position_target_global_int.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 13 4d 1b 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13 4d 1b 0 
+local_position_ned_system_global_offset.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+local_position_ned_system_global_offset.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+local_position_ned_system_global_offset.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+hil_state.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+hil_state.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+hil_state.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 48 ffffffd5 6d 39 18 ffffffd6 6d 39 43 4c ffffffab 4c 13 4d 7b 4d ffffffe3 4d 4b 4e 
+hil_controls.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 7d ffffffc0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 0 0 0 0 0 0 
+hil_controls.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 7d ffffffc0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 0 0 0 0 0 0 
+hil_controls.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 7d ffffffc0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 0 0 0 0 0 0 
+hil_rc_inputs_raw.1 is ok!
+hil_rc_inputs_raw.2 is ok!
+hil_rc_inputs_raw.3 is ok!
+hil_actuator_controls.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 5 43 0 0 6 43 0 0 7 43 0 0 8 43 0 0 9 43 0 0 a 43 0 0 b 43 0 0 c 43 0 0 d 43 0 0 e 43 0 0 f 43 0 0 10 43 fffffff5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff5 0 0 0 0 0 0 0 
+hil_actuator_controls.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 5 43 0 0 6 43 0 0 7 43 0 0 8 43 0 0 9 43 0 0 a 43 0 0 b 43 0 0 c 43 0 0 d 43 0 0 e 43 0 0 f 43 0 0 10 43 fffffff5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff5 0 0 0 0 0 0 0 
+hil_actuator_controls.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 5 43 0 0 6 43 0 0 7 43 0 0 8 43 0 0 9 43 0 0 a 43 0 0 b 43 0 0 c 43 0 0 d 43 0 0 e 43 0 0 f 43 0 0 10 43 fffffff5 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff5 0 0 0 0 0 0 0 
+optical_flow.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 47 43 0 0 63 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+optical_flow.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 47 43 0 0 63 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+optical_flow.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 47 43 0 0 63 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 63 47 ffffffcb 47 4d ffffff90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+global_vision_position_estimate.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+global_vision_position_estimate.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+global_vision_position_estimate.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+vision_position_estimate.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+vision_position_estimate.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+vision_position_estimate.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 61 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61 0 0 0 
+vision_speed_estimate.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 ffffffad 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffad 0 0 0 0 0 0 0 
+vision_speed_estimate.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 ffffffad 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffad 0 0 0 0 0 0 0 
+vision_speed_estimate.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 ffffffad 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffad 0 0 0 0 0 0 0 
+vicon_position_estimate.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+vicon_position_estimate.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+vicon_position_estimate.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 0 72 43 0 0 73 43 0 0 74 43 0 0 75 43 0 0 76 43 0 0 77 43 0 0 78 43 0 0 79 43 0 0 7a 43 0 0 7b 43 0 0 7c 43 0 0 7d 43 0 0 7e 43 0 0 7f 43 0 0 ffffff80 43 0 ffffff80 ffffff80 43 0 0 ffffff81 43 0 ffffff80 ffffff81 43 0 0 ffffff82 43 0 ffffff80 ffffff82 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+highres_imu.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 ffffff83 4f 3f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff83 4f 3f 0 
+highres_imu.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 ffffff83 4f 3f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff83 4f 3f 0 
+highres_imu.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 ffffff83 4f 3f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff83 4f 3f 0 
+optical_flow_rad.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+optical_flow_rad.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+optical_flow_rad.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+hil_sensor.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 28 ffffffda 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 ffffffda 6d 39 
+hil_sensor.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 28 ffffffda 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 ffffffda 6d 39 
+hil_sensor.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 28 ffffffda 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 ffffffda 6d 39 
+sim_state.1
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 ffffff80 ffffffe8 43 0 ffffff80 fffffff6 43 0 40 2 44 0 40 9 44 0 40 10 44 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+sim_state.2
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 ffffff80 ffffffe8 43 0 ffffff80 fffffff6 43 0 40 2 44 0 40 9 44 0 40 10 44 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+sim_state.3
+0 0 ffffff88 41 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 ffffff80 ffffffe8 43 0 ffffff80 fffffff6 43 0 40 2 44 0 40 9 44 0 40 10 44 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+radio_status.1 is ok!
+radio_status.2 is ok!
+radio_status.3 is ok!
+file_transfer_protocol.1 is ok!
+file_transfer_protocol.2 is ok!
+file_transfer_protocol.3 is ok!
+timesync.1 is ok!
+timesync.2 is ok!
+timesync.3 is ok!
+camera_trigger.1 is ok!
+camera_trigger.2 is ok!
+camera_trigger.3 is ok!
+hil_gps.1 is ok!
+hil_gps.2 is ok!
+hil_gps.3 is ok!
+hil_optical_flow.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+hil_optical_flow.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+hil_optical_flow.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 0 ffffff80 ffffff86 43 73 4b 3 46 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 0 0 0 0 73 4b 3 46 0 0 0 0 
+hil_state_quaternion.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+hil_state_quaternion.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+hil_state_quaternion.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 ffffffd5 6d 39 18 ffffffd6 6d 39 ffffffe8 ffffffd6 6d 39 13 4d 7b 4d ffffffe3 4d 4b 4e ffffffb3 4e 1b 4f ffffff83 4f ffffffeb 4f 
+scaled_imu2.1 is ok!
+scaled_imu2.2 is ok!
+scaled_imu2.3 is ok!
+log_request_list.1 is ok!
+log_request_list.2 is ok!
+log_request_list.3 is ok!
+log_entry.1 is ok!
+log_entry.2 is ok!
+log_entry.3 is ok!
+log_request_data.1 is ok!
+log_request_data.2 is ok!
+log_request_data.3 is ok!
+log_data.1 is ok!
+log_data.2 is ok!
+log_data.3 is ok!
+log_erase.1 is ok!
+log_erase.2 is ok!
+log_erase.3 is ok!
+log_request_end.1 is ok!
+log_request_end.2 is ok!
+log_request_end.3 is ok!
+gps_inject_data.1 is ok!
+gps_inject_data.2 is ok!
+gps_inject_data.3 is ok!
+gps2_raw.1 is ok!
+gps2_raw.2 is ok!
+gps2_raw.3 is ok!
+power_status.1 is ok!
+power_status.2 is ok!
+power_status.3 is ok!
+serial_control.1 is ok!
+serial_control.2 is ok!
+serial_control.3 is ok!
+gps_rtk.1 is ok!
+gps_rtk.2 is ok!
+gps_rtk.3 is ok!
+gps2_rtk.1 is ok!
+gps2_rtk.2 is ok!
+gps2_rtk.3 is ok!
+scaled_imu3.1 is ok!
+scaled_imu3.2 is ok!
+scaled_imu3.3 is ok!
+data_transmission_handshake.1 is ok!
+data_transmission_handshake.2 is ok!
+data_transmission_handshake.3 is ok!
+encapsulated_data.1 is ok!
+encapsulated_data.2 is ok!
+encapsulated_data.3 is ok!
+distance_sensor.1
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 ffffffe6 42 0 0 f 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 fffffff7 0 0 0 
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff7 0 0 0 
+distance_sensor.2
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 ffffffe6 42 0 0 f 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 fffffff7 0 0 0 
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff7 0 0 0 
+distance_sensor.3
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 ffffffe6 42 0 0 f 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 fffffff7 0 0 0 
+fffffff8 ffffffcd 6d 39 23 44 ffffff8b 44 fffffff3 44 ffffffa3 ffffffe6 29 6c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 fffffff7 0 0 0 
+terrain_request.1 is ok!
+terrain_request.2 is ok!
+terrain_request.3 is ok!
+terrain_data.1 is ok!
+terrain_data.2 is ok!
+terrain_data.3 is ok!
+terrain_check.1 is ok!
+terrain_check.2 is ok!
+terrain_check.3 is ok!
+terrain_report.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 63 47 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 63 47 0 0 
+terrain_report.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 63 47 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 63 47 0 0 
+terrain_report.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 63 47 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 63 47 0 0 
+scaled_pressure2.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure2.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure2.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+att_pos_mocap.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+att_pos_mocap.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+att_pos_mocap.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 0 ffffff87 43 0 ffffff80 ffffff87 43 0 0 ffffff88 43 0 ffffff80 ffffff88 43 0 0 ffffff89 43 0 ffffff80 ffffff89 43 0 0 ffffff8a 43 0 ffffff80 ffffff8a 43 0 0 ffffff8b 43 0 ffffff80 ffffff8b 43 0 0 ffffff8c 43 0 ffffff80 ffffff8c 43 0 0 ffffff8d 43 0 ffffff80 ffffff8d 43 0 0 ffffff8e 43 0 ffffff80 ffffff8e 43 0 0 ffffff8f 43 0 ffffff80 ffffff8f 43 0 0 ffffff90 43 0 ffffff80 ffffff90 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+set_actuator_control_target.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d ffffffc0 3 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 3 0 0 0 0 0 
+set_actuator_control_target.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d ffffffc0 3 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 3 0 0 0 0 0 
+set_actuator_control_target.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d ffffffc0 3 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d ffffffc0 3 0 0 0 0 0 
+actuator_control_target.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d 0 0 0 0 0 0 0 
+actuator_control_target.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d 0 0 0 0 0 0 0 
+actuator_control_target.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 ffffff9c 42 0 0 ffffff9e 42 0 0 ffffffa0 42 7d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7d 0 0 0 0 0 0 0 
+altitude.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+altitude.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+altitude.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+resource_request.1 is ok!
+resource_request.2 is ok!
+resource_request.3 is ok!
+scaled_pressure3.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure3.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+scaled_pressure3.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 ffffffc3 45 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 ffffffc3 45 0 0 
+follow_target.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 56 43 0 0 57 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 ffffff80 ffffffbe 43 0 0 ffffffbf 43 0 ffffff80 ffffffbf 43 0 0 ffffffc0 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 40 10 44 0 ffffff80 10 44 0 ffffffc0 10 44 19 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 
+follow_target.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 56 43 0 0 57 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 ffffff80 ffffffbe 43 0 0 ffffffbf 43 0 ffffff80 ffffffbf 43 0 0 ffffffc0 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 40 10 44 0 ffffff80 10 44 0 ffffffc0 10 44 19 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 
+follow_target.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 39 43 0 0 55 43 0 0 56 43 0 0 57 43 0 ffffff80 ffffff94 43 0 0 ffffff95 43 0 ffffff80 ffffff95 43 0 ffffff80 ffffffbe 43 0 0 ffffffbf 43 0 ffffff80 ffffffbf 43 0 0 ffffffc0 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 40 10 44 0 ffffff80 10 44 0 ffffffc0 10 44 19 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff7 1 ffffffaf 70 5f ffffffb9 4b 1 38 ffffffd1 6d 39 8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19 0 0 0 
+control_system_state.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 40 2 44 0 ffffff80 2 44 0 ffffffc0 2 44 0 0 3 44 0 40 1e 44 0 40 25 44 0 40 2c 44 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+control_system_state.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 40 2 44 0 ffffff80 2 44 0 ffffffc0 2 44 0 0 3 44 0 40 1e 44 0 40 25 44 0 40 2c 44 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+control_system_state.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 40 2 44 0 ffffff80 2 44 0 ffffffc0 2 44 0 0 3 44 0 40 1e 44 0 40 25 44 0 40 2c 44 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+battery_status.1 is ok!
+battery_status.2 is ok!
+battery_status.3 is ok!
+autopilot_version.1 is ok!
+autopilot_version.2 is ok!
+autopilot_version.3 is ok!
+landing_target.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 59 ffffff9c 0 0 0 0 63 43 0 0 7f 43 0 ffffff80 ffffff8d 43 0 ffffff80 ffffff9b 43 0 0 ffffff9c 43 0 ffffff80 ffffff9c 43 0 0 ffffff9d 43 33 76 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59 ffffff9c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 76 0 0 
+landing_target.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 59 ffffff9c 0 0 0 0 63 43 0 0 7f 43 0 ffffff80 ffffff8d 43 0 ffffff80 ffffff9b 43 0 0 ffffff9c 43 0 ffffff80 ffffff9c 43 0 0 ffffff9d 43 33 76 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59 ffffff9c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 76 0 0 
+landing_target.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 59 ffffff9c 0 0 0 0 63 43 0 0 7f 43 0 ffffff80 ffffff8d 43 0 ffffff80 ffffff9b 43 0 0 ffffff9c 43 0 ffffff80 ffffff9c 43 0 0 ffffff9d 43 33 76 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59 ffffff9c 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 76 0 0 
+fence_status.1 is ok!
+fence_status.2 is ok!
+fence_status.3 is ok!
+estimator_status.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 73 4b 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73 4b 0 0 0 0 0 0 
+estimator_status.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 73 4b 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73 4b 0 0 0 0 0 0 
+estimator_status.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 73 4b 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73 4b 0 0 0 0 0 0 
+wind_cov.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+wind_cov.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+wind_cov.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+gps_input.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+gps_input.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+gps_input.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 0 0 39 43 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb3 4e 1b 4f ffffffb9 fffffffc 3f 0 1f 50 0 0 0 0 0 0 
+gps_rtcm_data.1 is ok!
+gps_rtcm_data.2 is ok!
+gps_rtcm_data.3 is ok!
+high_latency.1 is ok!
+high_latency.2 is ok!
+high_latency.3 is ok!
+high_latency2.1 is ok!
+high_latency2.2 is ok!
+high_latency2.3 is ok!
+vibration.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+vibration.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+vibration.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 ffffffa8 ffffffd3 6d 39 
+home_position.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+home_position.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+home_position.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffcb c ffffffaf 70 5f ffffffb9 4b 1 
+set_home_position.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+set_home_position.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+set_home_position.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa1 0 0 0 a d ffffffaf 70 5f ffffffb9 4b 1 
+message_interval.1 is ok!
+message_interval.2 is ok!
+message_interval.3 is ok!
+extended_sys_state.1 is ok!
+extended_sys_state.2 is ok!
+extended_sys_state.3 is ok!
+adsb_vehicle.1 is ok!
+adsb_vehicle.2 is ok!
+adsb_vehicle.3 is ok!
+collision.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 35 78 ffffffbb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 35 78 ffffffbb 0 
+collision.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 35 78 ffffffbb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 35 78 ffffffbb 0 
+collision.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 35 78 ffffffbb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 35 78 ffffffbb 0 
+v2_extension.1 is ok!
+v2_extension.2 is ok!
+v2_extension.3 is ok!
+memory_vect.1 is ok!
+memory_vect.2 is ok!
+memory_vect.3 is ok!
+debug_vect.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 55 56 57 58 59 5a 41 42 43 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 55 56 57 58 59 5a 41 42 43 0 0 0 
+debug_vect.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 55 56 57 58 59 5a 41 42 43 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 55 56 57 58 59 5a 41 42 43 0 0 0 
+debug_vect.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 55 56 57 58 59 5a 41 42 43 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 55 56 57 58 59 5a 41 42 43 0 0 0 
+named_value_float.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+named_value_float.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+named_value_float.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 49 4a 4b 4c 4d 4e 4f 50 51 0 0 0 
+named_value_int.1 is ok!
+named_value_int.2 is ok!
+named_value_int.3 is ok!
+statustext.1 is ok!
+statustext.2 is ok!
+statustext.3 is ok!
+debug.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 1d 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 1d 0 0 0 
+debug.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 1d 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 1d 0 0 0 
+debug.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 1d 0 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 1d 0 0 0 
+setup_signing.1 is ok!
+setup_signing.2 is ok!
+setup_signing.3 is ok!
+button_change.1 is ok!
+button_change.2 is ok!
+button_change.3 is ok!
+play_tune.1 is ok!
+play_tune.2 is ok!
+play_tune.3 is ok!
+camera_information.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+camera_information.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+camera_information.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 8 ffffffd2 6d 39 33 48 ffffff9b 48 3 49 ffffffdf ffffffe0 ffffffe1 ffffffe2 ffffffe3 ffffffe4 ffffffe5 ffffffe6 ffffffe7 ffffffe8 ffffffe9 ffffffea ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e ffffff9f 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 0 
+camera_settings.1
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 50 42 0 0 ffffffa0 42 
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 0 0 0 0 0 0 
+camera_settings.2
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 50 42 0 0 ffffffa0 42 
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 0 0 0 0 0 0 
+camera_settings.3
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 50 42 0 0 ffffffa0 42 
+fffffff8 ffffffcd 6d 39 11 0 0 0 0 0 0 0 0 0 0 0 
+storage_information.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+storage_information.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+storage_information.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 4d ffffff90 ffffffd3 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4d ffffff90 ffffffd3 0 
+camera_capture_status.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+fffffff8 ffffffcd 6d 39 0 0 0 0 ffffff98 ffffffcf 6d 39 0 0 0 0 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+camera_capture_status.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+fffffff8 ffffffcd 6d 39 0 0 0 0 ffffff98 ffffffcf 6d 39 0 0 0 0 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+camera_capture_status.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+fffffff8 ffffffcd 6d 39 0 0 0 0 ffffff98 ffffffcf 6d 39 0 0 0 0 35 78 0 0 ffffffa0 ffffffd1 6d 39 
+camera_image_captured.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+camera_image_captured.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+camera_image_captured.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 68 ffffffd0 6d 39 38 ffffffd1 6d 39 8 ffffffd2 6d 39 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffe8 ffffffd6 6d 39 ffffff95 ffffffd8 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 0 0 
+flight_information.1 is ok!
+flight_information.2 is ok!
+flight_information.3 is ok!
+mount_orientation.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+mount_orientation.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+mount_orientation.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+logging_data.1 is ok!
+logging_data.2 is ok!
+logging_data.3 is ok!
+logging_data_acked.1 is ok!
+logging_data_acked.2 is ok!
+logging_data_acked.3 is ok!
+logging_ack.1 is ok!
+logging_ack.2 is ok!
+logging_ack.3 is ok!
+video_stream_information.1
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+video_stream_information.2
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+video_stream_information.3
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb fffffffe 41 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 0 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 41 42 43 44 0 0 0 0 
+video_stream_status.1
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+video_stream_status.2
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+video_stream_status.3
+0 0 ffffff88 41 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+0 0 0 0 ffffffc8 ffffffce 6d 39 fffffff3 44 5b 45 ffffffc3 45 2b 46 ffffff93 46 ffffffbb 0 
+gimbal_manager_information.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 65 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 0 0 0 
+gimbal_manager_information.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 65 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 0 0 0 
+gimbal_manager_information.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 65 0 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 0 0 0 
+gimbal_manager_status.1 is ok!
+gimbal_manager_status.2 is ok!
+gimbal_manager_status.3 is ok!
+gimbal_manager_set_attitude.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 65 ffffffa8 ffffffeb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 ffffffa8 ffffffeb 0 
+gimbal_manager_set_attitude.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 65 ffffffa8 ffffffeb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 ffffffa8 ffffffeb 0 
+gimbal_manager_set_attitude.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 65 ffffffa8 ffffffeb 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65 ffffffa8 ffffffeb 0 
+gimbal_device_information.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+gimbal_device_information.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+gimbal_device_information.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 0 0 55 43 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd3 49 ffffffeb ffffffec ffffffed ffffffee ffffffef fffffff0 fffffff1 fffffff2 fffffff3 fffffff4 fffffff5 fffffff6 fffffff7 fffffff8 fffffff9 fffffffa fffffffb fffffffc fffffffd fffffffe ffffffff 0 1 2 3 4 5 6 7 8 9 a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 0 0 
+gimbal_device_set_attitude.1
+0 0 ffffff88 41 0 0 ffffff90 41 0 0 ffffff98 41 0 0 ffffffa0 41 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 
+gimbal_device_set_attitude.2
+0 0 ffffff88 41 0 0 ffffff90 41 0 0 ffffff98 41 0 0 ffffffa0 41 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 
+gimbal_device_set_attitude.3
+0 0 ffffff88 41 0 0 ffffff90 41 0 0 ffffff98 41 0 0 ffffffa0 41 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 ffffffdf 22 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 ffffffdf 22 
+gimbal_device_attitude_status.1
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+gimbal_device_attitude_status.2
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+gimbal_device_attitude_status.3
+fffffff8 ffffffcd 6d 39 0 0 34 42 0 0 38 42 0 0 3c 42 0 0 40 42 0 0 1d 43 0 0 39 43 0 0 55 43 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+fffffff8 ffffffcd 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 ffffffd4 6d 39 ffffffa3 4a 0 0 
+autopilot_state_for_gimbal_device.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 18 ffffffd6 6d 39 0 ffffff80 ffffffa2 43 ffffff95 ffffffd8 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 18 ffffffd6 6d 39 0 0 0 0 ffffff95 ffffffd8 0 0 0 0 0 0 
+autopilot_state_for_gimbal_device.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 18 ffffffd6 6d 39 0 ffffff80 ffffffa2 43 ffffff95 ffffffd8 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 18 ffffffd6 6d 39 0 0 0 0 ffffff95 ffffffd8 0 0 0 0 0 0 
+autopilot_state_for_gimbal_device.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 ffffffd8 ffffffd2 6d 39 0 0 55 43 0 0 71 43 0 ffffff80 ffffff86 43 18 ffffffd6 6d 39 0 ffffff80 ffffffa2 43 ffffff95 ffffffd8 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffd8 ffffffd2 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 18 ffffffd6 6d 39 0 0 0 0 ffffff95 ffffffd8 0 0 0 0 0 0 
+wifi_config_ap.1 is ok!
+wifi_config_ap.2 is ok!
+wifi_config_ap.3 is ok!
+protocol_version.1 is ok!
+protocol_version.2 is ok!
+protocol_version.3 is ok!
+ais_vessel.1 is ok!
+ais_vessel.2 is ok!
+ais_vessel.3 is ok!
+uavcan_node_status.1 is ok!
+uavcan_node_status.2 is ok!
+uavcan_node_status.3 is ok!
+uavcan_node_info.1 is ok!
+uavcan_node_info.2 is ok!
+uavcan_node_info.3 is ok!
+param_ext_request_read.1 is ok!
+param_ext_request_read.2 is ok!
+param_ext_request_read.3 is ok!
+param_ext_request_list.1 is ok!
+param_ext_request_list.2 is ok!
+param_ext_request_list.3 is ok!
+param_ext_value.1 is ok!
+param_ext_value.2 is ok!
+param_ext_value.3 is ok!
+param_ext_set.1 is ok!
+param_ext_set.2 is ok!
+param_ext_set.3 is ok!
+param_ext_ack.1 is ok!
+param_ext_ack.2 is ok!
+param_ext_ack.3 is ok!
+obstacle_distance.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 60 ffffff8c 44 0 ffffffe0 ffffff8f 44 77 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 0 0 0 0 0 0 0 77 0 0 0 0 0 0 0 
+obstacle_distance.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 60 ffffff8c 44 0 ffffffe0 ffffff8f 44 77 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 0 0 0 0 0 0 0 77 0 0 0 0 0 0 0 
+obstacle_distance.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 60 ffffff8c 44 0 ffffffe0 ffffff8f 44 77 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 fffffff4 44 fffffff5 44 fffffff6 44 fffffff7 44 fffffff8 44 fffffff9 44 fffffffa 44 fffffffb 44 fffffffc 44 fffffffd 44 fffffffe 44 ffffffff 44 0 45 1 45 2 45 3 45 4 45 5 45 6 45 7 45 8 45 9 45 a 45 b 45 c 45 d 45 e 45 f 45 10 45 11 45 12 45 13 45 14 45 15 45 16 45 17 45 18 45 19 45 1a 45 1b 45 1c 45 1d 45 1e 45 1f 45 20 45 21 45 22 45 23 45 24 45 25 45 26 45 27 45 28 45 29 45 2a 45 2b 45 2c 45 2d 45 2e 45 2f 45 30 45 31 45 32 45 33 45 34 45 35 45 36 45 37 45 38 45 39 45 3a 45 33 62 ffffff9b 62 ffffffd9 1c 0 0 0 0 0 0 0 0 0 0 77 0 0 0 0 0 0 0 
+odometry.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 0 ffffffdc 43 0 ffffff80 ffffffdc 43 0 0 ffffffdd 43 0 ffffff80 ffffffdd 43 0 0 ffffffde 43 0 ffffff80 ffffffde 43 0 0 ffffffdf 43 0 ffffff80 ffffffdf 43 0 0 ffffffe0 43 0 ffffff80 ffffffe0 43 0 0 ffffffe1 43 0 ffffff80 ffffffe1 43 0 0 ffffffe2 43 0 ffffff80 ffffffe2 43 0 0 ffffffe3 43 0 ffffff80 ffffffe3 43 0 0 ffffffe4 43 0 ffffff80 ffffffe4 43 0 20 ffffff80 44 0 40 ffffff80 44 0 60 ffffff80 44 0 ffffff80 ffffff80 44 0 ffffffa0 ffffff80 44 0 ffffffc0 ffffff80 44 0 ffffffe0 ffffff80 44 0 0 ffffff81 44 0 20 ffffff81 44 0 40 ffffff81 44 0 60 ffffff81 44 0 ffffff80 ffffff81 44 0 ffffffa0 ffffff81 44 0 ffffffc0 ffffff81 44 0 ffffffe0 ffffff81 44 0 0 ffffff82 44 0 20 ffffff82 44 0 40 ffffff82 44 0 60 ffffff82 44 0 ffffff80 ffffff82 44 0 ffffffa0 ffffff82 44 ffffffb1 fffffff4 37 7a 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb1 fffffff4 37 7a 
+odometry.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 0 ffffffdc 43 0 ffffff80 ffffffdc 43 0 0 ffffffdd 43 0 ffffff80 ffffffdd 43 0 0 ffffffde 43 0 ffffff80 ffffffde 43 0 0 ffffffdf 43 0 ffffff80 ffffffdf 43 0 0 ffffffe0 43 0 ffffff80 ffffffe0 43 0 0 ffffffe1 43 0 ffffff80 ffffffe1 43 0 0 ffffffe2 43 0 ffffff80 ffffffe2 43 0 0 ffffffe3 43 0 ffffff80 ffffffe3 43 0 0 ffffffe4 43 0 ffffff80 ffffffe4 43 0 20 ffffff80 44 0 40 ffffff80 44 0 60 ffffff80 44 0 ffffff80 ffffff80 44 0 ffffffa0 ffffff80 44 0 ffffffc0 ffffff80 44 0 ffffffe0 ffffff80 44 0 0 ffffff81 44 0 20 ffffff81 44 0 40 ffffff81 44 0 60 ffffff81 44 0 ffffff80 ffffff81 44 0 ffffffa0 ffffff81 44 0 ffffffc0 ffffff81 44 0 ffffffe0 ffffff81 44 0 0 ffffff82 44 0 20 ffffff82 44 0 40 ffffff82 44 0 60 ffffff82 44 0 ffffff80 ffffff82 44 0 ffffffa0 ffffff82 44 ffffffb1 fffffff4 37 7a 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb1 fffffff4 37 7a 
+odometry.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 ffffff80 ffffff86 43 0 ffffff80 ffffff94 43 0 ffffff80 ffffffa2 43 0 ffffff80 ffffffb0 43 0 ffffff80 ffffffbe 43 0 ffffff80 ffffffcc 43 0 ffffff80 ffffffda 43 0 0 ffffffdb 43 0 ffffff80 ffffffdb 43 0 0 ffffffdc 43 0 ffffff80 ffffffdc 43 0 0 ffffffdd 43 0 ffffff80 ffffffdd 43 0 0 ffffffde 43 0 ffffff80 ffffffde 43 0 0 ffffffdf 43 0 ffffff80 ffffffdf 43 0 0 ffffffe0 43 0 ffffff80 ffffffe0 43 0 0 ffffffe1 43 0 ffffff80 ffffffe1 43 0 0 ffffffe2 43 0 ffffff80 ffffffe2 43 0 0 ffffffe3 43 0 ffffff80 ffffffe3 43 0 0 ffffffe4 43 0 ffffff80 ffffffe4 43 0 20 ffffff80 44 0 40 ffffff80 44 0 60 ffffff80 44 0 ffffff80 ffffff80 44 0 ffffffa0 ffffff80 44 0 ffffffc0 ffffff80 44 0 ffffffe0 ffffff80 44 0 0 ffffff81 44 0 20 ffffff81 44 0 40 ffffff81 44 0 60 ffffff81 44 0 ffffff80 ffffff81 44 0 ffffffa0 ffffff81 44 0 ffffffc0 ffffff81 44 0 ffffffe0 ffffff81 44 0 0 ffffff82 44 0 20 ffffff82 44 0 40 ffffff82 44 0 60 ffffff82 44 0 ffffff80 ffffff82 44 0 ffffffa0 ffffff82 44 ffffffb1 fffffff4 37 7a 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffb1 fffffff4 37 7a 
+trajectory_representation_waypoints.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 0 40 41 44 0 ffffff80 41 44 0 ffffffc0 41 44 0 0 42 44 0 40 42 44 0 40 64 44 0 ffffff80 64 44 0 ffffffc0 64 44 0 0 65 44 0 40 65 44 0 ffffffa0 ffffff83 44 0 ffffffc0 ffffff83 44 0 ffffffe0 ffffff83 44 0 0 ffffff84 44 0 20 ffffff84 44 0 20 ffffff95 44 0 40 ffffff95 44 0 60 ffffff95 44 0 ffffff80 ffffff95 44 0 ffffffa0 ffffff95 44 0 ffffffa0 ffffffa6 44 0 ffffffc0 ffffffa6 44 0 ffffffe0 ffffffa6 44 0 0 ffffffa7 44 0 20 ffffffa7 44 0 20 ffffffb8 44 0 40 ffffffb8 44 0 60 ffffffb8 44 0 ffffff80 ffffffb8 44 0 ffffffa0 ffffffb8 44 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+trajectory_representation_waypoints.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 0 40 41 44 0 ffffff80 41 44 0 ffffffc0 41 44 0 0 42 44 0 40 42 44 0 40 64 44 0 ffffff80 64 44 0 ffffffc0 64 44 0 0 65 44 0 40 65 44 0 ffffffa0 ffffff83 44 0 ffffffc0 ffffff83 44 0 ffffffe0 ffffff83 44 0 0 ffffff84 44 0 20 ffffff84 44 0 20 ffffff95 44 0 40 ffffff95 44 0 60 ffffff95 44 0 ffffff80 ffffff95 44 0 ffffffa0 ffffff95 44 0 ffffffa0 ffffffa6 44 0 ffffffc0 ffffffa6 44 0 ffffffe0 ffffffa6 44 0 0 ffffffa7 44 0 20 ffffffa7 44 0 20 ffffffb8 44 0 40 ffffffb8 44 0 60 ffffffb8 44 0 ffffff80 ffffffb8 44 0 ffffffa0 ffffffb8 44 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+trajectory_representation_waypoints.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 0 40 41 44 0 ffffff80 41 44 0 ffffffc0 41 44 0 0 42 44 0 40 42 44 0 40 64 44 0 ffffff80 64 44 0 ffffffc0 64 44 0 0 65 44 0 40 65 44 0 ffffffa0 ffffff83 44 0 ffffffc0 ffffff83 44 0 ffffffe0 ffffff83 44 0 0 ffffff84 44 0 20 ffffff84 44 0 20 ffffff95 44 0 40 ffffff95 44 0 60 ffffff95 44 0 ffffff80 ffffff95 44 0 ffffffa0 ffffff95 44 0 ffffffa0 ffffffa6 44 0 ffffffc0 ffffffa6 44 0 ffffffe0 ffffffa6 44 0 0 ffffffa7 44 0 20 ffffffa7 44 0 20 ffffffb8 44 0 40 ffffffb8 44 0 60 ffffffb8 44 0 ffffff80 ffffffb8 44 0 ffffffa0 ffffffb8 44 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffffa3 71 ffffffa4 71 ffffffa5 71 ffffffa6 71 ffffffa7 71 4f 0 
+trajectory_representation_bezier.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 49 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 
+trajectory_representation_bezier.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 49 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 
+trajectory_representation_bezier.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffff94 42 0 0 ffffff96 42 0 0 ffffff98 42 0 0 ffffff9a 42 0 0 55 43 0 0 56 43 0 0 57 43 0 0 58 43 0 0 59 43 0 ffffff80 ffffffb0 43 0 0 ffffffb1 43 0 ffffff80 ffffffb1 43 0 0 ffffffb2 43 0 ffffff80 ffffffb2 43 0 ffffff80 fffffff6 43 0 0 fffffff7 43 0 ffffff80 fffffff7 43 0 0 fffffff8 43 0 ffffff80 fffffff8 43 0 40 1e 44 0 ffffff80 1e 44 0 ffffffc0 1e 44 0 0 1f 44 0 40 1f 44 49 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49 0 0 0 
+cellular_status.1 is ok!
+cellular_status.2 is ok!
+cellular_status.3 is ok!
+isbd_link_status.1 is ok!
+isbd_link_status.2 is ok!
+isbd_link_status.3 is ok!
+raw_rpm.1
+0 0 ffffff88 41 11 0 0 0 
+0 0 0 0 11 0 0 0 
+raw_rpm.2
+0 0 ffffff88 41 11 0 0 0 
+0 0 0 0 11 0 0 0 
+raw_rpm.3
+0 0 ffffff88 41 11 0 0 0 
+0 0 0 0 11 0 0 0 
+utm_global_position.1 is ok!
+utm_global_position.2 is ok!
+utm_global_position.3 is ok!
+debug_float_array.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 0 0 26 43 0 0 27 43 0 0 28 43 0 0 29 43 0 0 2a 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 0 0 2f 43 0 0 30 43 0 0 31 43 0 0 32 43 0 0 33 43 0 0 34 43 0 0 35 43 0 0 36 43 0 0 37 43 0 0 38 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 0 3d 43 0 0 3e 43 0 0 3f 43 0 0 40 43 0 0 41 43 0 0 42 43 0 0 43 43 0 0 44 43 0 0 45 43 0 0 46 43 0 0 47 43 0 0 48 43 0 0 49 43 0 0 4a 43 0 0 4b 43 0 0 4c 43 0 0 4d 43 0 0 4e 43 0 0 4f 43 0 0 50 43 0 0 51 43 0 0 52 43 0 0 53 43 0 0 54 43 0 0 55 43 0 0 56 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+debug_float_array.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 0 0 26 43 0 0 27 43 0 0 28 43 0 0 29 43 0 0 2a 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 0 0 2f 43 0 0 30 43 0 0 31 43 0 0 32 43 0 0 33 43 0 0 34 43 0 0 35 43 0 0 36 43 0 0 37 43 0 0 38 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 0 3d 43 0 0 3e 43 0 0 3f 43 0 0 40 43 0 0 41 43 0 0 42 43 0 0 43 43 0 0 44 43 0 0 45 43 0 0 46 43 0 0 47 43 0 0 48 43 0 0 49 43 0 0 4a 43 0 0 4b 43 0 0 4c 43 0 0 4d 43 0 0 4e 43 0 0 4f 43 0 0 50 43 0 0 51 43 0 0 52 43 0 0 53 43 0 0 54 43 0 0 55 43 0 0 56 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+debug_float_array.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 1d 43 0 0 1e 43 0 0 1f 43 0 0 20 43 0 0 21 43 0 0 22 43 0 0 23 43 0 0 24 43 0 0 25 43 0 0 26 43 0 0 27 43 0 0 28 43 0 0 29 43 0 0 2a 43 0 0 2b 43 0 0 2c 43 0 0 2d 43 0 0 2e 43 0 0 2f 43 0 0 30 43 0 0 31 43 0 0 32 43 0 0 33 43 0 0 34 43 0 0 35 43 0 0 36 43 0 0 37 43 0 0 38 43 0 0 39 43 0 0 3a 43 0 0 3b 43 0 0 3c 43 0 0 3d 43 0 0 3e 43 0 0 3f 43 0 0 40 43 0 0 41 43 0 0 42 43 0 0 43 43 0 0 44 43 0 0 45 43 0 0 46 43 0 0 47 43 0 0 48 43 0 0 49 43 0 0 4a 43 0 0 4b 43 0 0 4c 43 0 0 4d 43 0 0 4e 43 0 0 4f 43 0 0 50 43 0 0 51 43 0 0 52 43 0 0 53 43 0 0 54 43 0 0 55 43 0 0 56 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 fffffff3 44 4b 4c 4d 4e 4f 50 51 52 53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+orbit_execution_status.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 4d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 4d 0 0 0 0 0 0 0 
+orbit_execution_status.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 4d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 4d 0 0 0 0 0 0 0 
+orbit_execution_status.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 1d 43 4d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 68 ffffffd0 6d 39 38 ffffffd1 6d 39 0 0 0 0 4d 0 0 0 0 0 0 0 
+smart_battery_info.1 is ok!
+smart_battery_info.2 is ok!
+smart_battery_info.3 is ok!
+smart_battery_status.1 is ok!
+smart_battery_status.2 is ok!
+smart_battery_status.3 is ok!
+generator_status.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+generator_status.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+generator_status.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 0 0 39 43 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 49 6b 49 ffffffd3 49 0 0 0 0 0 0 
+actuator_output_status.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 ffffffcc 42 0 0 ffffffce 42 0 0 ffffffd0 42 0 0 ffffffd2 42 0 0 ffffffd4 42 0 0 ffffffd6 42 0 0 ffffffd8 42 0 0 ffffffda 42 0 0 ffffffdc 42 0 0 ffffffde 42 0 0 ffffffe0 42 0 0 ffffffe2 42 0 0 ffffffe4 42 0 0 ffffffe6 42 0 0 ffffffe8 42 0 0 ffffffea 42 0 0 ffffffec 42 0 0 ffffffee 42 0 0 fffffff0 42 0 0 fffffff2 42 0 0 fffffff4 42 0 0 fffffff6 42 0 0 fffffff8 42 0 0 fffffffa 42 0 0 fffffffc 42 0 0 fffffffe 42 0 0 0 43 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+actuator_output_status.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 ffffffcc 42 0 0 ffffffce 42 0 0 ffffffd0 42 0 0 ffffffd2 42 0 0 ffffffd4 42 0 0 ffffffd6 42 0 0 ffffffd8 42 0 0 ffffffda 42 0 0 ffffffdc 42 0 0 ffffffde 42 0 0 ffffffe0 42 0 0 ffffffe2 42 0 0 ffffffe4 42 0 0 ffffffe6 42 0 0 ffffffe8 42 0 0 ffffffea 42 0 0 ffffffec 42 0 0 ffffffee 42 0 0 fffffff0 42 0 0 fffffff2 42 0 0 fffffff4 42 0 0 fffffff6 42 0 0 fffffff8 42 0 0 fffffffa 42 0 0 fffffffc 42 0 0 fffffffe 42 0 0 0 43 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+actuator_output_status.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 ffffffca 42 0 0 ffffffcc 42 0 0 ffffffce 42 0 0 ffffffd0 42 0 0 ffffffd2 42 0 0 ffffffd4 42 0 0 ffffffd6 42 0 0 ffffffd8 42 0 0 ffffffda 42 0 0 ffffffdc 42 0 0 ffffffde 42 0 0 ffffffe0 42 0 0 ffffffe2 42 0 0 ffffffe4 42 0 0 ffffffe6 42 0 0 ffffffe8 42 0 0 ffffffea 42 0 0 ffffffec 42 0 0 ffffffee 42 0 0 fffffff0 42 0 0 fffffff2 42 0 0 fffffff4 42 0 0 fffffff6 42 0 0 fffffff8 42 0 0 fffffffa 42 0 0 fffffffc 42 0 0 fffffffe 42 0 0 0 43 0 0 1 43 0 0 2 43 0 0 3 43 0 0 4 43 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 ffffff98 ffffffcf 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+time_estimate_to_target.1 is ok!
+time_estimate_to_target.2 is ok!
+time_estimate_to_target.3 is ok!
+tunnel.1 is ok!
+tunnel.2 is ok!
+tunnel.3 is ok!
+onboard_computer_status.1 is ok!
+onboard_computer_status.2 is ok!
+onboard_computer_status.3 is ok!
+component_information.1 is ok!
+component_information.2 is ok!
+component_information.3 is ok!
+play_tune_v2.1 is ok!
+play_tune_v2.2 is ok!
+play_tune_v2.3 is ok!
+supported_tunes.1 is ok!
+supported_tunes.2 is ok!
+supported_tunes.3 is ok!
+wheel_distance.1
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 60 66 40 0 0 0 0 0 ffffff80 66 40 0 0 0 0 0 ffffffa0 66 40 0 0 0 0 0 ffffffc0 66 40 0 0 0 0 0 ffffffe0 66 40 0 0 0 0 0 0 67 40 0 0 0 0 0 20 67 40 0 0 0 0 0 40 67 40 0 0 0 0 0 60 67 40 0 0 0 0 0 ffffff80 67 40 0 0 0 0 0 ffffffa0 67 40 0 0 0 0 0 ffffffc0 67 40 0 0 0 0 0 ffffffe0 67 40 0 0 0 0 0 0 68 40 0 0 0 0 0 20 68 40 0 0 0 0 0 40 68 40 ffffff9d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff9d 0 0 0 0 0 0 0 
+wheel_distance.2
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 60 66 40 0 0 0 0 0 ffffff80 66 40 0 0 0 0 0 ffffffa0 66 40 0 0 0 0 0 ffffffc0 66 40 0 0 0 0 0 ffffffe0 66 40 0 0 0 0 0 0 67 40 0 0 0 0 0 20 67 40 0 0 0 0 0 40 67 40 0 0 0 0 0 60 67 40 0 0 0 0 0 ffffff80 67 40 0 0 0 0 0 ffffffa0 67 40 0 0 0 0 0 ffffffc0 67 40 0 0 0 0 0 ffffffe0 67 40 0 0 0 0 0 0 68 40 0 0 0 0 0 20 68 40 0 0 0 0 0 40 68 40 ffffff9d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff9d 0 0 0 0 0 0 0 
+wheel_distance.3
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 60 66 40 0 0 0 0 0 ffffff80 66 40 0 0 0 0 0 ffffffa0 66 40 0 0 0 0 0 ffffffc0 66 40 0 0 0 0 0 ffffffe0 66 40 0 0 0 0 0 0 67 40 0 0 0 0 0 20 67 40 0 0 0 0 0 40 67 40 0 0 0 0 0 60 67 40 0 0 0 0 0 ffffff80 67 40 0 0 0 0 0 ffffffa0 67 40 0 0 0 0 0 ffffffc0 67 40 0 0 0 0 0 ffffffe0 67 40 0 0 0 0 0 0 68 40 0 0 0 0 0 20 68 40 0 0 0 0 0 40 68 40 ffffff9d 0 0 0 0 0 0 0 
+ffffffff ffffffff ffffffae 70 5f ffffffb9 4b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ffffff9d 0 0 0 0 0 0 0 
+open_drone_id_basic_id.1 is ok!
+open_drone_id_basic_id.2 is ok!
+open_drone_id_basic_id.3 is ok!
+open_drone_id_location.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+open_drone_id_location.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+open_drone_id_location.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 0 0 1 43 0 0 1d 43 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33 48 ffffff9b 48 3 49 ffffffdf 22 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 ffffffa1 ffffffe4 27 6a ffffffad fffffff0 33 0 
+open_drone_id_authentication.1 is ok!
+open_drone_id_authentication.2 is ok!
+open_drone_id_authentication.3 is ok!
+open_drone_id_self_id.1 is ok!
+open_drone_id_self_id.2 is ok!
+open_drone_id_self_id.3 is ok!
+open_drone_id_system.1
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+open_drone_id_system.2
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+open_drone_id_system.3
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 ffffff92 42 0 0 ffffffca 42 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+fffffff8 ffffffcd 6d 39 ffffffc8 ffffffce 6d 39 0 0 0 0 0 0 0 0 ffffff93 46 fffffffb 46 41 ffffff84 ffffffc7 ffffffc8 ffffffc9 ffffffca ffffffcb ffffffcc ffffffcd ffffffce ffffffcf ffffffd0 ffffffd1 ffffffd2 ffffffd3 ffffffd4 ffffffd5 ffffffd6 ffffffd7 ffffffd8 ffffffd9 ffffffda 3 0 
+open_drone_id_operator_id.1 is ok!
+open_drone_id_operator_id.2 is ok!
+open_drone_id_operator_id.3 is ok!
+open_drone_id_message_pack.1 is ok!
+open_drone_id_message_pack.2 is ok!
+open_drone_id_message_pack.3 is ok!
+heart len=21
+fd 9 0 0 58 1 c8 0 0 0 0 0 0 0 4 0 d8 4 3 aa fc 
+status len=43
+fd 1f 0 0 59 1 c8 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 f4 1 f8 2a ff ff 0 0 0 0 0 0 0 0 0 0 0 0 ff 7a f 
+local position len=14
+fd 2 0 0 5a 1 c8 20 0 0 90 eb ce c0 
+attitude len=40
+fd 1c 0 0 5b 1 c8 1e 0 0 90 eb 0 0 9a 99 99 3f 9a 99 d9 3f c3 f5 48 40 a d7 23 3c a d7 a3 3c 8f c2 f5 3c ac 8a 

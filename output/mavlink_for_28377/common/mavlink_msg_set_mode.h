@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_mode
+#define MAVLINK_MSG_set_mode
 // MESSAGE SET_MODE PACKING
 
 #define MAVLINK_MSG_ID_SET_MODE 11
@@ -158,3 +159,4 @@ static inline void mavlink_msg_set_mode_decode(const mavlink_message_t* msg, mav
     set_mode->target_system = mavlink_msg_set_mode_get_target_system(msg);
     set_mode->base_mode = mavlink_msg_set_mode_get_base_mode(msg);
 }
+#endif

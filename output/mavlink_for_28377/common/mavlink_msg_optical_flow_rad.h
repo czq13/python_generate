@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_optical_flow_rad
+#define MAVLINK_MSG_optical_flow_rad
 // MESSAGE OPTICAL_FLOW_RAD PACKING
 
 #define MAVLINK_MSG_ID_OPTICAL_FLOW_RAD 106
@@ -320,3 +321,4 @@ static inline void mavlink_msg_optical_flow_rad_decode(const mavlink_message_t* 
     optical_flow_rad->sensor_id = mavlink_msg_optical_flow_rad_get_sensor_id(msg);
     optical_flow_rad->quality = mavlink_msg_optical_flow_rad_get_quality(msg);
 }
+#endif

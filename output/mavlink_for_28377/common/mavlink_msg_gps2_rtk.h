@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps2_rtk
+#define MAVLINK_MSG_gps2_rtk
 // MESSAGE GPS2_RTK PACKING
 
 #define MAVLINK_MSG_ID_GPS2_RTK 128
@@ -338,3 +339,4 @@ static inline void mavlink_msg_gps2_rtk_decode(const mavlink_message_t* msg, mav
     gps2_rtk->nsats = mavlink_msg_gps2_rtk_get_nsats(msg);
     gps2_rtk->baseline_coords_type = mavlink_msg_gps2_rtk_get_baseline_coords_type(msg);
 }
+#endif

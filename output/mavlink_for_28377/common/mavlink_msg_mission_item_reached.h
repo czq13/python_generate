@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_item_reached
+#define MAVLINK_MSG_mission_item_reached
 // MESSAGE MISSION_ITEM_REACHED PACKING
 
 #define MAVLINK_MSG_ID_MISSION_ITEM_REACHED 46
@@ -122,3 +123,4 @@ static inline void mavlink_msg_mission_item_reached_decode(const mavlink_message
 {
     mission_item_reached->seq = mavlink_msg_mission_item_reached_get_seq(msg);
 }
+#endif

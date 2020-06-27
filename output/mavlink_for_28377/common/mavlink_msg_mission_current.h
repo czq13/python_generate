@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_current
+#define MAVLINK_MSG_mission_current
 // MESSAGE MISSION_CURRENT PACKING
 
 #define MAVLINK_MSG_ID_MISSION_CURRENT 42
@@ -122,3 +123,4 @@ static inline void mavlink_msg_mission_current_decode(const mavlink_message_t* m
 {
     mission_current->seq = mavlink_msg_mission_current_get_seq(msg);
 }
+#endif

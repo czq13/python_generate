@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_protocol_version
+#define MAVLINK_MSG_protocol_version
 // MESSAGE PROTOCOL_VERSION PACKING
 
 #define MAVLINK_MSG_ID_PROTOCOL_VERSION 300
@@ -193,3 +194,4 @@ static inline void mavlink_msg_protocol_version_decode(const mavlink_message_t* 
     mavlink_msg_protocol_version_get_spec_version_hash(msg, protocol_version->spec_version_hash);
     mavlink_msg_protocol_version_get_library_version_hash(msg, protocol_version->library_version_hash);
 }
+#endif

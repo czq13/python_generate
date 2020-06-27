@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_log_request_end
+#define MAVLINK_MSG_log_request_end
 // MESSAGE LOG_REQUEST_END PACKING
 
 #define MAVLINK_MSG_ID_LOG_REQUEST_END 122
@@ -140,3 +141,4 @@ static inline void mavlink_msg_log_request_end_decode(const mavlink_message_t* m
     log_request_end->target_system = mavlink_msg_log_request_end_get_target_system(msg);
     log_request_end->target_component = mavlink_msg_log_request_end_get_target_component(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_adsb_vehicle
+#define MAVLINK_MSG_adsb_vehicle
 // MESSAGE ADSB_VEHICLE PACKING
 
 #define MAVLINK_MSG_ID_ADSB_VEHICLE 246
@@ -336,3 +337,4 @@ static inline void mavlink_msg_adsb_vehicle_decode(const mavlink_message_t* msg,
     adsb_vehicle->emitter_type = mavlink_msg_adsb_vehicle_get_emitter_type(msg);
     adsb_vehicle->tslc = mavlink_msg_adsb_vehicle_get_tslc(msg);
 }
+#endif

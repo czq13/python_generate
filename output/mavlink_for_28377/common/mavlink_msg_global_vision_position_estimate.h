@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_global_vision_position_estimate
+#define MAVLINK_MSG_global_vision_position_estimate
 // MESSAGE GLOBAL_VISION_POSITION_ESTIMATE PACKING
 
 #define MAVLINK_MSG_ID_GLOBAL_VISION_POSITION_ESTIMATE 101
@@ -264,3 +265,4 @@ static inline void mavlink_msg_global_vision_position_estimate_decode(const mavl
     mavlink_msg_global_vision_position_estimate_get_covariance(msg, global_vision_position_estimate->covariance);
     global_vision_position_estimate->reset_counter = mavlink_msg_global_vision_position_estimate_get_reset_counter(msg);
 }
+#endif

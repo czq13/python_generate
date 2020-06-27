@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_camera_settings
+#define MAVLINK_MSG_camera_settings
 // MESSAGE CAMERA_SETTINGS PACKING
 
 #define MAVLINK_MSG_ID_CAMERA_SETTINGS 260
@@ -176,3 +177,4 @@ static inline void mavlink_msg_camera_settings_decode(const mavlink_message_t* m
     camera_settings->zoomLevel = mavlink_msg_camera_settings_get_zoomLevel(msg);
     camera_settings->focusLevel = mavlink_msg_camera_settings_get_focusLevel(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_logging_data_acked
+#define MAVLINK_MSG_logging_data_acked
 // MESSAGE LOGGING_DATA_ACKED PACKING
 
 #define MAVLINK_MSG_ID_LOGGING_DATA_ACKED 267
@@ -210,3 +211,4 @@ static inline void mavlink_msg_logging_data_acked_decode(const mavlink_message_t
     logging_data_acked->first_message_offset = mavlink_msg_logging_data_acked_get_first_message_offset(msg);
     mavlink_msg_logging_data_acked_get_data(msg, logging_data_acked->data);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_vfr_hud
+#define MAVLINK_MSG_vfr_hud
 // MESSAGE VFR_HUD PACKING
 
 #define MAVLINK_MSG_ID_VFR_HUD 74
@@ -212,3 +213,4 @@ static inline void mavlink_msg_vfr_hud_decode(const mavlink_message_t* msg, mavl
     vfr_hud->heading = mavlink_msg_vfr_hud_get_heading(msg);
     vfr_hud->throttle = mavlink_msg_vfr_hud_get_throttle(msg);
 }
+#endif

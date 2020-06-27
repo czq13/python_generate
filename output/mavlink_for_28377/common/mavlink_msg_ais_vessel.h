@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_ais_vessel
+#define MAVLINK_MSG_ais_vessel
 // MESSAGE AIS_VESSEL PACKING
 
 #define MAVLINK_MSG_ID_AIS_VESSEL 301
@@ -409,3 +410,4 @@ static inline void mavlink_msg_ais_vessel_decode(const mavlink_message_t* msg, m
     mavlink_msg_ais_vessel_get_callsign(msg, ais_vessel->callsign);
     mavlink_msg_ais_vessel_get_name(msg, ais_vessel->name);
 }
+#endif

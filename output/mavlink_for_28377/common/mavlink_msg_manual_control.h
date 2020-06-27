@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_manual_control
+#define MAVLINK_MSG_manual_control
 // MESSAGE MANUAL_CONTROL PACKING
 
 #define MAVLINK_MSG_ID_MANUAL_CONTROL 69
@@ -212,3 +213,4 @@ static inline void mavlink_msg_manual_control_decode(const mavlink_message_t* ms
     manual_control->buttons = mavlink_msg_manual_control_get_buttons(msg);
     manual_control->target = mavlink_msg_manual_control_get_target(msg);
 }
+#endif

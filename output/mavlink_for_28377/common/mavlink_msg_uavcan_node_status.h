@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_uavcan_node_status
+#define MAVLINK_MSG_uavcan_node_status
 // MESSAGE UAVCAN_NODE_STATUS PACKING
 
 #define MAVLINK_MSG_ID_UAVCAN_NODE_STATUS 310
@@ -212,3 +213,4 @@ static inline void mavlink_msg_uavcan_node_status_decode(const mavlink_message_t
     uavcan_node_status->mode = mavlink_msg_uavcan_node_status_get_mode(msg);
     uavcan_node_status->sub_mode = mavlink_msg_uavcan_node_status_get_sub_mode(msg);
 }
+#endif

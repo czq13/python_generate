@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_collision
+#define MAVLINK_MSG_collision
 // MESSAGE COLLISION PACKING
 
 #define MAVLINK_MSG_ID_COLLISION 247
@@ -230,3 +231,4 @@ static inline void mavlink_msg_collision_decode(const mavlink_message_t* msg, ma
     collision->action = mavlink_msg_collision_get_action(msg);
     collision->threat_level = mavlink_msg_collision_get_threat_level(msg);
 }
+#endif

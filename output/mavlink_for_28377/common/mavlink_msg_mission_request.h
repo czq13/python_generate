@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_request
+#define MAVLINK_MSG_mission_request
 // MESSAGE MISSION_REQUEST PACKING
 
 #define MAVLINK_MSG_ID_MISSION_REQUEST 40
@@ -176,3 +177,4 @@ static inline void mavlink_msg_mission_request_decode(const mavlink_message_t* m
     mission_request->target_component = mavlink_msg_mission_request_get_target_component(msg);
     mission_request->mission_type = mavlink_msg_mission_request_get_mission_type(msg);
 }
+#endif

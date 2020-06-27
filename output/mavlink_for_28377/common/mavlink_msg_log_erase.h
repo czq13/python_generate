@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_log_erase
+#define MAVLINK_MSG_log_erase
 // MESSAGE LOG_ERASE PACKING
 
 #define MAVLINK_MSG_ID_LOG_ERASE 121
@@ -140,3 +141,4 @@ static inline void mavlink_msg_log_erase_decode(const mavlink_message_t* msg, ma
     log_erase->target_system = mavlink_msg_log_erase_get_target_system(msg);
     log_erase->target_component = mavlink_msg_log_erase_get_target_component(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_terrain_request
+#define MAVLINK_MSG_terrain_request
 // MESSAGE TERRAIN_REQUEST PACKING
 
 #define MAVLINK_MSG_ID_TERRAIN_REQUEST 133
@@ -176,3 +177,4 @@ static inline void mavlink_msg_terrain_request_decode(const mavlink_message_t* m
     terrain_request->lon = mavlink_msg_terrain_request_get_lon(msg);
     terrain_request->grid_spacing = mavlink_msg_terrain_request_get_grid_spacing(msg);
 }
+#endif

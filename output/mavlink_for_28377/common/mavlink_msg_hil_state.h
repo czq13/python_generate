@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_state
+#define MAVLINK_MSG_hil_state
 // MESSAGE HIL_STATE PACKING
 
 #define MAVLINK_MSG_ID_HIL_STATE 90
@@ -392,3 +393,4 @@ static inline void mavlink_msg_hil_state_decode(const mavlink_message_t* msg, ma
     hil_state->yacc = mavlink_msg_hil_state_get_yacc(msg);
     hil_state->zacc = mavlink_msg_hil_state_get_zacc(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_tunnel
+#define MAVLINK_MSG_tunnel
 // MESSAGE TUNNEL PACKING
 
 #define MAVLINK_MSG_ID_TUNNEL 385
@@ -192,3 +193,4 @@ static inline void mavlink_msg_tunnel_decode(const mavlink_message_t* msg, mavli
     tunnel->payload_length = mavlink_msg_tunnel_get_payload_length(msg);
     mavlink_msg_tunnel_get_payload(msg, tunnel->payload);
 }
+#endif

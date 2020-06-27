@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_scaled_imu3
+#define MAVLINK_MSG_scaled_imu3
 // MESSAGE SCALED_IMU3 PACKING
 
 #define MAVLINK_MSG_ID_SCALED_IMU3 129
@@ -302,3 +303,4 @@ static inline void mavlink_msg_scaled_imu3_decode(const mavlink_message_t* msg, 
     scaled_imu3->zmag = mavlink_msg_scaled_imu3_get_zmag(msg);
     scaled_imu3->temperature = mavlink_msg_scaled_imu3_get_temperature(msg);
 }
+#endif

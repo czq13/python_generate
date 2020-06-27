@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_system
+#define MAVLINK_MSG_open_drone_id_system
 // MESSAGE OPEN_DRONE_ID_SYSTEM PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM 12904
@@ -282,3 +283,4 @@ static inline void mavlink_msg_open_drone_id_system_decode(const mavlink_message
     mavlink_msg_open_drone_id_system_get_id_or_mac(msg, open_drone_id_system->id_or_mac);
     open_drone_id_system->flags = mavlink_msg_open_drone_id_system_get_flags(msg);
 }
+#endif

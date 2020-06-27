@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_param_ext_value
+#define MAVLINK_MSG_param_ext_value
 // MESSAGE PARAM_EXT_VALUE PACKING
 
 #define MAVLINK_MSG_ID_PARAM_EXT_VALUE 322
@@ -193,3 +194,4 @@ static inline void mavlink_msg_param_ext_value_decode(const mavlink_message_t* m
     mavlink_msg_param_ext_value_get_param_value(msg, param_ext_value->param_value);
     param_ext_value->param_type = mavlink_msg_param_ext_value_get_param_type(msg);
 }
+#endif

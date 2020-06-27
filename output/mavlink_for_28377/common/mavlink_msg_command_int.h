@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_command_int
+#define MAVLINK_MSG_command_int
 // MESSAGE COMMAND_INT PACKING
 
 #define MAVLINK_MSG_ID_COMMAND_INT 75
@@ -338,3 +339,4 @@ static inline void mavlink_msg_command_int_decode(const mavlink_message_t* msg, 
     command_int->current = mavlink_msg_command_int_get_current(msg);
     command_int->autocontinue = mavlink_msg_command_int_get_autocontinue(msg);
 }
+#endif

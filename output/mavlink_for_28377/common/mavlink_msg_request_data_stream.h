@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_request_data_stream
+#define MAVLINK_MSG_request_data_stream
 // MESSAGE REQUEST_DATA_STREAM PACKING
 
 #define MAVLINK_MSG_ID_REQUEST_DATA_STREAM 66
@@ -194,3 +195,4 @@ static inline void mavlink_msg_request_data_stream_decode(const mavlink_message_
     request_data_stream->req_stream_id = mavlink_msg_request_data_stream_get_req_stream_id(msg);
     request_data_stream->start_stop = mavlink_msg_request_data_stream_get_start_stop(msg);
 }
+#endif

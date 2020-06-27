@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_mission_ack
+#define MAVLINK_MSG_mission_ack
 // MESSAGE MISSION_ACK PACKING
 
 #define MAVLINK_MSG_ID_MISSION_ACK 47
@@ -176,3 +177,4 @@ static inline void mavlink_msg_mission_ack_decode(const mavlink_message_t* msg, 
     mission_ack->type = mavlink_msg_mission_ack_get_type(msg);
     mission_ack->mission_type = mavlink_msg_mission_ack_get_mission_type(msg);
 }
+#endif

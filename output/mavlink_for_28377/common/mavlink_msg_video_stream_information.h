@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_video_stream_information
+#define MAVLINK_MSG_video_stream_information
 // MESSAGE VIDEO_STREAM_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION 269
@@ -319,3 +320,4 @@ static inline void mavlink_msg_video_stream_information_decode(const mavlink_mes
     mavlink_msg_video_stream_information_get_name(msg, video_stream_information->name);
     mavlink_msg_video_stream_information_get_uri(msg, video_stream_information->uri);
 }
+#endif

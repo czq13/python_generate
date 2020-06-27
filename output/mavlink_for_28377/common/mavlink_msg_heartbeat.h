@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_heartbeat
+#define MAVLINK_MSG_heartbeat
 // MESSAGE HEARTBEAT PACKING
 
 #define MAVLINK_MSG_ID_HEARTBEAT 0
@@ -70,8 +71,7 @@ static inline uint16_t mavlink_msg_heartbeat_pack(uint8_t system_id, uint8_t com
     _mav_put_uint8_t(msg->payloads, 5, autopilot);
     _mav_put_uint8_t(msg->payloads, 6, base_mode);
     _mav_put_uint8_t(msg->payloads, 7, system_status);
-    uint8_t version_t = 3;
-    _mav_put_uint8_t(msg->payloads, 8, version_t);
+    _mav_put_uint8_t(msg->payloads, 8, 3);
 
     msg->msgid = MAVLINK_MSG_ID_HEARTBEAT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
@@ -99,8 +99,7 @@ static inline uint16_t mavlink_msg_heartbeat_pack_chan(uint8_t system_id, uint8_
     _mav_put_uint8_t(msg->payloads, 5, autopilot);
     _mav_put_uint8_t(msg->payloads, 6, base_mode);
     _mav_put_uint8_t(msg->payloads, 7, system_status);
-    uint8_t version_t = 3;
-    _mav_put_uint8_t(msg->payloads, 8, version_t);
+    _mav_put_uint8_t(msg->payloads, 8, 3);
 
 
     msg->msgid = MAVLINK_MSG_ID_HEARTBEAT;
@@ -212,3 +211,4 @@ static inline void mavlink_msg_heartbeat_decode(const mavlink_message_t* msg, ma
     heartbeat->system_status = mavlink_msg_heartbeat_get_system_status(msg);
     heartbeat->mavlink_version = mavlink_msg_heartbeat_get_mavlink_version(msg);
 }
+#endif

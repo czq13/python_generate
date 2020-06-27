@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_named_value_int
+#define MAVLINK_MSG_named_value_int
 // MESSAGE NAMED_VALUE_INT PACKING
 
 #define MAVLINK_MSG_ID_NAMED_VALUE_INT 252
@@ -156,3 +157,4 @@ static inline void mavlink_msg_named_value_int_decode(const mavlink_message_t* m
     named_value_int->value = mavlink_msg_named_value_int_get_value(msg);
     mavlink_msg_named_value_int_get_name(msg, named_value_int->name);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_set_home_position
+#define MAVLINK_MSG_set_home_position
 // MESSAGE SET_HOME_POSITION PACKING
 
 #define MAVLINK_MSG_ID_SET_HOME_POSITION 243
@@ -318,3 +319,4 @@ static inline void mavlink_msg_set_home_position_decode(const mavlink_message_t*
     set_home_position->target_system = mavlink_msg_set_home_position_get_target_system(msg);
     set_home_position->time_usec = mavlink_msg_set_home_position_get_time_usec(msg);
 }
+#endif

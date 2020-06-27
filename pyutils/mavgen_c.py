@@ -24,7 +24,6 @@ def generate_version_h(directory, xml):
  *  @brief MAVLink comm protocol built from ${basename}.xml
  *  @see http://mavlink.org
  */
-#pragma once
  
 #ifndef MAVLINK_VERSION_H
 #define MAVLINK_VERSION_H
@@ -45,7 +44,6 @@ def generate_mavlink_h(directory, xml):
  *  @brief MAVLink comm protocol built from ${basename}.xml
  *  @see http://mavlink.org
  */
-#pragma once
 #ifndef MAVLINK_H
 #define MAVLINK_H
 
@@ -86,7 +84,6 @@ def generate_main_h(directory, xml):
  *  @brief MAVLink comm protocol generated from ${basename}.xml
  *  @see http://mavlink.org
  */
-#pragma once
 #ifndef MAVLINK_${basename_upper}_H
 #define MAVLINK_${basename_upper}_H
 
@@ -172,7 +169,8 @@ def generate_message_h(directory, m):
     '''generate per-message header for a XML file'''
     f = open(os.path.join(directory, 'mavlink_msg_%s.h' % m.name_lower), mode='w')
     t.write(f, '''
-#pragma once
+#ifndef MAVLINK_MSG_${name_lower}
+#define MAVLINK_MSG_${name_lower}
 // MESSAGE ${name} PACKING
 
 #define MAVLINK_MSG_ID_${name} ${id}
@@ -306,6 +304,7 @@ static inline void mavlink_msg_${name_lower}_decode(const mavlink_message_t* msg
 ${{ordered_fields:    ${decode_left}mavlink_msg_${name_lower}_get_${name}(msg${decode_right});
 }}
 }
+#endif
 ''', m)
     f.close()
 
@@ -318,13 +317,13 @@ def generate_testsuite_h(directory, xml):
  *    @brief MAVLink comm protocol testsuite generated from ${basename}.xml
  *    @see http://qgroundcontrol.org/mavlink/
  */
-#pragma once
 #ifndef ${basename_upper}_TESTSUITE_H
 #define ${basename_upper}_TESTSUITE_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+#include <assert.h>
 
 #ifndef MAVLINK_TEST_ALL
 #define MAVLINK_TEST_ALL
@@ -342,6 +341,18 @@ ${{include_list:    mavlink_test_${base}(system_id, component_id, last_msg);
 
 ${{include_list:#include "../${base}/testsuite.h"
 }}
+void mav_assert(char * p1,char * p2,int len,const char * name) {
+    if (memcmp(p1,p2,len)!=0) {
+        printf("%s",name);
+        for (int i = 0;i < len;i++) printf("%x ",p1[i]);
+        printf("");
+        for (int i = 0;i < len;i++) printf("%x ",p2[i]);
+        printf("");
+    }
+    else {
+        printf("%s is ok!",name);
+    }
+}
 
 ${{message:
 static void mavlink_test_${name_lower}(uint8_t system_id, uint8_t component_id, mavlink_message_t *last_msg)
@@ -362,7 +373,7 @@ static void mavlink_test_${name_lower}(uint8_t system_id, uint8_t component_id, 
         memset(&packet1, 0, sizeof(packet1));
         ${{scalar_fields:packet1.${name} = packet_in.${name};
         }}
-        ${{array_fields:mav_array_memcpy(packet1.${name}, packet_in.${name}, sizeof(${type})*${array_length});
+        ${{array_fields:memcpy(packet1.${name}, packet_in.${name}, sizeof(${type})*${array_length});
         }}
 #ifdef MAVLINK_STATUS_FLAG_OUT_MAVLINK1
         if (status->flags & MAVLINK_STATUS_FLAG_OUT_MAVLINK1) {
@@ -373,17 +384,20 @@ static void mavlink_test_${name_lower}(uint8_t system_id, uint8_t component_id, 
         memset(&packet2, 0, sizeof(packet2));
     mavlink_msg_${name_lower}_encode(system_id, component_id, &msg, &packet1);
     mavlink_msg_${name_lower}_decode(&msg, &packet2);
-        MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        //mav_assert(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        mav_assert((char*)&packet1, (char*)&packet2, sizeof(packet1),"${name_lower}.1");
 
         memset(&packet2, 0, sizeof(packet2));
     mavlink_msg_${name_lower}_pack(system_id, component_id, &msg ${{arg_fields:, packet1.${name} }});
     mavlink_msg_${name_lower}_decode(&msg, &packet2);
-        MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        //mav_assert(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        mav_assert((char*)&packet1, (char*)&packet2, sizeof(packet1),"${name_lower}.2");
 
         memset(&packet2, 0, sizeof(packet2));
     mavlink_msg_${name_lower}_pack_chan(system_id, component_id, MAVLINK_COMM_0, &msg ${{arg_fields:, packet1.${name} }});
     mavlink_msg_${name_lower}_decode(&msg, &packet2);
-        MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        //mav_assert(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
+        mav_assert((char*)&packet1, (char*)&packet2, sizeof(packet1),"${name_lower}.3");
 
 }
 }}

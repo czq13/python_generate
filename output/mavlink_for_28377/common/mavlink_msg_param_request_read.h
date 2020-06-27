@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_param_request_read
+#define MAVLINK_MSG_param_request_read
 // MESSAGE PARAM_REQUEST_READ PACKING
 
 #define MAVLINK_MSG_ID_PARAM_REQUEST_READ 20
@@ -174,3 +175,4 @@ static inline void mavlink_msg_param_request_read_decode(const mavlink_message_t
     param_request_read->target_component = mavlink_msg_param_request_read_get_target_component(msg);
     mavlink_msg_param_request_read_get_param_id(msg, param_request_read->param_id);
 }
+#endif

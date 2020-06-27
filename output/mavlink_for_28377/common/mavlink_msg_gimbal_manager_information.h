@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gimbal_manager_information
+#define MAVLINK_MSG_gimbal_manager_information
 // MESSAGE GIMBAL_MANAGER_INFORMATION PACKING
 
 #define MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION 280
@@ -266,3 +267,4 @@ static inline void mavlink_msg_gimbal_manager_information_decode(const mavlink_m
     gimbal_manager_information->pan_rate_max = mavlink_msg_gimbal_manager_information_get_pan_rate_max(msg);
     gimbal_manager_information->gimbal_device_id = mavlink_msg_gimbal_manager_information_get_gimbal_device_id(msg);
 }
+#endif

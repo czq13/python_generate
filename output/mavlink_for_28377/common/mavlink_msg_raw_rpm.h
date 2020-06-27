@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_raw_rpm
+#define MAVLINK_MSG_raw_rpm
 // MESSAGE RAW_RPM PACKING
 
 #define MAVLINK_MSG_ID_RAW_RPM 339
@@ -140,3 +141,4 @@ static inline void mavlink_msg_raw_rpm_decode(const mavlink_message_t* msg, mavl
     raw_rpm->frequency = mavlink_msg_raw_rpm_get_frequency(msg);
     raw_rpm->index = mavlink_msg_raw_rpm_get_index(msg);
 }
+#endif

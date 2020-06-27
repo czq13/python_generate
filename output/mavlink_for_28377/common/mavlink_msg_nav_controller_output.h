@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_nav_controller_output
+#define MAVLINK_MSG_nav_controller_output
 // MESSAGE NAV_CONTROLLER_OUTPUT PACKING
 
 #define MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT 62
@@ -248,3 +249,4 @@ static inline void mavlink_msg_nav_controller_output_decode(const mavlink_messag
     nav_controller_output->target_bearing = mavlink_msg_nav_controller_output_get_target_bearing(msg);
     nav_controller_output->wp_dist = mavlink_msg_nav_controller_output_get_wp_dist(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_camera_trigger
+#define MAVLINK_MSG_camera_trigger
 // MESSAGE CAMERA_TRIGGER PACKING
 
 #define MAVLINK_MSG_ID_CAMERA_TRIGGER 112
@@ -140,3 +141,4 @@ static inline void mavlink_msg_camera_trigger_decode(const mavlink_message_t* ms
     camera_trigger->time_usec = mavlink_msg_camera_trigger_get_time_usec(msg);
     camera_trigger->seq = mavlink_msg_camera_trigger_get_seq(msg);
 }
+#endif

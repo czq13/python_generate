@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_open_drone_id_location
+#define MAVLINK_MSG_open_drone_id_location
 // MESSAGE OPEN_DRONE_ID_LOCATION PACKING
 
 #define MAVLINK_MSG_ID_OPEN_DRONE_ID_LOCATION 12901
@@ -444,3 +445,4 @@ static inline void mavlink_msg_open_drone_id_location_decode(const mavlink_messa
     open_drone_id_location->speed_accuracy = mavlink_msg_open_drone_id_location_get_speed_accuracy(msg);
     open_drone_id_location->timestamp_accuracy = mavlink_msg_open_drone_id_location_get_timestamp_accuracy(msg);
 }
+#endif

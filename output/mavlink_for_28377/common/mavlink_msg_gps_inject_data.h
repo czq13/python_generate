@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_inject_data
+#define MAVLINK_MSG_gps_inject_data
 // MESSAGE GPS_INJECT_DATA PACKING
 
 #define MAVLINK_MSG_ID_GPS_INJECT_DATA 123
@@ -174,3 +175,4 @@ static inline void mavlink_msg_gps_inject_data_decode(const mavlink_message_t* m
     gps_inject_data->len = mavlink_msg_gps_inject_data_get_len(msg);
     mavlink_msg_gps_inject_data_get_data(msg, gps_inject_data->data);
 }
+#endif

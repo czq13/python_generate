@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_wheel_distance
+#define MAVLINK_MSG_wheel_distance
 // MESSAGE WHEEL_DISTANCE PACKING
 
 #define MAVLINK_MSG_ID_WHEEL_DISTANCE 9000
@@ -156,3 +157,4 @@ static inline void mavlink_msg_wheel_distance_decode(const mavlink_message_t* ms
     mavlink_msg_wheel_distance_get_distance(msg, wheel_distance->distance);
     wheel_distance->count = mavlink_msg_wheel_distance_get_count(msg);
 }
+#endif

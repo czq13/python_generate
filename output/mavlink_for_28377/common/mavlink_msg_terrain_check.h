@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_terrain_check
+#define MAVLINK_MSG_terrain_check
 // MESSAGE TERRAIN_CHECK PACKING
 
 #define MAVLINK_MSG_ID_TERRAIN_CHECK 135
@@ -140,3 +141,4 @@ static inline void mavlink_msg_terrain_check_decode(const mavlink_message_t* msg
     terrain_check->lat = mavlink_msg_terrain_check_get_lat(msg);
     terrain_check->lon = mavlink_msg_terrain_check_get_lon(msg);
 }
+#endif

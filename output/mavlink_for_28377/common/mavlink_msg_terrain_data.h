@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_terrain_data
+#define MAVLINK_MSG_terrain_data
 // MESSAGE TERRAIN_DATA PACKING
 
 #define MAVLINK_MSG_ID_TERRAIN_DATA 134
@@ -192,3 +193,4 @@ static inline void mavlink_msg_terrain_data_decode(const mavlink_message_t* msg,
     mavlink_msg_terrain_data_get_data(msg, terrain_data->data);
     terrain_data->gridbit = mavlink_msg_terrain_data_get_gridbit(msg);
 }
+#endif

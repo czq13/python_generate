@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_wind_cov
+#define MAVLINK_MSG_wind_cov
 // MESSAGE WIND_COV PACKING
 
 #define MAVLINK_MSG_ID_WIND_COV 231
@@ -266,3 +267,4 @@ static inline void mavlink_msg_wind_cov_decode(const mavlink_message_t* msg, mav
     wind_cov->horiz_accuracy = mavlink_msg_wind_cov_get_horiz_accuracy(msg);
     wind_cov->vert_accuracy = mavlink_msg_wind_cov_get_vert_accuracy(msg);
 }
+#endif

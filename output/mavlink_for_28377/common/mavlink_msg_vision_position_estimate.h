@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_vision_position_estimate
+#define MAVLINK_MSG_vision_position_estimate
 // MESSAGE VISION_POSITION_ESTIMATE PACKING
 
 #define MAVLINK_MSG_ID_VISION_POSITION_ESTIMATE 102
@@ -264,3 +265,4 @@ static inline void mavlink_msg_vision_position_estimate_decode(const mavlink_mes
     mavlink_msg_vision_position_estimate_get_covariance(msg, vision_position_estimate->covariance);
     vision_position_estimate->reset_counter = mavlink_msg_vision_position_estimate_get_reset_counter(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_hil_controls
+#define MAVLINK_MSG_hil_controls
 // MESSAGE HIL_CONTROLS PACKING
 
 #define MAVLINK_MSG_ID_HIL_CONTROLS 91
@@ -302,3 +303,4 @@ static inline void mavlink_msg_hil_controls_decode(const mavlink_message_t* msg,
     hil_controls->mode = mavlink_msg_hil_controls_get_mode(msg);
     hil_controls->nav_mode = mavlink_msg_hil_controls_get_nav_mode(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_utm_global_position
+#define MAVLINK_MSG_utm_global_position
 // MESSAGE UTM_GLOBAL_POSITION PACKING
 
 #define MAVLINK_MSG_ID_UTM_GLOBAL_POSITION 340
@@ -426,3 +427,4 @@ static inline void mavlink_msg_utm_global_position_decode(const mavlink_message_
     utm_global_position->flight_state = mavlink_msg_utm_global_position_get_flight_state(msg);
     utm_global_position->flags = mavlink_msg_utm_global_position_get_flags(msg);
 }
+#endif

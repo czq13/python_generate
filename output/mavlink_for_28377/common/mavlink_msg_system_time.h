@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_system_time
+#define MAVLINK_MSG_system_time
 // MESSAGE SYSTEM_TIME PACKING
 
 #define MAVLINK_MSG_ID_SYSTEM_TIME 2
@@ -140,3 +141,4 @@ static inline void mavlink_msg_system_time_decode(const mavlink_message_t* msg, 
     system_time->time_unix_usec = mavlink_msg_system_time_get_time_unix_usec(msg);
     system_time->time_boot_ms = mavlink_msg_system_time_get_time_boot_ms(msg);
 }
+#endif

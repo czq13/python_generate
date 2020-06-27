@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_smart_battery_info
+#define MAVLINK_MSG_smart_battery_info
 // MESSAGE SMART_BATTERY_INFO PACKING
 
 #define MAVLINK_MSG_ID_SMART_BATTERY_INFO 370
@@ -282,3 +283,4 @@ static inline void mavlink_msg_smart_battery_info_decode(const mavlink_message_t
     smart_battery_info->id = mavlink_msg_smart_battery_info_get_id(msg);
     mavlink_msg_smart_battery_info_get_device_name(msg, smart_battery_info->device_name);
 }
+#endif

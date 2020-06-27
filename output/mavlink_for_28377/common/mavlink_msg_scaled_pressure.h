@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_scaled_pressure
+#define MAVLINK_MSG_scaled_pressure
 // MESSAGE SCALED_PRESSURE PACKING
 
 #define MAVLINK_MSG_ID_SCALED_PRESSURE 29
@@ -176,3 +177,4 @@ static inline void mavlink_msg_scaled_pressure_decode(const mavlink_message_t* m
     scaled_pressure->press_diff = mavlink_msg_scaled_pressure_get_press_diff(msg);
     scaled_pressure->temperature = mavlink_msg_scaled_pressure_get_temperature(msg);
 }
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_autopilot_state_for_gimbal_device
+#define MAVLINK_MSG_autopilot_state_for_gimbal_device
 // MESSAGE AUTOPILOT_STATE_FOR_GIMBAL_DEVICE PACKING
 
 #define MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE 286
@@ -282,3 +283,4 @@ static inline void mavlink_msg_autopilot_state_for_gimbal_device_decode(const ma
     autopilot_state_for_gimbal_device->target_system = mavlink_msg_autopilot_state_for_gimbal_device_get_target_system(msg);
     autopilot_state_for_gimbal_device->target_component = mavlink_msg_autopilot_state_for_gimbal_device_get_target_component(msg);
 }
+#endif

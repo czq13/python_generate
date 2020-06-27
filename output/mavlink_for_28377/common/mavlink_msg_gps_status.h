@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_gps_status
+#define MAVLINK_MSG_gps_status
 // MESSAGE GPS_STATUS PACKING
 
 #define MAVLINK_MSG_ID_GPS_STATUS 25
@@ -214,3 +215,4 @@ static inline void mavlink_msg_gps_status_decode(const mavlink_message_t* msg, m
     mavlink_msg_gps_status_get_satellite_azimuth(msg, gps_status->satellite_azimuth);
     mavlink_msg_gps_status_get_satellite_snr(msg, gps_status->satellite_snr);
 }
+#endif

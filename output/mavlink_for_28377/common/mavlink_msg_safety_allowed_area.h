@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAVLINK_MSG_safety_allowed_area
+#define MAVLINK_MSG_safety_allowed_area
 // MESSAGE SAFETY_ALLOWED_AREA PACKING
 
 #define MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA 55
@@ -230,3 +231,4 @@ static inline void mavlink_msg_safety_allowed_area_decode(const mavlink_message_
     safety_allowed_area->p2z = mavlink_msg_safety_allowed_area_get_p2z(msg);
     safety_allowed_area->frame = mavlink_msg_safety_allowed_area_get_frame(msg);
 }
+#endif
