@@ -72,11 +72,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "E:/restart/autogenerate/auto_generate/output/mavlink_for_28377"
+					"path" : "K:/czqWorkSpace/auto_generate/output/mavlink_for_28377"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "E:/restart/autogenerate/auto_generate/output/mavlink_for_28377/common"
+					"path" : "K:/czqWorkSpace/auto_generate/output/mavlink_for_28377/common"
 				}
 			],
 			"language" : "C",

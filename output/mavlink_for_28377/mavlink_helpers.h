@@ -231,7 +231,7 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message_buffer(mavlink_message_t* msg, 
 		msg->incompat_flags |= MAVLINK_IFLAG_SIGNED;
 	}
 	msg->compat_flags = 0;
-	msg->seq = status->current_tx_seq;
+	msg->seq = 11;//status->current_tx_seq;
 	status->current_tx_seq = status->current_tx_seq + 1;
 
 	// form the header as a byte array for the crc
@@ -254,8 +254,11 @@ MAVLINK_HELPER uint16_t mavlink_finalize_message_buffer(mavlink_message_t* msg, 
 	}
 	
 	uint16_t checksum = crc_calculate(&buf[1], header_len-1);
+	printf("checksum.1=%d\n",checksum);
 	crc_accumulate_buffer(&checksum, _MAV_PAYLOAD(msg), msg->len);
+	printf("checksum.2=%d\n",checksum);
 	crc_accumulate(crc_extra, &checksum);
+	printf("checksum.3=%d\n",checksum);
 	mavlink_ck_a(msg) = (uint8_t)(checksum & 0xFF);
 	mavlink_ck_b(msg) = (uint8_t)(checksum >> 8);
 

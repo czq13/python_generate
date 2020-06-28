@@ -36,10 +36,11 @@ static inline void crc_accumulate(uint8_t data, uint16_t *crcAccum)
 {
         /*Accumulate one byte of data into the CRC*/
         uint8_t tmp;
-
+        printf("data=%d,crcAccum=%d,",data,*crcAccum);
         tmp = (data ^ (uint8_t)(*crcAccum &0xff))&0x0ff;
         tmp = (tmp ^ (tmp<<4)) & 0x0ff;
         *crcAccum = (*crcAccum>>8) ^ (tmp<<8) ^ (tmp <<3) ^ (tmp>>4);
+        printf("ans=%d\n",*crcAccum);
 }
 #endif
 

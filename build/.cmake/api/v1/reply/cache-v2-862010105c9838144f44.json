@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/restart/autogenerate/auto_generate/build"
+			"value" : "K:/czqWorkSpace/auto_generate/build"
 		},
 		{
 			"name" : "Auto_Generate_For_28377_SOURCE_DIR",
@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/restart/autogenerate/auto_generate"
+			"value" : "K:/czqWorkSpace/auto_generate"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/ar.exe"
+			"value" : "L:/TDM-GCC-64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -63,7 +63,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/restart/autogenerate/auto_generate/build"
+			"value" : "k:/czqWorkSpace/auto_generate/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -99,7 +99,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/cmake/bin/cmake.exe"
+			"value" : "C:/Program Files (x86)/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/cmake/bin/cpack.exe"
+			"value" : "C:/Program Files (x86)/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/cmake/bin/ctest.exe"
+			"value" : "C:/Program Files (x86)/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -167,7 +167,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/g++.exe"
+			"value" : "L:/TDM-GCC-64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -183,7 +183,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/gcc-ar.exe"
+			"value" : "L:/TDM-GCC-64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -199,7 +199,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/gcc-ranlib.exe"
+			"value" : "L:/TDM-GCC-64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -311,7 +311,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/gcc.exe"
+			"value" : "L:/TDM-GCC-64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -327,7 +327,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/gcc-ar.exe"
+			"value" : "L:/TDM-GCC-64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -343,7 +343,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/gcc-ranlib.exe"
+			"value" : "L:/TDM-GCC-64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -451,7 +451,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/cmake/bin/cmake-gui.exe"
+			"value" : "C:/Program Files (x86)/CMake/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -643,7 +643,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/restart/autogenerate/auto_generate"
+			"value" : "K:/czqWorkSpace/auto_generate"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/ld.exe"
+			"value" : "L:/TDM-GCC-64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "F:/matlab/bin/win64/gmake.exe"
+			"value" : "K:/cgwin64/mingw64/bin/make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -783,7 +783,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/nm.exe"
+			"value" : "L:/TDM-GCC-64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -811,7 +811,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/objcopy.exe"
+			"value" : "L:/TDM-GCC-64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -827,7 +827,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/objdump.exe"
+			"value" : "L:/TDM-GCC-64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -951,7 +951,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/ranlib.exe"
+			"value" : "L:/TDM-GCC-64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/windres.exe"
+			"value" : "L:/TDM-GCC-64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/cmake/share/cmake-3.15"
+			"value" : "C:/Program Files (x86)/CMake/share/cmake-3.15"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "G:/cgwin64/mingw64/bin/strip.exe"
+			"value" : "L:/TDM-GCC-64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",

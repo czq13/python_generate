@@ -6,6 +6,16 @@ default_target: all
 
 .PHONY : default_target
 
+# The main recursive all target
+all:
+
+.PHONY : all
+
+# The main recursive preinstall target
+preinstall:
+
+.PHONY : preinstall
+
 #=============================================================================
 # Special targets provided by cmake.
 
@@ -35,37 +45,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = G:/cmake/bin/cmake.EXE
+CMAKE_COMMAND = "C:/Program Files (x86)/CMake/bin/cmake.exe"
 
 # The command to remove a file.
-RM = G:/cmake/bin/cmake.EXE -E remove -f
+RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/restart/autogenerate/auto_generate
+CMAKE_SOURCE_DIR = K:/czqWorkSpace/auto_generate
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/restart/autogenerate/auto_generate/build
+CMAKE_BINARY_DIR = K:/czqWorkSpace/auto_generate/build
 
 #=============================================================================
 # Directory level rules for the build root directory
-
-# The main recursive "all" target.
-all: CMakeFiles/Auto_Generate_For_28377.dir/all
-
-.PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Auto_Generate_For_28377.dir/clean
 
 .PHONY : clean
-
-# The main recursive "preinstall" target.
-preinstall:
-
-.PHONY : preinstall
 
 #=============================================================================
 # Target rules for target CMakeFiles/Auto_Generate_For_28377.dir
@@ -74,14 +74,19 @@ preinstall:
 CMakeFiles/Auto_Generate_For_28377.dir/all:
 	$(MAKE) -f CMakeFiles/Auto_Generate_For_28377.dir/build.make CMakeFiles/Auto_Generate_For_28377.dir/depend
 	$(MAKE) -f CMakeFiles/Auto_Generate_For_28377.dir/build.make CMakeFiles/Auto_Generate_For_28377.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/restart/autogenerate/auto_generate/build/CMakeFiles --progress-num=1,2 "Built target Auto_Generate_For_28377"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:/czqWorkSpace/auto_generate/build/CMakeFiles --progress-num=1,2 "Built target Auto_Generate_For_28377"
 .PHONY : CMakeFiles/Auto_Generate_For_28377.dir/all
+
+# Include target in all.
+all: CMakeFiles/Auto_Generate_For_28377.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Auto_Generate_For_28377.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/restart/autogenerate/auto_generate/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start K:/czqWorkSpace/auto_generate/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Auto_Generate_For_28377.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/restart/autogenerate/auto_generate/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start K:/czqWorkSpace/auto_generate/build/CMakeFiles 0
 .PHONY : CMakeFiles/Auto_Generate_For_28377.dir/rule
 
 # Convenience name for target.

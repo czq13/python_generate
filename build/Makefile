@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = G:/cmake/bin/cmake.EXE
+CMAKE_COMMAND = "C:/Program Files (x86)/CMake/bin/cmake.exe"
 
 # The command to remove a file.
-RM = G:/cmake/bin/cmake.EXE -E remove -f
+RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/restart/autogenerate/auto_generate
+CMAKE_SOURCE_DIR = K:/czqWorkSpace/auto_generate
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/restart/autogenerate/auto_generate/build
+CMAKE_BINARY_DIR = K:/czqWorkSpace/auto_generate/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = E:/restart/autogenerate/auto_generate/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	G:/cmake/bin/cpack.exe --config ./CPackConfig.cmake
+	"C:/Program Files (x86)/CMake/bin/cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -70,7 +70,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	G:/cmake/bin/cpack.exe --config ./CPackSourceConfig.cmake E:/restart/autogenerate/auto_generate/build/CPackSourceConfig.cmake
+	"C:/Program Files (x86)/CMake/bin/cpack.exe" --config ./CPackSourceConfig.cmake K:/czqWorkSpace/auto_generate/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -81,7 +81,7 @@ package_source/fast: package_source
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	G:/cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:/Program Files (x86)/CMake/bin/cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -92,7 +92,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	G:/cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+	"C:/Program Files (x86)/CMake/bin/ctest.exe" --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -103,7 +103,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	G:/cmake/bin/cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:/Program Files (x86)/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,9 +113,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/restart/autogenerate/auto_generate/build/CMakeFiles E:/restart/autogenerate/auto_generate/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start K:/czqWorkSpace/auto_generate/build/CMakeFiles K:/czqWorkSpace/auto_generate/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/restart/autogenerate/auto_generate/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start K:/czqWorkSpace/auto_generate/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

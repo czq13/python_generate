@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Auto_Generate_For_28377::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Auto_Generate_For_28377-Debug-cb6aff76ccc6fa918509.json",
+					"jsonFile" : "target-Auto_Generate_For_28377-Debug-089343bbffc289b9285c.json",
 					"name" : "Auto_Generate_For_28377",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/restart/autogenerate/auto_generate/build",
-		"source" : "E:/restart/autogenerate/auto_generate"
+		"build" : "K:/czqWorkSpace/auto_generate/build",
+		"source" : "K:/czqWorkSpace/auto_generate"
 	},
 	"version" : 
 	{
