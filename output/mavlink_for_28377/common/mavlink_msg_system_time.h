@@ -51,8 +51,8 @@ typedef struct __mavlink_system_time_t {
 static inline uint16_t mavlink_msg_system_time_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_unix_usec, uint32_t time_boot_ms)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_unix_usec);
-    _mav_put_uint32_t(msg->payloads, 8, time_boot_ms);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_unix_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_boot_ms);
 
     msg->msgid = MAVLINK_MSG_ID_SYSTEM_TIME;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SYSTEM_TIME_MIN_LEN, MAVLINK_MSG_ID_SYSTEM_TIME_LEN, MAVLINK_MSG_ID_SYSTEM_TIME_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_system_time_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint64_t time_unix_usec,uint32_t time_boot_ms)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_unix_usec);
-    _mav_put_uint32_t(msg->payloads, 8, time_boot_ms);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_unix_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_boot_ms);
 
 
     msg->msgid = MAVLINK_MSG_ID_SYSTEM_TIME;

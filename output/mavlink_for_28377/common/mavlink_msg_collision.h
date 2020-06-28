@@ -71,13 +71,13 @@ typedef struct __mavlink_collision_t {
 static inline uint16_t mavlink_msg_collision_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t src, uint32_t id, uint8_t action, uint8_t threat_level, float time_to_minimum_delta, float altitude_minimum_delta, float horizontal_minimum_delta)
 {
-    _mav_put_uint32_t(msg->payloads, 0, id);
-    _mav_put_float(msg->payloads, 4, time_to_minimum_delta);
-    _mav_put_float(msg->payloads, 8, altitude_minimum_delta);
-    _mav_put_float(msg->payloads, 12, horizontal_minimum_delta);
-    _mav_put_uint8_t(msg->payloads, 16, src);
-    _mav_put_uint8_t(msg->payloads, 17, action);
-    _mav_put_uint8_t(msg->payloads, 18, threat_level);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, id);
+    _mav_put_float(((char*)msg->payloads), 4, time_to_minimum_delta);
+    _mav_put_float(((char*)msg->payloads), 8, altitude_minimum_delta);
+    _mav_put_float(((char*)msg->payloads), 12, horizontal_minimum_delta);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, src);
+    _mav_put_uint8_t(((char*)msg->payloads), 17, action);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, threat_level);
 
     msg->msgid = MAVLINK_MSG_ID_COLLISION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_COLLISION_MIN_LEN, MAVLINK_MSG_ID_COLLISION_LEN, MAVLINK_MSG_ID_COLLISION_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_collision_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint8_t src,uint32_t id,uint8_t action,uint8_t threat_level,float time_to_minimum_delta,float altitude_minimum_delta,float horizontal_minimum_delta)
 {
-    _mav_put_uint32_t(msg->payloads, 0, id);
-    _mav_put_float(msg->payloads, 4, time_to_minimum_delta);
-    _mav_put_float(msg->payloads, 8, altitude_minimum_delta);
-    _mav_put_float(msg->payloads, 12, horizontal_minimum_delta);
-    _mav_put_uint8_t(msg->payloads, 16, src);
-    _mav_put_uint8_t(msg->payloads, 17, action);
-    _mav_put_uint8_t(msg->payloads, 18, threat_level);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, id);
+    _mav_put_float(((char*)msg->payloads), 4, time_to_minimum_delta);
+    _mav_put_float(((char*)msg->payloads), 8, altitude_minimum_delta);
+    _mav_put_float(((char*)msg->payloads), 12, horizontal_minimum_delta);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, src);
+    _mav_put_uint8_t(((char*)msg->payloads), 17, action);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, threat_level);
 
 
     msg->msgid = MAVLINK_MSG_ID_COLLISION;

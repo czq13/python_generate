@@ -64,11 +64,11 @@ typedef struct __mavlink_open_drone_id_operator_id_t {
 static inline uint16_t mavlink_msg_open_drone_id_operator_id_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const uint8_t *id_or_mac, uint8_t operator_id_type, const char *operator_id)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, target_component);
-    _mav_put_uint8_t(msg->payloads, 22, operator_id_type);
-    _mav_put_uint8_t_array(msg->payloads, 2, id_or_mac, 20);
-    _mav_put_char_array(msg->payloads, 23, operator_id, 20);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, operator_id_type);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 2, id_or_mac, 20);
+    _mav_put_char_array(((char*)msg->payloads), 23, operator_id, 20);
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_CRC);
 }
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_open_drone_id_operator_id_pack_chan(uint8_t s
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const uint8_t *id_or_mac,uint8_t operator_id_type,const char *operator_id)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, target_component);
-    _mav_put_uint8_t(msg->payloads, 22, operator_id_type);
-    _mav_put_uint8_t_array(msg->payloads, 2, id_or_mac, 20);
-    _mav_put_char_array(msg->payloads, 23, operator_id, 20);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, operator_id_type);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 2, id_or_mac, 20);
+    _mav_put_char_array(((char*)msg->payloads), 23, operator_id, 20);
 
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_OPERATOR_ID_CRC);

@@ -55,9 +55,9 @@ typedef struct __mavlink_gimbal_manager_status_t {
 static inline uint16_t mavlink_msg_gimbal_manager_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint32_t flags, uint8_t gimbal_device_id)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, flags);
-    _mav_put_uint8_t(msg->payloads, 8, gimbal_device_id);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, gimbal_device_id);
 
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS_MIN_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_gimbal_manager_status_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint32_t flags,uint8_t gimbal_device_id)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, flags);
-    _mav_put_uint8_t(msg->payloads, 8, gimbal_device_id);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, gimbal_device_id);
 
 
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_STATUS;

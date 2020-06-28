@@ -91,18 +91,18 @@ typedef struct __mavlink_raw_imu_t {
 static inline uint16_t mavlink_msg_raw_imu_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, int16_t xacc, int16_t yacc, int16_t zacc, int16_t xgyro, int16_t ygyro, int16_t zgyro, int16_t xmag, int16_t ymag, int16_t zmag, uint8_t id, int16_t temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int16_t(msg->payloads, 8, xacc);
-    _mav_put_int16_t(msg->payloads, 10, yacc);
-    _mav_put_int16_t(msg->payloads, 12, zacc);
-    _mav_put_int16_t(msg->payloads, 14, xgyro);
-    _mav_put_int16_t(msg->payloads, 16, ygyro);
-    _mav_put_int16_t(msg->payloads, 18, zgyro);
-    _mav_put_int16_t(msg->payloads, 20, xmag);
-    _mav_put_int16_t(msg->payloads, 22, ymag);
-    _mav_put_int16_t(msg->payloads, 24, zmag);
-    _mav_put_uint8_t(msg->payloads, 26, id);
-    _mav_put_int16_t(msg->payloads, 27, temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int16_t(((char*)msg->payloads), 8, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 10, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 12, zacc);
+    _mav_put_int16_t(((char*)msg->payloads), 14, xgyro);
+    _mav_put_int16_t(((char*)msg->payloads), 16, ygyro);
+    _mav_put_int16_t(((char*)msg->payloads), 18, zgyro);
+    _mav_put_int16_t(((char*)msg->payloads), 20, xmag);
+    _mav_put_int16_t(((char*)msg->payloads), 22, ymag);
+    _mav_put_int16_t(((char*)msg->payloads), 24, zmag);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, id);
+    _mav_put_int16_t(((char*)msg->payloads), 27, temperature);
 
     msg->msgid = MAVLINK_MSG_ID_RAW_IMU;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RAW_IMU_MIN_LEN, MAVLINK_MSG_ID_RAW_IMU_LEN, MAVLINK_MSG_ID_RAW_IMU_CRC);
@@ -132,18 +132,18 @@ static inline uint16_t mavlink_msg_raw_imu_pack_chan(uint8_t system_id, uint8_t 
                                mavlink_message_t* msg,
                                    uint64_t time_usec,int16_t xacc,int16_t yacc,int16_t zacc,int16_t xgyro,int16_t ygyro,int16_t zgyro,int16_t xmag,int16_t ymag,int16_t zmag,uint8_t id,int16_t temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int16_t(msg->payloads, 8, xacc);
-    _mav_put_int16_t(msg->payloads, 10, yacc);
-    _mav_put_int16_t(msg->payloads, 12, zacc);
-    _mav_put_int16_t(msg->payloads, 14, xgyro);
-    _mav_put_int16_t(msg->payloads, 16, ygyro);
-    _mav_put_int16_t(msg->payloads, 18, zgyro);
-    _mav_put_int16_t(msg->payloads, 20, xmag);
-    _mav_put_int16_t(msg->payloads, 22, ymag);
-    _mav_put_int16_t(msg->payloads, 24, zmag);
-    _mav_put_uint8_t(msg->payloads, 26, id);
-    _mav_put_int16_t(msg->payloads, 27, temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int16_t(((char*)msg->payloads), 8, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 10, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 12, zacc);
+    _mav_put_int16_t(((char*)msg->payloads), 14, xgyro);
+    _mav_put_int16_t(((char*)msg->payloads), 16, ygyro);
+    _mav_put_int16_t(((char*)msg->payloads), 18, zgyro);
+    _mav_put_int16_t(((char*)msg->payloads), 20, xmag);
+    _mav_put_int16_t(((char*)msg->payloads), 22, ymag);
+    _mav_put_int16_t(((char*)msg->payloads), 24, zmag);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, id);
+    _mav_put_int16_t(((char*)msg->payloads), 27, temperature);
 
 
     msg->msgid = MAVLINK_MSG_ID_RAW_IMU;

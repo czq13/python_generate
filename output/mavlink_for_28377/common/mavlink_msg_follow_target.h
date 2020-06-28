@@ -91,17 +91,17 @@ typedef struct __mavlink_follow_target_t {
 static inline uint16_t mavlink_msg_follow_target_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t timestamp, uint8_t est_capabilities, int32_t lat, int32_t lon, float alt, const float *vel, const float *acc, const float *attitude_q, const float *rates, const float *position_cov, uint64_t custom_state)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint64_t(msg->payloads, 8, custom_state);
-    _mav_put_int32_t(msg->payloads, 16, lat);
-    _mav_put_int32_t(msg->payloads, 20, lon);
-    _mav_put_float(msg->payloads, 24, alt);
-    _mav_put_uint8_t(msg->payloads, 92, est_capabilities);
-    _mav_put_float_array(msg->payloads, 28, vel, 3);
-    _mav_put_float_array(msg->payloads, 40, acc, 3);
-    _mav_put_float_array(msg->payloads, 52, attitude_q, 4);
-    _mav_put_float_array(msg->payloads, 68, rates, 3);
-    _mav_put_float_array(msg->payloads, 80, position_cov, 3);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, custom_state);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 20, lon);
+    _mav_put_float(((char*)msg->payloads), 24, alt);
+    _mav_put_uint8_t(((char*)msg->payloads), 92, est_capabilities);
+    _mav_put_float_array(((char*)msg->payloads), 28, vel, 3);
+    _mav_put_float_array(((char*)msg->payloads), 40, acc, 3);
+    _mav_put_float_array(((char*)msg->payloads), 52, attitude_q, 4);
+    _mav_put_float_array(((char*)msg->payloads), 68, rates, 3);
+    _mav_put_float_array(((char*)msg->payloads), 80, position_cov, 3);
     msg->msgid = MAVLINK_MSG_ID_FOLLOW_TARGET;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_FOLLOW_TARGET_MIN_LEN, MAVLINK_MSG_ID_FOLLOW_TARGET_LEN, MAVLINK_MSG_ID_FOLLOW_TARGET_CRC);
 }
@@ -129,17 +129,17 @@ static inline uint16_t mavlink_msg_follow_target_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    uint64_t timestamp,uint8_t est_capabilities,int32_t lat,int32_t lon,float alt,const float *vel,const float *acc,const float *attitude_q,const float *rates,const float *position_cov,uint64_t custom_state)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint64_t(msg->payloads, 8, custom_state);
-    _mav_put_int32_t(msg->payloads, 16, lat);
-    _mav_put_int32_t(msg->payloads, 20, lon);
-    _mav_put_float(msg->payloads, 24, alt);
-    _mav_put_uint8_t(msg->payloads, 92, est_capabilities);
-    _mav_put_float_array(msg->payloads, 28, vel, 3);
-    _mav_put_float_array(msg->payloads, 40, acc, 3);
-    _mav_put_float_array(msg->payloads, 52, attitude_q, 4);
-    _mav_put_float_array(msg->payloads, 68, rates, 3);
-    _mav_put_float_array(msg->payloads, 80, position_cov, 3);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, custom_state);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 20, lon);
+    _mav_put_float(((char*)msg->payloads), 24, alt);
+    _mav_put_uint8_t(((char*)msg->payloads), 92, est_capabilities);
+    _mav_put_float_array(((char*)msg->payloads), 28, vel, 3);
+    _mav_put_float_array(((char*)msg->payloads), 40, acc, 3);
+    _mav_put_float_array(((char*)msg->payloads), 52, attitude_q, 4);
+    _mav_put_float_array(((char*)msg->payloads), 68, rates, 3);
+    _mav_put_float_array(((char*)msg->payloads), 80, position_cov, 3);
 
     msg->msgid = MAVLINK_MSG_ID_FOLLOW_TARGET;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_FOLLOW_TARGET_MIN_LEN, MAVLINK_MSG_ID_FOLLOW_TARGET_LEN, MAVLINK_MSG_ID_FOLLOW_TARGET_CRC);

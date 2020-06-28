@@ -67,12 +67,12 @@ typedef struct __mavlink_serial_control_t {
 static inline uint16_t mavlink_msg_serial_control_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t device, uint8_t flags, uint16_t timeout, uint32_t baudrate, uint8_t count, const uint8_t *data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, baudrate);
-    _mav_put_uint16_t(msg->payloads, 4, timeout);
-    _mav_put_uint8_t(msg->payloads, 6, device);
-    _mav_put_uint8_t(msg->payloads, 7, flags);
-    _mav_put_uint8_t(msg->payloads, 8, count);
-    _mav_put_uint8_t_array(msg->payloads, 9, data, 70);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, baudrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, timeout);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, device);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, count);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 9, data, 70);
     msg->msgid = MAVLINK_MSG_ID_SERIAL_CONTROL;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SERIAL_CONTROL_MIN_LEN, MAVLINK_MSG_ID_SERIAL_CONTROL_LEN, MAVLINK_MSG_ID_SERIAL_CONTROL_CRC);
 }
@@ -95,12 +95,12 @@ static inline uint16_t mavlink_msg_serial_control_pack_chan(uint8_t system_id, u
                                mavlink_message_t* msg,
                                    uint8_t device,uint8_t flags,uint16_t timeout,uint32_t baudrate,uint8_t count,const uint8_t *data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, baudrate);
-    _mav_put_uint16_t(msg->payloads, 4, timeout);
-    _mav_put_uint8_t(msg->payloads, 6, device);
-    _mav_put_uint8_t(msg->payloads, 7, flags);
-    _mav_put_uint8_t(msg->payloads, 8, count);
-    _mav_put_uint8_t_array(msg->payloads, 9, data, 70);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, baudrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, timeout);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, device);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, count);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 9, data, 70);
 
     msg->msgid = MAVLINK_MSG_ID_SERIAL_CONTROL;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_SERIAL_CONTROL_MIN_LEN, MAVLINK_MSG_ID_SERIAL_CONTROL_LEN, MAVLINK_MSG_ID_SERIAL_CONTROL_CRC);

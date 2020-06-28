@@ -55,9 +55,9 @@ typedef struct __mavlink_set_mode_t {
 static inline uint16_t mavlink_msg_set_mode_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t base_mode, uint32_t custom_mode)
 {
-    _mav_put_uint32_t(msg->payloads, 0, custom_mode);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, base_mode);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, custom_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, base_mode);
 
     msg->msgid = MAVLINK_MSG_ID_SET_MODE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SET_MODE_MIN_LEN, MAVLINK_MSG_ID_SET_MODE_LEN, MAVLINK_MSG_ID_SET_MODE_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_set_mode_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t base_mode,uint32_t custom_mode)
 {
-    _mav_put_uint32_t(msg->payloads, 0, custom_mode);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, base_mode);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, custom_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, base_mode);
 
 
     msg->msgid = MAVLINK_MSG_ID_SET_MODE;

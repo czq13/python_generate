@@ -51,8 +51,8 @@ typedef struct __mavlink_camera_trigger_t {
 static inline uint16_t mavlink_msg_camera_trigger_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint32_t seq)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, seq);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, seq);
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_TRIGGER;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CAMERA_TRIGGER_MIN_LEN, MAVLINK_MSG_ID_CAMERA_TRIGGER_LEN, MAVLINK_MSG_ID_CAMERA_TRIGGER_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_camera_trigger_pack_chan(uint8_t system_id, u
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint32_t seq)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, seq);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, seq);
 
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_TRIGGER;

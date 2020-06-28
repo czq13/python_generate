@@ -51,8 +51,8 @@ typedef struct __mavlink_extended_sys_state_t {
 static inline uint16_t mavlink_msg_extended_sys_state_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t vtol_state, uint8_t landed_state)
 {
-    _mav_put_uint8_t(msg->payloads, 0, vtol_state);
-    _mav_put_uint8_t(msg->payloads, 1, landed_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, vtol_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, landed_state);
 
     msg->msgid = MAVLINK_MSG_ID_EXTENDED_SYS_STATE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_EXTENDED_SYS_STATE_MIN_LEN, MAVLINK_MSG_ID_EXTENDED_SYS_STATE_LEN, MAVLINK_MSG_ID_EXTENDED_SYS_STATE_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_extended_sys_state_pack_chan(uint8_t system_i
                                mavlink_message_t* msg,
                                    uint8_t vtol_state,uint8_t landed_state)
 {
-    _mav_put_uint8_t(msg->payloads, 0, vtol_state);
-    _mav_put_uint8_t(msg->payloads, 1, landed_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, vtol_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, landed_state);
 
 
     msg->msgid = MAVLINK_MSG_ID_EXTENDED_SYS_STATE;

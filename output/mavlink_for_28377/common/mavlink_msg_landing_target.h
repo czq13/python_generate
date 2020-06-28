@@ -99,20 +99,20 @@ typedef struct __mavlink_landing_target_t {
 static inline uint16_t mavlink_msg_landing_target_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t target_num, uint8_t frame, float angle_x, float angle_y, float distance, float size_x, float size_y, float x, float y, float z, const float *q, uint8_t type, uint8_t position_valid)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, angle_x);
-    _mav_put_float(msg->payloads, 12, angle_y);
-    _mav_put_float(msg->payloads, 16, distance);
-    _mav_put_float(msg->payloads, 20, size_x);
-    _mav_put_float(msg->payloads, 24, size_y);
-    _mav_put_uint8_t(msg->payloads, 28, target_num);
-    _mav_put_uint8_t(msg->payloads, 29, frame);
-    _mav_put_float(msg->payloads, 30, x);
-    _mav_put_float(msg->payloads, 34, y);
-    _mav_put_float(msg->payloads, 38, z);
-    _mav_put_uint8_t(msg->payloads, 58, type);
-    _mav_put_uint8_t(msg->payloads, 59, position_valid);
-    _mav_put_float_array(msg->payloads, 42, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, angle_x);
+    _mav_put_float(((char*)msg->payloads), 12, angle_y);
+    _mav_put_float(((char*)msg->payloads), 16, distance);
+    _mav_put_float(((char*)msg->payloads), 20, size_x);
+    _mav_put_float(((char*)msg->payloads), 24, size_y);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, target_num);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, frame);
+    _mav_put_float(((char*)msg->payloads), 30, x);
+    _mav_put_float(((char*)msg->payloads), 34, y);
+    _mav_put_float(((char*)msg->payloads), 38, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 58, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 59, position_valid);
+    _mav_put_float_array(((char*)msg->payloads), 42, q, 4);
     msg->msgid = MAVLINK_MSG_ID_LANDING_TARGET;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LANDING_TARGET_MIN_LEN, MAVLINK_MSG_ID_LANDING_TARGET_LEN, MAVLINK_MSG_ID_LANDING_TARGET_CRC);
 }
@@ -143,20 +143,20 @@ static inline uint16_t mavlink_msg_landing_target_pack_chan(uint8_t system_id, u
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t target_num,uint8_t frame,float angle_x,float angle_y,float distance,float size_x,float size_y,float x,float y,float z,const float *q,uint8_t type,uint8_t position_valid)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, angle_x);
-    _mav_put_float(msg->payloads, 12, angle_y);
-    _mav_put_float(msg->payloads, 16, distance);
-    _mav_put_float(msg->payloads, 20, size_x);
-    _mav_put_float(msg->payloads, 24, size_y);
-    _mav_put_uint8_t(msg->payloads, 28, target_num);
-    _mav_put_uint8_t(msg->payloads, 29, frame);
-    _mav_put_float(msg->payloads, 30, x);
-    _mav_put_float(msg->payloads, 34, y);
-    _mav_put_float(msg->payloads, 38, z);
-    _mav_put_uint8_t(msg->payloads, 58, type);
-    _mav_put_uint8_t(msg->payloads, 59, position_valid);
-    _mav_put_float_array(msg->payloads, 42, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, angle_x);
+    _mav_put_float(((char*)msg->payloads), 12, angle_y);
+    _mav_put_float(((char*)msg->payloads), 16, distance);
+    _mav_put_float(((char*)msg->payloads), 20, size_x);
+    _mav_put_float(((char*)msg->payloads), 24, size_y);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, target_num);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, frame);
+    _mav_put_float(((char*)msg->payloads), 30, x);
+    _mav_put_float(((char*)msg->payloads), 34, y);
+    _mav_put_float(((char*)msg->payloads), 38, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 58, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 59, position_valid);
+    _mav_put_float_array(((char*)msg->payloads), 42, q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_LANDING_TARGET;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_LANDING_TARGET_MIN_LEN, MAVLINK_MSG_ID_LANDING_TARGET_LEN, MAVLINK_MSG_ID_LANDING_TARGET_CRC);

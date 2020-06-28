@@ -60,10 +60,10 @@ typedef struct __mavlink_wifi_config_ap_t {
 static inline uint16_t mavlink_msg_wifi_config_ap_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                const char *ssid, const char *password, int8_t mode, int8_t response)
 {
-    _mav_put_int8_t(msg->payloads, 96, mode);
-    _mav_put_int8_t(msg->payloads, 97, response);
-    _mav_put_char_array(msg->payloads, 0, ssid, 32);
-    _mav_put_char_array(msg->payloads, 32, password, 64);
+    _mav_put_int8_t(((char*)msg->payloads), 96, mode);
+    _mav_put_int8_t(((char*)msg->payloads), 97, response);
+    _mav_put_char_array(((char*)msg->payloads), 0, ssid, 32);
+    _mav_put_char_array(((char*)msg->payloads), 32, password, 64);
     msg->msgid = MAVLINK_MSG_ID_WIFI_CONFIG_AP;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_WIFI_CONFIG_AP_MIN_LEN, MAVLINK_MSG_ID_WIFI_CONFIG_AP_LEN, MAVLINK_MSG_ID_WIFI_CONFIG_AP_CRC);
 }
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_wifi_config_ap_pack_chan(uint8_t system_id, u
                                mavlink_message_t* msg,
                                    const char *ssid,const char *password,int8_t mode,int8_t response)
 {
-    _mav_put_int8_t(msg->payloads, 96, mode);
-    _mav_put_int8_t(msg->payloads, 97, response);
-    _mav_put_char_array(msg->payloads, 0, ssid, 32);
-    _mav_put_char_array(msg->payloads, 32, password, 64);
+    _mav_put_int8_t(((char*)msg->payloads), 96, mode);
+    _mav_put_int8_t(((char*)msg->payloads), 97, response);
+    _mav_put_char_array(((char*)msg->payloads), 0, ssid, 32);
+    _mav_put_char_array(((char*)msg->payloads), 32, password, 64);
 
     msg->msgid = MAVLINK_MSG_ID_WIFI_CONFIG_AP;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_WIFI_CONFIG_AP_MIN_LEN, MAVLINK_MSG_ID_WIFI_CONFIG_AP_LEN, MAVLINK_MSG_ID_WIFI_CONFIG_AP_CRC);

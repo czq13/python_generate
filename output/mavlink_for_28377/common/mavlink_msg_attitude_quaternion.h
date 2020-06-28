@@ -79,15 +79,15 @@ typedef struct __mavlink_attitude_quaternion_t {
 static inline uint16_t mavlink_msg_attitude_quaternion_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float q1, float q2, float q3, float q4, float rollspeed, float pitchspeed, float yawspeed, const float *repr_offset_q)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, q1);
-    _mav_put_float(msg->payloads, 8, q2);
-    _mav_put_float(msg->payloads, 12, q3);
-    _mav_put_float(msg->payloads, 16, q4);
-    _mav_put_float(msg->payloads, 20, rollspeed);
-    _mav_put_float(msg->payloads, 24, pitchspeed);
-    _mav_put_float(msg->payloads, 28, yawspeed);
-    _mav_put_float_array(msg->payloads, 32, repr_offset_q, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, q1);
+    _mav_put_float(((char*)msg->payloads), 8, q2);
+    _mav_put_float(((char*)msg->payloads), 12, q3);
+    _mav_put_float(((char*)msg->payloads), 16, q4);
+    _mav_put_float(((char*)msg->payloads), 20, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 24, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 28, yawspeed);
+    _mav_put_float_array(((char*)msg->payloads), 32, repr_offset_q, 4);
     msg->msgid = MAVLINK_MSG_ID_ATTITUDE_QUATERNION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_MIN_LEN, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_LEN, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_CRC);
 }
@@ -113,15 +113,15 @@ static inline uint16_t mavlink_msg_attitude_quaternion_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float q1,float q2,float q3,float q4,float rollspeed,float pitchspeed,float yawspeed,const float *repr_offset_q)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, q1);
-    _mav_put_float(msg->payloads, 8, q2);
-    _mav_put_float(msg->payloads, 12, q3);
-    _mav_put_float(msg->payloads, 16, q4);
-    _mav_put_float(msg->payloads, 20, rollspeed);
-    _mav_put_float(msg->payloads, 24, pitchspeed);
-    _mav_put_float(msg->payloads, 28, yawspeed);
-    _mav_put_float_array(msg->payloads, 32, repr_offset_q, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, q1);
+    _mav_put_float(((char*)msg->payloads), 8, q2);
+    _mav_put_float(((char*)msg->payloads), 12, q3);
+    _mav_put_float(((char*)msg->payloads), 16, q4);
+    _mav_put_float(((char*)msg->payloads), 20, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 24, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 28, yawspeed);
+    _mav_put_float_array(((char*)msg->payloads), 32, repr_offset_q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_ATTITUDE_QUATERNION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_MIN_LEN, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_LEN, MAVLINK_MSG_ID_ATTITUDE_QUATERNION_CRC);

@@ -99,20 +99,20 @@ typedef struct __mavlink_position_target_local_ned_t {
 static inline uint16_t mavlink_msg_position_target_local_ned_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint8_t coordinate_frame, uint16_t type_mask, float x, float y, float z, float vx, float vy, float vz, float afx, float afy, float afz, float yaw, float yaw_rate)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, x);
-    _mav_put_float(msg->payloads, 8, y);
-    _mav_put_float(msg->payloads, 12, z);
-    _mav_put_float(msg->payloads, 16, vx);
-    _mav_put_float(msg->payloads, 20, vy);
-    _mav_put_float(msg->payloads, 24, vz);
-    _mav_put_float(msg->payloads, 28, afx);
-    _mav_put_float(msg->payloads, 32, afy);
-    _mav_put_float(msg->payloads, 36, afz);
-    _mav_put_float(msg->payloads, 40, yaw);
-    _mav_put_float(msg->payloads, 44, yaw_rate);
-    _mav_put_uint16_t(msg->payloads, 48, type_mask);
-    _mav_put_uint8_t(msg->payloads, 50, coordinate_frame);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, x);
+    _mav_put_float(((char*)msg->payloads), 8, y);
+    _mav_put_float(((char*)msg->payloads), 12, z);
+    _mav_put_float(((char*)msg->payloads), 16, vx);
+    _mav_put_float(((char*)msg->payloads), 20, vy);
+    _mav_put_float(((char*)msg->payloads), 24, vz);
+    _mav_put_float(((char*)msg->payloads), 28, afx);
+    _mav_put_float(((char*)msg->payloads), 32, afy);
+    _mav_put_float(((char*)msg->payloads), 36, afz);
+    _mav_put_float(((char*)msg->payloads), 40, yaw);
+    _mav_put_float(((char*)msg->payloads), 44, yaw_rate);
+    _mav_put_uint16_t(((char*)msg->payloads), 48, type_mask);
+    _mav_put_uint8_t(((char*)msg->payloads), 50, coordinate_frame);
 
     msg->msgid = MAVLINK_MSG_ID_POSITION_TARGET_LOCAL_NED;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_POSITION_TARGET_LOCAL_NED_MIN_LEN, MAVLINK_MSG_ID_POSITION_TARGET_LOCAL_NED_LEN, MAVLINK_MSG_ID_POSITION_TARGET_LOCAL_NED_CRC);
@@ -144,20 +144,20 @@ static inline uint16_t mavlink_msg_position_target_local_ned_pack_chan(uint8_t s
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint8_t coordinate_frame,uint16_t type_mask,float x,float y,float z,float vx,float vy,float vz,float afx,float afy,float afz,float yaw,float yaw_rate)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, x);
-    _mav_put_float(msg->payloads, 8, y);
-    _mav_put_float(msg->payloads, 12, z);
-    _mav_put_float(msg->payloads, 16, vx);
-    _mav_put_float(msg->payloads, 20, vy);
-    _mav_put_float(msg->payloads, 24, vz);
-    _mav_put_float(msg->payloads, 28, afx);
-    _mav_put_float(msg->payloads, 32, afy);
-    _mav_put_float(msg->payloads, 36, afz);
-    _mav_put_float(msg->payloads, 40, yaw);
-    _mav_put_float(msg->payloads, 44, yaw_rate);
-    _mav_put_uint16_t(msg->payloads, 48, type_mask);
-    _mav_put_uint8_t(msg->payloads, 50, coordinate_frame);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, x);
+    _mav_put_float(((char*)msg->payloads), 8, y);
+    _mav_put_float(((char*)msg->payloads), 12, z);
+    _mav_put_float(((char*)msg->payloads), 16, vx);
+    _mav_put_float(((char*)msg->payloads), 20, vy);
+    _mav_put_float(((char*)msg->payloads), 24, vz);
+    _mav_put_float(((char*)msg->payloads), 28, afx);
+    _mav_put_float(((char*)msg->payloads), 32, afy);
+    _mav_put_float(((char*)msg->payloads), 36, afz);
+    _mav_put_float(((char*)msg->payloads), 40, yaw);
+    _mav_put_float(((char*)msg->payloads), 44, yaw_rate);
+    _mav_put_uint16_t(((char*)msg->payloads), 48, type_mask);
+    _mav_put_uint8_t(((char*)msg->payloads), 50, coordinate_frame);
 
 
     msg->msgid = MAVLINK_MSG_ID_POSITION_TARGET_LOCAL_NED;

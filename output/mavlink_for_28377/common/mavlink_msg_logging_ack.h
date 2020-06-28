@@ -55,9 +55,9 @@ typedef struct __mavlink_logging_ack_t {
 static inline uint16_t mavlink_msg_logging_ack_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t sequence)
 {
-    _mav_put_uint16_t(msg->payloads, 0, sequence);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, sequence);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
 
     msg->msgid = MAVLINK_MSG_ID_LOGGING_ACK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LOGGING_ACK_MIN_LEN, MAVLINK_MSG_ID_LOGGING_ACK_LEN, MAVLINK_MSG_ID_LOGGING_ACK_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_logging_ack_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t sequence)
 {
-    _mav_put_uint16_t(msg->payloads, 0, sequence);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, sequence);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
 
 
     msg->msgid = MAVLINK_MSG_ID_LOGGING_ACK;

@@ -95,19 +95,19 @@ typedef struct __mavlink_gps2_raw_t {
 static inline uint16_t mavlink_msg_gps2_raw_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t fix_type, int32_t lat, int32_t lon, int32_t alt, uint16_t eph, uint16_t epv, uint16_t vel, uint16_t cog, uint8_t satellites_visible, uint8_t dgps_numch, uint32_t dgps_age, uint16_t yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_int32_t(msg->payloads, 16, alt);
-    _mav_put_uint32_t(msg->payloads, 20, dgps_age);
-    _mav_put_uint16_t(msg->payloads, 24, eph);
-    _mav_put_uint16_t(msg->payloads, 26, epv);
-    _mav_put_uint16_t(msg->payloads, 28, vel);
-    _mav_put_uint16_t(msg->payloads, 30, cog);
-    _mav_put_uint8_t(msg->payloads, 32, fix_type);
-    _mav_put_uint8_t(msg->payloads, 33, satellites_visible);
-    _mav_put_uint8_t(msg->payloads, 34, dgps_numch);
-    _mav_put_uint16_t(msg->payloads, 35, yaw);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 16, alt);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, dgps_age);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, eph);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, epv);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, vel);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, cog);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, fix_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, satellites_visible);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, dgps_numch);
+    _mav_put_uint16_t(((char*)msg->payloads), 35, yaw);
 
     msg->msgid = MAVLINK_MSG_ID_GPS2_RAW;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GPS2_RAW_MIN_LEN, MAVLINK_MSG_ID_GPS2_RAW_LEN, MAVLINK_MSG_ID_GPS2_RAW_CRC);
@@ -138,19 +138,19 @@ static inline uint16_t mavlink_msg_gps2_raw_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t fix_type,int32_t lat,int32_t lon,int32_t alt,uint16_t eph,uint16_t epv,uint16_t vel,uint16_t cog,uint8_t satellites_visible,uint8_t dgps_numch,uint32_t dgps_age,uint16_t yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_int32_t(msg->payloads, 16, alt);
-    _mav_put_uint32_t(msg->payloads, 20, dgps_age);
-    _mav_put_uint16_t(msg->payloads, 24, eph);
-    _mav_put_uint16_t(msg->payloads, 26, epv);
-    _mav_put_uint16_t(msg->payloads, 28, vel);
-    _mav_put_uint16_t(msg->payloads, 30, cog);
-    _mav_put_uint8_t(msg->payloads, 32, fix_type);
-    _mav_put_uint8_t(msg->payloads, 33, satellites_visible);
-    _mav_put_uint8_t(msg->payloads, 34, dgps_numch);
-    _mav_put_uint16_t(msg->payloads, 35, yaw);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 16, alt);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, dgps_age);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, eph);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, epv);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, vel);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, cog);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, fix_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, satellites_visible);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, dgps_numch);
+    _mav_put_uint16_t(((char*)msg->payloads), 35, yaw);
 
 
     msg->msgid = MAVLINK_MSG_ID_GPS2_RAW;

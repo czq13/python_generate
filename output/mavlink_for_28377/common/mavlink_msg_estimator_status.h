@@ -83,16 +83,16 @@ typedef struct __mavlink_estimator_status_t {
 static inline uint16_t mavlink_msg_estimator_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint16_t flags, float vel_ratio, float pos_horiz_ratio, float pos_vert_ratio, float mag_ratio, float hagl_ratio, float tas_ratio, float pos_horiz_accuracy, float pos_vert_accuracy)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, vel_ratio);
-    _mav_put_float(msg->payloads, 12, pos_horiz_ratio);
-    _mav_put_float(msg->payloads, 16, pos_vert_ratio);
-    _mav_put_float(msg->payloads, 20, mag_ratio);
-    _mav_put_float(msg->payloads, 24, hagl_ratio);
-    _mav_put_float(msg->payloads, 28, tas_ratio);
-    _mav_put_float(msg->payloads, 32, pos_horiz_accuracy);
-    _mav_put_float(msg->payloads, 36, pos_vert_accuracy);
-    _mav_put_uint16_t(msg->payloads, 40, flags);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, vel_ratio);
+    _mav_put_float(((char*)msg->payloads), 12, pos_horiz_ratio);
+    _mav_put_float(((char*)msg->payloads), 16, pos_vert_ratio);
+    _mav_put_float(((char*)msg->payloads), 20, mag_ratio);
+    _mav_put_float(((char*)msg->payloads), 24, hagl_ratio);
+    _mav_put_float(((char*)msg->payloads), 28, tas_ratio);
+    _mav_put_float(((char*)msg->payloads), 32, pos_horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 36, pos_vert_accuracy);
+    _mav_put_uint16_t(((char*)msg->payloads), 40, flags);
 
     msg->msgid = MAVLINK_MSG_ID_ESTIMATOR_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ESTIMATOR_STATUS_MIN_LEN, MAVLINK_MSG_ID_ESTIMATOR_STATUS_LEN, MAVLINK_MSG_ID_ESTIMATOR_STATUS_CRC);
@@ -120,16 +120,16 @@ static inline uint16_t mavlink_msg_estimator_status_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint16_t flags,float vel_ratio,float pos_horiz_ratio,float pos_vert_ratio,float mag_ratio,float hagl_ratio,float tas_ratio,float pos_horiz_accuracy,float pos_vert_accuracy)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, vel_ratio);
-    _mav_put_float(msg->payloads, 12, pos_horiz_ratio);
-    _mav_put_float(msg->payloads, 16, pos_vert_ratio);
-    _mav_put_float(msg->payloads, 20, mag_ratio);
-    _mav_put_float(msg->payloads, 24, hagl_ratio);
-    _mav_put_float(msg->payloads, 28, tas_ratio);
-    _mav_put_float(msg->payloads, 32, pos_horiz_accuracy);
-    _mav_put_float(msg->payloads, 36, pos_vert_accuracy);
-    _mav_put_uint16_t(msg->payloads, 40, flags);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, vel_ratio);
+    _mav_put_float(((char*)msg->payloads), 12, pos_horiz_ratio);
+    _mav_put_float(((char*)msg->payloads), 16, pos_vert_ratio);
+    _mav_put_float(((char*)msg->payloads), 20, mag_ratio);
+    _mav_put_float(((char*)msg->payloads), 24, hagl_ratio);
+    _mav_put_float(((char*)msg->payloads), 28, tas_ratio);
+    _mav_put_float(((char*)msg->payloads), 32, pos_horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 36, pos_vert_accuracy);
+    _mav_put_uint16_t(((char*)msg->payloads), 40, flags);
 
 
     msg->msgid = MAVLINK_MSG_ID_ESTIMATOR_STATUS;

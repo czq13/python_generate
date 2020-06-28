@@ -83,16 +83,16 @@ typedef struct __mavlink_autopilot_state_for_gimbal_device_t {
 static inline uint16_t mavlink_msg_autopilot_state_for_gimbal_device_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_boot_us, uint8_t target_system, uint8_t target_component, const float *q, uint32_t q_estimated_delay_us, float vx, float vy, float vz, uint32_t v_estimated_delay_us, float feed_forward_angular_velocity_z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_boot_us);
-    _mav_put_uint32_t(msg->payloads, 24, q_estimated_delay_us);
-    _mav_put_float(msg->payloads, 28, vx);
-    _mav_put_float(msg->payloads, 32, vy);
-    _mav_put_float(msg->payloads, 36, vz);
-    _mav_put_uint32_t(msg->payloads, 40, v_estimated_delay_us);
-    _mav_put_float(msg->payloads, 44, feed_forward_angular_velocity_z);
-    _mav_put_uint8_t(msg->payloads, 48, target_system);
-    _mav_put_uint8_t(msg->payloads, 49, target_component);
-    _mav_put_float_array(msg->payloads, 8, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_boot_us);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, q_estimated_delay_us);
+    _mav_put_float(((char*)msg->payloads), 28, vx);
+    _mav_put_float(((char*)msg->payloads), 32, vy);
+    _mav_put_float(((char*)msg->payloads), 36, vz);
+    _mav_put_uint32_t(((char*)msg->payloads), 40, v_estimated_delay_us);
+    _mav_put_float(((char*)msg->payloads), 44, feed_forward_angular_velocity_z);
+    _mav_put_uint8_t(((char*)msg->payloads), 48, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 49, target_component);
+    _mav_put_float_array(((char*)msg->payloads), 8, q, 4);
     msg->msgid = MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_MIN_LEN, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_LEN, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_CRC);
 }
@@ -119,16 +119,16 @@ static inline uint16_t mavlink_msg_autopilot_state_for_gimbal_device_pack_chan(u
                                mavlink_message_t* msg,
                                    uint64_t time_boot_us,uint8_t target_system,uint8_t target_component,const float *q,uint32_t q_estimated_delay_us,float vx,float vy,float vz,uint32_t v_estimated_delay_us,float feed_forward_angular_velocity_z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_boot_us);
-    _mav_put_uint32_t(msg->payloads, 24, q_estimated_delay_us);
-    _mav_put_float(msg->payloads, 28, vx);
-    _mav_put_float(msg->payloads, 32, vy);
-    _mav_put_float(msg->payloads, 36, vz);
-    _mav_put_uint32_t(msg->payloads, 40, v_estimated_delay_us);
-    _mav_put_float(msg->payloads, 44, feed_forward_angular_velocity_z);
-    _mav_put_uint8_t(msg->payloads, 48, target_system);
-    _mav_put_uint8_t(msg->payloads, 49, target_component);
-    _mav_put_float_array(msg->payloads, 8, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_boot_us);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, q_estimated_delay_us);
+    _mav_put_float(((char*)msg->payloads), 28, vx);
+    _mav_put_float(((char*)msg->payloads), 32, vy);
+    _mav_put_float(((char*)msg->payloads), 36, vz);
+    _mav_put_uint32_t(((char*)msg->payloads), 40, v_estimated_delay_us);
+    _mav_put_float(((char*)msg->payloads), 44, feed_forward_angular_velocity_z);
+    _mav_put_uint8_t(((char*)msg->payloads), 48, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 49, target_component);
+    _mav_put_float_array(((char*)msg->payloads), 8, q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_MIN_LEN, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_LEN, MAVLINK_MSG_ID_AUTOPILOT_STATE_FOR_GIMBAL_DEVICE_CRC);

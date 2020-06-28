@@ -87,17 +87,17 @@ typedef struct __mavlink_home_position_t {
 static inline uint16_t mavlink_msg_home_position_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t latitude, int32_t longitude, int32_t altitude, float x, float y, float z, const float *q, float approach_x, float approach_y, float approach_z, uint64_t time_usec)
 {
-    _mav_put_int32_t(msg->payloads, 0, latitude);
-    _mav_put_int32_t(msg->payloads, 4, longitude);
-    _mav_put_int32_t(msg->payloads, 8, altitude);
-    _mav_put_float(msg->payloads, 12, x);
-    _mav_put_float(msg->payloads, 16, y);
-    _mav_put_float(msg->payloads, 20, z);
-    _mav_put_float(msg->payloads, 40, approach_x);
-    _mav_put_float(msg->payloads, 44, approach_y);
-    _mav_put_float(msg->payloads, 48, approach_z);
-    _mav_put_uint64_t(msg->payloads, 52, time_usec);
-    _mav_put_float_array(msg->payloads, 24, q, 4);
+    _mav_put_int32_t(((char*)msg->payloads), 0, latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, longitude);
+    _mav_put_int32_t(((char*)msg->payloads), 8, altitude);
+    _mav_put_float(((char*)msg->payloads), 12, x);
+    _mav_put_float(((char*)msg->payloads), 16, y);
+    _mav_put_float(((char*)msg->payloads), 20, z);
+    _mav_put_float(((char*)msg->payloads), 40, approach_x);
+    _mav_put_float(((char*)msg->payloads), 44, approach_y);
+    _mav_put_float(((char*)msg->payloads), 48, approach_z);
+    _mav_put_uint64_t(((char*)msg->payloads), 52, time_usec);
+    _mav_put_float_array(((char*)msg->payloads), 24, q, 4);
     msg->msgid = MAVLINK_MSG_ID_HOME_POSITION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HOME_POSITION_MIN_LEN, MAVLINK_MSG_ID_HOME_POSITION_LEN, MAVLINK_MSG_ID_HOME_POSITION_CRC);
 }
@@ -125,17 +125,17 @@ static inline uint16_t mavlink_msg_home_position_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    int32_t latitude,int32_t longitude,int32_t altitude,float x,float y,float z,const float *q,float approach_x,float approach_y,float approach_z,uint64_t time_usec)
 {
-    _mav_put_int32_t(msg->payloads, 0, latitude);
-    _mav_put_int32_t(msg->payloads, 4, longitude);
-    _mav_put_int32_t(msg->payloads, 8, altitude);
-    _mav_put_float(msg->payloads, 12, x);
-    _mav_put_float(msg->payloads, 16, y);
-    _mav_put_float(msg->payloads, 20, z);
-    _mav_put_float(msg->payloads, 40, approach_x);
-    _mav_put_float(msg->payloads, 44, approach_y);
-    _mav_put_float(msg->payloads, 48, approach_z);
-    _mav_put_uint64_t(msg->payloads, 52, time_usec);
-    _mav_put_float_array(msg->payloads, 24, q, 4);
+    _mav_put_int32_t(((char*)msg->payloads), 0, latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, longitude);
+    _mav_put_int32_t(((char*)msg->payloads), 8, altitude);
+    _mav_put_float(((char*)msg->payloads), 12, x);
+    _mav_put_float(((char*)msg->payloads), 16, y);
+    _mav_put_float(((char*)msg->payloads), 20, z);
+    _mav_put_float(((char*)msg->payloads), 40, approach_x);
+    _mav_put_float(((char*)msg->payloads), 44, approach_y);
+    _mav_put_float(((char*)msg->payloads), 48, approach_z);
+    _mav_put_uint64_t(((char*)msg->payloads), 52, time_usec);
+    _mav_put_float_array(((char*)msg->payloads), 24, q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_HOME_POSITION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_HOME_POSITION_MIN_LEN, MAVLINK_MSG_ID_HOME_POSITION_LEN, MAVLINK_MSG_ID_HOME_POSITION_CRC);

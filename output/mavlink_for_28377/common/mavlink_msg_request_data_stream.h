@@ -63,11 +63,11 @@ typedef struct __mavlink_request_data_stream_t {
 static inline uint16_t mavlink_msg_request_data_stream_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint8_t req_stream_id, uint16_t req_message_rate, uint8_t start_stop)
 {
-    _mav_put_uint16_t(msg->payloads, 0, req_message_rate);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, req_stream_id);
-    _mav_put_uint8_t(msg->payloads, 5, start_stop);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, req_message_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, req_stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, start_stop);
 
     msg->msgid = MAVLINK_MSG_ID_REQUEST_DATA_STREAM;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_REQUEST_DATA_STREAM_MIN_LEN, MAVLINK_MSG_ID_REQUEST_DATA_STREAM_LEN, MAVLINK_MSG_ID_REQUEST_DATA_STREAM_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_request_data_stream_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint8_t req_stream_id,uint16_t req_message_rate,uint8_t start_stop)
 {
-    _mav_put_uint16_t(msg->payloads, 0, req_message_rate);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, req_stream_id);
-    _mav_put_uint8_t(msg->payloads, 5, start_stop);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, req_message_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, req_stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, start_stop);
 
 
     msg->msgid = MAVLINK_MSG_ID_REQUEST_DATA_STREAM;

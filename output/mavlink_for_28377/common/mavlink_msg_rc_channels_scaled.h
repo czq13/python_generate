@@ -87,17 +87,17 @@ typedef struct __mavlink_rc_channels_scaled_t {
 static inline uint16_t mavlink_msg_rc_channels_scaled_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint8_t port, int16_t chan1_scaled, int16_t chan2_scaled, int16_t chan3_scaled, int16_t chan4_scaled, int16_t chan5_scaled, int16_t chan6_scaled, int16_t chan7_scaled, int16_t chan8_scaled, uint8_t rssi)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_int16_t(msg->payloads, 4, chan1_scaled);
-    _mav_put_int16_t(msg->payloads, 6, chan2_scaled);
-    _mav_put_int16_t(msg->payloads, 8, chan3_scaled);
-    _mav_put_int16_t(msg->payloads, 10, chan4_scaled);
-    _mav_put_int16_t(msg->payloads, 12, chan5_scaled);
-    _mav_put_int16_t(msg->payloads, 14, chan6_scaled);
-    _mav_put_int16_t(msg->payloads, 16, chan7_scaled);
-    _mav_put_int16_t(msg->payloads, 18, chan8_scaled);
-    _mav_put_uint8_t(msg->payloads, 20, port);
-    _mav_put_uint8_t(msg->payloads, 21, rssi);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_int16_t(((char*)msg->payloads), 4, chan1_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 6, chan2_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 8, chan3_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 10, chan4_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 12, chan5_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 14, chan6_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 16, chan7_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 18, chan8_scaled);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, port);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, rssi);
 
     msg->msgid = MAVLINK_MSG_ID_RC_CHANNELS_SCALED;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RC_CHANNELS_SCALED_MIN_LEN, MAVLINK_MSG_ID_RC_CHANNELS_SCALED_LEN, MAVLINK_MSG_ID_RC_CHANNELS_SCALED_CRC);
@@ -126,17 +126,17 @@ static inline uint16_t mavlink_msg_rc_channels_scaled_pack_chan(uint8_t system_i
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint8_t port,int16_t chan1_scaled,int16_t chan2_scaled,int16_t chan3_scaled,int16_t chan4_scaled,int16_t chan5_scaled,int16_t chan6_scaled,int16_t chan7_scaled,int16_t chan8_scaled,uint8_t rssi)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_int16_t(msg->payloads, 4, chan1_scaled);
-    _mav_put_int16_t(msg->payloads, 6, chan2_scaled);
-    _mav_put_int16_t(msg->payloads, 8, chan3_scaled);
-    _mav_put_int16_t(msg->payloads, 10, chan4_scaled);
-    _mav_put_int16_t(msg->payloads, 12, chan5_scaled);
-    _mav_put_int16_t(msg->payloads, 14, chan6_scaled);
-    _mav_put_int16_t(msg->payloads, 16, chan7_scaled);
-    _mav_put_int16_t(msg->payloads, 18, chan8_scaled);
-    _mav_put_uint8_t(msg->payloads, 20, port);
-    _mav_put_uint8_t(msg->payloads, 21, rssi);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_int16_t(((char*)msg->payloads), 4, chan1_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 6, chan2_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 8, chan3_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 10, chan4_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 12, chan5_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 14, chan6_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 16, chan7_scaled);
+    _mav_put_int16_t(((char*)msg->payloads), 18, chan8_scaled);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, port);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, rssi);
 
 
     msg->msgid = MAVLINK_MSG_ID_RC_CHANNELS_SCALED;

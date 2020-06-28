@@ -59,10 +59,10 @@ typedef struct __mavlink_change_operator_control_t {
 static inline uint16_t mavlink_msg_change_operator_control_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t control_request, uint8_t version, const char *passkey)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, control_request);
-    _mav_put_uint8_t(msg->payloads, 2, version);
-    _mav_put_char_array(msg->payloads, 3, passkey, 25);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, control_request);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, version);
+    _mav_put_char_array(((char*)msg->payloads), 3, passkey, 25);
     msg->msgid = MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_MIN_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_change_operator_control_pack_chan(uint8_t sys
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t control_request,uint8_t version,const char *passkey)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, control_request);
-    _mav_put_uint8_t(msg->payloads, 2, version);
-    _mav_put_char_array(msg->payloads, 3, passkey, 25);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, control_request);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, version);
+    _mav_put_char_array(((char*)msg->payloads), 3, passkey, 25);
 
     msg->msgid = MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_MIN_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_CRC);

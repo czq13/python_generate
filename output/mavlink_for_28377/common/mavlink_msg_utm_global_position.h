@@ -115,24 +115,24 @@ typedef struct __mavlink_utm_global_position_t {
 static inline uint16_t mavlink_msg_utm_global_position_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time, const uint8_t *uas_id, int32_t lat, int32_t lon, int32_t alt, int32_t relative_alt, int16_t vx, int16_t vy, int16_t vz, uint16_t h_acc, uint16_t v_acc, uint16_t vel_acc, int32_t next_lat, int32_t next_lon, int32_t next_alt, uint16_t update_rate, uint8_t flight_state, uint8_t flags)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_int32_t(msg->payloads, 16, alt);
-    _mav_put_int32_t(msg->payloads, 20, relative_alt);
-    _mav_put_int32_t(msg->payloads, 24, next_lat);
-    _mav_put_int32_t(msg->payloads, 28, next_lon);
-    _mav_put_int32_t(msg->payloads, 32, next_alt);
-    _mav_put_int16_t(msg->payloads, 36, vx);
-    _mav_put_int16_t(msg->payloads, 38, vy);
-    _mav_put_int16_t(msg->payloads, 40, vz);
-    _mav_put_uint16_t(msg->payloads, 42, h_acc);
-    _mav_put_uint16_t(msg->payloads, 44, v_acc);
-    _mav_put_uint16_t(msg->payloads, 46, vel_acc);
-    _mav_put_uint16_t(msg->payloads, 48, update_rate);
-    _mav_put_uint8_t(msg->payloads, 68, flight_state);
-    _mav_put_uint8_t(msg->payloads, 69, flags);
-    _mav_put_uint8_t_array(msg->payloads, 50, uas_id, 18);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 16, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 20, relative_alt);
+    _mav_put_int32_t(((char*)msg->payloads), 24, next_lat);
+    _mav_put_int32_t(((char*)msg->payloads), 28, next_lon);
+    _mav_put_int32_t(((char*)msg->payloads), 32, next_alt);
+    _mav_put_int16_t(((char*)msg->payloads), 36, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 38, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 40, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 42, h_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 44, v_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 46, vel_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 48, update_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 68, flight_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 69, flags);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 50, uas_id, 18);
     msg->msgid = MAVLINK_MSG_ID_UTM_GLOBAL_POSITION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_MIN_LEN, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_LEN, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_CRC);
 }
@@ -167,24 +167,24 @@ static inline uint16_t mavlink_msg_utm_global_position_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint64_t time,const uint8_t *uas_id,int32_t lat,int32_t lon,int32_t alt,int32_t relative_alt,int16_t vx,int16_t vy,int16_t vz,uint16_t h_acc,uint16_t v_acc,uint16_t vel_acc,int32_t next_lat,int32_t next_lon,int32_t next_alt,uint16_t update_rate,uint8_t flight_state,uint8_t flags)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_int32_t(msg->payloads, 16, alt);
-    _mav_put_int32_t(msg->payloads, 20, relative_alt);
-    _mav_put_int32_t(msg->payloads, 24, next_lat);
-    _mav_put_int32_t(msg->payloads, 28, next_lon);
-    _mav_put_int32_t(msg->payloads, 32, next_alt);
-    _mav_put_int16_t(msg->payloads, 36, vx);
-    _mav_put_int16_t(msg->payloads, 38, vy);
-    _mav_put_int16_t(msg->payloads, 40, vz);
-    _mav_put_uint16_t(msg->payloads, 42, h_acc);
-    _mav_put_uint16_t(msg->payloads, 44, v_acc);
-    _mav_put_uint16_t(msg->payloads, 46, vel_acc);
-    _mav_put_uint16_t(msg->payloads, 48, update_rate);
-    _mav_put_uint8_t(msg->payloads, 68, flight_state);
-    _mav_put_uint8_t(msg->payloads, 69, flags);
-    _mav_put_uint8_t_array(msg->payloads, 50, uas_id, 18);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 16, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 20, relative_alt);
+    _mav_put_int32_t(((char*)msg->payloads), 24, next_lat);
+    _mav_put_int32_t(((char*)msg->payloads), 28, next_lon);
+    _mav_put_int32_t(((char*)msg->payloads), 32, next_alt);
+    _mav_put_int16_t(((char*)msg->payloads), 36, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 38, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 40, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 42, h_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 44, v_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 46, vel_acc);
+    _mav_put_uint16_t(((char*)msg->payloads), 48, update_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 68, flight_state);
+    _mav_put_uint8_t(((char*)msg->payloads), 69, flags);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 50, uas_id, 18);
 
     msg->msgid = MAVLINK_MSG_ID_UTM_GLOBAL_POSITION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_MIN_LEN, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_LEN, MAVLINK_MSG_ID_UTM_GLOBAL_POSITION_CRC);

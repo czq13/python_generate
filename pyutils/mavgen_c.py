@@ -221,9 +221,9 @@ ${{arg_fields: * @param ${name} ${units} ${description}
 static inline uint16_t mavlink_msg_${name_lower}_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                               ${{arg_fields: ${array_const}${type} ${array_prefix}${name},}})
 {
-${{scalar_fields:    _mav_put_${type}(msg->payloads, ${wire_offset}, ${putname});
+${{scalar_fields:    _mav_put_${type}(((char*)msg->payloads), ${wire_offset}, ${putname});
 }}
-${{array_fields:    _mav_put_${type}_array(msg->payloads, ${wire_offset}, ${name}, ${array_length});
+${{array_fields:    _mav_put_${type}_array(((char*)msg->payloads), ${wire_offset}, ${name}, ${array_length});
 }}
     msg->msgid = MAVLINK_MSG_ID_${name};
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_${name}_MIN_LEN, MAVLINK_MSG_ID_${name}_LEN, MAVLINK_MSG_ID_${name}_CRC);
@@ -243,9 +243,9 @@ static inline uint16_t mavlink_msg_${name_lower}_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    ${{arg_fields:${array_const}${type} ${array_prefix}${name},}})
 {
-${{scalar_fields:    _mav_put_${type}(msg->payloads, ${wire_offset}, ${putname});
+${{scalar_fields:    _mav_put_${type}(((char*)msg->payloads), ${wire_offset}, ${putname});
 }}
-${{array_fields:    _mav_put_${type}_array(msg->payloads, ${wire_offset}, ${name}, ${array_length});
+${{array_fields:    _mav_put_${type}_array(((char*)msg->payloads), ${wire_offset}, ${name}, ${array_length});
 }}
 
     msg->msgid = MAVLINK_MSG_ID_${name};
@@ -343,14 +343,14 @@ ${{include_list:#include "../${base}/testsuite.h"
 }}
 void mav_assert(char * p1,char * p2,int len,const char * name) {
     if (memcmp(p1,p2,len)!=0) {
-        printf("%s",name);
+        MAPPrintf("%s",name);
         for (int i = 0;i < len;i++) printf("%x ",p1[i]);
-        printf("");
+        MAPPrintf("");
         for (int i = 0;i < len;i++) printf("%x ",p2[i]);
-        printf("");
+        MAPPrintf("");
     }
     else {
-        printf("%s is ok!",name);
+        MAPPrintf("%s is ok!",name);
     }
 }
 
@@ -364,8 +364,6 @@ static void mavlink_test_${name_lower}(uint8_t system_id, uint8_t component_id, 
         }
 #endif
     mavlink_message_t msg;
-        uint8_t buffer[MAVLINK_MAX_PACKET_LEN];
-        uint16_t i;
     mavlink_${name_lower}_t packet_in = {
         ${{ordered_fields:${c_test_value},}}
     };

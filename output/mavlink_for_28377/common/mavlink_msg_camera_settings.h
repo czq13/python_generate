@@ -59,10 +59,10 @@ typedef struct __mavlink_camera_settings_t {
 static inline uint16_t mavlink_msg_camera_settings_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint8_t mode_id, float zoomLevel, float focusLevel)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint8_t(msg->payloads, 4, mode_id);
-    _mav_put_float(msg->payloads, 5, zoomLevel);
-    _mav_put_float(msg->payloads, 9, focusLevel);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, mode_id);
+    _mav_put_float(((char*)msg->payloads), 5, zoomLevel);
+    _mav_put_float(((char*)msg->payloads), 9, focusLevel);
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_SETTINGS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CAMERA_SETTINGS_MIN_LEN, MAVLINK_MSG_ID_CAMERA_SETTINGS_LEN, MAVLINK_MSG_ID_CAMERA_SETTINGS_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_camera_settings_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint8_t mode_id,float zoomLevel,float focusLevel)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint8_t(msg->payloads, 4, mode_id);
-    _mav_put_float(msg->payloads, 5, zoomLevel);
-    _mav_put_float(msg->payloads, 9, focusLevel);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, mode_id);
+    _mav_put_float(((char*)msg->payloads), 5, zoomLevel);
+    _mav_put_float(((char*)msg->payloads), 9, focusLevel);
 
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_SETTINGS;

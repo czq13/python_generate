@@ -79,15 +79,15 @@ typedef struct __mavlink_param_map_rc_t {
 static inline uint16_t mavlink_msg_param_map_rc_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const char *param_id, int16_t param_index, uint8_t parameter_rc_channel_index, float param_value0, float scale, float param_value_min, float param_value_max)
 {
-    _mav_put_float(msg->payloads, 0, param_value0);
-    _mav_put_float(msg->payloads, 4, scale);
-    _mav_put_float(msg->payloads, 8, param_value_min);
-    _mav_put_float(msg->payloads, 12, param_value_max);
-    _mav_put_int16_t(msg->payloads, 16, param_index);
-    _mav_put_uint8_t(msg->payloads, 18, target_system);
-    _mav_put_uint8_t(msg->payloads, 19, target_component);
-    _mav_put_uint8_t(msg->payloads, 36, parameter_rc_channel_index);
-    _mav_put_char_array(msg->payloads, 20, param_id, 16);
+    _mav_put_float(((char*)msg->payloads), 0, param_value0);
+    _mav_put_float(((char*)msg->payloads), 4, scale);
+    _mav_put_float(((char*)msg->payloads), 8, param_value_min);
+    _mav_put_float(((char*)msg->payloads), 12, param_value_max);
+    _mav_put_int16_t(((char*)msg->payloads), 16, param_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 19, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, parameter_rc_channel_index);
+    _mav_put_char_array(((char*)msg->payloads), 20, param_id, 16);
     msg->msgid = MAVLINK_MSG_ID_PARAM_MAP_RC;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PARAM_MAP_RC_MIN_LEN, MAVLINK_MSG_ID_PARAM_MAP_RC_LEN, MAVLINK_MSG_ID_PARAM_MAP_RC_CRC);
 }
@@ -113,15 +113,15 @@ static inline uint16_t mavlink_msg_param_map_rc_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const char *param_id,int16_t param_index,uint8_t parameter_rc_channel_index,float param_value0,float scale,float param_value_min,float param_value_max)
 {
-    _mav_put_float(msg->payloads, 0, param_value0);
-    _mav_put_float(msg->payloads, 4, scale);
-    _mav_put_float(msg->payloads, 8, param_value_min);
-    _mav_put_float(msg->payloads, 12, param_value_max);
-    _mav_put_int16_t(msg->payloads, 16, param_index);
-    _mav_put_uint8_t(msg->payloads, 18, target_system);
-    _mav_put_uint8_t(msg->payloads, 19, target_component);
-    _mav_put_uint8_t(msg->payloads, 36, parameter_rc_channel_index);
-    _mav_put_char_array(msg->payloads, 20, param_id, 16);
+    _mav_put_float(((char*)msg->payloads), 0, param_value0);
+    _mav_put_float(((char*)msg->payloads), 4, scale);
+    _mav_put_float(((char*)msg->payloads), 8, param_value_min);
+    _mav_put_float(((char*)msg->payloads), 12, param_value_max);
+    _mav_put_int16_t(((char*)msg->payloads), 16, param_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 19, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, parameter_rc_channel_index);
+    _mav_put_char_array(((char*)msg->payloads), 20, param_id, 16);
 
     msg->msgid = MAVLINK_MSG_ID_PARAM_MAP_RC;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PARAM_MAP_RC_MIN_LEN, MAVLINK_MSG_ID_PARAM_MAP_RC_LEN, MAVLINK_MSG_ID_PARAM_MAP_RC_CRC);

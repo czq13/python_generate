@@ -79,15 +79,15 @@ typedef struct __mavlink_gimbal_manager_information_t {
 static inline uint16_t mavlink_msg_gimbal_manager_information_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint32_t cap_flags, uint8_t gimbal_device_id, float tilt_max, float tilt_min, float tilt_rate_max, float pan_max, float pan_min, float pan_rate_max)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, cap_flags);
-    _mav_put_float(msg->payloads, 8, tilt_max);
-    _mav_put_float(msg->payloads, 12, tilt_min);
-    _mav_put_float(msg->payloads, 16, tilt_rate_max);
-    _mav_put_float(msg->payloads, 20, pan_max);
-    _mav_put_float(msg->payloads, 24, pan_min);
-    _mav_put_float(msg->payloads, 28, pan_rate_max);
-    _mav_put_uint8_t(msg->payloads, 32, gimbal_device_id);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, cap_flags);
+    _mav_put_float(((char*)msg->payloads), 8, tilt_max);
+    _mav_put_float(((char*)msg->payloads), 12, tilt_min);
+    _mav_put_float(((char*)msg->payloads), 16, tilt_rate_max);
+    _mav_put_float(((char*)msg->payloads), 20, pan_max);
+    _mav_put_float(((char*)msg->payloads), 24, pan_min);
+    _mav_put_float(((char*)msg->payloads), 28, pan_rate_max);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, gimbal_device_id);
 
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION_CRC);
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_gimbal_manager_information_pack_chan(uint8_t 
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint32_t cap_flags,uint8_t gimbal_device_id,float tilt_max,float tilt_min,float tilt_rate_max,float pan_max,float pan_min,float pan_rate_max)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, cap_flags);
-    _mav_put_float(msg->payloads, 8, tilt_max);
-    _mav_put_float(msg->payloads, 12, tilt_min);
-    _mav_put_float(msg->payloads, 16, tilt_rate_max);
-    _mav_put_float(msg->payloads, 20, pan_max);
-    _mav_put_float(msg->payloads, 24, pan_min);
-    _mav_put_float(msg->payloads, 28, pan_rate_max);
-    _mav_put_uint8_t(msg->payloads, 32, gimbal_device_id);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, cap_flags);
+    _mav_put_float(((char*)msg->payloads), 8, tilt_max);
+    _mav_put_float(((char*)msg->payloads), 12, tilt_min);
+    _mav_put_float(((char*)msg->payloads), 16, tilt_rate_max);
+    _mav_put_float(((char*)msg->payloads), 20, pan_max);
+    _mav_put_float(((char*)msg->payloads), 24, pan_min);
+    _mav_put_float(((char*)msg->payloads), 28, pan_rate_max);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, gimbal_device_id);
 
 
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_INFORMATION;

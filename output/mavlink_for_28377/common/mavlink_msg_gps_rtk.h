@@ -95,19 +95,19 @@ typedef struct __mavlink_gps_rtk_t {
 static inline uint16_t mavlink_msg_gps_rtk_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_last_baseline_ms, uint8_t rtk_receiver_id, uint16_t wn, uint32_t tow, uint8_t rtk_health, uint8_t rtk_rate, uint8_t nsats, uint8_t baseline_coords_type, int32_t baseline_a_mm, int32_t baseline_b_mm, int32_t baseline_c_mm, uint32_t accuracy, int32_t iar_num_hypotheses)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_last_baseline_ms);
-    _mav_put_uint32_t(msg->payloads, 4, tow);
-    _mav_put_int32_t(msg->payloads, 8, baseline_a_mm);
-    _mav_put_int32_t(msg->payloads, 12, baseline_b_mm);
-    _mav_put_int32_t(msg->payloads, 16, baseline_c_mm);
-    _mav_put_uint32_t(msg->payloads, 20, accuracy);
-    _mav_put_int32_t(msg->payloads, 24, iar_num_hypotheses);
-    _mav_put_uint16_t(msg->payloads, 28, wn);
-    _mav_put_uint8_t(msg->payloads, 30, rtk_receiver_id);
-    _mav_put_uint8_t(msg->payloads, 31, rtk_health);
-    _mav_put_uint8_t(msg->payloads, 32, rtk_rate);
-    _mav_put_uint8_t(msg->payloads, 33, nsats);
-    _mav_put_uint8_t(msg->payloads, 34, baseline_coords_type);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_last_baseline_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, tow);
+    _mav_put_int32_t(((char*)msg->payloads), 8, baseline_a_mm);
+    _mav_put_int32_t(((char*)msg->payloads), 12, baseline_b_mm);
+    _mav_put_int32_t(((char*)msg->payloads), 16, baseline_c_mm);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, accuracy);
+    _mav_put_int32_t(((char*)msg->payloads), 24, iar_num_hypotheses);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, wn);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, rtk_receiver_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 31, rtk_health);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, rtk_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, nsats);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, baseline_coords_type);
 
     msg->msgid = MAVLINK_MSG_ID_GPS_RTK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GPS_RTK_MIN_LEN, MAVLINK_MSG_ID_GPS_RTK_LEN, MAVLINK_MSG_ID_GPS_RTK_CRC);
@@ -138,19 +138,19 @@ static inline uint16_t mavlink_msg_gps_rtk_pack_chan(uint8_t system_id, uint8_t 
                                mavlink_message_t* msg,
                                    uint32_t time_last_baseline_ms,uint8_t rtk_receiver_id,uint16_t wn,uint32_t tow,uint8_t rtk_health,uint8_t rtk_rate,uint8_t nsats,uint8_t baseline_coords_type,int32_t baseline_a_mm,int32_t baseline_b_mm,int32_t baseline_c_mm,uint32_t accuracy,int32_t iar_num_hypotheses)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_last_baseline_ms);
-    _mav_put_uint32_t(msg->payloads, 4, tow);
-    _mav_put_int32_t(msg->payloads, 8, baseline_a_mm);
-    _mav_put_int32_t(msg->payloads, 12, baseline_b_mm);
-    _mav_put_int32_t(msg->payloads, 16, baseline_c_mm);
-    _mav_put_uint32_t(msg->payloads, 20, accuracy);
-    _mav_put_int32_t(msg->payloads, 24, iar_num_hypotheses);
-    _mav_put_uint16_t(msg->payloads, 28, wn);
-    _mav_put_uint8_t(msg->payloads, 30, rtk_receiver_id);
-    _mav_put_uint8_t(msg->payloads, 31, rtk_health);
-    _mav_put_uint8_t(msg->payloads, 32, rtk_rate);
-    _mav_put_uint8_t(msg->payloads, 33, nsats);
-    _mav_put_uint8_t(msg->payloads, 34, baseline_coords_type);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_last_baseline_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, tow);
+    _mav_put_int32_t(((char*)msg->payloads), 8, baseline_a_mm);
+    _mav_put_int32_t(((char*)msg->payloads), 12, baseline_b_mm);
+    _mav_put_int32_t(((char*)msg->payloads), 16, baseline_c_mm);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, accuracy);
+    _mav_put_int32_t(((char*)msg->payloads), 24, iar_num_hypotheses);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, wn);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, rtk_receiver_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 31, rtk_health);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, rtk_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, nsats);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, baseline_coords_type);
 
 
     msg->msgid = MAVLINK_MSG_ID_GPS_RTK;

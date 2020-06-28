@@ -67,12 +67,12 @@ typedef struct __mavlink_command_ack_t {
 static inline uint16_t mavlink_msg_command_ack_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t command, uint8_t result, uint8_t progress, int32_t result_param2, uint8_t target_system, uint8_t target_component)
 {
-    _mav_put_uint16_t(msg->payloads, 0, command);
-    _mav_put_uint8_t(msg->payloads, 2, result);
-    _mav_put_uint8_t(msg->payloads, 3, progress);
-    _mav_put_int32_t(msg->payloads, 4, result_param2);
-    _mav_put_uint8_t(msg->payloads, 8, target_system);
-    _mav_put_uint8_t(msg->payloads, 9, target_component);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, result);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, progress);
+    _mav_put_int32_t(((char*)msg->payloads), 4, result_param2);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 9, target_component);
 
     msg->msgid = MAVLINK_MSG_ID_COMMAND_ACK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_COMMAND_ACK_MIN_LEN, MAVLINK_MSG_ID_COMMAND_ACK_LEN, MAVLINK_MSG_ID_COMMAND_ACK_CRC);
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_command_ack_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint16_t command,uint8_t result,uint8_t progress,int32_t result_param2,uint8_t target_system,uint8_t target_component)
 {
-    _mav_put_uint16_t(msg->payloads, 0, command);
-    _mav_put_uint8_t(msg->payloads, 2, result);
-    _mav_put_uint8_t(msg->payloads, 3, progress);
-    _mav_put_int32_t(msg->payloads, 4, result_param2);
-    _mav_put_uint8_t(msg->payloads, 8, target_system);
-    _mav_put_uint8_t(msg->payloads, 9, target_component);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, result);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, progress);
+    _mav_put_int32_t(((char*)msg->payloads), 4, result_param2);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 9, target_component);
 
 
     msg->msgid = MAVLINK_MSG_ID_COMMAND_ACK;

@@ -71,13 +71,13 @@ typedef struct __mavlink_attitude_t {
 static inline uint16_t mavlink_msg_attitude_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float roll, float pitch, float yaw, float rollspeed, float pitchspeed, float yawspeed)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, rollspeed);
-    _mav_put_float(msg->payloads, 20, pitchspeed);
-    _mav_put_float(msg->payloads, 24, yawspeed);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 20, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 24, yawspeed);
 
     msg->msgid = MAVLINK_MSG_ID_ATTITUDE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ATTITUDE_MIN_LEN, MAVLINK_MSG_ID_ATTITUDE_LEN, MAVLINK_MSG_ID_ATTITUDE_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_attitude_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float roll,float pitch,float yaw,float rollspeed,float pitchspeed,float yawspeed)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, rollspeed);
-    _mav_put_float(msg->payloads, 20, pitchspeed);
-    _mav_put_float(msg->payloads, 24, yawspeed);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 20, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 24, yawspeed);
 
 
     msg->msgid = MAVLINK_MSG_ID_ATTITUDE;

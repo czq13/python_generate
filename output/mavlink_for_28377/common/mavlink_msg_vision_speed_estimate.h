@@ -67,12 +67,12 @@ typedef struct __mavlink_vision_speed_estimate_t {
 static inline uint16_t mavlink_msg_vision_speed_estimate_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t usec, float x, float y, float z, const float *covariance, uint8_t reset_counter)
 {
-    _mav_put_uint64_t(msg->payloads, 0, usec);
-    _mav_put_float(msg->payloads, 8, x);
-    _mav_put_float(msg->payloads, 12, y);
-    _mav_put_float(msg->payloads, 16, z);
-    _mav_put_uint8_t(msg->payloads, 56, reset_counter);
-    _mav_put_float_array(msg->payloads, 20, covariance, 9);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, usec);
+    _mav_put_float(((char*)msg->payloads), 8, x);
+    _mav_put_float(((char*)msg->payloads), 12, y);
+    _mav_put_float(((char*)msg->payloads), 16, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 56, reset_counter);
+    _mav_put_float_array(((char*)msg->payloads), 20, covariance, 9);
     msg->msgid = MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_MIN_LEN, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_LEN, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_CRC);
 }
@@ -95,12 +95,12 @@ static inline uint16_t mavlink_msg_vision_speed_estimate_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint64_t usec,float x,float y,float z,const float *covariance,uint8_t reset_counter)
 {
-    _mav_put_uint64_t(msg->payloads, 0, usec);
-    _mav_put_float(msg->payloads, 8, x);
-    _mav_put_float(msg->payloads, 12, y);
-    _mav_put_float(msg->payloads, 16, z);
-    _mav_put_uint8_t(msg->payloads, 56, reset_counter);
-    _mav_put_float_array(msg->payloads, 20, covariance, 9);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, usec);
+    _mav_put_float(((char*)msg->payloads), 8, x);
+    _mav_put_float(((char*)msg->payloads), 12, y);
+    _mav_put_float(((char*)msg->payloads), 16, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 56, reset_counter);
+    _mav_put_float_array(((char*)msg->payloads), 20, covariance, 9);
 
     msg->msgid = MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_MIN_LEN, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_LEN, MAVLINK_MSG_ID_VISION_SPEED_ESTIMATE_CRC);

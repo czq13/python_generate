@@ -87,17 +87,17 @@ typedef struct __mavlink_command_long_t {
 static inline uint16_t mavlink_msg_command_long_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t command, uint8_t confirmation, float param1, float param2, float param3, float param4, float param5, float param6, float param7)
 {
-    _mav_put_float(msg->payloads, 0, param1);
-    _mav_put_float(msg->payloads, 4, param2);
-    _mav_put_float(msg->payloads, 8, param3);
-    _mav_put_float(msg->payloads, 12, param4);
-    _mav_put_float(msg->payloads, 16, param5);
-    _mav_put_float(msg->payloads, 20, param6);
-    _mav_put_float(msg->payloads, 24, param7);
-    _mav_put_uint16_t(msg->payloads, 28, command);
-    _mav_put_uint8_t(msg->payloads, 30, target_system);
-    _mav_put_uint8_t(msg->payloads, 31, target_component);
-    _mav_put_uint8_t(msg->payloads, 32, confirmation);
+    _mav_put_float(((char*)msg->payloads), 0, param1);
+    _mav_put_float(((char*)msg->payloads), 4, param2);
+    _mav_put_float(((char*)msg->payloads), 8, param3);
+    _mav_put_float(((char*)msg->payloads), 12, param4);
+    _mav_put_float(((char*)msg->payloads), 16, param5);
+    _mav_put_float(((char*)msg->payloads), 20, param6);
+    _mav_put_float(((char*)msg->payloads), 24, param7);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 31, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, confirmation);
 
     msg->msgid = MAVLINK_MSG_ID_COMMAND_LONG;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_COMMAND_LONG_MIN_LEN, MAVLINK_MSG_ID_COMMAND_LONG_LEN, MAVLINK_MSG_ID_COMMAND_LONG_CRC);
@@ -126,17 +126,17 @@ static inline uint16_t mavlink_msg_command_long_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t command,uint8_t confirmation,float param1,float param2,float param3,float param4,float param5,float param6,float param7)
 {
-    _mav_put_float(msg->payloads, 0, param1);
-    _mav_put_float(msg->payloads, 4, param2);
-    _mav_put_float(msg->payloads, 8, param3);
-    _mav_put_float(msg->payloads, 12, param4);
-    _mav_put_float(msg->payloads, 16, param5);
-    _mav_put_float(msg->payloads, 20, param6);
-    _mav_put_float(msg->payloads, 24, param7);
-    _mav_put_uint16_t(msg->payloads, 28, command);
-    _mav_put_uint8_t(msg->payloads, 30, target_system);
-    _mav_put_uint8_t(msg->payloads, 31, target_component);
-    _mav_put_uint8_t(msg->payloads, 32, confirmation);
+    _mav_put_float(((char*)msg->payloads), 0, param1);
+    _mav_put_float(((char*)msg->payloads), 4, param2);
+    _mav_put_float(((char*)msg->payloads), 8, param3);
+    _mav_put_float(((char*)msg->payloads), 12, param4);
+    _mav_put_float(((char*)msg->payloads), 16, param5);
+    _mav_put_float(((char*)msg->payloads), 20, param6);
+    _mav_put_float(((char*)msg->payloads), 24, param7);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 31, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, confirmation);
 
 
     msg->msgid = MAVLINK_MSG_ID_COMMAND_LONG;

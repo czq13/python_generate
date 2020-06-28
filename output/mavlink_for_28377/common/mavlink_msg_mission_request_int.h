@@ -59,10 +59,10 @@ typedef struct __mavlink_mission_request_int_t {
 static inline uint16_t mavlink_msg_mission_request_int_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t seq, uint8_t mission_type)
 {
-    _mav_put_uint16_t(msg->payloads, 0, seq);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, mission_type);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, seq);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, mission_type);
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_REQUEST_INT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MISSION_REQUEST_INT_MIN_LEN, MAVLINK_MSG_ID_MISSION_REQUEST_INT_LEN, MAVLINK_MSG_ID_MISSION_REQUEST_INT_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_mission_request_int_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t seq,uint8_t mission_type)
 {
-    _mav_put_uint16_t(msg->payloads, 0, seq);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, mission_type);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, seq);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, mission_type);
 
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_REQUEST_INT;

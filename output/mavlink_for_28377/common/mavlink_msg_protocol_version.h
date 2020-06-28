@@ -64,11 +64,11 @@ typedef struct __mavlink_protocol_version_t {
 static inline uint16_t mavlink_msg_protocol_version_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t version, uint16_t min_version, uint16_t max_version, const uint8_t *spec_version_hash, const uint8_t *library_version_hash)
 {
-    _mav_put_uint16_t(msg->payloads, 0, version);
-    _mav_put_uint16_t(msg->payloads, 2, min_version);
-    _mav_put_uint16_t(msg->payloads, 4, max_version);
-    _mav_put_uint8_t_array(msg->payloads, 6, spec_version_hash, 8);
-    _mav_put_uint8_t_array(msg->payloads, 14, library_version_hash, 8);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, version);
+    _mav_put_uint16_t(((char*)msg->payloads), 2, min_version);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, max_version);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, spec_version_hash, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 14, library_version_hash, 8);
     msg->msgid = MAVLINK_MSG_ID_PROTOCOL_VERSION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PROTOCOL_VERSION_MIN_LEN, MAVLINK_MSG_ID_PROTOCOL_VERSION_LEN, MAVLINK_MSG_ID_PROTOCOL_VERSION_CRC);
 }
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_protocol_version_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint16_t version,uint16_t min_version,uint16_t max_version,const uint8_t *spec_version_hash,const uint8_t *library_version_hash)
 {
-    _mav_put_uint16_t(msg->payloads, 0, version);
-    _mav_put_uint16_t(msg->payloads, 2, min_version);
-    _mav_put_uint16_t(msg->payloads, 4, max_version);
-    _mav_put_uint8_t_array(msg->payloads, 6, spec_version_hash, 8);
-    _mav_put_uint8_t_array(msg->payloads, 14, library_version_hash, 8);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, version);
+    _mav_put_uint16_t(((char*)msg->payloads), 2, min_version);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, max_version);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, spec_version_hash, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 14, library_version_hash, 8);
 
     msg->msgid = MAVLINK_MSG_ID_PROTOCOL_VERSION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PROTOCOL_VERSION_MIN_LEN, MAVLINK_MSG_ID_PROTOCOL_VERSION_LEN, MAVLINK_MSG_ID_PROTOCOL_VERSION_CRC);

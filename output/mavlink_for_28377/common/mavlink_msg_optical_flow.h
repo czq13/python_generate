@@ -83,16 +83,16 @@ typedef struct __mavlink_optical_flow_t {
 static inline uint16_t mavlink_msg_optical_flow_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t sensor_id, int16_t flow_x, int16_t flow_y, float flow_comp_m_x, float flow_comp_m_y, uint8_t quality, float ground_distance, float flow_rate_x, float flow_rate_y)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, flow_comp_m_x);
-    _mav_put_float(msg->payloads, 12, flow_comp_m_y);
-    _mav_put_float(msg->payloads, 16, ground_distance);
-    _mav_put_int16_t(msg->payloads, 20, flow_x);
-    _mav_put_int16_t(msg->payloads, 22, flow_y);
-    _mav_put_uint8_t(msg->payloads, 24, sensor_id);
-    _mav_put_uint8_t(msg->payloads, 25, quality);
-    _mav_put_float(msg->payloads, 26, flow_rate_x);
-    _mav_put_float(msg->payloads, 30, flow_rate_y);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, flow_comp_m_x);
+    _mav_put_float(((char*)msg->payloads), 12, flow_comp_m_y);
+    _mav_put_float(((char*)msg->payloads), 16, ground_distance);
+    _mav_put_int16_t(((char*)msg->payloads), 20, flow_x);
+    _mav_put_int16_t(((char*)msg->payloads), 22, flow_y);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, sensor_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 25, quality);
+    _mav_put_float(((char*)msg->payloads), 26, flow_rate_x);
+    _mav_put_float(((char*)msg->payloads), 30, flow_rate_y);
 
     msg->msgid = MAVLINK_MSG_ID_OPTICAL_FLOW;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OPTICAL_FLOW_MIN_LEN, MAVLINK_MSG_ID_OPTICAL_FLOW_LEN, MAVLINK_MSG_ID_OPTICAL_FLOW_CRC);
@@ -120,16 +120,16 @@ static inline uint16_t mavlink_msg_optical_flow_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t sensor_id,int16_t flow_x,int16_t flow_y,float flow_comp_m_x,float flow_comp_m_y,uint8_t quality,float ground_distance,float flow_rate_x,float flow_rate_y)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, flow_comp_m_x);
-    _mav_put_float(msg->payloads, 12, flow_comp_m_y);
-    _mav_put_float(msg->payloads, 16, ground_distance);
-    _mav_put_int16_t(msg->payloads, 20, flow_x);
-    _mav_put_int16_t(msg->payloads, 22, flow_y);
-    _mav_put_uint8_t(msg->payloads, 24, sensor_id);
-    _mav_put_uint8_t(msg->payloads, 25, quality);
-    _mav_put_float(msg->payloads, 26, flow_rate_x);
-    _mav_put_float(msg->payloads, 30, flow_rate_y);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, flow_comp_m_x);
+    _mav_put_float(((char*)msg->payloads), 12, flow_comp_m_y);
+    _mav_put_float(((char*)msg->payloads), 16, ground_distance);
+    _mav_put_int16_t(((char*)msg->payloads), 20, flow_x);
+    _mav_put_int16_t(((char*)msg->payloads), 22, flow_y);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, sensor_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 25, quality);
+    _mav_put_float(((char*)msg->payloads), 26, flow_rate_x);
+    _mav_put_float(((char*)msg->payloads), 30, flow_rate_y);
 
 
     msg->msgid = MAVLINK_MSG_ID_OPTICAL_FLOW;

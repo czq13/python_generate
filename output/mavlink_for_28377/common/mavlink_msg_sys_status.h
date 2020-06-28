@@ -95,19 +95,19 @@ typedef struct __mavlink_sys_status_t {
 static inline uint16_t mavlink_msg_sys_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t onboard_control_sensors_present, uint32_t onboard_control_sensors_enabled, uint32_t onboard_control_sensors_health, uint16_t load, uint16_t voltage_battery, int16_t current_battery, int8_t battery_remaining, uint16_t drop_rate_comm, uint16_t errors_comm, uint16_t errors_count1, uint16_t errors_count2, uint16_t errors_count3, uint16_t errors_count4)
 {
-    _mav_put_uint32_t(msg->payloads, 0, onboard_control_sensors_present);
-    _mav_put_uint32_t(msg->payloads, 4, onboard_control_sensors_enabled);
-    _mav_put_uint32_t(msg->payloads, 8, onboard_control_sensors_health);
-    _mav_put_uint16_t(msg->payloads, 12, load);
-    _mav_put_uint16_t(msg->payloads, 14, voltage_battery);
-    _mav_put_int16_t(msg->payloads, 16, current_battery);
-    _mav_put_uint16_t(msg->payloads, 18, drop_rate_comm);
-    _mav_put_uint16_t(msg->payloads, 20, errors_comm);
-    _mav_put_uint16_t(msg->payloads, 22, errors_count1);
-    _mav_put_uint16_t(msg->payloads, 24, errors_count2);
-    _mav_put_uint16_t(msg->payloads, 26, errors_count3);
-    _mav_put_uint16_t(msg->payloads, 28, errors_count4);
-    _mav_put_int8_t(msg->payloads, 30, battery_remaining);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, onboard_control_sensors_present);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, onboard_control_sensors_enabled);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, onboard_control_sensors_health);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, load);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, voltage_battery);
+    _mav_put_int16_t(((char*)msg->payloads), 16, current_battery);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, drop_rate_comm);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, errors_comm);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, errors_count1);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, errors_count2);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, errors_count3);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, errors_count4);
+    _mav_put_int8_t(((char*)msg->payloads), 30, battery_remaining);
 
     msg->msgid = MAVLINK_MSG_ID_SYS_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
@@ -138,19 +138,19 @@ static inline uint16_t mavlink_msg_sys_status_pack_chan(uint8_t system_id, uint8
                                mavlink_message_t* msg,
                                    uint32_t onboard_control_sensors_present,uint32_t onboard_control_sensors_enabled,uint32_t onboard_control_sensors_health,uint16_t load,uint16_t voltage_battery,int16_t current_battery,int8_t battery_remaining,uint16_t drop_rate_comm,uint16_t errors_comm,uint16_t errors_count1,uint16_t errors_count2,uint16_t errors_count3,uint16_t errors_count4)
 {
-    _mav_put_uint32_t(msg->payloads, 0, onboard_control_sensors_present);
-    _mav_put_uint32_t(msg->payloads, 4, onboard_control_sensors_enabled);
-    _mav_put_uint32_t(msg->payloads, 8, onboard_control_sensors_health);
-    _mav_put_uint16_t(msg->payloads, 12, load);
-    _mav_put_uint16_t(msg->payloads, 14, voltage_battery);
-    _mav_put_int16_t(msg->payloads, 16, current_battery);
-    _mav_put_uint16_t(msg->payloads, 18, drop_rate_comm);
-    _mav_put_uint16_t(msg->payloads, 20, errors_comm);
-    _mav_put_uint16_t(msg->payloads, 22, errors_count1);
-    _mav_put_uint16_t(msg->payloads, 24, errors_count2);
-    _mav_put_uint16_t(msg->payloads, 26, errors_count3);
-    _mav_put_uint16_t(msg->payloads, 28, errors_count4);
-    _mav_put_int8_t(msg->payloads, 30, battery_remaining);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, onboard_control_sensors_present);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, onboard_control_sensors_enabled);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, onboard_control_sensors_health);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, load);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, voltage_battery);
+    _mav_put_int16_t(((char*)msg->payloads), 16, current_battery);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, drop_rate_comm);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, errors_comm);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, errors_count1);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, errors_count2);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, errors_count3);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, errors_count4);
+    _mav_put_int8_t(((char*)msg->payloads), 30, battery_remaining);
 
 
     msg->msgid = MAVLINK_MSG_ID_SYS_STATUS;

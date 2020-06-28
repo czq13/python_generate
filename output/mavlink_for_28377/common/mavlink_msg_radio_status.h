@@ -71,13 +71,13 @@ typedef struct __mavlink_radio_status_t {
 static inline uint16_t mavlink_msg_radio_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t rssi, uint8_t remrssi, uint8_t txbuf, uint8_t noise, uint8_t remnoise, uint16_t rxerrors, uint16_t fixed)
 {
-    _mav_put_uint16_t(msg->payloads, 0, rxerrors);
-    _mav_put_uint16_t(msg->payloads, 2, fixed);
-    _mav_put_uint8_t(msg->payloads, 4, rssi);
-    _mav_put_uint8_t(msg->payloads, 5, remrssi);
-    _mav_put_uint8_t(msg->payloads, 6, txbuf);
-    _mav_put_uint8_t(msg->payloads, 7, noise);
-    _mav_put_uint8_t(msg->payloads, 8, remnoise);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, rxerrors);
+    _mav_put_uint16_t(((char*)msg->payloads), 2, fixed);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, rssi);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, remrssi);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, txbuf);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, noise);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, remnoise);
 
     msg->msgid = MAVLINK_MSG_ID_RADIO_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RADIO_STATUS_MIN_LEN, MAVLINK_MSG_ID_RADIO_STATUS_LEN, MAVLINK_MSG_ID_RADIO_STATUS_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_radio_status_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t rssi,uint8_t remrssi,uint8_t txbuf,uint8_t noise,uint8_t remnoise,uint16_t rxerrors,uint16_t fixed)
 {
-    _mav_put_uint16_t(msg->payloads, 0, rxerrors);
-    _mav_put_uint16_t(msg->payloads, 2, fixed);
-    _mav_put_uint8_t(msg->payloads, 4, rssi);
-    _mav_put_uint8_t(msg->payloads, 5, remrssi);
-    _mav_put_uint8_t(msg->payloads, 6, txbuf);
-    _mav_put_uint8_t(msg->payloads, 7, noise);
-    _mav_put_uint8_t(msg->payloads, 8, remnoise);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, rxerrors);
+    _mav_put_uint16_t(((char*)msg->payloads), 2, fixed);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, rssi);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, remrssi);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, txbuf);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, noise);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, remnoise);
 
 
     msg->msgid = MAVLINK_MSG_ID_RADIO_STATUS;

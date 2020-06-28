@@ -107,22 +107,22 @@ typedef struct __mavlink_highres_imu_t {
 static inline uint16_t mavlink_msg_highres_imu_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float xacc, float yacc, float zacc, float xgyro, float ygyro, float zgyro, float xmag, float ymag, float zmag, float abs_pressure, float diff_pressure, float pressure_alt, float temperature, uint16_t fields_updated, uint8_t id)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, xacc);
-    _mav_put_float(msg->payloads, 12, yacc);
-    _mav_put_float(msg->payloads, 16, zacc);
-    _mav_put_float(msg->payloads, 20, xgyro);
-    _mav_put_float(msg->payloads, 24, ygyro);
-    _mav_put_float(msg->payloads, 28, zgyro);
-    _mav_put_float(msg->payloads, 32, xmag);
-    _mav_put_float(msg->payloads, 36, ymag);
-    _mav_put_float(msg->payloads, 40, zmag);
-    _mav_put_float(msg->payloads, 44, abs_pressure);
-    _mav_put_float(msg->payloads, 48, diff_pressure);
-    _mav_put_float(msg->payloads, 52, pressure_alt);
-    _mav_put_float(msg->payloads, 56, temperature);
-    _mav_put_uint16_t(msg->payloads, 60, fields_updated);
-    _mav_put_uint8_t(msg->payloads, 62, id);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, xacc);
+    _mav_put_float(((char*)msg->payloads), 12, yacc);
+    _mav_put_float(((char*)msg->payloads), 16, zacc);
+    _mav_put_float(((char*)msg->payloads), 20, xgyro);
+    _mav_put_float(((char*)msg->payloads), 24, ygyro);
+    _mav_put_float(((char*)msg->payloads), 28, zgyro);
+    _mav_put_float(((char*)msg->payloads), 32, xmag);
+    _mav_put_float(((char*)msg->payloads), 36, ymag);
+    _mav_put_float(((char*)msg->payloads), 40, zmag);
+    _mav_put_float(((char*)msg->payloads), 44, abs_pressure);
+    _mav_put_float(((char*)msg->payloads), 48, diff_pressure);
+    _mav_put_float(((char*)msg->payloads), 52, pressure_alt);
+    _mav_put_float(((char*)msg->payloads), 56, temperature);
+    _mav_put_uint16_t(((char*)msg->payloads), 60, fields_updated);
+    _mav_put_uint8_t(((char*)msg->payloads), 62, id);
 
     msg->msgid = MAVLINK_MSG_ID_HIGHRES_IMU;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIGHRES_IMU_MIN_LEN, MAVLINK_MSG_ID_HIGHRES_IMU_LEN, MAVLINK_MSG_ID_HIGHRES_IMU_CRC);
@@ -156,22 +156,22 @@ static inline uint16_t mavlink_msg_highres_imu_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float xacc,float yacc,float zacc,float xgyro,float ygyro,float zgyro,float xmag,float ymag,float zmag,float abs_pressure,float diff_pressure,float pressure_alt,float temperature,uint16_t fields_updated,uint8_t id)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, xacc);
-    _mav_put_float(msg->payloads, 12, yacc);
-    _mav_put_float(msg->payloads, 16, zacc);
-    _mav_put_float(msg->payloads, 20, xgyro);
-    _mav_put_float(msg->payloads, 24, ygyro);
-    _mav_put_float(msg->payloads, 28, zgyro);
-    _mav_put_float(msg->payloads, 32, xmag);
-    _mav_put_float(msg->payloads, 36, ymag);
-    _mav_put_float(msg->payloads, 40, zmag);
-    _mav_put_float(msg->payloads, 44, abs_pressure);
-    _mav_put_float(msg->payloads, 48, diff_pressure);
-    _mav_put_float(msg->payloads, 52, pressure_alt);
-    _mav_put_float(msg->payloads, 56, temperature);
-    _mav_put_uint16_t(msg->payloads, 60, fields_updated);
-    _mav_put_uint8_t(msg->payloads, 62, id);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, xacc);
+    _mav_put_float(((char*)msg->payloads), 12, yacc);
+    _mav_put_float(((char*)msg->payloads), 16, zacc);
+    _mav_put_float(((char*)msg->payloads), 20, xgyro);
+    _mav_put_float(((char*)msg->payloads), 24, ygyro);
+    _mav_put_float(((char*)msg->payloads), 28, zgyro);
+    _mav_put_float(((char*)msg->payloads), 32, xmag);
+    _mav_put_float(((char*)msg->payloads), 36, ymag);
+    _mav_put_float(((char*)msg->payloads), 40, zmag);
+    _mav_put_float(((char*)msg->payloads), 44, abs_pressure);
+    _mav_put_float(((char*)msg->payloads), 48, diff_pressure);
+    _mav_put_float(((char*)msg->payloads), 52, pressure_alt);
+    _mav_put_float(((char*)msg->payloads), 56, temperature);
+    _mav_put_uint16_t(((char*)msg->payloads), 60, fields_updated);
+    _mav_put_uint8_t(((char*)msg->payloads), 62, id);
 
 
     msg->msgid = MAVLINK_MSG_ID_HIGHRES_IMU;

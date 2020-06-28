@@ -92,18 +92,18 @@ typedef struct __mavlink_video_stream_information_t {
 static inline uint16_t mavlink_msg_video_stream_information_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t stream_id, uint8_t count, uint8_t type, uint16_t flags, float framerate, uint16_t resolution_h, uint16_t resolution_v, uint32_t bitrate, uint16_t rotation, uint16_t hfov, const char *name, const char *uri)
 {
-    _mav_put_float(msg->payloads, 0, framerate);
-    _mav_put_uint32_t(msg->payloads, 4, bitrate);
-    _mav_put_uint16_t(msg->payloads, 8, flags);
-    _mav_put_uint16_t(msg->payloads, 10, resolution_h);
-    _mav_put_uint16_t(msg->payloads, 12, resolution_v);
-    _mav_put_uint16_t(msg->payloads, 14, rotation);
-    _mav_put_uint16_t(msg->payloads, 16, hfov);
-    _mav_put_uint8_t(msg->payloads, 18, stream_id);
-    _mav_put_uint8_t(msg->payloads, 19, count);
-    _mav_put_uint8_t(msg->payloads, 20, type);
-    _mav_put_char_array(msg->payloads, 21, name, 32);
-    _mav_put_char_array(msg->payloads, 53, uri, 160);
+    _mav_put_float(((char*)msg->payloads), 0, framerate);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, bitrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, resolution_h);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, resolution_v);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, rotation);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, hfov);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 19, count);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, type);
+    _mav_put_char_array(((char*)msg->payloads), 21, name, 32);
+    _mav_put_char_array(((char*)msg->payloads), 53, uri, 160);
     msg->msgid = MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_CRC);
 }
@@ -132,18 +132,18 @@ static inline uint16_t mavlink_msg_video_stream_information_pack_chan(uint8_t sy
                                mavlink_message_t* msg,
                                    uint8_t stream_id,uint8_t count,uint8_t type,uint16_t flags,float framerate,uint16_t resolution_h,uint16_t resolution_v,uint32_t bitrate,uint16_t rotation,uint16_t hfov,const char *name,const char *uri)
 {
-    _mav_put_float(msg->payloads, 0, framerate);
-    _mav_put_uint32_t(msg->payloads, 4, bitrate);
-    _mav_put_uint16_t(msg->payloads, 8, flags);
-    _mav_put_uint16_t(msg->payloads, 10, resolution_h);
-    _mav_put_uint16_t(msg->payloads, 12, resolution_v);
-    _mav_put_uint16_t(msg->payloads, 14, rotation);
-    _mav_put_uint16_t(msg->payloads, 16, hfov);
-    _mav_put_uint8_t(msg->payloads, 18, stream_id);
-    _mav_put_uint8_t(msg->payloads, 19, count);
-    _mav_put_uint8_t(msg->payloads, 20, type);
-    _mav_put_char_array(msg->payloads, 21, name, 32);
-    _mav_put_char_array(msg->payloads, 53, uri, 160);
+    _mav_put_float(((char*)msg->payloads), 0, framerate);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, bitrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, resolution_h);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, resolution_v);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, rotation);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, hfov);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 19, count);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, type);
+    _mav_put_char_array(((char*)msg->payloads), 21, name, 32);
+    _mav_put_char_array(((char*)msg->payloads), 53, uri, 160);
 
     msg->msgid = MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_CRC);

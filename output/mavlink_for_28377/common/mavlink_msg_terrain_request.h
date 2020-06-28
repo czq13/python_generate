@@ -59,10 +59,10 @@ typedef struct __mavlink_terrain_request_t {
 static inline uint16_t mavlink_msg_terrain_request_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t lat, int32_t lon, uint16_t grid_spacing, uint64_t mask)
 {
-    _mav_put_uint64_t(msg->payloads, 0, mask);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_uint16_t(msg->payloads, 16, grid_spacing);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, mask);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, grid_spacing);
 
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_REQUEST;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TERRAIN_REQUEST_MIN_LEN, MAVLINK_MSG_ID_TERRAIN_REQUEST_LEN, MAVLINK_MSG_ID_TERRAIN_REQUEST_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_terrain_request_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    int32_t lat,int32_t lon,uint16_t grid_spacing,uint64_t mask)
 {
-    _mav_put_uint64_t(msg->payloads, 0, mask);
-    _mav_put_int32_t(msg->payloads, 8, lat);
-    _mav_put_int32_t(msg->payloads, 12, lon);
-    _mav_put_uint16_t(msg->payloads, 16, grid_spacing);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, mask);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, grid_spacing);
 
 
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_REQUEST;

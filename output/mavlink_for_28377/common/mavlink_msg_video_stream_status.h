@@ -75,14 +75,14 @@ typedef struct __mavlink_video_stream_status_t {
 static inline uint16_t mavlink_msg_video_stream_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t stream_id, uint16_t flags, float framerate, uint16_t resolution_h, uint16_t resolution_v, uint32_t bitrate, uint16_t rotation, uint16_t hfov)
 {
-    _mav_put_float(msg->payloads, 0, framerate);
-    _mav_put_uint32_t(msg->payloads, 4, bitrate);
-    _mav_put_uint16_t(msg->payloads, 8, flags);
-    _mav_put_uint16_t(msg->payloads, 10, resolution_h);
-    _mav_put_uint16_t(msg->payloads, 12, resolution_v);
-    _mav_put_uint16_t(msg->payloads, 14, rotation);
-    _mav_put_uint16_t(msg->payloads, 16, hfov);
-    _mav_put_uint8_t(msg->payloads, 18, stream_id);
+    _mav_put_float(((char*)msg->payloads), 0, framerate);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, bitrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, resolution_h);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, resolution_v);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, rotation);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, hfov);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, stream_id);
 
     msg->msgid = MAVLINK_MSG_ID_VIDEO_STREAM_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_MIN_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_LEN, MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_CRC);
@@ -108,14 +108,14 @@ static inline uint16_t mavlink_msg_video_stream_status_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint8_t stream_id,uint16_t flags,float framerate,uint16_t resolution_h,uint16_t resolution_v,uint32_t bitrate,uint16_t rotation,uint16_t hfov)
 {
-    _mav_put_float(msg->payloads, 0, framerate);
-    _mav_put_uint32_t(msg->payloads, 4, bitrate);
-    _mav_put_uint16_t(msg->payloads, 8, flags);
-    _mav_put_uint16_t(msg->payloads, 10, resolution_h);
-    _mav_put_uint16_t(msg->payloads, 12, resolution_v);
-    _mav_put_uint16_t(msg->payloads, 14, rotation);
-    _mav_put_uint16_t(msg->payloads, 16, hfov);
-    _mav_put_uint8_t(msg->payloads, 18, stream_id);
+    _mav_put_float(((char*)msg->payloads), 0, framerate);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, bitrate);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, resolution_h);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, resolution_v);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, rotation);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, hfov);
+    _mav_put_uint8_t(((char*)msg->payloads), 18, stream_id);
 
 
     msg->msgid = MAVLINK_MSG_ID_VIDEO_STREAM_STATUS;

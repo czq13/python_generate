@@ -87,17 +87,17 @@ typedef struct __mavlink_link_node_status_t {
 static inline uint16_t mavlink_msg_link_node_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t timestamp, uint8_t tx_buf, uint8_t rx_buf, uint32_t tx_rate, uint32_t rx_rate, uint16_t rx_parse_err, uint16_t tx_overflows, uint16_t rx_overflows, uint32_t messages_sent, uint32_t messages_received, uint32_t messages_lost)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint32_t(msg->payloads, 8, tx_rate);
-    _mav_put_uint32_t(msg->payloads, 12, rx_rate);
-    _mav_put_uint32_t(msg->payloads, 16, messages_sent);
-    _mav_put_uint32_t(msg->payloads, 20, messages_received);
-    _mav_put_uint32_t(msg->payloads, 24, messages_lost);
-    _mav_put_uint16_t(msg->payloads, 28, rx_parse_err);
-    _mav_put_uint16_t(msg->payloads, 30, tx_overflows);
-    _mav_put_uint16_t(msg->payloads, 32, rx_overflows);
-    _mav_put_uint8_t(msg->payloads, 34, tx_buf);
-    _mav_put_uint8_t(msg->payloads, 35, rx_buf);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, tx_rate);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, rx_rate);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, messages_sent);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, messages_received);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, messages_lost);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, rx_parse_err);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, tx_overflows);
+    _mav_put_uint16_t(((char*)msg->payloads), 32, rx_overflows);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, tx_buf);
+    _mav_put_uint8_t(((char*)msg->payloads), 35, rx_buf);
 
     msg->msgid = MAVLINK_MSG_ID_LINK_NODE_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LINK_NODE_STATUS_MIN_LEN, MAVLINK_MSG_ID_LINK_NODE_STATUS_LEN, MAVLINK_MSG_ID_LINK_NODE_STATUS_CRC);
@@ -126,17 +126,17 @@ static inline uint16_t mavlink_msg_link_node_status_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t timestamp,uint8_t tx_buf,uint8_t rx_buf,uint32_t tx_rate,uint32_t rx_rate,uint16_t rx_parse_err,uint16_t tx_overflows,uint16_t rx_overflows,uint32_t messages_sent,uint32_t messages_received,uint32_t messages_lost)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint32_t(msg->payloads, 8, tx_rate);
-    _mav_put_uint32_t(msg->payloads, 12, rx_rate);
-    _mav_put_uint32_t(msg->payloads, 16, messages_sent);
-    _mav_put_uint32_t(msg->payloads, 20, messages_received);
-    _mav_put_uint32_t(msg->payloads, 24, messages_lost);
-    _mav_put_uint16_t(msg->payloads, 28, rx_parse_err);
-    _mav_put_uint16_t(msg->payloads, 30, tx_overflows);
-    _mav_put_uint16_t(msg->payloads, 32, rx_overflows);
-    _mav_put_uint8_t(msg->payloads, 34, tx_buf);
-    _mav_put_uint8_t(msg->payloads, 35, rx_buf);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, tx_rate);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, rx_rate);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, messages_sent);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, messages_received);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, messages_lost);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, rx_parse_err);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, tx_overflows);
+    _mav_put_uint16_t(((char*)msg->payloads), 32, rx_overflows);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, tx_buf);
+    _mav_put_uint8_t(((char*)msg->payloads), 35, rx_buf);
 
 
     msg->msgid = MAVLINK_MSG_ID_LINK_NODE_STATUS;

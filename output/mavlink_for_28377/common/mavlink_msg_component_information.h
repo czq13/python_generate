@@ -77,14 +77,14 @@ typedef struct __mavlink_component_information_t {
 static inline uint16_t mavlink_msg_component_information_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, const uint8_t *vendor_name, const uint8_t *model_name, uint32_t firmware_version, uint32_t hardware_version, uint32_t capability_flags, uint16_t component_definition_version, const char *component_definition_uri)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, firmware_version);
-    _mav_put_uint32_t(msg->payloads, 8, hardware_version);
-    _mav_put_uint32_t(msg->payloads, 12, capability_flags);
-    _mav_put_uint16_t(msg->payloads, 16, component_definition_version);
-    _mav_put_uint8_t_array(msg->payloads, 18, vendor_name, 32);
-    _mav_put_uint8_t_array(msg->payloads, 50, model_name, 32);
-    _mav_put_char_array(msg->payloads, 82, component_definition_uri, 140);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, firmware_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, hardware_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, capability_flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, component_definition_version);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 18, vendor_name, 32);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 50, model_name, 32);
+    _mav_put_char_array(((char*)msg->payloads), 82, component_definition_uri, 140);
     msg->msgid = MAVLINK_MSG_ID_COMPONENT_INFORMATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_COMPONENT_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_COMPONENT_INFORMATION_LEN, MAVLINK_MSG_ID_COMPONENT_INFORMATION_CRC);
 }
@@ -109,14 +109,14 @@ static inline uint16_t mavlink_msg_component_information_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,const uint8_t *vendor_name,const uint8_t *model_name,uint32_t firmware_version,uint32_t hardware_version,uint32_t capability_flags,uint16_t component_definition_version,const char *component_definition_uri)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, firmware_version);
-    _mav_put_uint32_t(msg->payloads, 8, hardware_version);
-    _mav_put_uint32_t(msg->payloads, 12, capability_flags);
-    _mav_put_uint16_t(msg->payloads, 16, component_definition_version);
-    _mav_put_uint8_t_array(msg->payloads, 18, vendor_name, 32);
-    _mav_put_uint8_t_array(msg->payloads, 50, model_name, 32);
-    _mav_put_char_array(msg->payloads, 82, component_definition_uri, 140);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, firmware_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, hardware_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, capability_flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, component_definition_version);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 18, vendor_name, 32);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 50, model_name, 32);
+    _mav_put_char_array(((char*)msg->payloads), 82, component_definition_uri, 140);
 
     msg->msgid = MAVLINK_MSG_ID_COMPONENT_INFORMATION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_COMPONENT_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_COMPONENT_INFORMATION_LEN, MAVLINK_MSG_ID_COMPONENT_INFORMATION_CRC);

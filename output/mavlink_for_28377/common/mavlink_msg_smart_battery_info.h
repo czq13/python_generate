@@ -83,16 +83,16 @@ typedef struct __mavlink_smart_battery_info_t {
 static inline uint16_t mavlink_msg_smart_battery_info_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t id, int32_t capacity_full_specification, int32_t capacity_full, uint16_t cycle_count, int32_t serial_number, const char *device_name, uint16_t weight, uint16_t discharge_minimum_voltage, uint16_t charging_minimum_voltage, uint16_t resting_minimum_voltage)
 {
-    _mav_put_int32_t(msg->payloads, 0, capacity_full_specification);
-    _mav_put_int32_t(msg->payloads, 4, capacity_full);
-    _mav_put_int32_t(msg->payloads, 8, serial_number);
-    _mav_put_uint16_t(msg->payloads, 12, cycle_count);
-    _mav_put_uint16_t(msg->payloads, 14, weight);
-    _mav_put_uint16_t(msg->payloads, 16, discharge_minimum_voltage);
-    _mav_put_uint16_t(msg->payloads, 18, charging_minimum_voltage);
-    _mav_put_uint16_t(msg->payloads, 20, resting_minimum_voltage);
-    _mav_put_uint8_t(msg->payloads, 22, id);
-    _mav_put_char_array(msg->payloads, 23, device_name, 50);
+    _mav_put_int32_t(((char*)msg->payloads), 0, capacity_full_specification);
+    _mav_put_int32_t(((char*)msg->payloads), 4, capacity_full);
+    _mav_put_int32_t(((char*)msg->payloads), 8, serial_number);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, cycle_count);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, weight);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, discharge_minimum_voltage);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, charging_minimum_voltage);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, resting_minimum_voltage);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, id);
+    _mav_put_char_array(((char*)msg->payloads), 23, device_name, 50);
     msg->msgid = MAVLINK_MSG_ID_SMART_BATTERY_INFO;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SMART_BATTERY_INFO_MIN_LEN, MAVLINK_MSG_ID_SMART_BATTERY_INFO_LEN, MAVLINK_MSG_ID_SMART_BATTERY_INFO_CRC);
 }
@@ -119,16 +119,16 @@ static inline uint16_t mavlink_msg_smart_battery_info_pack_chan(uint8_t system_i
                                mavlink_message_t* msg,
                                    uint8_t id,int32_t capacity_full_specification,int32_t capacity_full,uint16_t cycle_count,int32_t serial_number,const char *device_name,uint16_t weight,uint16_t discharge_minimum_voltage,uint16_t charging_minimum_voltage,uint16_t resting_minimum_voltage)
 {
-    _mav_put_int32_t(msg->payloads, 0, capacity_full_specification);
-    _mav_put_int32_t(msg->payloads, 4, capacity_full);
-    _mav_put_int32_t(msg->payloads, 8, serial_number);
-    _mav_put_uint16_t(msg->payloads, 12, cycle_count);
-    _mav_put_uint16_t(msg->payloads, 14, weight);
-    _mav_put_uint16_t(msg->payloads, 16, discharge_minimum_voltage);
-    _mav_put_uint16_t(msg->payloads, 18, charging_minimum_voltage);
-    _mav_put_uint16_t(msg->payloads, 20, resting_minimum_voltage);
-    _mav_put_uint8_t(msg->payloads, 22, id);
-    _mav_put_char_array(msg->payloads, 23, device_name, 50);
+    _mav_put_int32_t(((char*)msg->payloads), 0, capacity_full_specification);
+    _mav_put_int32_t(((char*)msg->payloads), 4, capacity_full);
+    _mav_put_int32_t(((char*)msg->payloads), 8, serial_number);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, cycle_count);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, weight);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, discharge_minimum_voltage);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, charging_minimum_voltage);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, resting_minimum_voltage);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, id);
+    _mav_put_char_array(((char*)msg->payloads), 23, device_name, 50);
 
     msg->msgid = MAVLINK_MSG_ID_SMART_BATTERY_INFO;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_SMART_BATTERY_INFO_MIN_LEN, MAVLINK_MSG_ID_SMART_BATTERY_INFO_LEN, MAVLINK_MSG_ID_SMART_BATTERY_INFO_CRC);

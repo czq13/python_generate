@@ -107,22 +107,22 @@ typedef struct __mavlink_hil_state_t {
 static inline uint16_t mavlink_msg_hil_state_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float roll, float pitch, float yaw, float rollspeed, float pitchspeed, float yawspeed, int32_t lat, int32_t lon, int32_t alt, int16_t vx, int16_t vy, int16_t vz, int16_t xacc, int16_t yacc, int16_t zacc)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, roll);
-    _mav_put_float(msg->payloads, 12, pitch);
-    _mav_put_float(msg->payloads, 16, yaw);
-    _mav_put_float(msg->payloads, 20, rollspeed);
-    _mav_put_float(msg->payloads, 24, pitchspeed);
-    _mav_put_float(msg->payloads, 28, yawspeed);
-    _mav_put_int32_t(msg->payloads, 32, lat);
-    _mav_put_int32_t(msg->payloads, 36, lon);
-    _mav_put_int32_t(msg->payloads, 40, alt);
-    _mav_put_int16_t(msg->payloads, 44, vx);
-    _mav_put_int16_t(msg->payloads, 46, vy);
-    _mav_put_int16_t(msg->payloads, 48, vz);
-    _mav_put_int16_t(msg->payloads, 50, xacc);
-    _mav_put_int16_t(msg->payloads, 52, yacc);
-    _mav_put_int16_t(msg->payloads, 54, zacc);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, roll);
+    _mav_put_float(((char*)msg->payloads), 12, pitch);
+    _mav_put_float(((char*)msg->payloads), 16, yaw);
+    _mav_put_float(((char*)msg->payloads), 20, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 24, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 28, yawspeed);
+    _mav_put_int32_t(((char*)msg->payloads), 32, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 36, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 40, alt);
+    _mav_put_int16_t(((char*)msg->payloads), 44, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 46, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 48, vz);
+    _mav_put_int16_t(((char*)msg->payloads), 50, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 52, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 54, zacc);
 
     msg->msgid = MAVLINK_MSG_ID_HIL_STATE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIL_STATE_MIN_LEN, MAVLINK_MSG_ID_HIL_STATE_LEN, MAVLINK_MSG_ID_HIL_STATE_CRC);
@@ -156,22 +156,22 @@ static inline uint16_t mavlink_msg_hil_state_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float roll,float pitch,float yaw,float rollspeed,float pitchspeed,float yawspeed,int32_t lat,int32_t lon,int32_t alt,int16_t vx,int16_t vy,int16_t vz,int16_t xacc,int16_t yacc,int16_t zacc)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, roll);
-    _mav_put_float(msg->payloads, 12, pitch);
-    _mav_put_float(msg->payloads, 16, yaw);
-    _mav_put_float(msg->payloads, 20, rollspeed);
-    _mav_put_float(msg->payloads, 24, pitchspeed);
-    _mav_put_float(msg->payloads, 28, yawspeed);
-    _mav_put_int32_t(msg->payloads, 32, lat);
-    _mav_put_int32_t(msg->payloads, 36, lon);
-    _mav_put_int32_t(msg->payloads, 40, alt);
-    _mav_put_int16_t(msg->payloads, 44, vx);
-    _mav_put_int16_t(msg->payloads, 46, vy);
-    _mav_put_int16_t(msg->payloads, 48, vz);
-    _mav_put_int16_t(msg->payloads, 50, xacc);
-    _mav_put_int16_t(msg->payloads, 52, yacc);
-    _mav_put_int16_t(msg->payloads, 54, zacc);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, roll);
+    _mav_put_float(((char*)msg->payloads), 12, pitch);
+    _mav_put_float(((char*)msg->payloads), 16, yaw);
+    _mav_put_float(((char*)msg->payloads), 20, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 24, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 28, yawspeed);
+    _mav_put_int32_t(((char*)msg->payloads), 32, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 36, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 40, alt);
+    _mav_put_int16_t(((char*)msg->payloads), 44, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 46, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 48, vz);
+    _mav_put_int16_t(((char*)msg->payloads), 50, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 52, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 54, zacc);
 
 
     msg->msgid = MAVLINK_MSG_ID_HIL_STATE;

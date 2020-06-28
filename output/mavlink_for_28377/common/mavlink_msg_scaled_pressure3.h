@@ -59,10 +59,10 @@ typedef struct __mavlink_scaled_pressure3_t {
 static inline uint16_t mavlink_msg_scaled_pressure3_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float press_abs, float press_diff, int16_t temperature)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, press_abs);
-    _mav_put_float(msg->payloads, 8, press_diff);
-    _mav_put_int16_t(msg->payloads, 12, temperature);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, press_abs);
+    _mav_put_float(((char*)msg->payloads), 8, press_diff);
+    _mav_put_int16_t(((char*)msg->payloads), 12, temperature);
 
     msg->msgid = MAVLINK_MSG_ID_SCALED_PRESSURE3;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SCALED_PRESSURE3_MIN_LEN, MAVLINK_MSG_ID_SCALED_PRESSURE3_LEN, MAVLINK_MSG_ID_SCALED_PRESSURE3_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_scaled_pressure3_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float press_abs,float press_diff,int16_t temperature)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, press_abs);
-    _mav_put_float(msg->payloads, 8, press_diff);
-    _mav_put_int16_t(msg->payloads, 12, temperature);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, press_abs);
+    _mav_put_float(((char*)msg->payloads), 8, press_diff);
+    _mav_put_int16_t(((char*)msg->payloads), 12, temperature);
 
 
     msg->msgid = MAVLINK_MSG_ID_SCALED_PRESSURE3;

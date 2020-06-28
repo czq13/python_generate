@@ -59,10 +59,10 @@ typedef struct __mavlink_ping_t {
 static inline uint16_t mavlink_msg_ping_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint32_t seq, uint8_t target_system, uint8_t target_component)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, seq);
-    _mav_put_uint8_t(msg->payloads, 12, target_system);
-    _mav_put_uint8_t(msg->payloads, 13, target_component);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, seq);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, target_component);
 
     msg->msgid = MAVLINK_MSG_ID_PING;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PING_MIN_LEN, MAVLINK_MSG_ID_PING_LEN, MAVLINK_MSG_ID_PING_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_ping_pack_chan(uint8_t system_id, uint8_t com
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint32_t seq,uint8_t target_system,uint8_t target_component)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, seq);
-    _mav_put_uint8_t(msg->payloads, 12, target_system);
-    _mav_put_uint8_t(msg->payloads, 13, target_component);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, seq);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, target_component);
 
 
     msg->msgid = MAVLINK_MSG_ID_PING;

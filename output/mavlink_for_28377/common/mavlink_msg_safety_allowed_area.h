@@ -71,13 +71,13 @@ typedef struct __mavlink_safety_allowed_area_t {
 static inline uint16_t mavlink_msg_safety_allowed_area_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t frame, float p1x, float p1y, float p1z, float p2x, float p2y, float p2z)
 {
-    _mav_put_float(msg->payloads, 0, p1x);
-    _mav_put_float(msg->payloads, 4, p1y);
-    _mav_put_float(msg->payloads, 8, p1z);
-    _mav_put_float(msg->payloads, 12, p2x);
-    _mav_put_float(msg->payloads, 16, p2y);
-    _mav_put_float(msg->payloads, 20, p2z);
-    _mav_put_uint8_t(msg->payloads, 24, frame);
+    _mav_put_float(((char*)msg->payloads), 0, p1x);
+    _mav_put_float(((char*)msg->payloads), 4, p1y);
+    _mav_put_float(((char*)msg->payloads), 8, p1z);
+    _mav_put_float(((char*)msg->payloads), 12, p2x);
+    _mav_put_float(((char*)msg->payloads), 16, p2y);
+    _mav_put_float(((char*)msg->payloads), 20, p2z);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, frame);
 
     msg->msgid = MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA_MIN_LEN, MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA_LEN, MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_safety_allowed_area_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint8_t frame,float p1x,float p1y,float p1z,float p2x,float p2y,float p2z)
 {
-    _mav_put_float(msg->payloads, 0, p1x);
-    _mav_put_float(msg->payloads, 4, p1y);
-    _mav_put_float(msg->payloads, 8, p1z);
-    _mav_put_float(msg->payloads, 12, p2x);
-    _mav_put_float(msg->payloads, 16, p2y);
-    _mav_put_float(msg->payloads, 20, p2z);
-    _mav_put_uint8_t(msg->payloads, 24, frame);
+    _mav_put_float(((char*)msg->payloads), 0, p1x);
+    _mav_put_float(((char*)msg->payloads), 4, p1y);
+    _mav_put_float(((char*)msg->payloads), 8, p1z);
+    _mav_put_float(((char*)msg->payloads), 12, p2x);
+    _mav_put_float(((char*)msg->payloads), 16, p2y);
+    _mav_put_float(((char*)msg->payloads), 20, p2z);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, frame);
 
 
     msg->msgid = MAVLINK_MSG_ID_SAFETY_ALLOWED_AREA;

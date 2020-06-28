@@ -27,7 +27,8 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/build/Auto_Generate_For_28377",
-            "cwd": "."
+            "cwd": ".",
+            "externalConsole": false
         }
     ]
 }

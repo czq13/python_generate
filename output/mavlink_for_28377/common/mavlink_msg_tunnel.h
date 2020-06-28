@@ -63,11 +63,11 @@ typedef struct __mavlink_tunnel_t {
 static inline uint16_t mavlink_msg_tunnel_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t payload_type, uint8_t payload_length, const uint8_t *payload)
 {
-    _mav_put_uint16_t(msg->payloads, 0, payload_type);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, payload_length);
-    _mav_put_uint8_t_array(msg->payloads, 5, payload, 128);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, payload_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, payload_length);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 5, payload, 128);
     msg->msgid = MAVLINK_MSG_ID_TUNNEL;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TUNNEL_MIN_LEN, MAVLINK_MSG_ID_TUNNEL_LEN, MAVLINK_MSG_ID_TUNNEL_CRC);
 }
@@ -89,11 +89,11 @@ static inline uint16_t mavlink_msg_tunnel_pack_chan(uint8_t system_id, uint8_t c
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t payload_type,uint8_t payload_length,const uint8_t *payload)
 {
-    _mav_put_uint16_t(msg->payloads, 0, payload_type);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, payload_length);
-    _mav_put_uint8_t_array(msg->payloads, 5, payload, 128);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, payload_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, payload_length);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 5, payload, 128);
 
     msg->msgid = MAVLINK_MSG_ID_TUNNEL;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_TUNNEL_MIN_LEN, MAVLINK_MSG_ID_TUNNEL_LEN, MAVLINK_MSG_ID_TUNNEL_CRC);

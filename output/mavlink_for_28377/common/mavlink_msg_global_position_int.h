@@ -79,15 +79,15 @@ typedef struct __mavlink_global_position_int_t {
 static inline uint16_t mavlink_msg_global_position_int_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, int32_t lat, int32_t lon, int32_t alt, int32_t relative_alt, int16_t vx, int16_t vy, int16_t vz, uint16_t hdg)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_int32_t(msg->payloads, 12, alt);
-    _mav_put_int32_t(msg->payloads, 16, relative_alt);
-    _mav_put_int16_t(msg->payloads, 20, vx);
-    _mav_put_int16_t(msg->payloads, 22, vy);
-    _mav_put_int16_t(msg->payloads, 24, vz);
-    _mav_put_uint16_t(msg->payloads, 26, hdg);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 12, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 16, relative_alt);
+    _mav_put_int16_t(((char*)msg->payloads), 20, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 22, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 24, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, hdg);
 
     msg->msgid = MAVLINK_MSG_ID_GLOBAL_POSITION_INT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GLOBAL_POSITION_INT_MIN_LEN, MAVLINK_MSG_ID_GLOBAL_POSITION_INT_LEN, MAVLINK_MSG_ID_GLOBAL_POSITION_INT_CRC);
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_global_position_int_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,int32_t lat,int32_t lon,int32_t alt,int32_t relative_alt,int16_t vx,int16_t vy,int16_t vz,uint16_t hdg)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_int32_t(msg->payloads, 12, alt);
-    _mav_put_int32_t(msg->payloads, 16, relative_alt);
-    _mav_put_int16_t(msg->payloads, 20, vx);
-    _mav_put_int16_t(msg->payloads, 22, vy);
-    _mav_put_int16_t(msg->payloads, 24, vz);
-    _mav_put_uint16_t(msg->payloads, 26, hdg);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 12, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 16, relative_alt);
+    _mav_put_int16_t(((char*)msg->payloads), 20, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 22, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 24, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, hdg);
 
 
     msg->msgid = MAVLINK_MSG_ID_GLOBAL_POSITION_INT;

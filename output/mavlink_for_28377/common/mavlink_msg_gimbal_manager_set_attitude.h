@@ -75,14 +75,14 @@ typedef struct __mavlink_gimbal_manager_set_attitude_t {
 static inline uint16_t mavlink_msg_gimbal_manager_set_attitude_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint32_t flags, uint8_t gimbal_device_id, const float *q, float angular_velocity_x, float angular_velocity_y, float angular_velocity_z)
 {
-    _mav_put_uint32_t(msg->payloads, 0, flags);
-    _mav_put_float(msg->payloads, 20, angular_velocity_x);
-    _mav_put_float(msg->payloads, 24, angular_velocity_y);
-    _mav_put_float(msg->payloads, 28, angular_velocity_z);
-    _mav_put_uint8_t(msg->payloads, 32, target_system);
-    _mav_put_uint8_t(msg->payloads, 33, target_component);
-    _mav_put_uint8_t(msg->payloads, 34, gimbal_device_id);
-    _mav_put_float_array(msg->payloads, 4, q, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, flags);
+    _mav_put_float(((char*)msg->payloads), 20, angular_velocity_x);
+    _mav_put_float(((char*)msg->payloads), 24, angular_velocity_y);
+    _mav_put_float(((char*)msg->payloads), 28, angular_velocity_z);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, gimbal_device_id);
+    _mav_put_float_array(((char*)msg->payloads), 4, q, 4);
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_MIN_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_CRC);
 }
@@ -107,14 +107,14 @@ static inline uint16_t mavlink_msg_gimbal_manager_set_attitude_pack_chan(uint8_t
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint32_t flags,uint8_t gimbal_device_id,const float *q,float angular_velocity_x,float angular_velocity_y,float angular_velocity_z)
 {
-    _mav_put_uint32_t(msg->payloads, 0, flags);
-    _mav_put_float(msg->payloads, 20, angular_velocity_x);
-    _mav_put_float(msg->payloads, 24, angular_velocity_y);
-    _mav_put_float(msg->payloads, 28, angular_velocity_z);
-    _mav_put_uint8_t(msg->payloads, 32, target_system);
-    _mav_put_uint8_t(msg->payloads, 33, target_component);
-    _mav_put_uint8_t(msg->payloads, 34, gimbal_device_id);
-    _mav_put_float_array(msg->payloads, 4, q, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, flags);
+    _mav_put_float(((char*)msg->payloads), 20, angular_velocity_x);
+    _mav_put_float(((char*)msg->payloads), 24, angular_velocity_y);
+    _mav_put_float(((char*)msg->payloads), 28, angular_velocity_z);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, gimbal_device_id);
+    _mav_put_float_array(((char*)msg->payloads), 4, q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_MIN_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_LEN, MAVLINK_MSG_ID_GIMBAL_MANAGER_SET_ATTITUDE_CRC);

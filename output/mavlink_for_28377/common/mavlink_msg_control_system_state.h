@@ -113,23 +113,23 @@ typedef struct __mavlink_control_system_state_t {
 static inline uint16_t mavlink_msg_control_system_state_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float x_acc, float y_acc, float z_acc, float x_vel, float y_vel, float z_vel, float x_pos, float y_pos, float z_pos, float airspeed, const float *vel_variance, const float *pos_variance, const float *q, float roll_rate, float pitch_rate, float yaw_rate)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, x_acc);
-    _mav_put_float(msg->payloads, 12, y_acc);
-    _mav_put_float(msg->payloads, 16, z_acc);
-    _mav_put_float(msg->payloads, 20, x_vel);
-    _mav_put_float(msg->payloads, 24, y_vel);
-    _mav_put_float(msg->payloads, 28, z_vel);
-    _mav_put_float(msg->payloads, 32, x_pos);
-    _mav_put_float(msg->payloads, 36, y_pos);
-    _mav_put_float(msg->payloads, 40, z_pos);
-    _mav_put_float(msg->payloads, 44, airspeed);
-    _mav_put_float(msg->payloads, 88, roll_rate);
-    _mav_put_float(msg->payloads, 92, pitch_rate);
-    _mav_put_float(msg->payloads, 96, yaw_rate);
-    _mav_put_float_array(msg->payloads, 48, vel_variance, 3);
-    _mav_put_float_array(msg->payloads, 60, pos_variance, 3);
-    _mav_put_float_array(msg->payloads, 72, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, x_acc);
+    _mav_put_float(((char*)msg->payloads), 12, y_acc);
+    _mav_put_float(((char*)msg->payloads), 16, z_acc);
+    _mav_put_float(((char*)msg->payloads), 20, x_vel);
+    _mav_put_float(((char*)msg->payloads), 24, y_vel);
+    _mav_put_float(((char*)msg->payloads), 28, z_vel);
+    _mav_put_float(((char*)msg->payloads), 32, x_pos);
+    _mav_put_float(((char*)msg->payloads), 36, y_pos);
+    _mav_put_float(((char*)msg->payloads), 40, z_pos);
+    _mav_put_float(((char*)msg->payloads), 44, airspeed);
+    _mav_put_float(((char*)msg->payloads), 88, roll_rate);
+    _mav_put_float(((char*)msg->payloads), 92, pitch_rate);
+    _mav_put_float(((char*)msg->payloads), 96, yaw_rate);
+    _mav_put_float_array(((char*)msg->payloads), 48, vel_variance, 3);
+    _mav_put_float_array(((char*)msg->payloads), 60, pos_variance, 3);
+    _mav_put_float_array(((char*)msg->payloads), 72, q, 4);
     msg->msgid = MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_MIN_LEN, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_LEN, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_CRC);
 }
@@ -163,23 +163,23 @@ static inline uint16_t mavlink_msg_control_system_state_pack_chan(uint8_t system
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float x_acc,float y_acc,float z_acc,float x_vel,float y_vel,float z_vel,float x_pos,float y_pos,float z_pos,float airspeed,const float *vel_variance,const float *pos_variance,const float *q,float roll_rate,float pitch_rate,float yaw_rate)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, x_acc);
-    _mav_put_float(msg->payloads, 12, y_acc);
-    _mav_put_float(msg->payloads, 16, z_acc);
-    _mav_put_float(msg->payloads, 20, x_vel);
-    _mav_put_float(msg->payloads, 24, y_vel);
-    _mav_put_float(msg->payloads, 28, z_vel);
-    _mav_put_float(msg->payloads, 32, x_pos);
-    _mav_put_float(msg->payloads, 36, y_pos);
-    _mav_put_float(msg->payloads, 40, z_pos);
-    _mav_put_float(msg->payloads, 44, airspeed);
-    _mav_put_float(msg->payloads, 88, roll_rate);
-    _mav_put_float(msg->payloads, 92, pitch_rate);
-    _mav_put_float(msg->payloads, 96, yaw_rate);
-    _mav_put_float_array(msg->payloads, 48, vel_variance, 3);
-    _mav_put_float_array(msg->payloads, 60, pos_variance, 3);
-    _mav_put_float_array(msg->payloads, 72, q, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, x_acc);
+    _mav_put_float(((char*)msg->payloads), 12, y_acc);
+    _mav_put_float(((char*)msg->payloads), 16, z_acc);
+    _mav_put_float(((char*)msg->payloads), 20, x_vel);
+    _mav_put_float(((char*)msg->payloads), 24, y_vel);
+    _mav_put_float(((char*)msg->payloads), 28, z_vel);
+    _mav_put_float(((char*)msg->payloads), 32, x_pos);
+    _mav_put_float(((char*)msg->payloads), 36, y_pos);
+    _mav_put_float(((char*)msg->payloads), 40, z_pos);
+    _mav_put_float(((char*)msg->payloads), 44, airspeed);
+    _mav_put_float(((char*)msg->payloads), 88, roll_rate);
+    _mav_put_float(((char*)msg->payloads), 92, pitch_rate);
+    _mav_put_float(((char*)msg->payloads), 96, yaw_rate);
+    _mav_put_float_array(((char*)msg->payloads), 48, vel_variance, 3);
+    _mav_put_float_array(((char*)msg->payloads), 60, pos_variance, 3);
+    _mav_put_float_array(((char*)msg->payloads), 72, q, 4);
 
     msg->msgid = MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_MIN_LEN, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_LEN, MAVLINK_MSG_ID_CONTROL_SYSTEM_STATE_CRC);

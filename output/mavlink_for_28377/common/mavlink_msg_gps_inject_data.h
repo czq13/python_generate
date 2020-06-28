@@ -59,10 +59,10 @@ typedef struct __mavlink_gps_inject_data_t {
 static inline uint16_t mavlink_msg_gps_inject_data_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint8_t len, const uint8_t *data)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, target_component);
-    _mav_put_uint8_t(msg->payloads, 2, len);
-    _mav_put_uint8_t_array(msg->payloads, 3, data, 110);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, len);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 3, data, 110);
     msg->msgid = MAVLINK_MSG_ID_GPS_INJECT_DATA;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GPS_INJECT_DATA_MIN_LEN, MAVLINK_MSG_ID_GPS_INJECT_DATA_LEN, MAVLINK_MSG_ID_GPS_INJECT_DATA_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_gps_inject_data_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint8_t len,const uint8_t *data)
 {
-    _mav_put_uint8_t(msg->payloads, 0, target_system);
-    _mav_put_uint8_t(msg->payloads, 1, target_component);
-    _mav_put_uint8_t(msg->payloads, 2, len);
-    _mav_put_uint8_t_array(msg->payloads, 3, data, 110);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, len);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 3, data, 110);
 
     msg->msgid = MAVLINK_MSG_ID_GPS_INJECT_DATA;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_GPS_INJECT_DATA_MIN_LEN, MAVLINK_MSG_ID_GPS_INJECT_DATA_LEN, MAVLINK_MSG_ID_GPS_INJECT_DATA_CRC);

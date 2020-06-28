@@ -110,20 +110,20 @@ typedef struct __mavlink_trajectory_representation_waypoints_t {
 static inline uint16_t mavlink_msg_trajectory_representation_waypoints_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t valid_points, const float *pos_x, const float *pos_y, const float *pos_z, const float *vel_x, const float *vel_y, const float *vel_z, const float *acc_x, const float *acc_y, const float *acc_z, const float *pos_yaw, const float *vel_yaw, const uint16_t *command)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint8_t(msg->payloads, 238, valid_points);
-    _mav_put_float_array(msg->payloads, 8, pos_x, 5);
-    _mav_put_float_array(msg->payloads, 28, pos_y, 5);
-    _mav_put_float_array(msg->payloads, 48, pos_z, 5);
-    _mav_put_float_array(msg->payloads, 68, vel_x, 5);
-    _mav_put_float_array(msg->payloads, 88, vel_y, 5);
-    _mav_put_float_array(msg->payloads, 108, vel_z, 5);
-    _mav_put_float_array(msg->payloads, 128, acc_x, 5);
-    _mav_put_float_array(msg->payloads, 148, acc_y, 5);
-    _mav_put_float_array(msg->payloads, 168, acc_z, 5);
-    _mav_put_float_array(msg->payloads, 188, pos_yaw, 5);
-    _mav_put_float_array(msg->payloads, 208, vel_yaw, 5);
-    _mav_put_uint16_t_array(msg->payloads, 228, command, 5);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint8_t(((char*)msg->payloads), 238, valid_points);
+    _mav_put_float_array(((char*)msg->payloads), 8, pos_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 28, pos_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 48, pos_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 68, vel_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 88, vel_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 108, vel_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 128, acc_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 148, acc_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 168, acc_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 188, pos_yaw, 5);
+    _mav_put_float_array(((char*)msg->payloads), 208, vel_yaw, 5);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 228, command, 5);
     msg->msgid = MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_MIN_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_CRC);
 }
@@ -154,20 +154,20 @@ static inline uint16_t mavlink_msg_trajectory_representation_waypoints_pack_chan
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t valid_points,const float *pos_x,const float *pos_y,const float *pos_z,const float *vel_x,const float *vel_y,const float *vel_z,const float *acc_x,const float *acc_y,const float *acc_z,const float *pos_yaw,const float *vel_yaw,const uint16_t *command)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint8_t(msg->payloads, 238, valid_points);
-    _mav_put_float_array(msg->payloads, 8, pos_x, 5);
-    _mav_put_float_array(msg->payloads, 28, pos_y, 5);
-    _mav_put_float_array(msg->payloads, 48, pos_z, 5);
-    _mav_put_float_array(msg->payloads, 68, vel_x, 5);
-    _mav_put_float_array(msg->payloads, 88, vel_y, 5);
-    _mav_put_float_array(msg->payloads, 108, vel_z, 5);
-    _mav_put_float_array(msg->payloads, 128, acc_x, 5);
-    _mav_put_float_array(msg->payloads, 148, acc_y, 5);
-    _mav_put_float_array(msg->payloads, 168, acc_z, 5);
-    _mav_put_float_array(msg->payloads, 188, pos_yaw, 5);
-    _mav_put_float_array(msg->payloads, 208, vel_yaw, 5);
-    _mav_put_uint16_t_array(msg->payloads, 228, command, 5);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint8_t(((char*)msg->payloads), 238, valid_points);
+    _mav_put_float_array(((char*)msg->payloads), 8, pos_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 28, pos_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 48, pos_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 68, vel_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 88, vel_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 108, vel_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 128, acc_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 148, acc_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 168, acc_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 188, pos_yaw, 5);
+    _mav_put_float_array(((char*)msg->payloads), 208, vel_yaw, 5);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 228, command, 5);
 
     msg->msgid = MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_MIN_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_WAYPOINTS_CRC);

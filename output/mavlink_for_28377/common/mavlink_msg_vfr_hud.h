@@ -67,12 +67,12 @@ typedef struct __mavlink_vfr_hud_t {
 static inline uint16_t mavlink_msg_vfr_hud_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                float airspeed, float groundspeed, int16_t heading, uint16_t throttle, float alt, float climb)
 {
-    _mav_put_float(msg->payloads, 0, airspeed);
-    _mav_put_float(msg->payloads, 4, groundspeed);
-    _mav_put_float(msg->payloads, 8, alt);
-    _mav_put_float(msg->payloads, 12, climb);
-    _mav_put_int16_t(msg->payloads, 16, heading);
-    _mav_put_uint16_t(msg->payloads, 18, throttle);
+    _mav_put_float(((char*)msg->payloads), 0, airspeed);
+    _mav_put_float(((char*)msg->payloads), 4, groundspeed);
+    _mav_put_float(((char*)msg->payloads), 8, alt);
+    _mav_put_float(((char*)msg->payloads), 12, climb);
+    _mav_put_int16_t(((char*)msg->payloads), 16, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, throttle);
 
     msg->msgid = MAVLINK_MSG_ID_VFR_HUD;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_VFR_HUD_MIN_LEN, MAVLINK_MSG_ID_VFR_HUD_LEN, MAVLINK_MSG_ID_VFR_HUD_CRC);
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_vfr_hud_pack_chan(uint8_t system_id, uint8_t 
                                mavlink_message_t* msg,
                                    float airspeed,float groundspeed,int16_t heading,uint16_t throttle,float alt,float climb)
 {
-    _mav_put_float(msg->payloads, 0, airspeed);
-    _mav_put_float(msg->payloads, 4, groundspeed);
-    _mav_put_float(msg->payloads, 8, alt);
-    _mav_put_float(msg->payloads, 12, climb);
-    _mav_put_int16_t(msg->payloads, 16, heading);
-    _mav_put_uint16_t(msg->payloads, 18, throttle);
+    _mav_put_float(((char*)msg->payloads), 0, airspeed);
+    _mav_put_float(((char*)msg->payloads), 4, groundspeed);
+    _mav_put_float(((char*)msg->payloads), 8, alt);
+    _mav_put_float(((char*)msg->payloads), 12, climb);
+    _mav_put_int16_t(((char*)msg->payloads), 16, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, throttle);
 
 
     msg->msgid = MAVLINK_MSG_ID_VFR_HUD;

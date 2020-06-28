@@ -67,12 +67,12 @@ typedef struct __mavlink_manual_control_t {
 static inline uint16_t mavlink_msg_manual_control_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target, int16_t x, int16_t y, int16_t z, int16_t r, uint16_t buttons)
 {
-    _mav_put_int16_t(msg->payloads, 0, x);
-    _mav_put_int16_t(msg->payloads, 2, y);
-    _mav_put_int16_t(msg->payloads, 4, z);
-    _mav_put_int16_t(msg->payloads, 6, r);
-    _mav_put_uint16_t(msg->payloads, 8, buttons);
-    _mav_put_uint8_t(msg->payloads, 10, target);
+    _mav_put_int16_t(((char*)msg->payloads), 0, x);
+    _mav_put_int16_t(((char*)msg->payloads), 2, y);
+    _mav_put_int16_t(((char*)msg->payloads), 4, z);
+    _mav_put_int16_t(((char*)msg->payloads), 6, r);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, buttons);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, target);
 
     msg->msgid = MAVLINK_MSG_ID_MANUAL_CONTROL;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MANUAL_CONTROL_MIN_LEN, MAVLINK_MSG_ID_MANUAL_CONTROL_LEN, MAVLINK_MSG_ID_MANUAL_CONTROL_CRC);
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_manual_control_pack_chan(uint8_t system_id, u
                                mavlink_message_t* msg,
                                    uint8_t target,int16_t x,int16_t y,int16_t z,int16_t r,uint16_t buttons)
 {
-    _mav_put_int16_t(msg->payloads, 0, x);
-    _mav_put_int16_t(msg->payloads, 2, y);
-    _mav_put_int16_t(msg->payloads, 4, z);
-    _mav_put_int16_t(msg->payloads, 6, r);
-    _mav_put_uint16_t(msg->payloads, 8, buttons);
-    _mav_put_uint8_t(msg->payloads, 10, target);
+    _mav_put_int16_t(((char*)msg->payloads), 0, x);
+    _mav_put_int16_t(((char*)msg->payloads), 2, y);
+    _mav_put_int16_t(((char*)msg->payloads), 4, z);
+    _mav_put_int16_t(((char*)msg->payloads), 6, r);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, buttons);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, target);
 
 
     msg->msgid = MAVLINK_MSG_ID_MANUAL_CONTROL;

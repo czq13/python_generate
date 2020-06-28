@@ -67,12 +67,12 @@ typedef struct __mavlink_orbit_execution_status_t {
 static inline uint16_t mavlink_msg_orbit_execution_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float radius, uint8_t frame, int32_t x, int32_t y, float z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, radius);
-    _mav_put_int32_t(msg->payloads, 12, x);
-    _mav_put_int32_t(msg->payloads, 16, y);
-    _mav_put_float(msg->payloads, 20, z);
-    _mav_put_uint8_t(msg->payloads, 24, frame);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, radius);
+    _mav_put_int32_t(((char*)msg->payloads), 12, x);
+    _mav_put_int32_t(((char*)msg->payloads), 16, y);
+    _mav_put_float(((char*)msg->payloads), 20, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, frame);
 
     msg->msgid = MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS_MIN_LEN, MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS_LEN, MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS_CRC);
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_orbit_execution_status_pack_chan(uint8_t syst
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float radius,uint8_t frame,int32_t x,int32_t y,float z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, radius);
-    _mav_put_int32_t(msg->payloads, 12, x);
-    _mav_put_int32_t(msg->payloads, 16, y);
-    _mav_put_float(msg->payloads, 20, z);
-    _mav_put_uint8_t(msg->payloads, 24, frame);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, radius);
+    _mav_put_int32_t(((char*)msg->payloads), 12, x);
+    _mav_put_int32_t(((char*)msg->payloads), 16, y);
+    _mav_put_float(((char*)msg->payloads), 20, z);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, frame);
 
 
     msg->msgid = MAVLINK_MSG_ID_ORBIT_EXECUTION_STATUS;

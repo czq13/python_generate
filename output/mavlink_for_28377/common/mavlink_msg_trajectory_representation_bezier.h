@@ -75,13 +75,13 @@ typedef struct __mavlink_trajectory_representation_bezier_t {
 static inline uint16_t mavlink_msg_trajectory_representation_bezier_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t valid_points, const float *pos_x, const float *pos_y, const float *pos_z, const float *delta, const float *pos_yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint8_t(msg->payloads, 108, valid_points);
-    _mav_put_float_array(msg->payloads, 8, pos_x, 5);
-    _mav_put_float_array(msg->payloads, 28, pos_y, 5);
-    _mav_put_float_array(msg->payloads, 48, pos_z, 5);
-    _mav_put_float_array(msg->payloads, 68, delta, 5);
-    _mav_put_float_array(msg->payloads, 88, pos_yaw, 5);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint8_t(((char*)msg->payloads), 108, valid_points);
+    _mav_put_float_array(((char*)msg->payloads), 8, pos_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 28, pos_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 48, pos_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 68, delta, 5);
+    _mav_put_float_array(((char*)msg->payloads), 88, pos_yaw, 5);
     msg->msgid = MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_MIN_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_CRC);
 }
@@ -105,13 +105,13 @@ static inline uint16_t mavlink_msg_trajectory_representation_bezier_pack_chan(ui
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t valid_points,const float *pos_x,const float *pos_y,const float *pos_z,const float *delta,const float *pos_yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint8_t(msg->payloads, 108, valid_points);
-    _mav_put_float_array(msg->payloads, 8, pos_x, 5);
-    _mav_put_float_array(msg->payloads, 28, pos_y, 5);
-    _mav_put_float_array(msg->payloads, 48, pos_z, 5);
-    _mav_put_float_array(msg->payloads, 68, delta, 5);
-    _mav_put_float_array(msg->payloads, 88, pos_yaw, 5);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint8_t(((char*)msg->payloads), 108, valid_points);
+    _mav_put_float_array(((char*)msg->payloads), 8, pos_x, 5);
+    _mav_put_float_array(((char*)msg->payloads), 28, pos_y, 5);
+    _mav_put_float_array(((char*)msg->payloads), 48, pos_z, 5);
+    _mav_put_float_array(((char*)msg->payloads), 68, delta, 5);
+    _mav_put_float_array(((char*)msg->payloads), 88, pos_yaw, 5);
 
     msg->msgid = MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_MIN_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_LEN, MAVLINK_MSG_ID_TRAJECTORY_REPRESENTATION_BEZIER_CRC);

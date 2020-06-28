@@ -103,21 +103,21 @@ typedef struct __mavlink_mission_item_t {
 static inline uint16_t mavlink_msg_mission_item_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t seq, uint8_t frame, uint16_t command, uint8_t current, uint8_t autocontinue, float param1, float param2, float param3, float param4, float x, float y, float z, uint8_t mission_type)
 {
-    _mav_put_float(msg->payloads, 0, param1);
-    _mav_put_float(msg->payloads, 4, param2);
-    _mav_put_float(msg->payloads, 8, param3);
-    _mav_put_float(msg->payloads, 12, param4);
-    _mav_put_float(msg->payloads, 16, x);
-    _mav_put_float(msg->payloads, 20, y);
-    _mav_put_float(msg->payloads, 24, z);
-    _mav_put_uint16_t(msg->payloads, 28, seq);
-    _mav_put_uint16_t(msg->payloads, 30, command);
-    _mav_put_uint8_t(msg->payloads, 32, target_system);
-    _mav_put_uint8_t(msg->payloads, 33, target_component);
-    _mav_put_uint8_t(msg->payloads, 34, frame);
-    _mav_put_uint8_t(msg->payloads, 35, current);
-    _mav_put_uint8_t(msg->payloads, 36, autocontinue);
-    _mav_put_uint8_t(msg->payloads, 37, mission_type);
+    _mav_put_float(((char*)msg->payloads), 0, param1);
+    _mav_put_float(((char*)msg->payloads), 4, param2);
+    _mav_put_float(((char*)msg->payloads), 8, param3);
+    _mav_put_float(((char*)msg->payloads), 12, param4);
+    _mav_put_float(((char*)msg->payloads), 16, x);
+    _mav_put_float(((char*)msg->payloads), 20, y);
+    _mav_put_float(((char*)msg->payloads), 24, z);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, seq);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, frame);
+    _mav_put_uint8_t(((char*)msg->payloads), 35, current);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, autocontinue);
+    _mav_put_uint8_t(((char*)msg->payloads), 37, mission_type);
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_ITEM;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MISSION_ITEM_MIN_LEN, MAVLINK_MSG_ID_MISSION_ITEM_LEN, MAVLINK_MSG_ID_MISSION_ITEM_CRC);
@@ -150,21 +150,21 @@ static inline uint16_t mavlink_msg_mission_item_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t seq,uint8_t frame,uint16_t command,uint8_t current,uint8_t autocontinue,float param1,float param2,float param3,float param4,float x,float y,float z,uint8_t mission_type)
 {
-    _mav_put_float(msg->payloads, 0, param1);
-    _mav_put_float(msg->payloads, 4, param2);
-    _mav_put_float(msg->payloads, 8, param3);
-    _mav_put_float(msg->payloads, 12, param4);
-    _mav_put_float(msg->payloads, 16, x);
-    _mav_put_float(msg->payloads, 20, y);
-    _mav_put_float(msg->payloads, 24, z);
-    _mav_put_uint16_t(msg->payloads, 28, seq);
-    _mav_put_uint16_t(msg->payloads, 30, command);
-    _mav_put_uint8_t(msg->payloads, 32, target_system);
-    _mav_put_uint8_t(msg->payloads, 33, target_component);
-    _mav_put_uint8_t(msg->payloads, 34, frame);
-    _mav_put_uint8_t(msg->payloads, 35, current);
-    _mav_put_uint8_t(msg->payloads, 36, autocontinue);
-    _mav_put_uint8_t(msg->payloads, 37, mission_type);
+    _mav_put_float(((char*)msg->payloads), 0, param1);
+    _mav_put_float(((char*)msg->payloads), 4, param2);
+    _mav_put_float(((char*)msg->payloads), 8, param3);
+    _mav_put_float(((char*)msg->payloads), 12, param4);
+    _mav_put_float(((char*)msg->payloads), 16, x);
+    _mav_put_float(((char*)msg->payloads), 20, y);
+    _mav_put_float(((char*)msg->payloads), 24, z);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, seq);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, command);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 33, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 34, frame);
+    _mav_put_uint8_t(((char*)msg->payloads), 35, current);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, autocontinue);
+    _mav_put_uint8_t(((char*)msg->payloads), 37, mission_type);
 
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_ITEM;

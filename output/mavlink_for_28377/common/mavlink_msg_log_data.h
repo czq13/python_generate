@@ -59,10 +59,10 @@ typedef struct __mavlink_log_data_t {
 static inline uint16_t mavlink_msg_log_data_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t id, uint32_t ofs, uint8_t count, const uint8_t *data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ofs);
-    _mav_put_uint16_t(msg->payloads, 4, id);
-    _mav_put_uint8_t(msg->payloads, 6, count);
-    _mav_put_uint8_t_array(msg->payloads, 7, data, 90);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ofs);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, count);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 7, data, 90);
     msg->msgid = MAVLINK_MSG_ID_LOG_DATA;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LOG_DATA_MIN_LEN, MAVLINK_MSG_ID_LOG_DATA_LEN, MAVLINK_MSG_ID_LOG_DATA_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_log_data_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    uint16_t id,uint32_t ofs,uint8_t count,const uint8_t *data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ofs);
-    _mav_put_uint16_t(msg->payloads, 4, id);
-    _mav_put_uint8_t(msg->payloads, 6, count);
-    _mav_put_uint8_t_array(msg->payloads, 7, data, 90);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ofs);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, count);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 7, data, 90);
 
     msg->msgid = MAVLINK_MSG_ID_LOG_DATA;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_LOG_DATA_MIN_LEN, MAVLINK_MSG_ID_LOG_DATA_LEN, MAVLINK_MSG_ID_LOG_DATA_CRC);

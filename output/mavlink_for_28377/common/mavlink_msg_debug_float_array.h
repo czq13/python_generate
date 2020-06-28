@@ -60,10 +60,10 @@ typedef struct __mavlink_debug_float_array_t {
 static inline uint16_t mavlink_msg_debug_float_array_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, const char *name, uint16_t array_id, const float *data)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 8, array_id);
-    _mav_put_char_array(msg->payloads, 10, name, 10);
-    _mav_put_float_array(msg->payloads, 20, data, 58);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, array_id);
+    _mav_put_char_array(((char*)msg->payloads), 10, name, 10);
+    _mav_put_float_array(((char*)msg->payloads), 20, data, 58);
     msg->msgid = MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_MIN_LEN, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_LEN, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_CRC);
 }
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_debug_float_array_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint64_t time_usec,const char *name,uint16_t array_id,const float *data)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 8, array_id);
-    _mav_put_char_array(msg->payloads, 10, name, 10);
-    _mav_put_float_array(msg->payloads, 20, data, 58);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, array_id);
+    _mav_put_char_array(((char*)msg->payloads), 10, name, 10);
+    _mav_put_float_array(((char*)msg->payloads), 20, data, 58);
 
     msg->msgid = MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_MIN_LEN, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_LEN, MAVLINK_MSG_ID_DEBUG_FLOAT_ARRAY_CRC);

@@ -112,23 +112,23 @@ typedef struct __mavlink_ais_vessel_t {
 static inline uint16_t mavlink_msg_ais_vessel_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t MMSI, int32_t lat, int32_t lon, uint16_t COG, uint16_t heading, uint16_t velocity, int8_t turn_rate, uint8_t navigational_status, uint8_t type, uint16_t dimension_bow, uint16_t dimension_stern, uint8_t dimension_port, uint8_t dimension_starboard, const char *callsign, const char *name, uint16_t tslc, uint16_t flags)
 {
-    _mav_put_uint32_t(msg->payloads, 0, MMSI);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_uint16_t(msg->payloads, 12, COG);
-    _mav_put_uint16_t(msg->payloads, 14, heading);
-    _mav_put_uint16_t(msg->payloads, 16, velocity);
-    _mav_put_uint16_t(msg->payloads, 18, dimension_bow);
-    _mav_put_uint16_t(msg->payloads, 20, dimension_stern);
-    _mav_put_uint16_t(msg->payloads, 22, tslc);
-    _mav_put_uint16_t(msg->payloads, 24, flags);
-    _mav_put_int8_t(msg->payloads, 26, turn_rate);
-    _mav_put_uint8_t(msg->payloads, 27, navigational_status);
-    _mav_put_uint8_t(msg->payloads, 28, type);
-    _mav_put_uint8_t(msg->payloads, 29, dimension_port);
-    _mav_put_uint8_t(msg->payloads, 30, dimension_starboard);
-    _mav_put_char_array(msg->payloads, 31, callsign, 7);
-    _mav_put_char_array(msg->payloads, 38, name, 20);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, MMSI);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, COG);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, velocity);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, dimension_bow);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, dimension_stern);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, tslc);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, flags);
+    _mav_put_int8_t(((char*)msg->payloads), 26, turn_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 27, navigational_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, dimension_port);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, dimension_starboard);
+    _mav_put_char_array(((char*)msg->payloads), 31, callsign, 7);
+    _mav_put_char_array(((char*)msg->payloads), 38, name, 20);
     msg->msgid = MAVLINK_MSG_ID_AIS_VESSEL;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_AIS_VESSEL_MIN_LEN, MAVLINK_MSG_ID_AIS_VESSEL_LEN, MAVLINK_MSG_ID_AIS_VESSEL_CRC);
 }
@@ -162,23 +162,23 @@ static inline uint16_t mavlink_msg_ais_vessel_pack_chan(uint8_t system_id, uint8
                                mavlink_message_t* msg,
                                    uint32_t MMSI,int32_t lat,int32_t lon,uint16_t COG,uint16_t heading,uint16_t velocity,int8_t turn_rate,uint8_t navigational_status,uint8_t type,uint16_t dimension_bow,uint16_t dimension_stern,uint8_t dimension_port,uint8_t dimension_starboard,const char *callsign,const char *name,uint16_t tslc,uint16_t flags)
 {
-    _mav_put_uint32_t(msg->payloads, 0, MMSI);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_uint16_t(msg->payloads, 12, COG);
-    _mav_put_uint16_t(msg->payloads, 14, heading);
-    _mav_put_uint16_t(msg->payloads, 16, velocity);
-    _mav_put_uint16_t(msg->payloads, 18, dimension_bow);
-    _mav_put_uint16_t(msg->payloads, 20, dimension_stern);
-    _mav_put_uint16_t(msg->payloads, 22, tslc);
-    _mav_put_uint16_t(msg->payloads, 24, flags);
-    _mav_put_int8_t(msg->payloads, 26, turn_rate);
-    _mav_put_uint8_t(msg->payloads, 27, navigational_status);
-    _mav_put_uint8_t(msg->payloads, 28, type);
-    _mav_put_uint8_t(msg->payloads, 29, dimension_port);
-    _mav_put_uint8_t(msg->payloads, 30, dimension_starboard);
-    _mav_put_char_array(msg->payloads, 31, callsign, 7);
-    _mav_put_char_array(msg->payloads, 38, name, 20);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, MMSI);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, COG);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, velocity);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, dimension_bow);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, dimension_stern);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, tslc);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, flags);
+    _mav_put_int8_t(((char*)msg->payloads), 26, turn_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 27, navigational_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, dimension_port);
+    _mav_put_uint8_t(((char*)msg->payloads), 30, dimension_starboard);
+    _mav_put_char_array(((char*)msg->payloads), 31, callsign, 7);
+    _mav_put_char_array(((char*)msg->payloads), 38, name, 20);
 
     msg->msgid = MAVLINK_MSG_ID_AIS_VESSEL;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_AIS_VESSEL_MIN_LEN, MAVLINK_MSG_ID_AIS_VESSEL_LEN, MAVLINK_MSG_ID_AIS_VESSEL_CRC);

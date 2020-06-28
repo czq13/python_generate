@@ -63,11 +63,11 @@ typedef struct __mavlink_time_estimate_to_target_t {
 static inline uint16_t mavlink_msg_time_estimate_to_target_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t safe_return, int32_t land, int32_t mission_next_item, int32_t mission_end, int32_t commanded_action)
 {
-    _mav_put_int32_t(msg->payloads, 0, safe_return);
-    _mav_put_int32_t(msg->payloads, 4, land);
-    _mav_put_int32_t(msg->payloads, 8, mission_next_item);
-    _mav_put_int32_t(msg->payloads, 12, mission_end);
-    _mav_put_int32_t(msg->payloads, 16, commanded_action);
+    _mav_put_int32_t(((char*)msg->payloads), 0, safe_return);
+    _mav_put_int32_t(((char*)msg->payloads), 4, land);
+    _mav_put_int32_t(((char*)msg->payloads), 8, mission_next_item);
+    _mav_put_int32_t(((char*)msg->payloads), 12, mission_end);
+    _mav_put_int32_t(((char*)msg->payloads), 16, commanded_action);
 
     msg->msgid = MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET_MIN_LEN, MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET_LEN, MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_time_estimate_to_target_pack_chan(uint8_t sys
                                mavlink_message_t* msg,
                                    int32_t safe_return,int32_t land,int32_t mission_next_item,int32_t mission_end,int32_t commanded_action)
 {
-    _mav_put_int32_t(msg->payloads, 0, safe_return);
-    _mav_put_int32_t(msg->payloads, 4, land);
-    _mav_put_int32_t(msg->payloads, 8, mission_next_item);
-    _mav_put_int32_t(msg->payloads, 12, mission_end);
-    _mav_put_int32_t(msg->payloads, 16, commanded_action);
+    _mav_put_int32_t(((char*)msg->payloads), 0, safe_return);
+    _mav_put_int32_t(((char*)msg->payloads), 4, land);
+    _mav_put_int32_t(((char*)msg->payloads), 8, mission_next_item);
+    _mav_put_int32_t(((char*)msg->payloads), 12, mission_end);
+    _mav_put_int32_t(((char*)msg->payloads), 16, commanded_action);
 
 
     msg->msgid = MAVLINK_MSG_ID_TIME_ESTIMATE_TO_TARGET;

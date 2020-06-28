@@ -67,12 +67,12 @@ typedef struct __mavlink_logging_data_acked_t {
 static inline uint16_t mavlink_msg_logging_data_acked_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t sequence, uint8_t length, uint8_t first_message_offset, const uint8_t *data)
 {
-    _mav_put_uint16_t(msg->payloads, 0, sequence);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, length);
-    _mav_put_uint8_t(msg->payloads, 5, first_message_offset);
-    _mav_put_uint8_t_array(msg->payloads, 6, data, 249);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, sequence);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, length);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, first_message_offset);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, data, 249);
     msg->msgid = MAVLINK_MSG_ID_LOGGING_DATA_ACKED;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_MIN_LEN, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_LEN, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_CRC);
 }
@@ -95,12 +95,12 @@ static inline uint16_t mavlink_msg_logging_data_acked_pack_chan(uint8_t system_i
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t sequence,uint8_t length,uint8_t first_message_offset,const uint8_t *data)
 {
-    _mav_put_uint16_t(msg->payloads, 0, sequence);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_uint8_t(msg->payloads, 4, length);
-    _mav_put_uint8_t(msg->payloads, 5, first_message_offset);
-    _mav_put_uint8_t_array(msg->payloads, 6, data, 249);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, sequence);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, length);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, first_message_offset);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, data, 249);
 
     msg->msgid = MAVLINK_MSG_ID_LOGGING_DATA_ACKED;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_MIN_LEN, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_LEN, MAVLINK_MSG_ID_LOGGING_DATA_ACKED_CRC);

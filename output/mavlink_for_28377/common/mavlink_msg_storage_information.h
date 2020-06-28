@@ -79,15 +79,15 @@ typedef struct __mavlink_storage_information_t {
 static inline uint16_t mavlink_msg_storage_information_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint8_t storage_id, uint8_t storage_count, uint8_t status, float total_capacity, float used_capacity, float available_capacity, float read_speed, float write_speed)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, total_capacity);
-    _mav_put_float(msg->payloads, 8, used_capacity);
-    _mav_put_float(msg->payloads, 12, available_capacity);
-    _mav_put_float(msg->payloads, 16, read_speed);
-    _mav_put_float(msg->payloads, 20, write_speed);
-    _mav_put_uint8_t(msg->payloads, 24, storage_id);
-    _mav_put_uint8_t(msg->payloads, 25, storage_count);
-    _mav_put_uint8_t(msg->payloads, 26, status);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, total_capacity);
+    _mav_put_float(((char*)msg->payloads), 8, used_capacity);
+    _mav_put_float(((char*)msg->payloads), 12, available_capacity);
+    _mav_put_float(((char*)msg->payloads), 16, read_speed);
+    _mav_put_float(((char*)msg->payloads), 20, write_speed);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, storage_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 25, storage_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, status);
 
     msg->msgid = MAVLINK_MSG_ID_STORAGE_INFORMATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_STORAGE_INFORMATION_MIN_LEN, MAVLINK_MSG_ID_STORAGE_INFORMATION_LEN, MAVLINK_MSG_ID_STORAGE_INFORMATION_CRC);
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_storage_information_pack_chan(uint8_t system_
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint8_t storage_id,uint8_t storage_count,uint8_t status,float total_capacity,float used_capacity,float available_capacity,float read_speed,float write_speed)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, total_capacity);
-    _mav_put_float(msg->payloads, 8, used_capacity);
-    _mav_put_float(msg->payloads, 12, available_capacity);
-    _mav_put_float(msg->payloads, 16, read_speed);
-    _mav_put_float(msg->payloads, 20, write_speed);
-    _mav_put_uint8_t(msg->payloads, 24, storage_id);
-    _mav_put_uint8_t(msg->payloads, 25, storage_count);
-    _mav_put_uint8_t(msg->payloads, 26, status);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, total_capacity);
+    _mav_put_float(((char*)msg->payloads), 8, used_capacity);
+    _mav_put_float(((char*)msg->payloads), 12, available_capacity);
+    _mav_put_float(((char*)msg->payloads), 16, read_speed);
+    _mav_put_float(((char*)msg->payloads), 20, write_speed);
+    _mav_put_uint8_t(((char*)msg->payloads), 24, storage_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 25, storage_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, status);
 
 
     msg->msgid = MAVLINK_MSG_ID_STORAGE_INFORMATION;

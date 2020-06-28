@@ -71,13 +71,13 @@ typedef struct __mavlink_camera_capture_status_t {
 static inline uint16_t mavlink_msg_camera_capture_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint8_t image_status, uint8_t video_status, float image_interval, uint32_t recording_time_ms, float available_capacity, int32_t image_count)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, image_interval);
-    _mav_put_uint32_t(msg->payloads, 8, recording_time_ms);
-    _mav_put_float(msg->payloads, 12, available_capacity);
-    _mav_put_uint8_t(msg->payloads, 16, image_status);
-    _mav_put_uint8_t(msg->payloads, 17, video_status);
-    _mav_put_int32_t(msg->payloads, 18, image_count);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, image_interval);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, recording_time_ms);
+    _mav_put_float(((char*)msg->payloads), 12, available_capacity);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, image_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 17, video_status);
+    _mav_put_int32_t(((char*)msg->payloads), 18, image_count);
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS_MIN_LEN, MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS_LEN, MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_camera_capture_status_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint8_t image_status,uint8_t video_status,float image_interval,uint32_t recording_time_ms,float available_capacity,int32_t image_count)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, image_interval);
-    _mav_put_uint32_t(msg->payloads, 8, recording_time_ms);
-    _mav_put_float(msg->payloads, 12, available_capacity);
-    _mav_put_uint8_t(msg->payloads, 16, image_status);
-    _mav_put_uint8_t(msg->payloads, 17, video_status);
-    _mav_put_int32_t(msg->payloads, 18, image_count);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, image_interval);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, recording_time_ms);
+    _mav_put_float(((char*)msg->payloads), 12, available_capacity);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, image_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 17, video_status);
+    _mav_put_int32_t(((char*)msg->payloads), 18, image_count);
 
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_CAPTURE_STATUS;

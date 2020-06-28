@@ -83,16 +83,16 @@ typedef struct __mavlink_open_drone_id_system_t {
 static inline uint16_t mavlink_msg_open_drone_id_system_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const uint8_t *id_or_mac, uint8_t flags, int32_t operator_latitude, int32_t operator_longitude, uint16_t area_count, uint16_t area_radius, float area_ceiling, float area_floor)
 {
-    _mav_put_int32_t(msg->payloads, 0, operator_latitude);
-    _mav_put_int32_t(msg->payloads, 4, operator_longitude);
-    _mav_put_float(msg->payloads, 8, area_ceiling);
-    _mav_put_float(msg->payloads, 12, area_floor);
-    _mav_put_uint16_t(msg->payloads, 16, area_count);
-    _mav_put_uint16_t(msg->payloads, 18, area_radius);
-    _mav_put_uint8_t(msg->payloads, 20, target_system);
-    _mav_put_uint8_t(msg->payloads, 21, target_component);
-    _mav_put_uint8_t(msg->payloads, 42, flags);
-    _mav_put_uint8_t_array(msg->payloads, 22, id_or_mac, 20);
+    _mav_put_int32_t(((char*)msg->payloads), 0, operator_latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, operator_longitude);
+    _mav_put_float(((char*)msg->payloads), 8, area_ceiling);
+    _mav_put_float(((char*)msg->payloads), 12, area_floor);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, area_count);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, area_radius);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, flags);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 22, id_or_mac, 20);
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_CRC);
 }
@@ -119,16 +119,16 @@ static inline uint16_t mavlink_msg_open_drone_id_system_pack_chan(uint8_t system
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const uint8_t *id_or_mac,uint8_t flags,int32_t operator_latitude,int32_t operator_longitude,uint16_t area_count,uint16_t area_radius,float area_ceiling,float area_floor)
 {
-    _mav_put_int32_t(msg->payloads, 0, operator_latitude);
-    _mav_put_int32_t(msg->payloads, 4, operator_longitude);
-    _mav_put_float(msg->payloads, 8, area_ceiling);
-    _mav_put_float(msg->payloads, 12, area_floor);
-    _mav_put_uint16_t(msg->payloads, 16, area_count);
-    _mav_put_uint16_t(msg->payloads, 18, area_radius);
-    _mav_put_uint8_t(msg->payloads, 20, target_system);
-    _mav_put_uint8_t(msg->payloads, 21, target_component);
-    _mav_put_uint8_t(msg->payloads, 42, flags);
-    _mav_put_uint8_t_array(msg->payloads, 22, id_or_mac, 20);
+    _mav_put_int32_t(((char*)msg->payloads), 0, operator_latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, operator_longitude);
+    _mav_put_float(((char*)msg->payloads), 8, area_ceiling);
+    _mav_put_float(((char*)msg->payloads), 12, area_floor);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, area_count);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, area_radius);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, flags);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 22, id_or_mac, 20);
 
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_SYSTEM_CRC);

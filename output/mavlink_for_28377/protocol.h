@@ -91,11 +91,12 @@ static inline float _MAV_RETURN_float(const mavlink_message_t * msg, uint8_t ofs
 	point[0] = (msg->payloads[ofs]<<8) | (msg->payloads[ofs+1]);
 	point[1] = (msg->payloads[ofs+2]<<8) | (msg->payloads[ofs+3]);
 	#else
-	point[0] = msg->payloads[ofs+3];
-	point[1] = msg->payloads[ofs+2];
-	point[2] = msg->payloads[ofs+1];
-	point[3] = msg->payloads[ofs];
+	point[0] = msg->payloads[ofs];
+	point[1] = msg->payloads[ofs+1];
+	point[2] = msg->payloads[ofs+2];
+	point[3] = msg->payloads[ofs+3];
 	#endif
+	return r;
 }
 static inline double _MAV_RETURN_double(const mavlink_message_t * msg, uint8_t ofs) {
 	return (double)_MAV_RETURN_float(msg,ofs);

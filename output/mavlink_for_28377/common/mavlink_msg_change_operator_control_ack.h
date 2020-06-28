@@ -55,9 +55,9 @@ typedef struct __mavlink_change_operator_control_ack_t {
 static inline uint16_t mavlink_msg_change_operator_control_ack_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t gcs_system_id, uint8_t control_request, uint8_t ack)
 {
-    _mav_put_uint8_t(msg->payloads, 0, gcs_system_id);
-    _mav_put_uint8_t(msg->payloads, 1, control_request);
-    _mav_put_uint8_t(msg->payloads, 2, ack);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, gcs_system_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, control_request);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, ack);
 
     msg->msgid = MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK_MIN_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK_LEN, MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_change_operator_control_ack_pack_chan(uint8_t
                                mavlink_message_t* msg,
                                    uint8_t gcs_system_id,uint8_t control_request,uint8_t ack)
 {
-    _mav_put_uint8_t(msg->payloads, 0, gcs_system_id);
-    _mav_put_uint8_t(msg->payloads, 1, control_request);
-    _mav_put_uint8_t(msg->payloads, 2, ack);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, gcs_system_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, control_request);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, ack);
 
 
     msg->msgid = MAVLINK_MSG_ID_CHANGE_OPERATOR_CONTROL_ACK;

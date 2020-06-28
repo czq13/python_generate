@@ -63,11 +63,11 @@ typedef struct __mavlink_param_set_t {
 static inline uint16_t mavlink_msg_param_set_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const char *param_id, float param_value, uint8_t param_type)
 {
-    _mav_put_float(msg->payloads, 0, param_value);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 22, param_type);
-    _mav_put_char_array(msg->payloads, 6, param_id, 16);
+    _mav_put_float(((char*)msg->payloads), 0, param_value);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, param_type);
+    _mav_put_char_array(((char*)msg->payloads), 6, param_id, 16);
     msg->msgid = MAVLINK_MSG_ID_PARAM_SET;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PARAM_SET_MIN_LEN, MAVLINK_MSG_ID_PARAM_SET_LEN, MAVLINK_MSG_ID_PARAM_SET_CRC);
 }
@@ -89,11 +89,11 @@ static inline uint16_t mavlink_msg_param_set_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const char *param_id,float param_value,uint8_t param_type)
 {
-    _mav_put_float(msg->payloads, 0, param_value);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 22, param_type);
-    _mav_put_char_array(msg->payloads, 6, param_id, 16);
+    _mav_put_float(((char*)msg->payloads), 0, param_value);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, param_type);
+    _mav_put_char_array(((char*)msg->payloads), 6, param_id, 16);
 
     msg->msgid = MAVLINK_MSG_ID_PARAM_SET;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PARAM_SET_MIN_LEN, MAVLINK_MSG_ID_PARAM_SET_LEN, MAVLINK_MSG_ID_PARAM_SET_CRC);

@@ -75,14 +75,14 @@ typedef struct __mavlink_isbd_link_status_t {
 static inline uint16_t mavlink_msg_isbd_link_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t timestamp, uint64_t last_heartbeat, uint16_t failed_sessions, uint16_t successful_sessions, uint8_t signal_quality, uint8_t ring_pending, uint8_t tx_session_pending, uint8_t rx_session_pending)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint64_t(msg->payloads, 8, last_heartbeat);
-    _mav_put_uint16_t(msg->payloads, 16, failed_sessions);
-    _mav_put_uint16_t(msg->payloads, 18, successful_sessions);
-    _mav_put_uint8_t(msg->payloads, 20, signal_quality);
-    _mav_put_uint8_t(msg->payloads, 21, ring_pending);
-    _mav_put_uint8_t(msg->payloads, 22, tx_session_pending);
-    _mav_put_uint8_t(msg->payloads, 23, rx_session_pending);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, last_heartbeat);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, failed_sessions);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, successful_sessions);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, signal_quality);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, ring_pending);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, tx_session_pending);
+    _mav_put_uint8_t(((char*)msg->payloads), 23, rx_session_pending);
 
     msg->msgid = MAVLINK_MSG_ID_ISBD_LINK_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ISBD_LINK_STATUS_MIN_LEN, MAVLINK_MSG_ID_ISBD_LINK_STATUS_LEN, MAVLINK_MSG_ID_ISBD_LINK_STATUS_CRC);
@@ -108,14 +108,14 @@ static inline uint16_t mavlink_msg_isbd_link_status_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t timestamp,uint64_t last_heartbeat,uint16_t failed_sessions,uint16_t successful_sessions,uint8_t signal_quality,uint8_t ring_pending,uint8_t tx_session_pending,uint8_t rx_session_pending)
 {
-    _mav_put_uint64_t(msg->payloads, 0, timestamp);
-    _mav_put_uint64_t(msg->payloads, 8, last_heartbeat);
-    _mav_put_uint16_t(msg->payloads, 16, failed_sessions);
-    _mav_put_uint16_t(msg->payloads, 18, successful_sessions);
-    _mav_put_uint8_t(msg->payloads, 20, signal_quality);
-    _mav_put_uint8_t(msg->payloads, 21, ring_pending);
-    _mav_put_uint8_t(msg->payloads, 22, tx_session_pending);
-    _mav_put_uint8_t(msg->payloads, 23, rx_session_pending);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, last_heartbeat);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, failed_sessions);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, successful_sessions);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, signal_quality);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, ring_pending);
+    _mav_put_uint8_t(((char*)msg->payloads), 22, tx_session_pending);
+    _mav_put_uint8_t(((char*)msg->payloads), 23, rx_session_pending);
 
 
     msg->msgid = MAVLINK_MSG_ID_ISBD_LINK_STATUS;

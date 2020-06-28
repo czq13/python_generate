@@ -107,22 +107,22 @@ typedef struct __mavlink_hil_state_quaternion_t {
 static inline uint16_t mavlink_msg_hil_state_quaternion_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, const float *attitude_quaternion, float rollspeed, float pitchspeed, float yawspeed, int32_t lat, int32_t lon, int32_t alt, int16_t vx, int16_t vy, int16_t vz, uint16_t ind_airspeed, uint16_t true_airspeed, int16_t xacc, int16_t yacc, int16_t zacc)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 24, rollspeed);
-    _mav_put_float(msg->payloads, 28, pitchspeed);
-    _mav_put_float(msg->payloads, 32, yawspeed);
-    _mav_put_int32_t(msg->payloads, 36, lat);
-    _mav_put_int32_t(msg->payloads, 40, lon);
-    _mav_put_int32_t(msg->payloads, 44, alt);
-    _mav_put_int16_t(msg->payloads, 48, vx);
-    _mav_put_int16_t(msg->payloads, 50, vy);
-    _mav_put_int16_t(msg->payloads, 52, vz);
-    _mav_put_uint16_t(msg->payloads, 54, ind_airspeed);
-    _mav_put_uint16_t(msg->payloads, 56, true_airspeed);
-    _mav_put_int16_t(msg->payloads, 58, xacc);
-    _mav_put_int16_t(msg->payloads, 60, yacc);
-    _mav_put_int16_t(msg->payloads, 62, zacc);
-    _mav_put_float_array(msg->payloads, 8, attitude_quaternion, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 24, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 28, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 32, yawspeed);
+    _mav_put_int32_t(((char*)msg->payloads), 36, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 40, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 44, alt);
+    _mav_put_int16_t(((char*)msg->payloads), 48, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 50, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 52, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 54, ind_airspeed);
+    _mav_put_uint16_t(((char*)msg->payloads), 56, true_airspeed);
+    _mav_put_int16_t(((char*)msg->payloads), 58, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 60, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 62, zacc);
+    _mav_put_float_array(((char*)msg->payloads), 8, attitude_quaternion, 4);
     msg->msgid = MAVLINK_MSG_ID_HIL_STATE_QUATERNION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_MIN_LEN, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_LEN, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_CRC);
 }
@@ -155,22 +155,22 @@ static inline uint16_t mavlink_msg_hil_state_quaternion_pack_chan(uint8_t system
                                mavlink_message_t* msg,
                                    uint64_t time_usec,const float *attitude_quaternion,float rollspeed,float pitchspeed,float yawspeed,int32_t lat,int32_t lon,int32_t alt,int16_t vx,int16_t vy,int16_t vz,uint16_t ind_airspeed,uint16_t true_airspeed,int16_t xacc,int16_t yacc,int16_t zacc)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 24, rollspeed);
-    _mav_put_float(msg->payloads, 28, pitchspeed);
-    _mav_put_float(msg->payloads, 32, yawspeed);
-    _mav_put_int32_t(msg->payloads, 36, lat);
-    _mav_put_int32_t(msg->payloads, 40, lon);
-    _mav_put_int32_t(msg->payloads, 44, alt);
-    _mav_put_int16_t(msg->payloads, 48, vx);
-    _mav_put_int16_t(msg->payloads, 50, vy);
-    _mav_put_int16_t(msg->payloads, 52, vz);
-    _mav_put_uint16_t(msg->payloads, 54, ind_airspeed);
-    _mav_put_uint16_t(msg->payloads, 56, true_airspeed);
-    _mav_put_int16_t(msg->payloads, 58, xacc);
-    _mav_put_int16_t(msg->payloads, 60, yacc);
-    _mav_put_int16_t(msg->payloads, 62, zacc);
-    _mav_put_float_array(msg->payloads, 8, attitude_quaternion, 4);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 24, rollspeed);
+    _mav_put_float(((char*)msg->payloads), 28, pitchspeed);
+    _mav_put_float(((char*)msg->payloads), 32, yawspeed);
+    _mav_put_int32_t(((char*)msg->payloads), 36, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 40, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 44, alt);
+    _mav_put_int16_t(((char*)msg->payloads), 48, vx);
+    _mav_put_int16_t(((char*)msg->payloads), 50, vy);
+    _mav_put_int16_t(((char*)msg->payloads), 52, vz);
+    _mav_put_uint16_t(((char*)msg->payloads), 54, ind_airspeed);
+    _mav_put_uint16_t(((char*)msg->payloads), 56, true_airspeed);
+    _mav_put_int16_t(((char*)msg->payloads), 58, xacc);
+    _mav_put_int16_t(((char*)msg->payloads), 60, yacc);
+    _mav_put_int16_t(((char*)msg->payloads), 62, zacc);
+    _mav_put_float_array(((char*)msg->payloads), 8, attitude_quaternion, 4);
 
     msg->msgid = MAVLINK_MSG_ID_HIL_STATE_QUATERNION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_MIN_LEN, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_LEN, MAVLINK_MSG_ID_HIL_STATE_QUATERNION_CRC);

@@ -95,19 +95,19 @@ typedef struct __mavlink_adsb_vehicle_t {
 static inline uint16_t mavlink_msg_adsb_vehicle_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t ICAO_address, int32_t lat, int32_t lon, uint8_t altitude_type, int32_t altitude, uint16_t heading, uint16_t hor_velocity, int16_t ver_velocity, const char *callsign, uint8_t emitter_type, uint8_t tslc, uint16_t flags, uint16_t squawk)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ICAO_address);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_int32_t(msg->payloads, 12, altitude);
-    _mav_put_uint16_t(msg->payloads, 16, heading);
-    _mav_put_uint16_t(msg->payloads, 18, hor_velocity);
-    _mav_put_int16_t(msg->payloads, 20, ver_velocity);
-    _mav_put_uint16_t(msg->payloads, 22, flags);
-    _mav_put_uint16_t(msg->payloads, 24, squawk);
-    _mav_put_uint8_t(msg->payloads, 26, altitude_type);
-    _mav_put_uint8_t(msg->payloads, 36, emitter_type);
-    _mav_put_uint8_t(msg->payloads, 37, tslc);
-    _mav_put_char_array(msg->payloads, 27, callsign, 9);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ICAO_address);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 12, altitude);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, hor_velocity);
+    _mav_put_int16_t(((char*)msg->payloads), 20, ver_velocity);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, squawk);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, altitude_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, emitter_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 37, tslc);
+    _mav_put_char_array(((char*)msg->payloads), 27, callsign, 9);
     msg->msgid = MAVLINK_MSG_ID_ADSB_VEHICLE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);
 }
@@ -137,19 +137,19 @@ static inline uint16_t mavlink_msg_adsb_vehicle_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint32_t ICAO_address,int32_t lat,int32_t lon,uint8_t altitude_type,int32_t altitude,uint16_t heading,uint16_t hor_velocity,int16_t ver_velocity,const char *callsign,uint8_t emitter_type,uint8_t tslc,uint16_t flags,uint16_t squawk)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ICAO_address);
-    _mav_put_int32_t(msg->payloads, 4, lat);
-    _mav_put_int32_t(msg->payloads, 8, lon);
-    _mav_put_int32_t(msg->payloads, 12, altitude);
-    _mav_put_uint16_t(msg->payloads, 16, heading);
-    _mav_put_uint16_t(msg->payloads, 18, hor_velocity);
-    _mav_put_int16_t(msg->payloads, 20, ver_velocity);
-    _mav_put_uint16_t(msg->payloads, 22, flags);
-    _mav_put_uint16_t(msg->payloads, 24, squawk);
-    _mav_put_uint8_t(msg->payloads, 26, altitude_type);
-    _mav_put_uint8_t(msg->payloads, 36, emitter_type);
-    _mav_put_uint8_t(msg->payloads, 37, tslc);
-    _mav_put_char_array(msg->payloads, 27, callsign, 9);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ICAO_address);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 8, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 12, altitude);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, heading);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, hor_velocity);
+    _mav_put_int16_t(((char*)msg->payloads), 20, ver_velocity);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, squawk);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, altitude_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 36, emitter_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 37, tslc);
+    _mav_put_char_array(((char*)msg->payloads), 27, callsign, 9);
 
     msg->msgid = MAVLINK_MSG_ID_ADSB_VEHICLE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ADSB_VEHICLE_MIN_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_LEN, MAVLINK_MSG_ID_ADSB_VEHICLE_CRC);

@@ -71,13 +71,13 @@ typedef struct __mavlink_local_position_ned_system_global_offset_t {
 static inline uint16_t mavlink_msg_local_position_ned_system_global_offset_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float x, float y, float z, float roll, float pitch, float yaw)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, x);
-    _mav_put_float(msg->payloads, 8, y);
-    _mav_put_float(msg->payloads, 12, z);
-    _mav_put_float(msg->payloads, 16, roll);
-    _mav_put_float(msg->payloads, 20, pitch);
-    _mav_put_float(msg->payloads, 24, yaw);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, x);
+    _mav_put_float(((char*)msg->payloads), 8, y);
+    _mav_put_float(((char*)msg->payloads), 12, z);
+    _mav_put_float(((char*)msg->payloads), 16, roll);
+    _mav_put_float(((char*)msg->payloads), 20, pitch);
+    _mav_put_float(((char*)msg->payloads), 24, yaw);
 
     msg->msgid = MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET_MIN_LEN, MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET_LEN, MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_local_position_ned_system_global_offset_pack_
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float x,float y,float z,float roll,float pitch,float yaw)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, x);
-    _mav_put_float(msg->payloads, 8, y);
-    _mav_put_float(msg->payloads, 12, z);
-    _mav_put_float(msg->payloads, 16, roll);
-    _mav_put_float(msg->payloads, 20, pitch);
-    _mav_put_float(msg->payloads, 24, yaw);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, x);
+    _mav_put_float(((char*)msg->payloads), 8, y);
+    _mav_put_float(((char*)msg->payloads), 12, z);
+    _mav_put_float(((char*)msg->payloads), 16, roll);
+    _mav_put_float(((char*)msg->payloads), 20, pitch);
+    _mav_put_float(((char*)msg->payloads), 24, yaw);
 
 
     msg->msgid = MAVLINK_MSG_ID_LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET;

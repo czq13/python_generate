@@ -63,11 +63,11 @@ typedef struct __mavlink_mount_orientation_t {
 static inline uint16_t mavlink_msg_mount_orientation_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float roll, float pitch, float yaw, float yaw_absolute)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, yaw_absolute);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, yaw_absolute);
 
     msg->msgid = MAVLINK_MSG_ID_MOUNT_ORIENTATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MOUNT_ORIENTATION_MIN_LEN, MAVLINK_MSG_ID_MOUNT_ORIENTATION_LEN, MAVLINK_MSG_ID_MOUNT_ORIENTATION_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_mount_orientation_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float roll,float pitch,float yaw,float yaw_absolute)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, yaw_absolute);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, yaw_absolute);
 
 
     msg->msgid = MAVLINK_MSG_ID_MOUNT_ORIENTATION;

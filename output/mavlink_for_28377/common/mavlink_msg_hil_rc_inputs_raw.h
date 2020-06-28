@@ -99,20 +99,20 @@ typedef struct __mavlink_hil_rc_inputs_raw_t {
 static inline uint16_t mavlink_msg_hil_rc_inputs_raw_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint16_t chan1_raw, uint16_t chan2_raw, uint16_t chan3_raw, uint16_t chan4_raw, uint16_t chan5_raw, uint16_t chan6_raw, uint16_t chan7_raw, uint16_t chan8_raw, uint16_t chan9_raw, uint16_t chan10_raw, uint16_t chan11_raw, uint16_t chan12_raw, uint8_t rssi)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 8, chan1_raw);
-    _mav_put_uint16_t(msg->payloads, 10, chan2_raw);
-    _mav_put_uint16_t(msg->payloads, 12, chan3_raw);
-    _mav_put_uint16_t(msg->payloads, 14, chan4_raw);
-    _mav_put_uint16_t(msg->payloads, 16, chan5_raw);
-    _mav_put_uint16_t(msg->payloads, 18, chan6_raw);
-    _mav_put_uint16_t(msg->payloads, 20, chan7_raw);
-    _mav_put_uint16_t(msg->payloads, 22, chan8_raw);
-    _mav_put_uint16_t(msg->payloads, 24, chan9_raw);
-    _mav_put_uint16_t(msg->payloads, 26, chan10_raw);
-    _mav_put_uint16_t(msg->payloads, 28, chan11_raw);
-    _mav_put_uint16_t(msg->payloads, 30, chan12_raw);
-    _mav_put_uint8_t(msg->payloads, 32, rssi);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, chan1_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, chan2_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, chan3_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, chan4_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, chan5_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, chan6_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, chan7_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, chan8_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, chan9_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, chan10_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, chan11_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, chan12_raw);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, rssi);
 
     msg->msgid = MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW_MIN_LEN, MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW_LEN, MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW_CRC);
@@ -144,20 +144,20 @@ static inline uint16_t mavlink_msg_hil_rc_inputs_raw_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint16_t chan1_raw,uint16_t chan2_raw,uint16_t chan3_raw,uint16_t chan4_raw,uint16_t chan5_raw,uint16_t chan6_raw,uint16_t chan7_raw,uint16_t chan8_raw,uint16_t chan9_raw,uint16_t chan10_raw,uint16_t chan11_raw,uint16_t chan12_raw,uint8_t rssi)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 8, chan1_raw);
-    _mav_put_uint16_t(msg->payloads, 10, chan2_raw);
-    _mav_put_uint16_t(msg->payloads, 12, chan3_raw);
-    _mav_put_uint16_t(msg->payloads, 14, chan4_raw);
-    _mav_put_uint16_t(msg->payloads, 16, chan5_raw);
-    _mav_put_uint16_t(msg->payloads, 18, chan6_raw);
-    _mav_put_uint16_t(msg->payloads, 20, chan7_raw);
-    _mav_put_uint16_t(msg->payloads, 22, chan8_raw);
-    _mav_put_uint16_t(msg->payloads, 24, chan9_raw);
-    _mav_put_uint16_t(msg->payloads, 26, chan10_raw);
-    _mav_put_uint16_t(msg->payloads, 28, chan11_raw);
-    _mav_put_uint16_t(msg->payloads, 30, chan12_raw);
-    _mav_put_uint8_t(msg->payloads, 32, rssi);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, chan1_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, chan2_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, chan3_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 14, chan4_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, chan5_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 18, chan6_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 20, chan7_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 22, chan8_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, chan9_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 26, chan10_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, chan11_raw);
+    _mav_put_uint16_t(((char*)msg->payloads), 30, chan12_raw);
+    _mav_put_uint8_t(((char*)msg->payloads), 32, rssi);
 
 
     msg->msgid = MAVLINK_MSG_ID_HIL_RC_INPUTS_RAW;

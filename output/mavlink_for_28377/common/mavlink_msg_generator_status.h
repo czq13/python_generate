@@ -79,15 +79,15 @@ typedef struct __mavlink_generator_status_t {
 static inline uint16_t mavlink_msg_generator_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t status, uint16_t generator_speed, float battery_current, float load_current, float power_generated, float bus_voltage, int16_t rectifier_temperature, float bat_current_setpoint, int16_t generator_temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, status);
-    _mav_put_float(msg->payloads, 8, battery_current);
-    _mav_put_float(msg->payloads, 12, load_current);
-    _mav_put_float(msg->payloads, 16, power_generated);
-    _mav_put_float(msg->payloads, 20, bus_voltage);
-    _mav_put_float(msg->payloads, 24, bat_current_setpoint);
-    _mav_put_uint16_t(msg->payloads, 28, generator_speed);
-    _mav_put_int16_t(msg->payloads, 30, rectifier_temperature);
-    _mav_put_int16_t(msg->payloads, 32, generator_temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, status);
+    _mav_put_float(((char*)msg->payloads), 8, battery_current);
+    _mav_put_float(((char*)msg->payloads), 12, load_current);
+    _mav_put_float(((char*)msg->payloads), 16, power_generated);
+    _mav_put_float(((char*)msg->payloads), 20, bus_voltage);
+    _mav_put_float(((char*)msg->payloads), 24, bat_current_setpoint);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, generator_speed);
+    _mav_put_int16_t(((char*)msg->payloads), 30, rectifier_temperature);
+    _mav_put_int16_t(((char*)msg->payloads), 32, generator_temperature);
 
     msg->msgid = MAVLINK_MSG_ID_GENERATOR_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GENERATOR_STATUS_MIN_LEN, MAVLINK_MSG_ID_GENERATOR_STATUS_LEN, MAVLINK_MSG_ID_GENERATOR_STATUS_CRC);
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_generator_status_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t status,uint16_t generator_speed,float battery_current,float load_current,float power_generated,float bus_voltage,int16_t rectifier_temperature,float bat_current_setpoint,int16_t generator_temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, status);
-    _mav_put_float(msg->payloads, 8, battery_current);
-    _mav_put_float(msg->payloads, 12, load_current);
-    _mav_put_float(msg->payloads, 16, power_generated);
-    _mav_put_float(msg->payloads, 20, bus_voltage);
-    _mav_put_float(msg->payloads, 24, bat_current_setpoint);
-    _mav_put_uint16_t(msg->payloads, 28, generator_speed);
-    _mav_put_int16_t(msg->payloads, 30, rectifier_temperature);
-    _mav_put_int16_t(msg->payloads, 32, generator_temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, status);
+    _mav_put_float(((char*)msg->payloads), 8, battery_current);
+    _mav_put_float(((char*)msg->payloads), 12, load_current);
+    _mav_put_float(((char*)msg->payloads), 16, power_generated);
+    _mav_put_float(((char*)msg->payloads), 20, bus_voltage);
+    _mav_put_float(((char*)msg->payloads), 24, bat_current_setpoint);
+    _mav_put_uint16_t(((char*)msg->payloads), 28, generator_speed);
+    _mav_put_int16_t(((char*)msg->payloads), 30, rectifier_temperature);
+    _mav_put_int16_t(((char*)msg->payloads), 32, generator_temperature);
 
 
     msg->msgid = MAVLINK_MSG_ID_GENERATOR_STATUS;

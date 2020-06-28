@@ -55,9 +55,9 @@ typedef struct __mavlink_data_stream_t {
 static inline uint16_t mavlink_msg_data_stream_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t stream_id, uint16_t message_rate, uint8_t on_off)
 {
-    _mav_put_uint16_t(msg->payloads, 0, message_rate);
-    _mav_put_uint8_t(msg->payloads, 2, stream_id);
-    _mav_put_uint8_t(msg->payloads, 3, on_off);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, message_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, on_off);
 
     msg->msgid = MAVLINK_MSG_ID_DATA_STREAM;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_DATA_STREAM_MIN_LEN, MAVLINK_MSG_ID_DATA_STREAM_LEN, MAVLINK_MSG_ID_DATA_STREAM_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_data_stream_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint8_t stream_id,uint16_t message_rate,uint8_t on_off)
 {
-    _mav_put_uint16_t(msg->payloads, 0, message_rate);
-    _mav_put_uint8_t(msg->payloads, 2, stream_id);
-    _mav_put_uint8_t(msg->payloads, 3, on_off);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, message_rate);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, stream_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, on_off);
 
 
     msg->msgid = MAVLINK_MSG_ID_DATA_STREAM;

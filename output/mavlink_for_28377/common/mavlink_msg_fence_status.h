@@ -63,11 +63,11 @@ typedef struct __mavlink_fence_status_t {
 static inline uint16_t mavlink_msg_fence_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t breach_status, uint16_t breach_count, uint8_t breach_type, uint32_t breach_time, uint8_t breach_mitigation)
 {
-    _mav_put_uint32_t(msg->payloads, 0, breach_time);
-    _mav_put_uint16_t(msg->payloads, 4, breach_count);
-    _mav_put_uint8_t(msg->payloads, 6, breach_status);
-    _mav_put_uint8_t(msg->payloads, 7, breach_type);
-    _mav_put_uint8_t(msg->payloads, 8, breach_mitigation);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, breach_time);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, breach_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, breach_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, breach_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, breach_mitigation);
 
     msg->msgid = MAVLINK_MSG_ID_FENCE_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_FENCE_STATUS_MIN_LEN, MAVLINK_MSG_ID_FENCE_STATUS_LEN, MAVLINK_MSG_ID_FENCE_STATUS_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_fence_status_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t breach_status,uint16_t breach_count,uint8_t breach_type,uint32_t breach_time,uint8_t breach_mitigation)
 {
-    _mav_put_uint32_t(msg->payloads, 0, breach_time);
-    _mav_put_uint16_t(msg->payloads, 4, breach_count);
-    _mav_put_uint8_t(msg->payloads, 6, breach_status);
-    _mav_put_uint8_t(msg->payloads, 7, breach_type);
-    _mav_put_uint8_t(msg->payloads, 8, breach_mitigation);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, breach_time);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, breach_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, breach_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, breach_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, breach_mitigation);
 
 
     msg->msgid = MAVLINK_MSG_ID_FENCE_STATUS;

@@ -63,11 +63,11 @@ typedef struct __mavlink_mission_request_partial_list_t {
 static inline uint16_t mavlink_msg_mission_request_partial_list_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, int16_t start_index, int16_t end_index, uint8_t mission_type)
 {
-    _mav_put_int16_t(msg->payloads, 0, start_index);
-    _mav_put_int16_t(msg->payloads, 2, end_index);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 6, mission_type);
+    _mav_put_int16_t(((char*)msg->payloads), 0, start_index);
+    _mav_put_int16_t(((char*)msg->payloads), 2, end_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, mission_type);
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_REQUEST_PARTIAL_LIST;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MISSION_REQUEST_PARTIAL_LIST_MIN_LEN, MAVLINK_MSG_ID_MISSION_REQUEST_PARTIAL_LIST_LEN, MAVLINK_MSG_ID_MISSION_REQUEST_PARTIAL_LIST_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_mission_request_partial_list_pack_chan(uint8_
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,int16_t start_index,int16_t end_index,uint8_t mission_type)
 {
-    _mav_put_int16_t(msg->payloads, 0, start_index);
-    _mav_put_int16_t(msg->payloads, 2, end_index);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 6, mission_type);
+    _mav_put_int16_t(((char*)msg->payloads), 0, start_index);
+    _mav_put_int16_t(((char*)msg->payloads), 2, end_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, mission_type);
 
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_REQUEST_PARTIAL_LIST;

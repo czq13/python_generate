@@ -48,7 +48,7 @@ static inline uint16_t mavlink_msg_auth_key_pack(uint8_t system_id, uint8_t comp
                                const char *key)
 {
 
-    _mav_put_char_array(msg->payloads, 0, key, 32);
+    _mav_put_char_array(((char*)msg->payloads), 0, key, 32);
     msg->msgid = MAVLINK_MSG_ID_AUTH_KEY;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_AUTH_KEY_MIN_LEN, MAVLINK_MSG_ID_AUTH_KEY_LEN, MAVLINK_MSG_ID_AUTH_KEY_CRC);
 }
@@ -67,7 +67,7 @@ static inline uint16_t mavlink_msg_auth_key_pack_chan(uint8_t system_id, uint8_t
                                    const char *key)
 {
 
-    _mav_put_char_array(msg->payloads, 0, key, 32);
+    _mav_put_char_array(((char*)msg->payloads), 0, key, 32);
 
     msg->msgid = MAVLINK_MSG_ID_AUTH_KEY;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_AUTH_KEY_MIN_LEN, MAVLINK_MSG_ID_AUTH_KEY_LEN, MAVLINK_MSG_ID_AUTH_KEY_CRC);

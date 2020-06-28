@@ -68,12 +68,12 @@ typedef struct __mavlink_att_pos_mocap_t {
 static inline uint16_t mavlink_msg_att_pos_mocap_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, const float *q, float x, float y, float z, const float *covariance)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 24, x);
-    _mav_put_float(msg->payloads, 28, y);
-    _mav_put_float(msg->payloads, 32, z);
-    _mav_put_float_array(msg->payloads, 8, q, 4);
-    _mav_put_float_array(msg->payloads, 36, covariance, 21);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 24, x);
+    _mav_put_float(((char*)msg->payloads), 28, y);
+    _mav_put_float(((char*)msg->payloads), 32, z);
+    _mav_put_float_array(((char*)msg->payloads), 8, q, 4);
+    _mav_put_float_array(((char*)msg->payloads), 36, covariance, 21);
     msg->msgid = MAVLINK_MSG_ID_ATT_POS_MOCAP;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ATT_POS_MOCAP_MIN_LEN, MAVLINK_MSG_ID_ATT_POS_MOCAP_LEN, MAVLINK_MSG_ID_ATT_POS_MOCAP_CRC);
 }
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_att_pos_mocap_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    uint64_t time_usec,const float *q,float x,float y,float z,const float *covariance)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 24, x);
-    _mav_put_float(msg->payloads, 28, y);
-    _mav_put_float(msg->payloads, 32, z);
-    _mav_put_float_array(msg->payloads, 8, q, 4);
-    _mav_put_float_array(msg->payloads, 36, covariance, 21);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 24, x);
+    _mav_put_float(((char*)msg->payloads), 28, y);
+    _mav_put_float(((char*)msg->payloads), 32, z);
+    _mav_put_float_array(((char*)msg->payloads), 8, q, 4);
+    _mav_put_float_array(((char*)msg->payloads), 36, covariance, 21);
 
     msg->msgid = MAVLINK_MSG_ID_ATT_POS_MOCAP;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ATT_POS_MOCAP_MIN_LEN, MAVLINK_MSG_ID_ATT_POS_MOCAP_LEN, MAVLINK_MSG_ID_ATT_POS_MOCAP_CRC);

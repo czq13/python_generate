@@ -119,25 +119,25 @@ typedef struct __mavlink_gps_input_t {
 static inline uint16_t mavlink_msg_gps_input_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t gps_id, uint16_t ignore_flags, uint32_t time_week_ms, uint16_t time_week, uint8_t fix_type, int32_t lat, int32_t lon, float alt, float hdop, float vdop, float vn, float ve, float vd, float speed_accuracy, float horiz_accuracy, float vert_accuracy, uint8_t satellites_visible, uint16_t yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, time_week_ms);
-    _mav_put_int32_t(msg->payloads, 12, lat);
-    _mav_put_int32_t(msg->payloads, 16, lon);
-    _mav_put_float(msg->payloads, 20, alt);
-    _mav_put_float(msg->payloads, 24, hdop);
-    _mav_put_float(msg->payloads, 28, vdop);
-    _mav_put_float(msg->payloads, 32, vn);
-    _mav_put_float(msg->payloads, 36, ve);
-    _mav_put_float(msg->payloads, 40, vd);
-    _mav_put_float(msg->payloads, 44, speed_accuracy);
-    _mav_put_float(msg->payloads, 48, horiz_accuracy);
-    _mav_put_float(msg->payloads, 52, vert_accuracy);
-    _mav_put_uint16_t(msg->payloads, 56, ignore_flags);
-    _mav_put_uint16_t(msg->payloads, 58, time_week);
-    _mav_put_uint8_t(msg->payloads, 60, gps_id);
-    _mav_put_uint8_t(msg->payloads, 61, fix_type);
-    _mav_put_uint8_t(msg->payloads, 62, satellites_visible);
-    _mav_put_uint16_t(msg->payloads, 63, yaw);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_week_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lon);
+    _mav_put_float(((char*)msg->payloads), 20, alt);
+    _mav_put_float(((char*)msg->payloads), 24, hdop);
+    _mav_put_float(((char*)msg->payloads), 28, vdop);
+    _mav_put_float(((char*)msg->payloads), 32, vn);
+    _mav_put_float(((char*)msg->payloads), 36, ve);
+    _mav_put_float(((char*)msg->payloads), 40, vd);
+    _mav_put_float(((char*)msg->payloads), 44, speed_accuracy);
+    _mav_put_float(((char*)msg->payloads), 48, horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 52, vert_accuracy);
+    _mav_put_uint16_t(((char*)msg->payloads), 56, ignore_flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 58, time_week);
+    _mav_put_uint8_t(((char*)msg->payloads), 60, gps_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 61, fix_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 62, satellites_visible);
+    _mav_put_uint16_t(((char*)msg->payloads), 63, yaw);
 
     msg->msgid = MAVLINK_MSG_ID_GPS_INPUT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GPS_INPUT_MIN_LEN, MAVLINK_MSG_ID_GPS_INPUT_LEN, MAVLINK_MSG_ID_GPS_INPUT_CRC);
@@ -174,25 +174,25 @@ static inline uint16_t mavlink_msg_gps_input_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t gps_id,uint16_t ignore_flags,uint32_t time_week_ms,uint16_t time_week,uint8_t fix_type,int32_t lat,int32_t lon,float alt,float hdop,float vdop,float vn,float ve,float vd,float speed_accuracy,float horiz_accuracy,float vert_accuracy,uint8_t satellites_visible,uint16_t yaw)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, time_week_ms);
-    _mav_put_int32_t(msg->payloads, 12, lat);
-    _mav_put_int32_t(msg->payloads, 16, lon);
-    _mav_put_float(msg->payloads, 20, alt);
-    _mav_put_float(msg->payloads, 24, hdop);
-    _mav_put_float(msg->payloads, 28, vdop);
-    _mav_put_float(msg->payloads, 32, vn);
-    _mav_put_float(msg->payloads, 36, ve);
-    _mav_put_float(msg->payloads, 40, vd);
-    _mav_put_float(msg->payloads, 44, speed_accuracy);
-    _mav_put_float(msg->payloads, 48, horiz_accuracy);
-    _mav_put_float(msg->payloads, 52, vert_accuracy);
-    _mav_put_uint16_t(msg->payloads, 56, ignore_flags);
-    _mav_put_uint16_t(msg->payloads, 58, time_week);
-    _mav_put_uint8_t(msg->payloads, 60, gps_id);
-    _mav_put_uint8_t(msg->payloads, 61, fix_type);
-    _mav_put_uint8_t(msg->payloads, 62, satellites_visible);
-    _mav_put_uint16_t(msg->payloads, 63, yaw);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_week_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lon);
+    _mav_put_float(((char*)msg->payloads), 20, alt);
+    _mav_put_float(((char*)msg->payloads), 24, hdop);
+    _mav_put_float(((char*)msg->payloads), 28, vdop);
+    _mav_put_float(((char*)msg->payloads), 32, vn);
+    _mav_put_float(((char*)msg->payloads), 36, ve);
+    _mav_put_float(((char*)msg->payloads), 40, vd);
+    _mav_put_float(((char*)msg->payloads), 44, speed_accuracy);
+    _mav_put_float(((char*)msg->payloads), 48, horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 52, vert_accuracy);
+    _mav_put_uint16_t(((char*)msg->payloads), 56, ignore_flags);
+    _mav_put_uint16_t(((char*)msg->payloads), 58, time_week);
+    _mav_put_uint8_t(((char*)msg->payloads), 60, gps_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 61, fix_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 62, satellites_visible);
+    _mav_put_uint16_t(((char*)msg->payloads), 63, yaw);
 
 
     msg->msgid = MAVLINK_MSG_ID_GPS_INPUT;

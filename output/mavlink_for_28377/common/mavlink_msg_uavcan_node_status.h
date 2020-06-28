@@ -67,12 +67,12 @@ typedef struct __mavlink_uavcan_node_status_t {
 static inline uint16_t mavlink_msg_uavcan_node_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint32_t uptime_sec, uint8_t health, uint8_t mode, uint8_t sub_mode, uint16_t vendor_specific_status_code)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime_sec);
-    _mav_put_uint16_t(msg->payloads, 12, vendor_specific_status_code);
-    _mav_put_uint8_t(msg->payloads, 14, health);
-    _mav_put_uint8_t(msg->payloads, 15, mode);
-    _mav_put_uint8_t(msg->payloads, 16, sub_mode);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime_sec);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, vendor_specific_status_code);
+    _mav_put_uint8_t(((char*)msg->payloads), 14, health);
+    _mav_put_uint8_t(((char*)msg->payloads), 15, mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, sub_mode);
 
     msg->msgid = MAVLINK_MSG_ID_UAVCAN_NODE_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_UAVCAN_NODE_STATUS_MIN_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_STATUS_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_STATUS_CRC);
@@ -96,12 +96,12 @@ static inline uint16_t mavlink_msg_uavcan_node_status_pack_chan(uint8_t system_i
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint32_t uptime_sec,uint8_t health,uint8_t mode,uint8_t sub_mode,uint16_t vendor_specific_status_code)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime_sec);
-    _mav_put_uint16_t(msg->payloads, 12, vendor_specific_status_code);
-    _mav_put_uint8_t(msg->payloads, 14, health);
-    _mav_put_uint8_t(msg->payloads, 15, mode);
-    _mav_put_uint8_t(msg->payloads, 16, sub_mode);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime_sec);
+    _mav_put_uint16_t(((char*)msg->payloads), 12, vendor_specific_status_code);
+    _mav_put_uint8_t(((char*)msg->payloads), 14, health);
+    _mav_put_uint8_t(((char*)msg->payloads), 15, mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 16, sub_mode);
 
 
     msg->msgid = MAVLINK_MSG_ID_UAVCAN_NODE_STATUS;

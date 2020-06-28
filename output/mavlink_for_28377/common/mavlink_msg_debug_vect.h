@@ -63,11 +63,11 @@ typedef struct __mavlink_debug_vect_t {
 static inline uint16_t mavlink_msg_debug_vect_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                const char *name, uint64_t time_usec, float x, float y, float z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, x);
-    _mav_put_float(msg->payloads, 12, y);
-    _mav_put_float(msg->payloads, 16, z);
-    _mav_put_char_array(msg->payloads, 20, name, 10);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, x);
+    _mav_put_float(((char*)msg->payloads), 12, y);
+    _mav_put_float(((char*)msg->payloads), 16, z);
+    _mav_put_char_array(((char*)msg->payloads), 20, name, 10);
     msg->msgid = MAVLINK_MSG_ID_DEBUG_VECT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_DEBUG_VECT_MIN_LEN, MAVLINK_MSG_ID_DEBUG_VECT_LEN, MAVLINK_MSG_ID_DEBUG_VECT_CRC);
 }
@@ -89,11 +89,11 @@ static inline uint16_t mavlink_msg_debug_vect_pack_chan(uint8_t system_id, uint8
                                mavlink_message_t* msg,
                                    const char *name,uint64_t time_usec,float x,float y,float z)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, x);
-    _mav_put_float(msg->payloads, 12, y);
-    _mav_put_float(msg->payloads, 16, z);
-    _mav_put_char_array(msg->payloads, 20, name, 10);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, x);
+    _mav_put_float(((char*)msg->payloads), 12, y);
+    _mav_put_float(((char*)msg->payloads), 16, z);
+    _mav_put_char_array(((char*)msg->payloads), 20, name, 10);
 
     msg->msgid = MAVLINK_MSG_ID_DEBUG_VECT;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_DEBUG_VECT_MIN_LEN, MAVLINK_MSG_ID_DEBUG_VECT_LEN, MAVLINK_MSG_ID_DEBUG_VECT_CRC);

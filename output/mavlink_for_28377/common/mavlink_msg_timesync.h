@@ -51,8 +51,8 @@ typedef struct __mavlink_timesync_t {
 static inline uint16_t mavlink_msg_timesync_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int64_t tc1, int64_t ts1)
 {
-    _mav_put_int64_t(msg->payloads, 0, tc1);
-    _mav_put_int64_t(msg->payloads, 8, ts1);
+    _mav_put_int64_t(((char*)msg->payloads), 0, tc1);
+    _mav_put_int64_t(((char*)msg->payloads), 8, ts1);
 
     msg->msgid = MAVLINK_MSG_ID_TIMESYNC;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TIMESYNC_MIN_LEN, MAVLINK_MSG_ID_TIMESYNC_LEN, MAVLINK_MSG_ID_TIMESYNC_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_timesync_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    int64_t tc1,int64_t ts1)
 {
-    _mav_put_int64_t(msg->payloads, 0, tc1);
-    _mav_put_int64_t(msg->payloads, 8, ts1);
+    _mav_put_int64_t(((char*)msg->payloads), 0, tc1);
+    _mav_put_int64_t(((char*)msg->payloads), 8, ts1);
 
 
     msg->msgid = MAVLINK_MSG_ID_TIMESYNC;

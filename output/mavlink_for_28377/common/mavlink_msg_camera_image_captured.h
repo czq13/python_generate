@@ -88,17 +88,17 @@ typedef struct __mavlink_camera_image_captured_t {
 static inline uint16_t mavlink_msg_camera_image_captured_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint64_t time_utc, uint8_t camera_id, int32_t lat, int32_t lon, int32_t alt, int32_t relative_alt, const float *q, int32_t image_index, int8_t capture_result, const char *file_url)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_utc);
-    _mav_put_uint32_t(msg->payloads, 8, time_boot_ms);
-    _mav_put_int32_t(msg->payloads, 12, lat);
-    _mav_put_int32_t(msg->payloads, 16, lon);
-    _mav_put_int32_t(msg->payloads, 20, alt);
-    _mav_put_int32_t(msg->payloads, 24, relative_alt);
-    _mav_put_int32_t(msg->payloads, 44, image_index);
-    _mav_put_uint8_t(msg->payloads, 48, camera_id);
-    _mav_put_int8_t(msg->payloads, 49, capture_result);
-    _mav_put_float_array(msg->payloads, 28, q, 4);
-    _mav_put_char_array(msg->payloads, 50, file_url, 205);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_utc);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_boot_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 20, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 24, relative_alt);
+    _mav_put_int32_t(((char*)msg->payloads), 44, image_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 48, camera_id);
+    _mav_put_int8_t(((char*)msg->payloads), 49, capture_result);
+    _mav_put_float_array(((char*)msg->payloads), 28, q, 4);
+    _mav_put_char_array(((char*)msg->payloads), 50, file_url, 205);
     msg->msgid = MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_MIN_LEN, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_LEN, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_CRC);
 }
@@ -126,17 +126,17 @@ static inline uint16_t mavlink_msg_camera_image_captured_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint64_t time_utc,uint8_t camera_id,int32_t lat,int32_t lon,int32_t alt,int32_t relative_alt,const float *q,int32_t image_index,int8_t capture_result,const char *file_url)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_utc);
-    _mav_put_uint32_t(msg->payloads, 8, time_boot_ms);
-    _mav_put_int32_t(msg->payloads, 12, lat);
-    _mav_put_int32_t(msg->payloads, 16, lon);
-    _mav_put_int32_t(msg->payloads, 20, alt);
-    _mav_put_int32_t(msg->payloads, 24, relative_alt);
-    _mav_put_int32_t(msg->payloads, 44, image_index);
-    _mav_put_uint8_t(msg->payloads, 48, camera_id);
-    _mav_put_int8_t(msg->payloads, 49, capture_result);
-    _mav_put_float_array(msg->payloads, 28, q, 4);
-    _mav_put_char_array(msg->payloads, 50, file_url, 205);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_utc);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, time_boot_ms);
+    _mav_put_int32_t(((char*)msg->payloads), 12, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 16, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 20, alt);
+    _mav_put_int32_t(((char*)msg->payloads), 24, relative_alt);
+    _mav_put_int32_t(((char*)msg->payloads), 44, image_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 48, camera_id);
+    _mav_put_int8_t(((char*)msg->payloads), 49, capture_result);
+    _mav_put_float_array(((char*)msg->payloads), 28, q, 4);
+    _mav_put_char_array(((char*)msg->payloads), 50, file_url, 205);
 
     msg->msgid = MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_MIN_LEN, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_LEN, MAVLINK_MSG_ID_CAMERA_IMAGE_CAPTURED_CRC);

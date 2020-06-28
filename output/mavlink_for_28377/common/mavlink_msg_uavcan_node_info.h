@@ -80,15 +80,15 @@ typedef struct __mavlink_uavcan_node_info_t {
 static inline uint16_t mavlink_msg_uavcan_node_info_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint32_t uptime_sec, const char *name, uint8_t hw_version_major, uint8_t hw_version_minor, const uint8_t *hw_unique_id, uint8_t sw_version_major, uint8_t sw_version_minor, uint32_t sw_vcs_commit)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime_sec);
-    _mav_put_uint32_t(msg->payloads, 12, sw_vcs_commit);
-    _mav_put_uint8_t(msg->payloads, 96, hw_version_major);
-    _mav_put_uint8_t(msg->payloads, 97, hw_version_minor);
-    _mav_put_uint8_t(msg->payloads, 114, sw_version_major);
-    _mav_put_uint8_t(msg->payloads, 115, sw_version_minor);
-    _mav_put_char_array(msg->payloads, 16, name, 80);
-    _mav_put_uint8_t_array(msg->payloads, 98, hw_unique_id, 16);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime_sec);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, sw_vcs_commit);
+    _mav_put_uint8_t(((char*)msg->payloads), 96, hw_version_major);
+    _mav_put_uint8_t(((char*)msg->payloads), 97, hw_version_minor);
+    _mav_put_uint8_t(((char*)msg->payloads), 114, sw_version_major);
+    _mav_put_uint8_t(((char*)msg->payloads), 115, sw_version_minor);
+    _mav_put_char_array(((char*)msg->payloads), 16, name, 80);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 98, hw_unique_id, 16);
     msg->msgid = MAVLINK_MSG_ID_UAVCAN_NODE_INFO;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_MIN_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_CRC);
 }
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_uavcan_node_info_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint32_t uptime_sec,const char *name,uint8_t hw_version_major,uint8_t hw_version_minor,const uint8_t *hw_unique_id,uint8_t sw_version_major,uint8_t sw_version_minor,uint32_t sw_vcs_commit)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime_sec);
-    _mav_put_uint32_t(msg->payloads, 12, sw_vcs_commit);
-    _mav_put_uint8_t(msg->payloads, 96, hw_version_major);
-    _mav_put_uint8_t(msg->payloads, 97, hw_version_minor);
-    _mav_put_uint8_t(msg->payloads, 114, sw_version_major);
-    _mav_put_uint8_t(msg->payloads, 115, sw_version_minor);
-    _mav_put_char_array(msg->payloads, 16, name, 80);
-    _mav_put_uint8_t_array(msg->payloads, 98, hw_unique_id, 16);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime_sec);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, sw_vcs_commit);
+    _mav_put_uint8_t(((char*)msg->payloads), 96, hw_version_major);
+    _mav_put_uint8_t(((char*)msg->payloads), 97, hw_version_minor);
+    _mav_put_uint8_t(((char*)msg->payloads), 114, sw_version_major);
+    _mav_put_uint8_t(((char*)msg->payloads), 115, sw_version_minor);
+    _mav_put_char_array(((char*)msg->payloads), 16, name, 80);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 98, hw_unique_id, 16);
 
     msg->msgid = MAVLINK_MSG_ID_UAVCAN_NODE_INFO;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_MIN_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_LEN, MAVLINK_MSG_ID_UAVCAN_NODE_INFO_CRC);

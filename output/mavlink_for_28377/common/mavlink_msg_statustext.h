@@ -59,10 +59,10 @@ typedef struct __mavlink_statustext_t {
 static inline uint16_t mavlink_msg_statustext_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t severity, const char *text, uint16_t id, uint8_t chunk_seq)
 {
-    _mav_put_uint8_t(msg->payloads, 0, severity);
-    _mav_put_uint16_t(msg->payloads, 51, id);
-    _mav_put_uint8_t(msg->payloads, 53, chunk_seq);
-    _mav_put_char_array(msg->payloads, 1, text, 50);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, severity);
+    _mav_put_uint16_t(((char*)msg->payloads), 51, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 53, chunk_seq);
+    _mav_put_char_array(((char*)msg->payloads), 1, text, 50);
     msg->msgid = MAVLINK_MSG_ID_STATUSTEXT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_STATUSTEXT_MIN_LEN, MAVLINK_MSG_ID_STATUSTEXT_LEN, MAVLINK_MSG_ID_STATUSTEXT_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_statustext_pack_chan(uint8_t system_id, uint8
                                mavlink_message_t* msg,
                                    uint8_t severity,const char *text,uint16_t id,uint8_t chunk_seq)
 {
-    _mav_put_uint8_t(msg->payloads, 0, severity);
-    _mav_put_uint16_t(msg->payloads, 51, id);
-    _mav_put_uint8_t(msg->payloads, 53, chunk_seq);
-    _mav_put_char_array(msg->payloads, 1, text, 50);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, severity);
+    _mav_put_uint16_t(((char*)msg->payloads), 51, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 53, chunk_seq);
+    _mav_put_char_array(((char*)msg->payloads), 1, text, 50);
 
     msg->msgid = MAVLINK_MSG_ID_STATUSTEXT;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_STATUSTEXT_MIN_LEN, MAVLINK_MSG_ID_STATUSTEXT_LEN, MAVLINK_MSG_ID_STATUSTEXT_CRC);

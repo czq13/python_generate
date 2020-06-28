@@ -63,11 +63,11 @@ typedef struct __mavlink_mission_changed_t {
 static inline uint16_t mavlink_msg_mission_changed_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int16_t start_index, int16_t end_index, uint8_t origin_sysid, uint8_t origin_compid, uint8_t mission_type)
 {
-    _mav_put_int16_t(msg->payloads, 0, start_index);
-    _mav_put_int16_t(msg->payloads, 2, end_index);
-    _mav_put_uint8_t(msg->payloads, 4, origin_sysid);
-    _mav_put_uint8_t(msg->payloads, 5, origin_compid);
-    _mav_put_uint8_t(msg->payloads, 6, mission_type);
+    _mav_put_int16_t(((char*)msg->payloads), 0, start_index);
+    _mav_put_int16_t(((char*)msg->payloads), 2, end_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, origin_sysid);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, origin_compid);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, mission_type);
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_CHANGED;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MISSION_CHANGED_MIN_LEN, MAVLINK_MSG_ID_MISSION_CHANGED_LEN, MAVLINK_MSG_ID_MISSION_CHANGED_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_mission_changed_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    int16_t start_index,int16_t end_index,uint8_t origin_sysid,uint8_t origin_compid,uint8_t mission_type)
 {
-    _mav_put_int16_t(msg->payloads, 0, start_index);
-    _mav_put_int16_t(msg->payloads, 2, end_index);
-    _mav_put_uint8_t(msg->payloads, 4, origin_sysid);
-    _mav_put_uint8_t(msg->payloads, 5, origin_compid);
-    _mav_put_uint8_t(msg->payloads, 6, mission_type);
+    _mav_put_int16_t(((char*)msg->payloads), 0, start_index);
+    _mav_put_int16_t(((char*)msg->payloads), 2, end_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, origin_sysid);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, origin_compid);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, mission_type);
 
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_CHANGED;

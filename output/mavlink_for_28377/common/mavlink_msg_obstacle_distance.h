@@ -79,15 +79,15 @@ typedef struct __mavlink_obstacle_distance_t {
 static inline uint16_t mavlink_msg_obstacle_distance_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t sensor_type, const uint16_t *distances, uint8_t increment, uint16_t min_distance, uint16_t max_distance, float increment_f, float angle_offset, uint8_t frame)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 152, min_distance);
-    _mav_put_uint16_t(msg->payloads, 154, max_distance);
-    _mav_put_uint8_t(msg->payloads, 156, sensor_type);
-    _mav_put_uint8_t(msg->payloads, 157, increment);
-    _mav_put_float(msg->payloads, 158, increment_f);
-    _mav_put_float(msg->payloads, 162, angle_offset);
-    _mav_put_uint8_t(msg->payloads, 166, frame);
-    _mav_put_uint16_t_array(msg->payloads, 8, distances, 72);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 152, min_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 154, max_distance);
+    _mav_put_uint8_t(((char*)msg->payloads), 156, sensor_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 157, increment);
+    _mav_put_float(((char*)msg->payloads), 158, increment_f);
+    _mav_put_float(((char*)msg->payloads), 162, angle_offset);
+    _mav_put_uint8_t(((char*)msg->payloads), 166, frame);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 8, distances, 72);
     msg->msgid = MAVLINK_MSG_ID_OBSTACLE_DISTANCE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_MIN_LEN, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_LEN, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_CRC);
 }
@@ -113,15 +113,15 @@ static inline uint16_t mavlink_msg_obstacle_distance_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t sensor_type,const uint16_t *distances,uint8_t increment,uint16_t min_distance,uint16_t max_distance,float increment_f,float angle_offset,uint8_t frame)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint16_t(msg->payloads, 152, min_distance);
-    _mav_put_uint16_t(msg->payloads, 154, max_distance);
-    _mav_put_uint8_t(msg->payloads, 156, sensor_type);
-    _mav_put_uint8_t(msg->payloads, 157, increment);
-    _mav_put_float(msg->payloads, 158, increment_f);
-    _mav_put_float(msg->payloads, 162, angle_offset);
-    _mav_put_uint8_t(msg->payloads, 166, frame);
-    _mav_put_uint16_t_array(msg->payloads, 8, distances, 72);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint16_t(((char*)msg->payloads), 152, min_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 154, max_distance);
+    _mav_put_uint8_t(((char*)msg->payloads), 156, sensor_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 157, increment);
+    _mav_put_float(((char*)msg->payloads), 158, increment_f);
+    _mav_put_float(((char*)msg->payloads), 162, angle_offset);
+    _mav_put_uint8_t(((char*)msg->payloads), 166, frame);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 8, distances, 72);
 
     msg->msgid = MAVLINK_MSG_ID_OBSTACLE_DISTANCE;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_MIN_LEN, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_LEN, MAVLINK_MSG_ID_OBSTACLE_DISTANCE_CRC);

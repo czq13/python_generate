@@ -87,17 +87,17 @@ typedef struct __mavlink_hil_controls_t {
 static inline uint16_t mavlink_msg_hil_controls_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float roll_ailerons, float pitch_elevator, float yaw_rudder, float throttle, float aux1, float aux2, float aux3, float aux4, uint8_t mode, uint8_t nav_mode)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, roll_ailerons);
-    _mav_put_float(msg->payloads, 12, pitch_elevator);
-    _mav_put_float(msg->payloads, 16, yaw_rudder);
-    _mav_put_float(msg->payloads, 20, throttle);
-    _mav_put_float(msg->payloads, 24, aux1);
-    _mav_put_float(msg->payloads, 28, aux2);
-    _mav_put_float(msg->payloads, 32, aux3);
-    _mav_put_float(msg->payloads, 36, aux4);
-    _mav_put_uint8_t(msg->payloads, 40, mode);
-    _mav_put_uint8_t(msg->payloads, 41, nav_mode);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, roll_ailerons);
+    _mav_put_float(((char*)msg->payloads), 12, pitch_elevator);
+    _mav_put_float(((char*)msg->payloads), 16, yaw_rudder);
+    _mav_put_float(((char*)msg->payloads), 20, throttle);
+    _mav_put_float(((char*)msg->payloads), 24, aux1);
+    _mav_put_float(((char*)msg->payloads), 28, aux2);
+    _mav_put_float(((char*)msg->payloads), 32, aux3);
+    _mav_put_float(((char*)msg->payloads), 36, aux4);
+    _mav_put_uint8_t(((char*)msg->payloads), 40, mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 41, nav_mode);
 
     msg->msgid = MAVLINK_MSG_ID_HIL_CONTROLS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIL_CONTROLS_MIN_LEN, MAVLINK_MSG_ID_HIL_CONTROLS_LEN, MAVLINK_MSG_ID_HIL_CONTROLS_CRC);
@@ -126,17 +126,17 @@ static inline uint16_t mavlink_msg_hil_controls_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float roll_ailerons,float pitch_elevator,float yaw_rudder,float throttle,float aux1,float aux2,float aux3,float aux4,uint8_t mode,uint8_t nav_mode)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, roll_ailerons);
-    _mav_put_float(msg->payloads, 12, pitch_elevator);
-    _mav_put_float(msg->payloads, 16, yaw_rudder);
-    _mav_put_float(msg->payloads, 20, throttle);
-    _mav_put_float(msg->payloads, 24, aux1);
-    _mav_put_float(msg->payloads, 28, aux2);
-    _mav_put_float(msg->payloads, 32, aux3);
-    _mav_put_float(msg->payloads, 36, aux4);
-    _mav_put_uint8_t(msg->payloads, 40, mode);
-    _mav_put_uint8_t(msg->payloads, 41, nav_mode);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, roll_ailerons);
+    _mav_put_float(((char*)msg->payloads), 12, pitch_elevator);
+    _mav_put_float(((char*)msg->payloads), 16, yaw_rudder);
+    _mav_put_float(((char*)msg->payloads), 20, throttle);
+    _mav_put_float(((char*)msg->payloads), 24, aux1);
+    _mav_put_float(((char*)msg->payloads), 28, aux2);
+    _mav_put_float(((char*)msg->payloads), 32, aux3);
+    _mav_put_float(((char*)msg->payloads), 36, aux4);
+    _mav_put_uint8_t(((char*)msg->payloads), 40, mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 41, nav_mode);
 
 
     msg->msgid = MAVLINK_MSG_ID_HIL_CONTROLS;

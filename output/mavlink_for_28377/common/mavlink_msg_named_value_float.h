@@ -55,9 +55,9 @@ typedef struct __mavlink_named_value_float_t {
 static inline uint16_t mavlink_msg_named_value_float_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, const char *name, float value)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, value);
-    _mav_put_char_array(msg->payloads, 8, name, 10);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, value);
+    _mav_put_char_array(((char*)msg->payloads), 8, name, 10);
     msg->msgid = MAVLINK_MSG_ID_NAMED_VALUE_FLOAT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_MIN_LEN, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_LEN, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_CRC);
 }
@@ -77,9 +77,9 @@ static inline uint16_t mavlink_msg_named_value_float_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,const char *name,float value)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, value);
-    _mav_put_char_array(msg->payloads, 8, name, 10);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, value);
+    _mav_put_char_array(((char*)msg->payloads), 8, name, 10);
 
     msg->msgid = MAVLINK_MSG_ID_NAMED_VALUE_FLOAT;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_MIN_LEN, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_LEN, MAVLINK_MSG_ID_NAMED_VALUE_FLOAT_CRC);

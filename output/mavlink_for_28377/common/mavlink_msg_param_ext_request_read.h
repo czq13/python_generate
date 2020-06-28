@@ -59,10 +59,10 @@ typedef struct __mavlink_param_ext_request_read_t {
 static inline uint16_t mavlink_msg_param_ext_request_read_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const char *param_id, int16_t param_index)
 {
-    _mav_put_int16_t(msg->payloads, 0, param_index);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_char_array(msg->payloads, 4, param_id, 16);
+    _mav_put_int16_t(((char*)msg->payloads), 0, param_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_char_array(((char*)msg->payloads), 4, param_id, 16);
     msg->msgid = MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_MIN_LEN, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_LEN, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_param_ext_request_read_pack_chan(uint8_t syst
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const char *param_id,int16_t param_index)
 {
-    _mav_put_int16_t(msg->payloads, 0, param_index);
-    _mav_put_uint8_t(msg->payloads, 2, target_system);
-    _mav_put_uint8_t(msg->payloads, 3, target_component);
-    _mav_put_char_array(msg->payloads, 4, param_id, 16);
+    _mav_put_int16_t(((char*)msg->payloads), 0, param_index);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, target_component);
+    _mav_put_char_array(((char*)msg->payloads), 4, param_id, 16);
 
     msg->msgid = MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_MIN_LEN, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_LEN, MAVLINK_MSG_ID_PARAM_EXT_REQUEST_READ_CRC);

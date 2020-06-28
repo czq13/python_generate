@@ -55,9 +55,9 @@ typedef struct __mavlink_button_change_t {
 static inline uint16_t mavlink_msg_button_change_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint32_t last_change_ms, uint8_t state)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, last_change_ms);
-    _mav_put_uint8_t(msg->payloads, 8, state);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, last_change_ms);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, state);
 
     msg->msgid = MAVLINK_MSG_ID_BUTTON_CHANGE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_BUTTON_CHANGE_MIN_LEN, MAVLINK_MSG_ID_BUTTON_CHANGE_LEN, MAVLINK_MSG_ID_BUTTON_CHANGE_CRC);
@@ -78,9 +78,9 @@ static inline uint16_t mavlink_msg_button_change_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint32_t last_change_ms,uint8_t state)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint32_t(msg->payloads, 4, last_change_ms);
-    _mav_put_uint8_t(msg->payloads, 8, state);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, last_change_ms);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, state);
 
 
     msg->msgid = MAVLINK_MSG_ID_BUTTON_CHANGE;

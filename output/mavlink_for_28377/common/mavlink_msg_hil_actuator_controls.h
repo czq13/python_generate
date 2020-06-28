@@ -59,10 +59,10 @@ typedef struct __mavlink_hil_actuator_controls_t {
 static inline uint16_t mavlink_msg_hil_actuator_controls_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, const float *controls, uint8_t mode, uint64_t flags)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint64_t(msg->payloads, 8, flags);
-    _mav_put_uint8_t(msg->payloads, 80, mode);
-    _mav_put_float_array(msg->payloads, 16, controls, 16);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 80, mode);
+    _mav_put_float_array(((char*)msg->payloads), 16, controls, 16);
     msg->msgid = MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_MIN_LEN, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_LEN, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_hil_actuator_controls_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    uint64_t time_usec,const float *controls,uint8_t mode,uint64_t flags)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint64_t(msg->payloads, 8, flags);
-    _mav_put_uint8_t(msg->payloads, 80, mode);
-    _mav_put_float_array(msg->payloads, 16, controls, 16);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, flags);
+    _mav_put_uint8_t(((char*)msg->payloads), 80, mode);
+    _mav_put_float_array(((char*)msg->payloads), 16, controls, 16);
 
     msg->msgid = MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_MIN_LEN, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_LEN, MAVLINK_MSG_ID_HIL_ACTUATOR_CONTROLS_CRC);

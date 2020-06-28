@@ -79,15 +79,15 @@ typedef struct __mavlink_wind_cov_t {
 static inline uint16_t mavlink_msg_wind_cov_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float wind_x, float wind_y, float wind_z, float var_horiz, float var_vert, float wind_alt, float horiz_accuracy, float vert_accuracy)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, wind_x);
-    _mav_put_float(msg->payloads, 12, wind_y);
-    _mav_put_float(msg->payloads, 16, wind_z);
-    _mav_put_float(msg->payloads, 20, var_horiz);
-    _mav_put_float(msg->payloads, 24, var_vert);
-    _mav_put_float(msg->payloads, 28, wind_alt);
-    _mav_put_float(msg->payloads, 32, horiz_accuracy);
-    _mav_put_float(msg->payloads, 36, vert_accuracy);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, wind_x);
+    _mav_put_float(((char*)msg->payloads), 12, wind_y);
+    _mav_put_float(((char*)msg->payloads), 16, wind_z);
+    _mav_put_float(((char*)msg->payloads), 20, var_horiz);
+    _mav_put_float(((char*)msg->payloads), 24, var_vert);
+    _mav_put_float(((char*)msg->payloads), 28, wind_alt);
+    _mav_put_float(((char*)msg->payloads), 32, horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 36, vert_accuracy);
 
     msg->msgid = MAVLINK_MSG_ID_WIND_COV;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_WIND_COV_MIN_LEN, MAVLINK_MSG_ID_WIND_COV_LEN, MAVLINK_MSG_ID_WIND_COV_CRC);
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_wind_cov_pack_chan(uint8_t system_id, uint8_t
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float wind_x,float wind_y,float wind_z,float var_horiz,float var_vert,float wind_alt,float horiz_accuracy,float vert_accuracy)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, wind_x);
-    _mav_put_float(msg->payloads, 12, wind_y);
-    _mav_put_float(msg->payloads, 16, wind_z);
-    _mav_put_float(msg->payloads, 20, var_horiz);
-    _mav_put_float(msg->payloads, 24, var_vert);
-    _mav_put_float(msg->payloads, 28, wind_alt);
-    _mav_put_float(msg->payloads, 32, horiz_accuracy);
-    _mav_put_float(msg->payloads, 36, vert_accuracy);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, wind_x);
+    _mav_put_float(((char*)msg->payloads), 12, wind_y);
+    _mav_put_float(((char*)msg->payloads), 16, wind_z);
+    _mav_put_float(((char*)msg->payloads), 20, var_horiz);
+    _mav_put_float(((char*)msg->payloads), 24, var_vert);
+    _mav_put_float(((char*)msg->payloads), 28, wind_alt);
+    _mav_put_float(((char*)msg->payloads), 32, horiz_accuracy);
+    _mav_put_float(((char*)msg->payloads), 36, vert_accuracy);
 
 
     msg->msgid = MAVLINK_MSG_ID_WIND_COV;

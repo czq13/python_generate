@@ -51,8 +51,8 @@ typedef struct __mavlink_raw_rpm_t {
 static inline uint16_t mavlink_msg_raw_rpm_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t index, float frequency)
 {
-    _mav_put_float(msg->payloads, 0, frequency);
-    _mav_put_uint8_t(msg->payloads, 4, index);
+    _mav_put_float(((char*)msg->payloads), 0, frequency);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, index);
 
     msg->msgid = MAVLINK_MSG_ID_RAW_RPM;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RAW_RPM_MIN_LEN, MAVLINK_MSG_ID_RAW_RPM_LEN, MAVLINK_MSG_ID_RAW_RPM_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_raw_rpm_pack_chan(uint8_t system_id, uint8_t 
                                mavlink_message_t* msg,
                                    uint8_t index,float frequency)
 {
-    _mav_put_float(msg->payloads, 0, frequency);
-    _mav_put_uint8_t(msg->payloads, 4, index);
+    _mav_put_float(((char*)msg->payloads), 0, frequency);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, index);
 
 
     msg->msgid = MAVLINK_MSG_ID_RAW_RPM;

@@ -66,12 +66,12 @@ typedef struct __mavlink_heartbeat_t {
 static inline uint16_t mavlink_msg_heartbeat_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t type, uint8_t autopilot, uint8_t base_mode, uint32_t custom_mode, uint8_t system_status)
 {
-    _mav_put_uint32_t(msg->payloads, 0, custom_mode);
-    _mav_put_uint8_t(msg->payloads, 4, type);
-    _mav_put_uint8_t(msg->payloads, 5, autopilot);
-    _mav_put_uint8_t(msg->payloads, 6, base_mode);
-    _mav_put_uint8_t(msg->payloads, 7, system_status);
-    _mav_put_uint8_t(msg->payloads, 8, 3);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, custom_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, autopilot);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, base_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, system_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, 3);
 
     msg->msgid = MAVLINK_MSG_ID_HEARTBEAT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_HEARTBEAT_MIN_LEN, MAVLINK_MSG_ID_HEARTBEAT_LEN, MAVLINK_MSG_ID_HEARTBEAT_CRC);
@@ -94,12 +94,12 @@ static inline uint16_t mavlink_msg_heartbeat_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint8_t type,uint8_t autopilot,uint8_t base_mode,uint32_t custom_mode,uint8_t system_status)
 {
-    _mav_put_uint32_t(msg->payloads, 0, custom_mode);
-    _mav_put_uint8_t(msg->payloads, 4, type);
-    _mav_put_uint8_t(msg->payloads, 5, autopilot);
-    _mav_put_uint8_t(msg->payloads, 6, base_mode);
-    _mav_put_uint8_t(msg->payloads, 7, system_status);
-    _mav_put_uint8_t(msg->payloads, 8, 3);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, custom_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, autopilot);
+    _mav_put_uint8_t(((char*)msg->payloads), 6, base_mode);
+    _mav_put_uint8_t(((char*)msg->payloads), 7, system_status);
+    _mav_put_uint8_t(((char*)msg->payloads), 8, 3);
 
 
     msg->msgid = MAVLINK_MSG_ID_HEARTBEAT;

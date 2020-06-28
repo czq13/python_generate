@@ -63,11 +63,11 @@ typedef struct __mavlink_log_request_data_t {
 static inline uint16_t mavlink_msg_log_request_data_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint16_t id, uint32_t ofs, uint32_t count)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ofs);
-    _mav_put_uint32_t(msg->payloads, 4, count);
-    _mav_put_uint16_t(msg->payloads, 8, id);
-    _mav_put_uint8_t(msg->payloads, 10, target_system);
-    _mav_put_uint8_t(msg->payloads, 11, target_component);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ofs);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, count);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, target_component);
 
     msg->msgid = MAVLINK_MSG_ID_LOG_REQUEST_DATA;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_LOG_REQUEST_DATA_MIN_LEN, MAVLINK_MSG_ID_LOG_REQUEST_DATA_LEN, MAVLINK_MSG_ID_LOG_REQUEST_DATA_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_log_request_data_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint16_t id,uint32_t ofs,uint32_t count)
 {
-    _mav_put_uint32_t(msg->payloads, 0, ofs);
-    _mav_put_uint32_t(msg->payloads, 4, count);
-    _mav_put_uint16_t(msg->payloads, 8, id);
-    _mav_put_uint8_t(msg->payloads, 10, target_system);
-    _mav_put_uint8_t(msg->payloads, 11, target_component);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, ofs);
+    _mav_put_uint32_t(((char*)msg->payloads), 4, count);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, target_component);
 
 
     msg->msgid = MAVLINK_MSG_ID_LOG_REQUEST_DATA;

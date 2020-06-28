@@ -59,10 +59,10 @@ typedef struct __mavlink_play_tune_v2_t {
 static inline uint16_t mavlink_msg_play_tune_v2_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, uint32_t format, const char *tune)
 {
-    _mav_put_uint32_t(msg->payloads, 0, format);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_char_array(msg->payloads, 6, tune, 248);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, format);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_char_array(((char*)msg->payloads), 6, tune, 248);
     msg->msgid = MAVLINK_MSG_ID_PLAY_TUNE_V2;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PLAY_TUNE_V2_MIN_LEN, MAVLINK_MSG_ID_PLAY_TUNE_V2_LEN, MAVLINK_MSG_ID_PLAY_TUNE_V2_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_play_tune_v2_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,uint32_t format,const char *tune)
 {
-    _mav_put_uint32_t(msg->payloads, 0, format);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_char_array(msg->payloads, 6, tune, 248);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, format);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_char_array(((char*)msg->payloads), 6, tune, 248);
 
     msg->msgid = MAVLINK_MSG_ID_PLAY_TUNE_V2;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PLAY_TUNE_V2_MIN_LEN, MAVLINK_MSG_ID_PLAY_TUNE_V2_LEN, MAVLINK_MSG_ID_PLAY_TUNE_V2_CRC);

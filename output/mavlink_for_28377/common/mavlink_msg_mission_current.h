@@ -47,7 +47,7 @@ typedef struct __mavlink_mission_current_t {
 static inline uint16_t mavlink_msg_mission_current_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t seq)
 {
-    _mav_put_uint16_t(msg->payloads, 0, seq);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, seq);
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_CURRENT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MISSION_CURRENT_MIN_LEN, MAVLINK_MSG_ID_MISSION_CURRENT_LEN, MAVLINK_MSG_ID_MISSION_CURRENT_CRC);
@@ -66,7 +66,7 @@ static inline uint16_t mavlink_msg_mission_current_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint16_t seq)
 {
-    _mav_put_uint16_t(msg->payloads, 0, seq);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, seq);
 
 
     msg->msgid = MAVLINK_MSG_ID_MISSION_CURRENT;

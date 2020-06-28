@@ -127,27 +127,27 @@ typedef struct __mavlink_sim_state_t {
 static inline uint16_t mavlink_msg_sim_state_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                float q1, float q2, float q3, float q4, float roll, float pitch, float yaw, float xacc, float yacc, float zacc, float xgyro, float ygyro, float zgyro, float lat, float lon, float alt, float std_dev_horz, float std_dev_vert, float vn, float ve, float vd)
 {
-    _mav_put_float(msg->payloads, 0, q1);
-    _mav_put_float(msg->payloads, 4, q2);
-    _mav_put_float(msg->payloads, 8, q3);
-    _mav_put_float(msg->payloads, 12, q4);
-    _mav_put_float(msg->payloads, 16, roll);
-    _mav_put_float(msg->payloads, 20, pitch);
-    _mav_put_float(msg->payloads, 24, yaw);
-    _mav_put_float(msg->payloads, 28, xacc);
-    _mav_put_float(msg->payloads, 32, yacc);
-    _mav_put_float(msg->payloads, 36, zacc);
-    _mav_put_float(msg->payloads, 40, xgyro);
-    _mav_put_float(msg->payloads, 44, ygyro);
-    _mav_put_float(msg->payloads, 48, zgyro);
-    _mav_put_float(msg->payloads, 52, lat);
-    _mav_put_float(msg->payloads, 56, lon);
-    _mav_put_float(msg->payloads, 60, alt);
-    _mav_put_float(msg->payloads, 64, std_dev_horz);
-    _mav_put_float(msg->payloads, 68, std_dev_vert);
-    _mav_put_float(msg->payloads, 72, vn);
-    _mav_put_float(msg->payloads, 76, ve);
-    _mav_put_float(msg->payloads, 80, vd);
+    _mav_put_float(((char*)msg->payloads), 0, q1);
+    _mav_put_float(((char*)msg->payloads), 4, q2);
+    _mav_put_float(((char*)msg->payloads), 8, q3);
+    _mav_put_float(((char*)msg->payloads), 12, q4);
+    _mav_put_float(((char*)msg->payloads), 16, roll);
+    _mav_put_float(((char*)msg->payloads), 20, pitch);
+    _mav_put_float(((char*)msg->payloads), 24, yaw);
+    _mav_put_float(((char*)msg->payloads), 28, xacc);
+    _mav_put_float(((char*)msg->payloads), 32, yacc);
+    _mav_put_float(((char*)msg->payloads), 36, zacc);
+    _mav_put_float(((char*)msg->payloads), 40, xgyro);
+    _mav_put_float(((char*)msg->payloads), 44, ygyro);
+    _mav_put_float(((char*)msg->payloads), 48, zgyro);
+    _mav_put_float(((char*)msg->payloads), 52, lat);
+    _mav_put_float(((char*)msg->payloads), 56, lon);
+    _mav_put_float(((char*)msg->payloads), 60, alt);
+    _mav_put_float(((char*)msg->payloads), 64, std_dev_horz);
+    _mav_put_float(((char*)msg->payloads), 68, std_dev_vert);
+    _mav_put_float(((char*)msg->payloads), 72, vn);
+    _mav_put_float(((char*)msg->payloads), 76, ve);
+    _mav_put_float(((char*)msg->payloads), 80, vd);
 
     msg->msgid = MAVLINK_MSG_ID_SIM_STATE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SIM_STATE_MIN_LEN, MAVLINK_MSG_ID_SIM_STATE_LEN, MAVLINK_MSG_ID_SIM_STATE_CRC);
@@ -186,27 +186,27 @@ static inline uint16_t mavlink_msg_sim_state_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    float q1,float q2,float q3,float q4,float roll,float pitch,float yaw,float xacc,float yacc,float zacc,float xgyro,float ygyro,float zgyro,float lat,float lon,float alt,float std_dev_horz,float std_dev_vert,float vn,float ve,float vd)
 {
-    _mav_put_float(msg->payloads, 0, q1);
-    _mav_put_float(msg->payloads, 4, q2);
-    _mav_put_float(msg->payloads, 8, q3);
-    _mav_put_float(msg->payloads, 12, q4);
-    _mav_put_float(msg->payloads, 16, roll);
-    _mav_put_float(msg->payloads, 20, pitch);
-    _mav_put_float(msg->payloads, 24, yaw);
-    _mav_put_float(msg->payloads, 28, xacc);
-    _mav_put_float(msg->payloads, 32, yacc);
-    _mav_put_float(msg->payloads, 36, zacc);
-    _mav_put_float(msg->payloads, 40, xgyro);
-    _mav_put_float(msg->payloads, 44, ygyro);
-    _mav_put_float(msg->payloads, 48, zgyro);
-    _mav_put_float(msg->payloads, 52, lat);
-    _mav_put_float(msg->payloads, 56, lon);
-    _mav_put_float(msg->payloads, 60, alt);
-    _mav_put_float(msg->payloads, 64, std_dev_horz);
-    _mav_put_float(msg->payloads, 68, std_dev_vert);
-    _mav_put_float(msg->payloads, 72, vn);
-    _mav_put_float(msg->payloads, 76, ve);
-    _mav_put_float(msg->payloads, 80, vd);
+    _mav_put_float(((char*)msg->payloads), 0, q1);
+    _mav_put_float(((char*)msg->payloads), 4, q2);
+    _mav_put_float(((char*)msg->payloads), 8, q3);
+    _mav_put_float(((char*)msg->payloads), 12, q4);
+    _mav_put_float(((char*)msg->payloads), 16, roll);
+    _mav_put_float(((char*)msg->payloads), 20, pitch);
+    _mav_put_float(((char*)msg->payloads), 24, yaw);
+    _mav_put_float(((char*)msg->payloads), 28, xacc);
+    _mav_put_float(((char*)msg->payloads), 32, yacc);
+    _mav_put_float(((char*)msg->payloads), 36, zacc);
+    _mav_put_float(((char*)msg->payloads), 40, xgyro);
+    _mav_put_float(((char*)msg->payloads), 44, ygyro);
+    _mav_put_float(((char*)msg->payloads), 48, zgyro);
+    _mav_put_float(((char*)msg->payloads), 52, lat);
+    _mav_put_float(((char*)msg->payloads), 56, lon);
+    _mav_put_float(((char*)msg->payloads), 60, alt);
+    _mav_put_float(((char*)msg->payloads), 64, std_dev_horz);
+    _mav_put_float(((char*)msg->payloads), 68, std_dev_vert);
+    _mav_put_float(((char*)msg->payloads), 72, vn);
+    _mav_put_float(((char*)msg->payloads), 76, ve);
+    _mav_put_float(((char*)msg->payloads), 80, vd);
 
 
     msg->msgid = MAVLINK_MSG_ID_SIM_STATE;

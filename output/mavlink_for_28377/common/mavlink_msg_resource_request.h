@@ -64,11 +64,11 @@ typedef struct __mavlink_resource_request_t {
 static inline uint16_t mavlink_msg_resource_request_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t request_id, uint8_t uri_type, const uint8_t *uri, uint8_t transfer_type, const uint8_t *storage)
 {
-    _mav_put_uint8_t(msg->payloads, 0, request_id);
-    _mav_put_uint8_t(msg->payloads, 1, uri_type);
-    _mav_put_uint8_t(msg->payloads, 122, transfer_type);
-    _mav_put_uint8_t_array(msg->payloads, 2, uri, 120);
-    _mav_put_uint8_t_array(msg->payloads, 123, storage, 120);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, request_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, uri_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 122, transfer_type);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 2, uri, 120);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 123, storage, 120);
     msg->msgid = MAVLINK_MSG_ID_RESOURCE_REQUEST;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RESOURCE_REQUEST_MIN_LEN, MAVLINK_MSG_ID_RESOURCE_REQUEST_LEN, MAVLINK_MSG_ID_RESOURCE_REQUEST_CRC);
 }
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_resource_request_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint8_t request_id,uint8_t uri_type,const uint8_t *uri,uint8_t transfer_type,const uint8_t *storage)
 {
-    _mav_put_uint8_t(msg->payloads, 0, request_id);
-    _mav_put_uint8_t(msg->payloads, 1, uri_type);
-    _mav_put_uint8_t(msg->payloads, 122, transfer_type);
-    _mav_put_uint8_t_array(msg->payloads, 2, uri, 120);
-    _mav_put_uint8_t_array(msg->payloads, 123, storage, 120);
+    _mav_put_uint8_t(((char*)msg->payloads), 0, request_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 1, uri_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 122, transfer_type);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 2, uri, 120);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 123, storage, 120);
 
     msg->msgid = MAVLINK_MSG_ID_RESOURCE_REQUEST;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_RESOURCE_REQUEST_MIN_LEN, MAVLINK_MSG_ID_RESOURCE_REQUEST_LEN, MAVLINK_MSG_ID_RESOURCE_REQUEST_CRC);

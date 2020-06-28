@@ -94,18 +94,18 @@ typedef struct __mavlink_autopilot_version_t {
 static inline uint16_t mavlink_msg_autopilot_version_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t capabilities, uint32_t flight_sw_version, uint32_t middleware_sw_version, uint32_t os_sw_version, uint32_t board_version, const uint8_t *flight_custom_version, const uint8_t *middleware_custom_version, const uint8_t *os_custom_version, uint16_t vendor_id, uint16_t product_id, uint64_t uid, const uint8_t *uid2)
 {
-    _mav_put_uint64_t(msg->payloads, 0, capabilities);
-    _mav_put_uint64_t(msg->payloads, 8, uid);
-    _mav_put_uint32_t(msg->payloads, 16, flight_sw_version);
-    _mav_put_uint32_t(msg->payloads, 20, middleware_sw_version);
-    _mav_put_uint32_t(msg->payloads, 24, os_sw_version);
-    _mav_put_uint32_t(msg->payloads, 28, board_version);
-    _mav_put_uint16_t(msg->payloads, 32, vendor_id);
-    _mav_put_uint16_t(msg->payloads, 34, product_id);
-    _mav_put_uint8_t_array(msg->payloads, 36, flight_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 44, middleware_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 52, os_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 60, uid2, 18);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, capabilities);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, uid);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, flight_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, middleware_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, os_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 28, board_version);
+    _mav_put_uint16_t(((char*)msg->payloads), 32, vendor_id);
+    _mav_put_uint16_t(((char*)msg->payloads), 34, product_id);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 36, flight_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 44, middleware_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 52, os_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 60, uid2, 18);
     msg->msgid = MAVLINK_MSG_ID_AUTOPILOT_VERSION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_AUTOPILOT_VERSION_MIN_LEN, MAVLINK_MSG_ID_AUTOPILOT_VERSION_LEN, MAVLINK_MSG_ID_AUTOPILOT_VERSION_CRC);
 }
@@ -134,18 +134,18 @@ static inline uint16_t mavlink_msg_autopilot_version_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    uint64_t capabilities,uint32_t flight_sw_version,uint32_t middleware_sw_version,uint32_t os_sw_version,uint32_t board_version,const uint8_t *flight_custom_version,const uint8_t *middleware_custom_version,const uint8_t *os_custom_version,uint16_t vendor_id,uint16_t product_id,uint64_t uid,const uint8_t *uid2)
 {
-    _mav_put_uint64_t(msg->payloads, 0, capabilities);
-    _mav_put_uint64_t(msg->payloads, 8, uid);
-    _mav_put_uint32_t(msg->payloads, 16, flight_sw_version);
-    _mav_put_uint32_t(msg->payloads, 20, middleware_sw_version);
-    _mav_put_uint32_t(msg->payloads, 24, os_sw_version);
-    _mav_put_uint32_t(msg->payloads, 28, board_version);
-    _mav_put_uint16_t(msg->payloads, 32, vendor_id);
-    _mav_put_uint16_t(msg->payloads, 34, product_id);
-    _mav_put_uint8_t_array(msg->payloads, 36, flight_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 44, middleware_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 52, os_custom_version, 8);
-    _mav_put_uint8_t_array(msg->payloads, 60, uid2, 18);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, capabilities);
+    _mav_put_uint64_t(((char*)msg->payloads), 8, uid);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, flight_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, middleware_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, os_sw_version);
+    _mav_put_uint32_t(((char*)msg->payloads), 28, board_version);
+    _mav_put_uint16_t(((char*)msg->payloads), 32, vendor_id);
+    _mav_put_uint16_t(((char*)msg->payloads), 34, product_id);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 36, flight_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 44, middleware_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 52, os_custom_version, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 60, uid2, 18);
 
     msg->msgid = MAVLINK_MSG_ID_AUTOPILOT_VERSION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_AUTOPILOT_VERSION_MIN_LEN, MAVLINK_MSG_ID_AUTOPILOT_VERSION_LEN, MAVLINK_MSG_ID_AUTOPILOT_VERSION_CRC);

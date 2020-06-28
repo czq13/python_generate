@@ -75,14 +75,14 @@ typedef struct __mavlink_smart_battery_status_t {
 static inline uint16_t mavlink_msg_smart_battery_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t id, int16_t capacity_remaining, int16_t current, int16_t temperature, int32_t fault_bitmask, int32_t time_remaining, uint16_t cell_offset, const uint16_t *voltages)
 {
-    _mav_put_int32_t(msg->payloads, 0, fault_bitmask);
-    _mav_put_int32_t(msg->payloads, 4, time_remaining);
-    _mav_put_uint16_t(msg->payloads, 8, id);
-    _mav_put_int16_t(msg->payloads, 10, capacity_remaining);
-    _mav_put_int16_t(msg->payloads, 12, current);
-    _mav_put_int16_t(msg->payloads, 14, temperature);
-    _mav_put_uint16_t(msg->payloads, 16, cell_offset);
-    _mav_put_uint16_t_array(msg->payloads, 18, voltages, 16);
+    _mav_put_int32_t(((char*)msg->payloads), 0, fault_bitmask);
+    _mav_put_int32_t(((char*)msg->payloads), 4, time_remaining);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, id);
+    _mav_put_int16_t(((char*)msg->payloads), 10, capacity_remaining);
+    _mav_put_int16_t(((char*)msg->payloads), 12, current);
+    _mav_put_int16_t(((char*)msg->payloads), 14, temperature);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, cell_offset);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 18, voltages, 16);
     msg->msgid = MAVLINK_MSG_ID_SMART_BATTERY_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_MIN_LEN, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_LEN, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_CRC);
 }
@@ -107,14 +107,14 @@ static inline uint16_t mavlink_msg_smart_battery_status_pack_chan(uint8_t system
                                mavlink_message_t* msg,
                                    uint16_t id,int16_t capacity_remaining,int16_t current,int16_t temperature,int32_t fault_bitmask,int32_t time_remaining,uint16_t cell_offset,const uint16_t *voltages)
 {
-    _mav_put_int32_t(msg->payloads, 0, fault_bitmask);
-    _mav_put_int32_t(msg->payloads, 4, time_remaining);
-    _mav_put_uint16_t(msg->payloads, 8, id);
-    _mav_put_int16_t(msg->payloads, 10, capacity_remaining);
-    _mav_put_int16_t(msg->payloads, 12, current);
-    _mav_put_int16_t(msg->payloads, 14, temperature);
-    _mav_put_uint16_t(msg->payloads, 16, cell_offset);
-    _mav_put_uint16_t_array(msg->payloads, 18, voltages, 16);
+    _mav_put_int32_t(((char*)msg->payloads), 0, fault_bitmask);
+    _mav_put_int32_t(((char*)msg->payloads), 4, time_remaining);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, id);
+    _mav_put_int16_t(((char*)msg->payloads), 10, capacity_remaining);
+    _mav_put_int16_t(((char*)msg->payloads), 12, current);
+    _mav_put_int16_t(((char*)msg->payloads), 14, temperature);
+    _mav_put_uint16_t(((char*)msg->payloads), 16, cell_offset);
+    _mav_put_uint16_t_array(((char*)msg->payloads), 18, voltages, 16);
 
     msg->msgid = MAVLINK_MSG_ID_SMART_BATTERY_STATUS;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_MIN_LEN, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_LEN, MAVLINK_MSG_ID_SMART_BATTERY_STATUS_CRC);

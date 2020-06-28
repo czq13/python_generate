@@ -63,11 +63,11 @@ typedef struct __mavlink_terrain_data_t {
 static inline uint16_t mavlink_msg_terrain_data_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t lat, int32_t lon, uint16_t grid_spacing, uint8_t gridbit, const int16_t *data)
 {
-    _mav_put_int32_t(msg->payloads, 0, lat);
-    _mav_put_int32_t(msg->payloads, 4, lon);
-    _mav_put_uint16_t(msg->payloads, 8, grid_spacing);
-    _mav_put_uint8_t(msg->payloads, 42, gridbit);
-    _mav_put_int16_t_array(msg->payloads, 10, data, 16);
+    _mav_put_int32_t(((char*)msg->payloads), 0, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, grid_spacing);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, gridbit);
+    _mav_put_int16_t_array(((char*)msg->payloads), 10, data, 16);
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_DATA;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TERRAIN_DATA_MIN_LEN, MAVLINK_MSG_ID_TERRAIN_DATA_LEN, MAVLINK_MSG_ID_TERRAIN_DATA_CRC);
 }
@@ -89,11 +89,11 @@ static inline uint16_t mavlink_msg_terrain_data_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    int32_t lat,int32_t lon,uint16_t grid_spacing,uint8_t gridbit,const int16_t *data)
 {
-    _mav_put_int32_t(msg->payloads, 0, lat);
-    _mav_put_int32_t(msg->payloads, 4, lon);
-    _mav_put_uint16_t(msg->payloads, 8, grid_spacing);
-    _mav_put_uint8_t(msg->payloads, 42, gridbit);
-    _mav_put_int16_t_array(msg->payloads, 10, data, 16);
+    _mav_put_int32_t(((char*)msg->payloads), 0, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lon);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, grid_spacing);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, gridbit);
+    _mav_put_int16_t_array(((char*)msg->payloads), 10, data, 16);
 
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_DATA;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_TERRAIN_DATA_MIN_LEN, MAVLINK_MSG_ID_TERRAIN_DATA_LEN, MAVLINK_MSG_ID_TERRAIN_DATA_CRC);

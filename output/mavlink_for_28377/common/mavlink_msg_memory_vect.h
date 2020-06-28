@@ -59,10 +59,10 @@ typedef struct __mavlink_memory_vect_t {
 static inline uint16_t mavlink_msg_memory_vect_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t address, uint8_t ver, uint8_t type, const int8_t *value)
 {
-    _mav_put_uint16_t(msg->payloads, 0, address);
-    _mav_put_uint8_t(msg->payloads, 2, ver);
-    _mav_put_uint8_t(msg->payloads, 3, type);
-    _mav_put_int8_t_array(msg->payloads, 4, value, 32);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, address);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, ver);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, type);
+    _mav_put_int8_t_array(((char*)msg->payloads), 4, value, 32);
     msg->msgid = MAVLINK_MSG_ID_MEMORY_VECT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MEMORY_VECT_MIN_LEN, MAVLINK_MSG_ID_MEMORY_VECT_LEN, MAVLINK_MSG_ID_MEMORY_VECT_CRC);
 }
@@ -83,10 +83,10 @@ static inline uint16_t mavlink_msg_memory_vect_pack_chan(uint8_t system_id, uint
                                mavlink_message_t* msg,
                                    uint16_t address,uint8_t ver,uint8_t type,const int8_t *value)
 {
-    _mav_put_uint16_t(msg->payloads, 0, address);
-    _mav_put_uint8_t(msg->payloads, 2, ver);
-    _mav_put_uint8_t(msg->payloads, 3, type);
-    _mav_put_int8_t_array(msg->payloads, 4, value, 32);
+    _mav_put_uint16_t(((char*)msg->payloads), 0, address);
+    _mav_put_uint8_t(((char*)msg->payloads), 2, ver);
+    _mav_put_uint8_t(((char*)msg->payloads), 3, type);
+    _mav_put_int8_t_array(((char*)msg->payloads), 4, value, 32);
 
     msg->msgid = MAVLINK_MSG_ID_MEMORY_VECT;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_MEMORY_VECT_MIN_LEN, MAVLINK_MSG_ID_MEMORY_VECT_LEN, MAVLINK_MSG_ID_MEMORY_VECT_CRC);

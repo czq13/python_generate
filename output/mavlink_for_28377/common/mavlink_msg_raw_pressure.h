@@ -63,11 +63,11 @@ typedef struct __mavlink_raw_pressure_t {
 static inline uint16_t mavlink_msg_raw_pressure_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, int16_t press_abs, int16_t press_diff1, int16_t press_diff2, int16_t temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int16_t(msg->payloads, 8, press_abs);
-    _mav_put_int16_t(msg->payloads, 10, press_diff1);
-    _mav_put_int16_t(msg->payloads, 12, press_diff2);
-    _mav_put_int16_t(msg->payloads, 14, temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int16_t(((char*)msg->payloads), 8, press_abs);
+    _mav_put_int16_t(((char*)msg->payloads), 10, press_diff1);
+    _mav_put_int16_t(((char*)msg->payloads), 12, press_diff2);
+    _mav_put_int16_t(((char*)msg->payloads), 14, temperature);
 
     msg->msgid = MAVLINK_MSG_ID_RAW_PRESSURE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_RAW_PRESSURE_MIN_LEN, MAVLINK_MSG_ID_RAW_PRESSURE_LEN, MAVLINK_MSG_ID_RAW_PRESSURE_CRC);
@@ -90,11 +90,11 @@ static inline uint16_t mavlink_msg_raw_pressure_pack_chan(uint8_t system_id, uin
                                mavlink_message_t* msg,
                                    uint64_t time_usec,int16_t press_abs,int16_t press_diff1,int16_t press_diff2,int16_t temperature)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_int16_t(msg->payloads, 8, press_abs);
-    _mav_put_int16_t(msg->payloads, 10, press_diff1);
-    _mav_put_int16_t(msg->payloads, 12, press_diff2);
-    _mav_put_int16_t(msg->payloads, 14, temperature);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_int16_t(((char*)msg->payloads), 8, press_abs);
+    _mav_put_int16_t(((char*)msg->payloads), 10, press_diff1);
+    _mav_put_int16_t(((char*)msg->payloads), 12, press_diff2);
+    _mav_put_int16_t(((char*)msg->payloads), 14, temperature);
 
 
     msg->msgid = MAVLINK_MSG_ID_RAW_PRESSURE;

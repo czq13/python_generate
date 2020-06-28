@@ -51,8 +51,8 @@ typedef struct __mavlink_terrain_check_t {
 static inline uint16_t mavlink_msg_terrain_check_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t lat, int32_t lon)
 {
-    _mav_put_int32_t(msg->payloads, 0, lat);
-    _mav_put_int32_t(msg->payloads, 4, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 0, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lon);
 
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_CHECK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_TERRAIN_CHECK_MIN_LEN, MAVLINK_MSG_ID_TERRAIN_CHECK_LEN, MAVLINK_MSG_ID_TERRAIN_CHECK_CRC);
@@ -72,8 +72,8 @@ static inline uint16_t mavlink_msg_terrain_check_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    int32_t lat,int32_t lon)
 {
-    _mav_put_int32_t(msg->payloads, 0, lat);
-    _mav_put_int32_t(msg->payloads, 4, lon);
+    _mav_put_int32_t(((char*)msg->payloads), 0, lat);
+    _mav_put_int32_t(((char*)msg->payloads), 4, lon);
 
 
     msg->msgid = MAVLINK_MSG_ID_TERRAIN_CHECK;

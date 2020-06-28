@@ -75,14 +75,14 @@ typedef struct __mavlink_nav_controller_output_t {
 static inline uint16_t mavlink_msg_nav_controller_output_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                float nav_roll, float nav_pitch, int16_t nav_bearing, int16_t target_bearing, uint16_t wp_dist, float alt_error, float aspd_error, float xtrack_error)
 {
-    _mav_put_float(msg->payloads, 0, nav_roll);
-    _mav_put_float(msg->payloads, 4, nav_pitch);
-    _mav_put_float(msg->payloads, 8, alt_error);
-    _mav_put_float(msg->payloads, 12, aspd_error);
-    _mav_put_float(msg->payloads, 16, xtrack_error);
-    _mav_put_int16_t(msg->payloads, 20, nav_bearing);
-    _mav_put_int16_t(msg->payloads, 22, target_bearing);
-    _mav_put_uint16_t(msg->payloads, 24, wp_dist);
+    _mav_put_float(((char*)msg->payloads), 0, nav_roll);
+    _mav_put_float(((char*)msg->payloads), 4, nav_pitch);
+    _mav_put_float(((char*)msg->payloads), 8, alt_error);
+    _mav_put_float(((char*)msg->payloads), 12, aspd_error);
+    _mav_put_float(((char*)msg->payloads), 16, xtrack_error);
+    _mav_put_int16_t(((char*)msg->payloads), 20, nav_bearing);
+    _mav_put_int16_t(((char*)msg->payloads), 22, target_bearing);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, wp_dist);
 
     msg->msgid = MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT_MIN_LEN, MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT_LEN, MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT_CRC);
@@ -108,14 +108,14 @@ static inline uint16_t mavlink_msg_nav_controller_output_pack_chan(uint8_t syste
                                mavlink_message_t* msg,
                                    float nav_roll,float nav_pitch,int16_t nav_bearing,int16_t target_bearing,uint16_t wp_dist,float alt_error,float aspd_error,float xtrack_error)
 {
-    _mav_put_float(msg->payloads, 0, nav_roll);
-    _mav_put_float(msg->payloads, 4, nav_pitch);
-    _mav_put_float(msg->payloads, 8, alt_error);
-    _mav_put_float(msg->payloads, 12, aspd_error);
-    _mav_put_float(msg->payloads, 16, xtrack_error);
-    _mav_put_int16_t(msg->payloads, 20, nav_bearing);
-    _mav_put_int16_t(msg->payloads, 22, target_bearing);
-    _mav_put_uint16_t(msg->payloads, 24, wp_dist);
+    _mav_put_float(((char*)msg->payloads), 0, nav_roll);
+    _mav_put_float(((char*)msg->payloads), 4, nav_pitch);
+    _mav_put_float(((char*)msg->payloads), 8, alt_error);
+    _mav_put_float(((char*)msg->payloads), 12, aspd_error);
+    _mav_put_float(((char*)msg->payloads), 16, xtrack_error);
+    _mav_put_int16_t(((char*)msg->payloads), 20, nav_bearing);
+    _mav_put_int16_t(((char*)msg->payloads), 22, target_bearing);
+    _mav_put_uint16_t(((char*)msg->payloads), 24, wp_dist);
 
 
     msg->msgid = MAVLINK_MSG_ID_NAV_CONTROLLER_OUTPUT;

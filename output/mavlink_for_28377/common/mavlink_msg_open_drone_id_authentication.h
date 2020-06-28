@@ -80,15 +80,15 @@ typedef struct __mavlink_open_drone_id_authentication_t {
 static inline uint16_t mavlink_msg_open_drone_id_authentication_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t target_system, uint8_t target_component, const uint8_t *id_or_mac, uint8_t authentication_type, uint8_t data_page, uint8_t page_count, uint8_t length, uint32_t timestamp, const uint8_t *authentication_data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, timestamp);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 26, authentication_type);
-    _mav_put_uint8_t(msg->payloads, 27, data_page);
-    _mav_put_uint8_t(msg->payloads, 28, page_count);
-    _mav_put_uint8_t(msg->payloads, 29, length);
-    _mav_put_uint8_t_array(msg->payloads, 6, id_or_mac, 20);
-    _mav_put_uint8_t_array(msg->payloads, 30, authentication_data, 23);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, authentication_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 27, data_page);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, page_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, length);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, id_or_mac, 20);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 30, authentication_data, 23);
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_CRC);
 }
@@ -114,15 +114,15 @@ static inline uint16_t mavlink_msg_open_drone_id_authentication_pack_chan(uint8_
                                mavlink_message_t* msg,
                                    uint8_t target_system,uint8_t target_component,const uint8_t *id_or_mac,uint8_t authentication_type,uint8_t data_page,uint8_t page_count,uint8_t length,uint32_t timestamp,const uint8_t *authentication_data)
 {
-    _mav_put_uint32_t(msg->payloads, 0, timestamp);
-    _mav_put_uint8_t(msg->payloads, 4, target_system);
-    _mav_put_uint8_t(msg->payloads, 5, target_component);
-    _mav_put_uint8_t(msg->payloads, 26, authentication_type);
-    _mav_put_uint8_t(msg->payloads, 27, data_page);
-    _mav_put_uint8_t(msg->payloads, 28, page_count);
-    _mav_put_uint8_t(msg->payloads, 29, length);
-    _mav_put_uint8_t_array(msg->payloads, 6, id_or_mac, 20);
-    _mav_put_uint8_t_array(msg->payloads, 30, authentication_data, 23);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, timestamp);
+    _mav_put_uint8_t(((char*)msg->payloads), 4, target_system);
+    _mav_put_uint8_t(((char*)msg->payloads), 5, target_component);
+    _mav_put_uint8_t(((char*)msg->payloads), 26, authentication_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 27, data_page);
+    _mav_put_uint8_t(((char*)msg->payloads), 28, page_count);
+    _mav_put_uint8_t(((char*)msg->payloads), 29, length);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 6, id_or_mac, 20);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 30, authentication_data, 23);
 
     msg->msgid = MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_MIN_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_LEN, MAVLINK_MSG_ID_OPEN_DRONE_ID_AUTHENTICATION_CRC);

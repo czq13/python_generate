@@ -91,18 +91,18 @@ typedef struct __mavlink_optical_flow_rad_t {
 static inline uint16_t mavlink_msg_optical_flow_rad_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint8_t sensor_id, uint32_t integration_time_us, float integrated_x, float integrated_y, float integrated_xgyro, float integrated_ygyro, float integrated_zgyro, int16_t temperature, uint8_t quality, uint32_t time_delta_distance_us, float distance)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, integration_time_us);
-    _mav_put_float(msg->payloads, 12, integrated_x);
-    _mav_put_float(msg->payloads, 16, integrated_y);
-    _mav_put_float(msg->payloads, 20, integrated_xgyro);
-    _mav_put_float(msg->payloads, 24, integrated_ygyro);
-    _mav_put_float(msg->payloads, 28, integrated_zgyro);
-    _mav_put_uint32_t(msg->payloads, 32, time_delta_distance_us);
-    _mav_put_float(msg->payloads, 36, distance);
-    _mav_put_int16_t(msg->payloads, 40, temperature);
-    _mav_put_uint8_t(msg->payloads, 42, sensor_id);
-    _mav_put_uint8_t(msg->payloads, 43, quality);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, integration_time_us);
+    _mav_put_float(((char*)msg->payloads), 12, integrated_x);
+    _mav_put_float(((char*)msg->payloads), 16, integrated_y);
+    _mav_put_float(((char*)msg->payloads), 20, integrated_xgyro);
+    _mav_put_float(((char*)msg->payloads), 24, integrated_ygyro);
+    _mav_put_float(((char*)msg->payloads), 28, integrated_zgyro);
+    _mav_put_uint32_t(((char*)msg->payloads), 32, time_delta_distance_us);
+    _mav_put_float(((char*)msg->payloads), 36, distance);
+    _mav_put_int16_t(((char*)msg->payloads), 40, temperature);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, sensor_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 43, quality);
 
     msg->msgid = MAVLINK_MSG_ID_OPTICAL_FLOW_RAD;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_OPTICAL_FLOW_RAD_MIN_LEN, MAVLINK_MSG_ID_OPTICAL_FLOW_RAD_LEN, MAVLINK_MSG_ID_OPTICAL_FLOW_RAD_CRC);
@@ -132,18 +132,18 @@ static inline uint16_t mavlink_msg_optical_flow_rad_pack_chan(uint8_t system_id,
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint8_t sensor_id,uint32_t integration_time_us,float integrated_x,float integrated_y,float integrated_xgyro,float integrated_ygyro,float integrated_zgyro,int16_t temperature,uint8_t quality,uint32_t time_delta_distance_us,float distance)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, integration_time_us);
-    _mav_put_float(msg->payloads, 12, integrated_x);
-    _mav_put_float(msg->payloads, 16, integrated_y);
-    _mav_put_float(msg->payloads, 20, integrated_xgyro);
-    _mav_put_float(msg->payloads, 24, integrated_ygyro);
-    _mav_put_float(msg->payloads, 28, integrated_zgyro);
-    _mav_put_uint32_t(msg->payloads, 32, time_delta_distance_us);
-    _mav_put_float(msg->payloads, 36, distance);
-    _mav_put_int16_t(msg->payloads, 40, temperature);
-    _mav_put_uint8_t(msg->payloads, 42, sensor_id);
-    _mav_put_uint8_t(msg->payloads, 43, quality);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, integration_time_us);
+    _mav_put_float(((char*)msg->payloads), 12, integrated_x);
+    _mav_put_float(((char*)msg->payloads), 16, integrated_y);
+    _mav_put_float(((char*)msg->payloads), 20, integrated_xgyro);
+    _mav_put_float(((char*)msg->payloads), 24, integrated_ygyro);
+    _mav_put_float(((char*)msg->payloads), 28, integrated_zgyro);
+    _mav_put_uint32_t(((char*)msg->payloads), 32, time_delta_distance_us);
+    _mav_put_float(((char*)msg->payloads), 36, distance);
+    _mav_put_int16_t(((char*)msg->payloads), 40, temperature);
+    _mav_put_uint8_t(((char*)msg->payloads), 42, sensor_id);
+    _mav_put_uint8_t(((char*)msg->payloads), 43, quality);
 
 
     msg->msgid = MAVLINK_MSG_ID_OPTICAL_FLOW_RAD;

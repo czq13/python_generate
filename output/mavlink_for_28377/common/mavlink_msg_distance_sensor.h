@@ -91,18 +91,18 @@ typedef struct __mavlink_distance_sensor_t {
 static inline uint16_t mavlink_msg_distance_sensor_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, uint16_t min_distance, uint16_t max_distance, uint16_t current_distance, uint8_t type, uint8_t id, uint8_t orientation, uint8_t covariance, float horizontal_fov, float vertical_fov, const float *quaternion, uint8_t signal_quality)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint16_t(msg->payloads, 4, min_distance);
-    _mav_put_uint16_t(msg->payloads, 6, max_distance);
-    _mav_put_uint16_t(msg->payloads, 8, current_distance);
-    _mav_put_uint8_t(msg->payloads, 10, type);
-    _mav_put_uint8_t(msg->payloads, 11, id);
-    _mav_put_uint8_t(msg->payloads, 12, orientation);
-    _mav_put_uint8_t(msg->payloads, 13, covariance);
-    _mav_put_float(msg->payloads, 14, horizontal_fov);
-    _mav_put_float(msg->payloads, 18, vertical_fov);
-    _mav_put_uint8_t(msg->payloads, 38, signal_quality);
-    _mav_put_float_array(msg->payloads, 22, quaternion, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, min_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, max_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, current_distance);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, orientation);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, covariance);
+    _mav_put_float(((char*)msg->payloads), 14, horizontal_fov);
+    _mav_put_float(((char*)msg->payloads), 18, vertical_fov);
+    _mav_put_uint8_t(((char*)msg->payloads), 38, signal_quality);
+    _mav_put_float_array(((char*)msg->payloads), 22, quaternion, 4);
     msg->msgid = MAVLINK_MSG_ID_DISTANCE_SENSOR;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_DISTANCE_SENSOR_MIN_LEN, MAVLINK_MSG_ID_DISTANCE_SENSOR_LEN, MAVLINK_MSG_ID_DISTANCE_SENSOR_CRC);
 }
@@ -131,18 +131,18 @@ static inline uint16_t mavlink_msg_distance_sensor_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,uint16_t min_distance,uint16_t max_distance,uint16_t current_distance,uint8_t type,uint8_t id,uint8_t orientation,uint8_t covariance,float horizontal_fov,float vertical_fov,const float *quaternion,uint8_t signal_quality)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_uint16_t(msg->payloads, 4, min_distance);
-    _mav_put_uint16_t(msg->payloads, 6, max_distance);
-    _mav_put_uint16_t(msg->payloads, 8, current_distance);
-    _mav_put_uint8_t(msg->payloads, 10, type);
-    _mav_put_uint8_t(msg->payloads, 11, id);
-    _mav_put_uint8_t(msg->payloads, 12, orientation);
-    _mav_put_uint8_t(msg->payloads, 13, covariance);
-    _mav_put_float(msg->payloads, 14, horizontal_fov);
-    _mav_put_float(msg->payloads, 18, vertical_fov);
-    _mav_put_uint8_t(msg->payloads, 38, signal_quality);
-    _mav_put_float_array(msg->payloads, 22, quaternion, 4);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, min_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, max_distance);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, current_distance);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, id);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, orientation);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, covariance);
+    _mav_put_float(((char*)msg->payloads), 14, horizontal_fov);
+    _mav_put_float(((char*)msg->payloads), 18, vertical_fov);
+    _mav_put_uint8_t(((char*)msg->payloads), 38, signal_quality);
+    _mav_put_float_array(((char*)msg->payloads), 22, quaternion, 4);
 
     msg->msgid = MAVLINK_MSG_ID_DISTANCE_SENSOR;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_DISTANCE_SENSOR_MIN_LEN, MAVLINK_MSG_ID_DISTANCE_SENSOR_LEN, MAVLINK_MSG_ID_DISTANCE_SENSOR_CRC);

@@ -136,26 +136,26 @@ typedef struct __mavlink_onboard_computer_status_t {
 static inline uint16_t mavlink_msg_onboard_computer_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, uint32_t uptime, uint8_t type, const uint8_t *cpu_cores, const uint8_t *cpu_combined, const uint8_t *gpu_cores, const uint8_t *gpu_combined, int8_t temperature_board, const int8_t *temperature_core, const int16_t *fan_speed, uint32_t ram_usage, uint32_t ram_total, const uint32_t *storage_type, const uint32_t *storage_usage, const uint32_t *storage_total, const uint32_t *link_type, const uint32_t *link_tx_rate, const uint32_t *link_rx_rate, const uint32_t *link_tx_max, const uint32_t *link_rx_max)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime);
-    _mav_put_uint32_t(msg->payloads, 12, ram_usage);
-    _mav_put_uint32_t(msg->payloads, 16, ram_total);
-    _mav_put_uint8_t(msg->payloads, 196, type);
-    _mav_put_int8_t(msg->payloads, 229, temperature_board);
-    _mav_put_uint32_t_array(msg->payloads, 20, storage_type, 4);
-    _mav_put_uint32_t_array(msg->payloads, 36, storage_usage, 4);
-    _mav_put_uint32_t_array(msg->payloads, 52, storage_total, 4);
-    _mav_put_uint32_t_array(msg->payloads, 68, link_type, 6);
-    _mav_put_uint32_t_array(msg->payloads, 92, link_tx_rate, 6);
-    _mav_put_uint32_t_array(msg->payloads, 116, link_rx_rate, 6);
-    _mav_put_uint32_t_array(msg->payloads, 140, link_tx_max, 6);
-    _mav_put_uint32_t_array(msg->payloads, 164, link_rx_max, 6);
-    _mav_put_int16_t_array(msg->payloads, 188, fan_speed, 4);
-    _mav_put_uint8_t_array(msg->payloads, 197, cpu_cores, 8);
-    _mav_put_uint8_t_array(msg->payloads, 205, cpu_combined, 10);
-    _mav_put_uint8_t_array(msg->payloads, 215, gpu_cores, 4);
-    _mav_put_uint8_t_array(msg->payloads, 219, gpu_combined, 10);
-    _mav_put_int8_t_array(msg->payloads, 230, temperature_core, 8);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, ram_usage);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, ram_total);
+    _mav_put_uint8_t(((char*)msg->payloads), 196, type);
+    _mav_put_int8_t(((char*)msg->payloads), 229, temperature_board);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 20, storage_type, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 36, storage_usage, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 52, storage_total, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 68, link_type, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 92, link_tx_rate, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 116, link_rx_rate, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 140, link_tx_max, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 164, link_rx_max, 6);
+    _mav_put_int16_t_array(((char*)msg->payloads), 188, fan_speed, 4);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 197, cpu_cores, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 205, cpu_combined, 10);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 215, gpu_cores, 4);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 219, gpu_combined, 10);
+    _mav_put_int8_t_array(((char*)msg->payloads), 230, temperature_core, 8);
     msg->msgid = MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_MIN_LEN, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_LEN, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_CRC);
 }
@@ -192,26 +192,26 @@ static inline uint16_t mavlink_msg_onboard_computer_status_pack_chan(uint8_t sys
                                mavlink_message_t* msg,
                                    uint64_t time_usec,uint32_t uptime,uint8_t type,const uint8_t *cpu_cores,const uint8_t *cpu_combined,const uint8_t *gpu_cores,const uint8_t *gpu_combined,int8_t temperature_board,const int8_t *temperature_core,const int16_t *fan_speed,uint32_t ram_usage,uint32_t ram_total,const uint32_t *storage_type,const uint32_t *storage_usage,const uint32_t *storage_total,const uint32_t *link_type,const uint32_t *link_tx_rate,const uint32_t *link_rx_rate,const uint32_t *link_tx_max,const uint32_t *link_rx_max)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_uint32_t(msg->payloads, 8, uptime);
-    _mav_put_uint32_t(msg->payloads, 12, ram_usage);
-    _mav_put_uint32_t(msg->payloads, 16, ram_total);
-    _mav_put_uint8_t(msg->payloads, 196, type);
-    _mav_put_int8_t(msg->payloads, 229, temperature_board);
-    _mav_put_uint32_t_array(msg->payloads, 20, storage_type, 4);
-    _mav_put_uint32_t_array(msg->payloads, 36, storage_usage, 4);
-    _mav_put_uint32_t_array(msg->payloads, 52, storage_total, 4);
-    _mav_put_uint32_t_array(msg->payloads, 68, link_type, 6);
-    _mav_put_uint32_t_array(msg->payloads, 92, link_tx_rate, 6);
-    _mav_put_uint32_t_array(msg->payloads, 116, link_rx_rate, 6);
-    _mav_put_uint32_t_array(msg->payloads, 140, link_tx_max, 6);
-    _mav_put_uint32_t_array(msg->payloads, 164, link_rx_max, 6);
-    _mav_put_int16_t_array(msg->payloads, 188, fan_speed, 4);
-    _mav_put_uint8_t_array(msg->payloads, 197, cpu_cores, 8);
-    _mav_put_uint8_t_array(msg->payloads, 205, cpu_combined, 10);
-    _mav_put_uint8_t_array(msg->payloads, 215, gpu_cores, 4);
-    _mav_put_uint8_t_array(msg->payloads, 219, gpu_combined, 10);
-    _mav_put_int8_t_array(msg->payloads, 230, temperature_core, 8);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_uint32_t(((char*)msg->payloads), 8, uptime);
+    _mav_put_uint32_t(((char*)msg->payloads), 12, ram_usage);
+    _mav_put_uint32_t(((char*)msg->payloads), 16, ram_total);
+    _mav_put_uint8_t(((char*)msg->payloads), 196, type);
+    _mav_put_int8_t(((char*)msg->payloads), 229, temperature_board);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 20, storage_type, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 36, storage_usage, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 52, storage_total, 4);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 68, link_type, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 92, link_tx_rate, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 116, link_rx_rate, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 140, link_tx_max, 6);
+    _mav_put_uint32_t_array(((char*)msg->payloads), 164, link_rx_max, 6);
+    _mav_put_int16_t_array(((char*)msg->payloads), 188, fan_speed, 4);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 197, cpu_cores, 8);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 205, cpu_combined, 10);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 215, gpu_cores, 4);
+    _mav_put_uint8_t_array(((char*)msg->payloads), 219, gpu_combined, 10);
+    _mav_put_int8_t_array(((char*)msg->payloads), 230, temperature_core, 8);
 
     msg->msgid = MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_MIN_LEN, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_LEN, MAVLINK_MSG_ID_ONBOARD_COMPUTER_STATUS_CRC);

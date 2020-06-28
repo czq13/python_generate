@@ -60,10 +60,10 @@ typedef struct __mavlink_param_ext_ack_t {
 static inline uint16_t mavlink_msg_param_ext_ack_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                const char *param_id, const char *param_value, uint8_t param_type, uint8_t param_result)
 {
-    _mav_put_uint8_t(msg->payloads, 144, param_type);
-    _mav_put_uint8_t(msg->payloads, 145, param_result);
-    _mav_put_char_array(msg->payloads, 0, param_id, 16);
-    _mav_put_char_array(msg->payloads, 16, param_value, 128);
+    _mav_put_uint8_t(((char*)msg->payloads), 144, param_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 145, param_result);
+    _mav_put_char_array(((char*)msg->payloads), 0, param_id, 16);
+    _mav_put_char_array(((char*)msg->payloads), 16, param_value, 128);
     msg->msgid = MAVLINK_MSG_ID_PARAM_EXT_ACK;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_PARAM_EXT_ACK_MIN_LEN, MAVLINK_MSG_ID_PARAM_EXT_ACK_LEN, MAVLINK_MSG_ID_PARAM_EXT_ACK_CRC);
 }
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_param_ext_ack_pack_chan(uint8_t system_id, ui
                                mavlink_message_t* msg,
                                    const char *param_id,const char *param_value,uint8_t param_type,uint8_t param_result)
 {
-    _mav_put_uint8_t(msg->payloads, 144, param_type);
-    _mav_put_uint8_t(msg->payloads, 145, param_result);
-    _mav_put_char_array(msg->payloads, 0, param_id, 16);
-    _mav_put_char_array(msg->payloads, 16, param_value, 128);
+    _mav_put_uint8_t(((char*)msg->payloads), 144, param_type);
+    _mav_put_uint8_t(((char*)msg->payloads), 145, param_result);
+    _mav_put_char_array(((char*)msg->payloads), 0, param_id, 16);
+    _mav_put_char_array(((char*)msg->payloads), 16, param_value, 128);
 
     msg->msgid = MAVLINK_MSG_ID_PARAM_EXT_ACK;
     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_PARAM_EXT_ACK_MIN_LEN, MAVLINK_MSG_ID_PARAM_EXT_ACK_LEN, MAVLINK_MSG_ID_PARAM_EXT_ACK_CRC);

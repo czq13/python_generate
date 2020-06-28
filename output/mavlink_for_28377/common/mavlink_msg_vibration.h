@@ -71,13 +71,13 @@ typedef struct __mavlink_vibration_t {
 static inline uint16_t mavlink_msg_vibration_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint64_t time_usec, float vibration_x, float vibration_y, float vibration_z, uint32_t clipping_0, uint32_t clipping_1, uint32_t clipping_2)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, vibration_x);
-    _mav_put_float(msg->payloads, 12, vibration_y);
-    _mav_put_float(msg->payloads, 16, vibration_z);
-    _mav_put_uint32_t(msg->payloads, 20, clipping_0);
-    _mav_put_uint32_t(msg->payloads, 24, clipping_1);
-    _mav_put_uint32_t(msg->payloads, 28, clipping_2);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, vibration_x);
+    _mav_put_float(((char*)msg->payloads), 12, vibration_y);
+    _mav_put_float(((char*)msg->payloads), 16, vibration_z);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, clipping_0);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, clipping_1);
+    _mav_put_uint32_t(((char*)msg->payloads), 28, clipping_2);
 
     msg->msgid = MAVLINK_MSG_ID_VIBRATION;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_VIBRATION_MIN_LEN, MAVLINK_MSG_ID_VIBRATION_LEN, MAVLINK_MSG_ID_VIBRATION_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_vibration_pack_chan(uint8_t system_id, uint8_
                                mavlink_message_t* msg,
                                    uint64_t time_usec,float vibration_x,float vibration_y,float vibration_z,uint32_t clipping_0,uint32_t clipping_1,uint32_t clipping_2)
 {
-    _mav_put_uint64_t(msg->payloads, 0, time_usec);
-    _mav_put_float(msg->payloads, 8, vibration_x);
-    _mav_put_float(msg->payloads, 12, vibration_y);
-    _mav_put_float(msg->payloads, 16, vibration_z);
-    _mav_put_uint32_t(msg->payloads, 20, clipping_0);
-    _mav_put_uint32_t(msg->payloads, 24, clipping_1);
-    _mav_put_uint32_t(msg->payloads, 28, clipping_2);
+    _mav_put_uint64_t(((char*)msg->payloads), 0, time_usec);
+    _mav_put_float(((char*)msg->payloads), 8, vibration_x);
+    _mav_put_float(((char*)msg->payloads), 12, vibration_y);
+    _mav_put_float(((char*)msg->payloads), 16, vibration_z);
+    _mav_put_uint32_t(((char*)msg->payloads), 20, clipping_0);
+    _mav_put_uint32_t(((char*)msg->payloads), 24, clipping_1);
+    _mav_put_uint32_t(((char*)msg->payloads), 28, clipping_2);
 
 
     msg->msgid = MAVLINK_MSG_ID_VIBRATION;

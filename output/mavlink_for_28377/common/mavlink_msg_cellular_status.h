@@ -71,13 +71,13 @@ typedef struct __mavlink_cellular_status_t {
 static inline uint16_t mavlink_msg_cellular_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint16_t status, uint8_t type, uint8_t quality, uint16_t mcc, uint16_t mnc, uint16_t lac, uint32_t cid)
 {
-    _mav_put_uint32_t(msg->payloads, 0, cid);
-    _mav_put_uint16_t(msg->payloads, 4, status);
-    _mav_put_uint16_t(msg->payloads, 6, mcc);
-    _mav_put_uint16_t(msg->payloads, 8, mnc);
-    _mav_put_uint16_t(msg->payloads, 10, lac);
-    _mav_put_uint8_t(msg->payloads, 12, type);
-    _mav_put_uint8_t(msg->payloads, 13, quality);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, cid);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, status);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, mcc);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, mnc);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, lac);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, quality);
 
     msg->msgid = MAVLINK_MSG_ID_CELLULAR_STATUS;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_CELLULAR_STATUS_MIN_LEN, MAVLINK_MSG_ID_CELLULAR_STATUS_LEN, MAVLINK_MSG_ID_CELLULAR_STATUS_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_cellular_status_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint16_t status,uint8_t type,uint8_t quality,uint16_t mcc,uint16_t mnc,uint16_t lac,uint32_t cid)
 {
-    _mav_put_uint32_t(msg->payloads, 0, cid);
-    _mav_put_uint16_t(msg->payloads, 4, status);
-    _mav_put_uint16_t(msg->payloads, 6, mcc);
-    _mav_put_uint16_t(msg->payloads, 8, mnc);
-    _mav_put_uint16_t(msg->payloads, 10, lac);
-    _mav_put_uint8_t(msg->payloads, 12, type);
-    _mav_put_uint8_t(msg->payloads, 13, quality);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, cid);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, status);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, mcc);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, mnc);
+    _mav_put_uint16_t(((char*)msg->payloads), 10, lac);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 13, quality);
 
 
     msg->msgid = MAVLINK_MSG_ID_CELLULAR_STATUS;

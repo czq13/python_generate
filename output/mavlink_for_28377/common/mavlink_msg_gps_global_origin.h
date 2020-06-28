@@ -59,10 +59,10 @@ typedef struct __mavlink_gps_global_origin_t {
 static inline uint16_t mavlink_msg_gps_global_origin_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                int32_t latitude, int32_t longitude, int32_t altitude, uint64_t time_usec)
 {
-    _mav_put_int32_t(msg->payloads, 0, latitude);
-    _mav_put_int32_t(msg->payloads, 4, longitude);
-    _mav_put_int32_t(msg->payloads, 8, altitude);
-    _mav_put_uint64_t(msg->payloads, 12, time_usec);
+    _mav_put_int32_t(((char*)msg->payloads), 0, latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, longitude);
+    _mav_put_int32_t(((char*)msg->payloads), 8, altitude);
+    _mav_put_uint64_t(((char*)msg->payloads), 12, time_usec);
 
     msg->msgid = MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN_MIN_LEN, MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN_LEN, MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN_CRC);
@@ -84,10 +84,10 @@ static inline uint16_t mavlink_msg_gps_global_origin_pack_chan(uint8_t system_id
                                mavlink_message_t* msg,
                                    int32_t latitude,int32_t longitude,int32_t altitude,uint64_t time_usec)
 {
-    _mav_put_int32_t(msg->payloads, 0, latitude);
-    _mav_put_int32_t(msg->payloads, 4, longitude);
-    _mav_put_int32_t(msg->payloads, 8, altitude);
-    _mav_put_uint64_t(msg->payloads, 12, time_usec);
+    _mav_put_int32_t(((char*)msg->payloads), 0, latitude);
+    _mav_put_int32_t(((char*)msg->payloads), 4, longitude);
+    _mav_put_int32_t(((char*)msg->payloads), 8, altitude);
+    _mav_put_uint64_t(((char*)msg->payloads), 12, time_usec);
 
 
     msg->msgid = MAVLINK_MSG_ID_GPS_GLOBAL_ORIGIN;

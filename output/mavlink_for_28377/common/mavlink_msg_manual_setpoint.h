@@ -71,13 +71,13 @@ typedef struct __mavlink_manual_setpoint_t {
 static inline uint16_t mavlink_msg_manual_setpoint_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint32_t time_boot_ms, float roll, float pitch, float yaw, float thrust, uint8_t mode_switch, uint8_t manual_override_switch)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, thrust);
-    _mav_put_uint8_t(msg->payloads, 20, mode_switch);
-    _mav_put_uint8_t(msg->payloads, 21, manual_override_switch);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, thrust);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, mode_switch);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, manual_override_switch);
 
     msg->msgid = MAVLINK_MSG_ID_MANUAL_SETPOINT;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_MANUAL_SETPOINT_MIN_LEN, MAVLINK_MSG_ID_MANUAL_SETPOINT_LEN, MAVLINK_MSG_ID_MANUAL_SETPOINT_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_manual_setpoint_pack_chan(uint8_t system_id, 
                                mavlink_message_t* msg,
                                    uint32_t time_boot_ms,float roll,float pitch,float yaw,float thrust,uint8_t mode_switch,uint8_t manual_override_switch)
 {
-    _mav_put_uint32_t(msg->payloads, 0, time_boot_ms);
-    _mav_put_float(msg->payloads, 4, roll);
-    _mav_put_float(msg->payloads, 8, pitch);
-    _mav_put_float(msg->payloads, 12, yaw);
-    _mav_put_float(msg->payloads, 16, thrust);
-    _mav_put_uint8_t(msg->payloads, 20, mode_switch);
-    _mav_put_uint8_t(msg->payloads, 21, manual_override_switch);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, time_boot_ms);
+    _mav_put_float(((char*)msg->payloads), 4, roll);
+    _mav_put_float(((char*)msg->payloads), 8, pitch);
+    _mav_put_float(((char*)msg->payloads), 12, yaw);
+    _mav_put_float(((char*)msg->payloads), 16, thrust);
+    _mav_put_uint8_t(((char*)msg->payloads), 20, mode_switch);
+    _mav_put_uint8_t(((char*)msg->payloads), 21, manual_override_switch);
 
 
     msg->msgid = MAVLINK_MSG_ID_MANUAL_SETPOINT;

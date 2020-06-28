@@ -71,13 +71,13 @@ typedef struct __mavlink_data_transmission_handshake_t {
 static inline uint16_t mavlink_msg_data_transmission_handshake_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
                                uint8_t type, uint32_t size, uint16_t width, uint16_t height, uint16_t packets, uint8_t payload, uint8_t jpg_quality)
 {
-    _mav_put_uint32_t(msg->payloads, 0, size);
-    _mav_put_uint16_t(msg->payloads, 4, width);
-    _mav_put_uint16_t(msg->payloads, 6, height);
-    _mav_put_uint16_t(msg->payloads, 8, packets);
-    _mav_put_uint8_t(msg->payloads, 10, type);
-    _mav_put_uint8_t(msg->payloads, 11, payload);
-    _mav_put_uint8_t(msg->payloads, 12, jpg_quality);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, size);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, width);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, height);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, packets);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, payload);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, jpg_quality);
 
     msg->msgid = MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE;
     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE_MIN_LEN, MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE_LEN, MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE_CRC);
@@ -102,13 +102,13 @@ static inline uint16_t mavlink_msg_data_transmission_handshake_pack_chan(uint8_t
                                mavlink_message_t* msg,
                                    uint8_t type,uint32_t size,uint16_t width,uint16_t height,uint16_t packets,uint8_t payload,uint8_t jpg_quality)
 {
-    _mav_put_uint32_t(msg->payloads, 0, size);
-    _mav_put_uint16_t(msg->payloads, 4, width);
-    _mav_put_uint16_t(msg->payloads, 6, height);
-    _mav_put_uint16_t(msg->payloads, 8, packets);
-    _mav_put_uint8_t(msg->payloads, 10, type);
-    _mav_put_uint8_t(msg->payloads, 11, payload);
-    _mav_put_uint8_t(msg->payloads, 12, jpg_quality);
+    _mav_put_uint32_t(((char*)msg->payloads), 0, size);
+    _mav_put_uint16_t(((char*)msg->payloads), 4, width);
+    _mav_put_uint16_t(((char*)msg->payloads), 6, height);
+    _mav_put_uint16_t(((char*)msg->payloads), 8, packets);
+    _mav_put_uint8_t(((char*)msg->payloads), 10, type);
+    _mav_put_uint8_t(((char*)msg->payloads), 11, payload);
+    _mav_put_uint8_t(((char*)msg->payloads), 12, jpg_quality);
 
 
     msg->msgid = MAVLINK_MSG_ID_DATA_TRANSMISSION_HANDSHAKE;
