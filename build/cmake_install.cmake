@@ -1,4 +1,4 @@
-# Install script for directory: K:/czqWorkSpace/auto_generate
+# Install script for directory: D:/chWorkSpace/code/auto_generate
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "K:/czqWorkSpace/auto_generate/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/chWorkSpace/code/auto_generate/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
