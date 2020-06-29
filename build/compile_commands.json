@@ -1,7 +1,7 @@
 [
 {
-  "directory": "K:/czqWorkSpace/auto_generate/build",
-  "command": "L:/TDM-GCC-64/bin/gcc.exe -DPLATFORM_Ubuntu=2 @CMakeFiles/Auto_Generate_For_28377.dir/includes_C.rsp -g   -fgnu89-inline -o CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj   -c K:/czqWorkSpace/auto_generate/c_test/mavlink_testsuit_main.c",
-  "file": "K:/czqWorkSpace/auto_generate/c_test/mavlink_testsuit_main.c"
+  "directory": "D:/chWorkSpace/code/auto_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\gcc.exe -DPLATFORM_Ubuntu=2 @CMakeFiles/Auto_Generate_For_28377.dir/includes_C.rsp -g   -fgnu89-inline -o CMakeFiles\\Auto_Generate_For_28377.dir\\c_test\\mavlink_testsuit_main.c.obj   -c D:\\chWorkSpace\\code\\auto_generate\\c_test\\mavlink_testsuit_main.c",
+  "file": "D:/chWorkSpace/code/auto_generate/c_test/mavlink_testsuit_main.c"
 }
 ]

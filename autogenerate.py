@@ -2,7 +2,7 @@ import os
 import re
 import argparse
 
-from pyutils import mavgen
+from mav_pyutils import mavgen
 
 
 def formatErrorMessage(message):
