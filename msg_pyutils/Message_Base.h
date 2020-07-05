@@ -9,8 +9,8 @@ public:
     uint64_t update_timestamp;
     uint64_t print_timestamp;
     uint16_t print_freq;
-    virtual void get_str(char * str);
-    virtual void set_str(char * str);
+    virtual void get_str(char * str){}
+    virtual void set_str(char * str){}
 };
 
 #endif

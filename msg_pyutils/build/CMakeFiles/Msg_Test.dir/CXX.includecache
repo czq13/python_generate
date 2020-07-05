@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/Message_Attitude.h
+Message_Base.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/Message_Base.h
+string.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/string.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/Message_Base.h
+stdio.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/stdio.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/main.cpp
+iostream
+-
+msg_logger.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/msg_logger.h
+Message_Attitude.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/Message_Attitude.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/messages.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/msg_logger.cpp
+string.h
+-
+msg_logger.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/msg_logger.h
+Message_Attitude.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/Message_Attitude.h
+messages.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/messages.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/msg_logger.h
+stdio.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/stdio.h
+stdint.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/stdint.h
+messages.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/messages.h
+
