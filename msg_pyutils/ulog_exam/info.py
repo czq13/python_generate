@@ -2,12 +2,11 @@
 """
 Display information from an ULog file
 """
-
 from __future__ import print_function
 
 import argparse
 
-from .core import ULog
+from core import ULog
 
 #pylint: disable=too-many-locals, unused-wildcard-import, wildcard-import
 #pylint: disable=invalid-name
@@ -96,4 +95,7 @@ def main():
             print("message {} not found".format(message))
     else:
         show_info(ulog, args.verbose)
+
+if __name__ == '__main__':
+    main()
 

@@ -26,6 +26,16 @@
             "program": "${workspaceRoot}/build/Auto_Generate_For_28377",
             "cwd": ".",
             "externalConsole": false
+        },
+        {
+            "name": "msg info",
+            "type": "python",
+            "request": "launch",
+            "program": "msg_pyutils\\ulog_exam\\info.py",
+            "console": "integratedTerminal",
+            "args": [
+                "msg_pyutils\\test.ulg"
+            ]
         }
     ]
 }
