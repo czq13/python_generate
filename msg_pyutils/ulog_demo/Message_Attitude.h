@@ -7,9 +7,9 @@ class Message_Attitude : public Message_Base {
 public:
     Message_Attitude() {}
     float phi,theta,psi;
-    int get_str(char * str) {
+    int get_str(unsigned char * str) {
         int ans_len = 0;
-        memcpy(str,&update_timestamp,sizeof(uint64_t));
+        memcpy((void*)str,(void*)&update_timestamp,sizeof(uint64_t));
         str += sizeof(uint64_t);
         ans_len += sizeof(uint64_t);
         memcpy(str,&phi,sizeof(float));

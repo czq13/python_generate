@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\Auto_Generate_For_28377.dir/objects.a
-F:\cgwin64\mingw64\bin\ar.exe cr CMakeFiles\Auto_Generate_For_28377.dir/objects.a @CMakeFiles\Auto_Generate_For_28377.dir\objects1.rsp
-F:\cgwin64\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\Auto_Generate_For_28377.dir/objects.a -Wl,--no-whole-archive  -o Auto_Generate_For_28377.exe -Wl,--out-implib,libAuto_Generate_For_28377.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Auto_Generate_For_28377.dir\linklibs.rsp

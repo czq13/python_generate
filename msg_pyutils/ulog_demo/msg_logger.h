@@ -19,7 +19,7 @@ public:
     void write_info_multiple(const char * name,const char * value,bool is_continued);
 
     void write_parameters();
-    void write_buffer(int buffer_len,char * buffer);
+    void write_buffer(int buffer_len,unsigned char * buffer);
 };
 extern msg_logger mlog;
 

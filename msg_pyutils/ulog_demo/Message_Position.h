@@ -7,7 +7,7 @@ class Message_Position : public Message_Base {
 public:
     Message_Position() {}
     float x,y,z,vx,vy,vz;
-    int get_str(char * str) {
+    int get_str(unsigned char * str) {
         int ans_len = 0;
         memcpy(str,&update_timestamp,sizeof(uint64_t));
         str += sizeof(uint64_t);

@@ -33,10 +33,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = F:\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E remove -f
+RM = F:\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -60,29 +60,29 @@ CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj: CMakeFiles/Ulog_dem
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj: CMakeFiles/Ulog_demo.dir/includes_CXX.rsp
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj: ../msg_pyutils/ulog_demo/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj"
-	F:\cgwin64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.obj -c D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.obj -c D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp
 
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.i"
-	F:\cgwin64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp > CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.i
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp > CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.i
 
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.s"
-	F:\cgwin64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.s
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\main.cpp -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\main.cpp.s
 
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj: CMakeFiles/Ulog_demo.dir/flags.make
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj: CMakeFiles/Ulog_demo.dir/includes_CXX.rsp
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj: ../msg_pyutils/ulog_demo/msg_logger.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj"
-	F:\cgwin64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.obj -c D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.obj -c D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp
 
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.i"
-	F:\cgwin64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp > CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.i
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp > CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.i
 
 CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.s"
-	F:\cgwin64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.s
+	F:\CodeBlocks\MinGW\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\chWorkSpace\code\auto_generate\msg_pyutils\ulog_demo\msg_logger.cpp -o CMakeFiles\Ulog_demo.dir\msg_pyutils\ulog_demo\msg_logger.cpp.s
 
 # Object files for target Ulog_demo
 Ulog_demo_OBJECTS = \

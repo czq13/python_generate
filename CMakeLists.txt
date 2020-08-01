@@ -4,6 +4,7 @@ project(Auto_Generate_For_28377 VERSION 0.1.0)
 #set(execute_mav 1)
 #set(execute_test_env 1)
 set(execute_ulog_demo 1)
+add_definitions(-std=c++11)
 
 if (execute_mav)
 include(mav_pyutils/mav_pyutils.cmake)

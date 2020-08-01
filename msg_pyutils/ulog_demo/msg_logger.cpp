@@ -5,7 +5,10 @@
 #include "messages.h"
 
 void msg_logger::start_log_file() {
-    file = fopen("msg_pyutils/ulog_exam/test.ulg","w");
+    file = fopen("../msg_pyutils/ulog_exam/test.ulg","w");
+    if (file == NULL) {
+        printf("can not open file\n");
+    }
     write_header();
     write_version();
     write_formats();
@@ -26,6 +29,9 @@ void msg_logger::write_add_logged_msg(const char * name,int msg_id,int multi_id)
     int len = sprintf(msg.message_name,"%s",name);
     msg.msg_size = 3 + len;
     fwrite((void*) &msg,msg.msg_size+3,1,file);
+    char * point = (char*) &msg;
+    for (int i = 0;i < msg.msg_size+3;i++) printf("%x ",point[i]);
+    printf("\n");
 }
 void msg_logger::write_header() {
     ulog_file_header_s header;
@@ -82,7 +88,13 @@ void msg_logger::write_parameters() {
 
 }
 
-void msg_logger::write_buffer(int buffer_len,char * buffer) {
-    fwrite((void*) buffer,buffer_len,1,file);
+void msg_logger::write_buffer(int buffer_len,unsigned char * buffer) {
+    /*for (int i = 0;i < buffer_len;i++) {
+        buffer[i] = 0x0A;
+        int tmp = fwrite((void*) &buffer[i],1,1,file);
+        fflush(file);
+    }*/
+    fwrite((void*)buffer,1,buffer_len,file);
+    fflush(file);
 }
 msg_logger mlog;

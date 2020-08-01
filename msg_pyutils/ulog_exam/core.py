@@ -125,7 +125,7 @@ class ULog(object):
         self._compat_flags = [0] * 8
         self._incompat_flags = [0] * 8
         self._appended_offsets = [] # file offsets for appended data
-        self._has_sync = False#True # set to false when first file search for sync fails
+        self._has_sync = True # set to false when first file search for sync fails
         self._sync_seq_cnt = 0 # number of sync packets found in file
 
         ULog._disable_str_exceptions = disable_str_exceptions
@@ -653,10 +653,17 @@ class ULog(object):
 
             while True:
                 data = self._file_handle.read(3)
+                tmp_data = data
                 curr_file_pos += len(data)
                 header.initialize(data)
                 data = self._file_handle.read(header.msg_size)
                 curr_file_pos += len(data)
+                str = ''
+                for i in tmp_data:
+                    str += '%d ' % (i)
+                for i in data:
+                    str += '%d ' % (i)
+                print(str)
                 if len(data) < header.msg_size:
                     break # less data than expected. File is most likely cut
 

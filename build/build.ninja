@@ -49,6 +49,37 @@ build CMakeFiles/package.util: CUSTOM_COMMAND all
   pool = console
   restat = 1
 build package: phony CMakeFiles/package.util
+# =============================================================================
+# Object build statements for EXECUTABLE target Ulog_demo
+
+build CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.o: CXX_COMPILER__Ulog_demo ../msg_pyutils/ulog_demo/main.cpp
+  DEP_FILE = CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.o.d
+  FLAGS = -g   -std=c++11
+  INCLUDES = -I../msg_pyutils/ulog_demo
+  OBJECT_DIR = CMakeFiles/Ulog_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo
+build CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.o: CXX_COMPILER__Ulog_demo ../msg_pyutils/ulog_demo/msg_logger.cpp
+  DEP_FILE = CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.o.d
+  FLAGS = -g   -std=c++11
+  INCLUDES = -I../msg_pyutils/ulog_demo
+  OBJECT_DIR = CMakeFiles/Ulog_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ulog_demo
+
+
+#############################################
+# Link the executable Ulog_demo
+
+build Ulog_demo: CXX_EXECUTABLE_LINKER__Ulog_demo CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.o
+  FLAGS = -g
+  LINK_LIBRARIES = -rdynamic
+  OBJECT_DIR = CMakeFiles/Ulog_demo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Ulog_demo
+  TARGET_PDB = Ulog_demo.dbg
 
 #############################################
 # Utility command for rebuild_cache
@@ -59,32 +90,6 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   pool = console
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-# =============================================================================
-# Object build statements for EXECUTABLE target Auto_Generate_For_28377
-
-build CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o: C_COMPILER__Auto_Generate_For_28377 ../c_test/mavlink_udp.c
-  DEFINES = -DPLATFORM_Ubuntu=2
-  DEP_FILE = CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o.d
-  FLAGS = -g   -fgnu89-inline
-  INCLUDES = -I../output/mavlink_for_28377 -I../output/mavlink_for_28377/common
-  OBJECT_DIR = CMakeFiles/Auto_Generate_For_28377.dir
-  OBJECT_FILE_DIR = CMakeFiles/Auto_Generate_For_28377.dir/c_test
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Auto_Generate_For_28377
-
-
-#############################################
-# Link the executable Auto_Generate_For_28377
-
-build Auto_Generate_For_28377: C_EXECUTABLE_LINKER__Auto_Generate_For_28377 CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_udp.c.o
-  FLAGS = -g
-  LINK_LIBRARIES = -rdynamic
-  OBJECT_DIR = CMakeFiles/Auto_Generate_For_28377.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = Auto_Generate_For_28377
-  TARGET_PDB = Auto_Generate_For_28377.dbg
 
 #############################################
 # Utility command for package_source
@@ -119,7 +124,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 #############################################
 # The main all target.
 
-build all: phony Auto_Generate_For_28377
+build all: phony Ulog_demo
 
 #############################################
 # Make the all target the default.
@@ -129,13 +134,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake-3.5/Modules/CMakeCInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.5/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.5/Modules/CPack.cmake /usr/share/cmake-3.5/Modules/CPackComponent.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux.cmake /usr/share/cmake-3.5/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.5/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.5.1/CMakeCCompiler.cmake CMakeFiles/3.5.1/CMakeCXXCompiler.cmake CMakeFiles/3.5.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../msg_pyutils/ulog_demo/ulog_demo.cmake /usr/share/cmake-3.5/Modules/CMakeCInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.5/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.5/Modules/CPack.cmake /usr/share/cmake-3.5/Modules/CPackComponent.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux.cmake /usr/share/cmake-3.5/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.5/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.5.1/CMakeCCompiler.cmake CMakeFiles/3.5.1/CMakeCXXCompiler.cmake CMakeFiles/3.5.1/CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake-3.5/Modules/CMakeCInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.5/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.5/Modules/CPack.cmake /usr/share/cmake-3.5/Modules/CPackComponent.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux.cmake /usr/share/cmake-3.5/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.5/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.5.1/CMakeCCompiler.cmake CMakeFiles/3.5.1/CMakeCXXCompiler.cmake CMakeFiles/3.5.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../msg_pyutils/ulog_demo/ulog_demo.cmake /usr/share/cmake-3.5/Modules/CMakeCInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.5/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.5/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.5/Modules/CPack.cmake /usr/share/cmake-3.5/Modules/CPackComponent.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Compiler/GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.5/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.5/Modules/Platform/Linux.cmake /usr/share/cmake-3.5/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.5/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.5.1/CMakeCCompiler.cmake CMakeFiles/3.5.1/CMakeCXXCompiler.cmake CMakeFiles/3.5.1/CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.
