@@ -143,44 +143,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Auto_Generate_For_28377
+# Target rules for targets named Ulog_demo
 
 # Build rule for target.
-Auto_Generate_For_28377: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Auto_Generate_For_28377
-.PHONY : Auto_Generate_For_28377
+Ulog_demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Ulog_demo
+.PHONY : Ulog_demo
 
 # fast build rule for target.
-Auto_Generate_For_28377/fast:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/build
-.PHONY : Auto_Generate_For_28377/fast
+Ulog_demo/fast:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/build
+.PHONY : Ulog_demo/fast
 
-c_test/mavlink_testsuit_main.obj: c_test/mavlink_testsuit_main.c.obj
+msg_pyutils/ulog_demo/main.obj: msg_pyutils/ulog_demo/main.cpp.obj
 
-.PHONY : c_test/mavlink_testsuit_main.obj
+.PHONY : msg_pyutils/ulog_demo/main.obj
 
 # target to build an object file
-c_test/mavlink_testsuit_main.c.obj:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj
-.PHONY : c_test/mavlink_testsuit_main.c.obj
+msg_pyutils/ulog_demo/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj
+.PHONY : msg_pyutils/ulog_demo/main.cpp.obj
 
-c_test/mavlink_testsuit_main.i: c_test/mavlink_testsuit_main.c.i
+msg_pyutils/ulog_demo/main.i: msg_pyutils/ulog_demo/main.cpp.i
 
-.PHONY : c_test/mavlink_testsuit_main.i
+.PHONY : msg_pyutils/ulog_demo/main.i
 
 # target to preprocess a source file
-c_test/mavlink_testsuit_main.c.i:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.i
-.PHONY : c_test/mavlink_testsuit_main.c.i
+msg_pyutils/ulog_demo/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.i
+.PHONY : msg_pyutils/ulog_demo/main.cpp.i
 
-c_test/mavlink_testsuit_main.s: c_test/mavlink_testsuit_main.c.s
+msg_pyutils/ulog_demo/main.s: msg_pyutils/ulog_demo/main.cpp.s
 
-.PHONY : c_test/mavlink_testsuit_main.s
+.PHONY : msg_pyutils/ulog_demo/main.s
 
 # target to generate assembly for a file
-c_test/mavlink_testsuit_main.c.s:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.s
-.PHONY : c_test/mavlink_testsuit_main.c.s
+msg_pyutils/ulog_demo/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.s
+.PHONY : msg_pyutils/ulog_demo/main.cpp.s
+
+msg_pyutils/ulog_demo/msg_logger.obj: msg_pyutils/ulog_demo/msg_logger.cpp.obj
+
+.PHONY : msg_pyutils/ulog_demo/msg_logger.obj
+
+# target to build an object file
+msg_pyutils/ulog_demo/msg_logger.cpp.obj:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj
+.PHONY : msg_pyutils/ulog_demo/msg_logger.cpp.obj
+
+msg_pyutils/ulog_demo/msg_logger.i: msg_pyutils/ulog_demo/msg_logger.cpp.i
+
+.PHONY : msg_pyutils/ulog_demo/msg_logger.i
+
+# target to preprocess a source file
+msg_pyutils/ulog_demo/msg_logger.cpp.i:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.i
+.PHONY : msg_pyutils/ulog_demo/msg_logger.cpp.i
+
+msg_pyutils/ulog_demo/msg_logger.s: msg_pyutils/ulog_demo/msg_logger.cpp.s
+
+.PHONY : msg_pyutils/ulog_demo/msg_logger.s
+
+# target to generate assembly for a file
+msg_pyutils/ulog_demo/msg_logger.cpp.s:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.s
+.PHONY : msg_pyutils/ulog_demo/msg_logger.cpp.s
 
 # Help Target
 help:
@@ -188,15 +215,18 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Auto_Generate_For_28377
+	@echo ... Ulog_demo
 	@echo ... package
 	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... edit_cache
-	@echo ... c_test/mavlink_testsuit_main.obj
-	@echo ... c_test/mavlink_testsuit_main.i
-	@echo ... c_test/mavlink_testsuit_main.s
+	@echo ... msg_pyutils/ulog_demo/main.obj
+	@echo ... msg_pyutils/ulog_demo/main.i
+	@echo ... msg_pyutils/ulog_demo/main.s
+	@echo ... msg_pyutils/ulog_demo/msg_logger.obj
+	@echo ... msg_pyutils/ulog_demo/msg_logger.i
+	@echo ... msg_pyutils/ulog_demo/msg_logger.s
 .PHONY : help
 
 

@@ -52,7 +52,7 @@ CMAKE_BINARY_DIR = D:\chWorkSpace\code\auto_generate\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Auto_Generate_For_28377.dir/all
+all: CMakeFiles/Ulog_demo.dir/all
 
 .PHONY : all
 
@@ -62,36 +62,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Auto_Generate_For_28377.dir/clean
+clean: CMakeFiles/Ulog_demo.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Auto_Generate_For_28377.dir
+# Target rules for target CMakeFiles/Ulog_demo.dir
 
 # All Build rule for target.
-CMakeFiles/Auto_Generate_For_28377.dir/all:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/depend
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=1,2 "Built target Auto_Generate_For_28377"
-.PHONY : CMakeFiles/Auto_Generate_For_28377.dir/all
+CMakeFiles/Ulog_demo.dir/all:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/depend
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=1,2,3 "Built target Ulog_demo"
+.PHONY : CMakeFiles/Ulog_demo.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Auto_Generate_For_28377.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\chWorkSpace\code\auto_generate\build\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Auto_Generate_For_28377.dir/all
+CMakeFiles/Ulog_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\chWorkSpace\code\auto_generate\build\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Ulog_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\chWorkSpace\code\auto_generate\build\CMakeFiles 0
-.PHONY : CMakeFiles/Auto_Generate_For_28377.dir/rule
+.PHONY : CMakeFiles/Ulog_demo.dir/rule
 
 # Convenience name for target.
-Auto_Generate_For_28377: CMakeFiles/Auto_Generate_For_28377.dir/rule
+Ulog_demo: CMakeFiles/Ulog_demo.dir/rule
 
-.PHONY : Auto_Generate_For_28377
+.PHONY : Ulog_demo
 
 # clean rule for target.
-CMakeFiles/Auto_Generate_For_28377.dir/clean:
-	$(MAKE) -f CMakeFiles\Auto_Generate_For_28377.dir\build.make CMakeFiles/Auto_Generate_For_28377.dir/clean
-.PHONY : CMakeFiles/Auto_Generate_For_28377.dir/clean
+CMakeFiles/Ulog_demo.dir/clean:
+	$(MAKE) -f CMakeFiles\Ulog_demo.dir\build.make CMakeFiles/Ulog_demo.dir/clean
+.PHONY : CMakeFiles/Ulog_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

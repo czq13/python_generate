@@ -4,14 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/chWorkSpace/code/auto_generate/c_test/mavlink_testsuit_main.c" "D:/chWorkSpace/code/auto_generate/build/CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj"
+  "D:/chWorkSpace/code/auto_generate/mav_pyutils/c_test/mavlink_testsuit_main.c" "D:/chWorkSpace/code/auto_generate/build/CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "PLATFORM_Ubuntu=2"
-  )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

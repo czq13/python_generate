@@ -56,28 +56,28 @@ include CMakeFiles/Auto_Generate_For_28377.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Auto_Generate_For_28377.dir/flags.make
 
-CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj: CMakeFiles/Auto_Generate_For_28377.dir/flags.make
-CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj: CMakeFiles/Auto_Generate_For_28377.dir/includes_C.rsp
-CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj: ../c_test/mavlink_testsuit_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj"
-	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Auto_Generate_For_28377.dir\c_test\mavlink_testsuit_main.c.obj   -c D:\chWorkSpace\code\auto_generate\c_test\mavlink_testsuit_main.c
+CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj: CMakeFiles/Auto_Generate_For_28377.dir/flags.make
+CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj: CMakeFiles/Auto_Generate_For_28377.dir/includes_C.rsp
+CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj: ../mav_pyutils/c_test/mavlink_testsuit_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\chWorkSpace\code\auto_generate\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj"
+	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Auto_Generate_For_28377.dir\mav_pyutils\c_test\mavlink_testsuit_main.c.obj   -c D:\chWorkSpace\code\auto_generate\mav_pyutils\c_test\mavlink_testsuit_main.c
 
-CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.i"
-	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\chWorkSpace\code\auto_generate\c_test\mavlink_testsuit_main.c > CMakeFiles\Auto_Generate_For_28377.dir\c_test\mavlink_testsuit_main.c.i
+CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.i"
+	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\chWorkSpace\code\auto_generate\mav_pyutils\c_test\mavlink_testsuit_main.c > CMakeFiles\Auto_Generate_For_28377.dir\mav_pyutils\c_test\mavlink_testsuit_main.c.i
 
-CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.s"
-	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\chWorkSpace\code\auto_generate\c_test\mavlink_testsuit_main.c -o CMakeFiles\Auto_Generate_For_28377.dir\c_test\mavlink_testsuit_main.c.s
+CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.s"
+	F:\cgwin64\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\chWorkSpace\code\auto_generate\mav_pyutils\c_test\mavlink_testsuit_main.c -o CMakeFiles\Auto_Generate_For_28377.dir\mav_pyutils\c_test\mavlink_testsuit_main.c.s
 
 # Object files for target Auto_Generate_For_28377
 Auto_Generate_For_28377_OBJECTS = \
-"CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj"
+"CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj"
 
 # External object files for target Auto_Generate_For_28377
 Auto_Generate_For_28377_EXTERNAL_OBJECTS =
 
-Auto_Generate_For_28377.exe: CMakeFiles/Auto_Generate_For_28377.dir/c_test/mavlink_testsuit_main.c.obj
+Auto_Generate_For_28377.exe: CMakeFiles/Auto_Generate_For_28377.dir/mav_pyutils/c_test/mavlink_testsuit_main.c.obj
 Auto_Generate_For_28377.exe: CMakeFiles/Auto_Generate_For_28377.dir/build.make
 Auto_Generate_For_28377.exe: CMakeFiles/Auto_Generate_For_28377.dir/linklibs.rsp
 Auto_Generate_For_28377.exe: CMakeFiles/Auto_Generate_For_28377.dir/objects1.rsp

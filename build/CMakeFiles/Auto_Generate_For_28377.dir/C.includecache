@@ -860,7 +860,7 @@ mavlink_types.h
 mavlink_helpers.h
 ../output/mavlink_for_28377/mavlink_helpers.h
 
-K:/czqWorkSpace/auto_generate/c_test/mavlink_testsuit_main.c
+D:/chWorkSpace/code/auto_generate/mav_pyutils/c_test/mavlink_testsuit_main.c
 mavlink.h
 -
 mavlink_helpers.h

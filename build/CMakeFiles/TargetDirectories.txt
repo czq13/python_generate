@@ -1,4 +1,4 @@
-D:/chWorkSpace/code/auto_generate/build/CMakeFiles/Auto_Generate_For_28377.dir
+D:/chWorkSpace/code/auto_generate/build/CMakeFiles/Ulog_demo.dir
 D:/chWorkSpace/code/auto_generate/build/CMakeFiles/package.dir
 D:/chWorkSpace/code/auto_generate/build/CMakeFiles/package_source.dir
 D:/chWorkSpace/code/auto_generate/build/CMakeFiles/rebuild_cache.dir

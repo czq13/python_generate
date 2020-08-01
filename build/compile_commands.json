@@ -1,7 +1,12 @@
 [
 {
   "directory": "D:/chWorkSpace/code/auto_generate/build",
-  "command": "F:\\cgwin64\\mingw64\\bin\\gcc.exe -DPLATFORM_Ubuntu=2 @CMakeFiles/Auto_Generate_For_28377.dir/includes_C.rsp -g   -fgnu89-inline -o CMakeFiles\\Auto_Generate_For_28377.dir\\c_test\\mavlink_testsuit_main.c.obj   -c D:\\chWorkSpace\\code\\auto_generate\\c_test\\mavlink_testsuit_main.c",
-  "file": "D:/chWorkSpace/code/auto_generate/c_test/mavlink_testsuit_main.c"
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\main.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\main.cpp",
+  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp"
+},
+{
+  "directory": "D:/chWorkSpace/code/auto_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\msg_logger.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\msg_logger.cpp",
+  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
 }
 ]

@@ -34,7 +34,17 @@
             "program": "msg_pyutils\\ulog_exam\\info.py",
             "console": "integratedTerminal",
             "args": [
-                "msg_pyutils\\test.ulg"
+                "msg_pyutils\\ulog_exam\\test.ulg"
+            ]
+        },
+        {
+            "name": "msg ulog2csv",
+            "type": "python",
+            "request": "launch",
+            "program": "msg_pyutils\\ulog_exam\\ulog2csv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "msg_pyutils\\ulog_exam\\test.ulg"
             ]
         }
     ]

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Attitude.h
+Message_Base.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Base.h
+string.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/string.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Base.h
+stdio.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/stdio.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Position.h
+Message_Base.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Base.h
+string.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/string.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp
+iostream
+-
+msg_logger.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.h
+Message_Attitude.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Attitude.h
+Message_Position.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/Message_Position.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/messages.h
+
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.h
+stdio.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/stdio.h
+stdint.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/stdint.h
+messages.h
+D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/messages.h
+

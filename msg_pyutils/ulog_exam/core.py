@@ -55,6 +55,7 @@ class ULog(object):
         'int64_t':  ['q', 8, np.int64],
         'uint64_t': ['Q', 8, np.uint64],
         'float':    ['f', 4, np.float32],
+        'float32':  ['f', 4, np.float32],
         'double':   ['d', 8, np.float64],
         'bool':     ['?', 1, np.int8],
         'char':     ['c', 1, np.int8]
@@ -124,7 +125,7 @@ class ULog(object):
         self._compat_flags = [0] * 8
         self._incompat_flags = [0] * 8
         self._appended_offsets = [] # file offsets for appended data
-        self._has_sync = True # set to false when first file search for sync fails
+        self._has_sync = False#True # set to false when first file search for sync fails
         self._sync_seq_cnt = 0 # number of sync packets found in file
 
         ULog._disable_str_exceptions = disable_str_exceptions
@@ -266,6 +267,7 @@ class ULog(object):
 
         def initialize(self, data):
             self.msg_size, self.msg_type = ULog._unpack_ushort_byte(data)
+            pass
 
     class _MessageInfo(object):
         """ ULog info message representation """
