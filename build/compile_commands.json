@@ -1,13 +1,12 @@
 [
 {
-  "directory": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-5    -I../msg_pyutils/ulog_demo  -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.o -c /media/czq/蛋猪/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp",
-  "file": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp"
+  "directory": "D:/chWorkSpace/code/auto_generate/build",
+  "command": "F:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -O3 -DNDEBUG   -std=c++11 -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\main.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\main.cpp",
+  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp"
 },
-
 {
-  "directory": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-5    -I../msg_pyutils/ulog_demo  -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.o -c /media/czq/蛋猪/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp",
-  "file": "/media/czq/蛋猪/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
+  "directory": "D:/chWorkSpace/code/auto_generate/build",
+  "command": "F:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -O3 -DNDEBUG   -std=c++11 -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\msg_logger.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\msg_logger.cpp",
+  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
 }
 ]
