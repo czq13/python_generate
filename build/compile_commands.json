@@ -1,12 +1,12 @@
 [
 {
-  "directory": "D:/chWorkSpace/code/auto_generate/build",
-  "command": "F:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -O3 -DNDEBUG   -std=c++11 -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\main.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\main.cpp",
-  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/main.cpp"
+  "directory": "E:/chWorkSpace/auto_generate/build",
+  "command": "F:/cgwin64/mingw64/bin/g++.exe  @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj -c E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/main.cpp",
+  "file": "E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/main.cpp"
 },
 {
-  "directory": "D:/chWorkSpace/code/auto_generate/build",
-  "command": "F:\\CodeBlocks\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -O3 -DNDEBUG   -std=c++11 -o CMakeFiles\\Ulog_demo.dir\\msg_pyutils\\ulog_demo\\msg_logger.cpp.obj -c D:\\chWorkSpace\\code\\auto_generate\\msg_pyutils\\ulog_demo\\msg_logger.cpp",
-  "file": "D:/chWorkSpace/code/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
+  "directory": "E:/chWorkSpace/auto_generate/build",
+  "command": "F:/cgwin64/mingw64/bin/g++.exe  @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj -c E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp",
+  "file": "E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
 }
 ]

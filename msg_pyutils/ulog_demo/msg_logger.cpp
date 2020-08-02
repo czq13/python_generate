@@ -5,7 +5,8 @@
 #include "messages.h"
 
 void msg_logger::start_log_file() {
-    file = fopen("../msg_pyutils/ulog_exam/test.ulg","w");
+    //file = fopen("../msg_pyutils/ulog_exam/test.ulg","w");
+    file = fopen("./msg_pyutils/ulog_exam/test.ulg","wb");
     if (file == NULL) {
         printf("can not open file\n");
     }
