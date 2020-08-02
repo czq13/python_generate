@@ -12,7 +12,7 @@ from builtins import range
 from builtins import object
 
 import os
-from pyutils import mavtemplate, mavparse
+from mav_pyutils import mavtemplate, mavparse
 
 t = mavtemplate.MAVTemplate()
 

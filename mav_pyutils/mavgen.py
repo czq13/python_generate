@@ -163,7 +163,7 @@ def mavgen(opts, args):
 
     # convert language option to lowercase and validate
     opts.language = opts.language.lower()
-    from pyutils import mavgen_c
+    from mav_pyutils import mavgen_c
     mavgen_c.generate(opts.output, xml)
 
     return True
