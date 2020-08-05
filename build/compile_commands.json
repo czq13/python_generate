@@ -1,12 +1,32 @@
 [
 {
-  "directory": "E:/chWorkSpace/auto_generate/build",
-  "command": "F:/cgwin64/mingw64/bin/g++.exe  @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/main.cpp.obj -c E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/main.cpp",
-  "file": "E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/main.cpp"
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\D_\\chWorkSpace\\code\\AutoPilot\\Modules\\SD\\device\\SD_Windows.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\Modules\\SD\\device\\SD_Windows.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/Modules/SD/device/SD_Windows.cpp"
 },
 {
-  "directory": "E:/chWorkSpace/auto_generate/build",
-  "command": "F:/cgwin64/mingw64/bin/g++.exe  @CMakeFiles/Ulog_demo.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles/Ulog_demo.dir/msg_pyutils/ulog_demo/msg_logger.cpp.obj -c E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp",
-  "file": "E:/chWorkSpace/auto_generate/msg_pyutils/ulog_demo/msg_logger.cpp"
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\D_\\chWorkSpace\\code\\AutoPilot\\Modules\\Clock\\device\\Clock_Windows.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\Modules\\Clock\\device\\Clock_Windows.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/Modules/Clock/device/Clock_Windows.cpp"
+},
+{
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\D_\\chWorkSpace\\code\\AutoPilot\\Modules\\Logger\\Logger.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\Modules\\Logger\\Logger.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/Modules/Logger/Logger.cpp"
+},
+{
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\output\\msg_for_28377\\msg_source\\Msg_Attitude.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\auto_generate\\python_generate\\output\\msg_for_28377\\msg_source\\Msg_Attitude.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/output/msg_for_28377/msg_source/Msg_Attitude.cpp"
+},
+{
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\output\\msg_for_28377\\msg_src.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\auto_generate\\python_generate\\output\\msg_for_28377\\msg_src.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/output/msg_for_28377/msg_src.cpp"
+},
+{
+  "directory": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/build",
+  "command": "F:\\cgwin64\\mingw64\\bin\\g++.exe   @CMakeFiles/Ulog_demo2.dir/includes_CXX.rsp -g   -std=c++11 -o CMakeFiles\\Ulog_demo2.dir\\output\\msg_for_28377\\test_msg.cpp.obj -c D:\\chWorkSpace\\code\\AutoPilot\\auto_generate\\python_generate\\output\\msg_for_28377\\test_msg.cpp",
+  "file": "D:/chWorkSpace/code/AutoPilot/auto_generate/python_generate/output/msg_for_28377/test_msg.cpp"
 }
 ]

@@ -56,6 +56,8 @@ class ULog(object):
         'uint64_t': ['Q', 8, np.uint64],
         'float':    ['f', 4, np.float32],
         'float32':  ['f', 4, np.float32],
+        'float16':  ['f', 4, np.float32],
+        'float16_t': ['f', 4, np.float32],
         'double':   ['d', 8, np.float64],
         'bool':     ['?', 1, np.int8],
         'char':     ['c', 1, np.int8]

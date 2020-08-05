@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<msg>
+  <version>1</version>
+  <dialect>0</dialect>
+  <messages>
+    <message id="0" name="Raw_imu_16488">
+      <description>The output of IMU_16488.</description>
+      <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
+      <field type="uint16_t" name="Nomal">Read the version of 16488 to check if it works fine.</field>
+      <field type="float16_t" name="ax"> x-axis accelerometer output. </filed>
+      <field type="float16_t" name="ay"> y-axis accelerometer output. </filed>
+      <field type="float16_t" name="az"> z-axis accelerometer output. </filed>
+
+      <field type="float16_t" name="gx"> x-axis gyro output. </filed>
+      <field type="float16_t" name="gy"> y-axis gyro output. </filed>
+      <field type="float16_t" name="gz"> z-axis gyro output. </filed>
+      
+      <field type="float16_t" name="mx"> x-axis magnetic output. </filed>
+      <field type="float16_t" name="my"> y-axis magnetic output. </filed>
+      <field type="float16_t" name="mz"> z-axis magnetic output. </filed>
+
+      <field type="float16_t" name="baro"> baro output. </filed>
+      <field type="float16_t" name="temperature"> temperature. </filed>
+
+      <field type="uint16_t" name="print_freq" default="10"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="1" name="Corr_imu_16488">
+      <description>The output of IMU_16488 after correct by calibration.</description>
+      <field type="uint16_t" name="Nomal">Read the version of 16488 to check if it works fine.</field>
+      <field type="float16_t" name="ax"> x-axis accelerometer output. </filed>
+      <field type="float16_t" name="ay"> y-axis accelerometer output. </filed>
+      <field type="float16_t" name="az"> z-axis accelerometer output. </filed>
+
+      <field type="float16_t" name="gx"> x-axis gyro output. </filed>
+      <field type="float16_t" name="gy"> y-axis gyro output. </filed>
+      <field type="float16_t" name="gz"> z-axis gyro output. </filed>
+      
+      <field type="float16_t" name="mx"> x-axis magnetic output. </filed>
+      <field type="float16_t" name="my"> y-axis magnetic output. </filed>
+      <field type="float16_t" name="mz"> z-axis magnetic output. </filed>
+
+      <feild type="float16_t" name="baro"> baro output. </filed>
+      <field type="uint16_t" name="print_freq" default="30"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="2" name="Gps_raw_int">
+      <description>The global position, as returned by the Global Positioning System (GPS). This is
+                NOT the global position estimate of the system, but rather a RAW sensor value. See message GLOBAL_POSITION for the global position estimate.</description>
+      <field type="int32_t" name="lat" units="degE7">Latitude (WGS84, EGM96 ellipsoid)</field>
+      <field type="int32_t" name="lon" units="degE7">Longitude (WGS84, EGM96 ellipsoid)</field>
+      <field type="int32_t" name="alt" units="mm">Altitude (MSL). Positive for up. Note that virtually all GPS modules provide the MSL altitude in addition to the WGS84 altitude.</field>
+      <field type="uint16_t" name="eph">GPS HDOP horizontal dilution of position (unitless). If unknown, set to: UINT16_MAX</field>
+      <field type="uint16_t" name="epv">GPS VDOP vertical dilution of position (unitless). If unknown, set to: UINT16_MAX</field>
+      <field type="uint16_t" name="vel" units="cm/s">GPS ground speed. If unknown, set to: UINT16_MAX</field>
+      <field type="uint16_t" name="cog" units="cdeg">Course over ground (NOT heading, but direction of movement) in degrees * 100, 0.0..359.99 degrees. If unknown, set to: UINT16_MAX</field>
+      <field type="uint16_t" name="satellites_visible">Number of satellites visible. If unknown, set to 255</field>
+      <field type="int32_t" name="alt_ellipsoid" units="mm">Altitude (above WGS84, EGM96 ellipsoid). Positive for up.</field>
+      <field type="uint32_t" name="h_acc" units="mm">Position uncertainty.</field>
+      <field type="uint32_t" name="v_acc" units="mm">Altitude uncertainty.</field>
+      <field type="uint32_t" name="vel_acc" units="mm">Speed uncertainty.</field>
+      <field type="uint32_t" name="hdg_acc" units="degE5">Heading / track uncertainty</field>
+      <field type="uint16_t" name="yaw" units="cdeg">Yaw in earth frame from north. Use 0 if this GPS does not provide yaw. Use 65535 if this GPS is configured to provide yaw and is currently unable to provide it. Use 36000 for north.</field>
+      <field type="uint16_t" name="print_freq" default="1"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="3" name="Attitude">
+      <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right).</description>
+      <field type="float16_t" name="roll" units="rad">Roll angle (-pi..+pi)</field>
+      <field type="float16_t" name="pitch" units="rad">Pitch angle (-pi/2..+pi/2)</field>
+      <field type="float16_t" name="yaw" units="rad">Yaw angle (-pi..+pi)</field>
+      <field type="float16_t" name="rollspeed" units="rad/s">Roll angular speed</field>
+      <field type="float16_t" name="pitchspeed" units="rad/s">Pitch angular speed</field>
+      <field type="float16_t" name="yawspeed" units="rad/s">Yaw angular speed</field>
+
+      <field type="float16_t" name="q1">Quaternion component 1, w (1 in null-rotation)</field>
+      <field type="float16_t" name="q2">Quaternion component 2, x (0 in null-rotation)</field>
+      <field type="float16_t" name="q3">Quaternion component 3, y (0 in null-rotation)</field>
+      <field type="float16_t" name="q4">Quaternion component 4, z (0 in null-rotation)</field>
+
+      <field type="uint16_t" name="print_freq" default="10"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="5" name="Local_position_ned">
+      <description>The filtered local position (e.g. fused computer vision and accelerometers). Coordinate frame is right-handed, Z-axis down (aeronautical frame, NED / north-east-down convention)</description>
+      <field type="float16_t" name="x" units="m">X Position</field>
+      <field type="float16_t" name="y" units="m">Y Position</field>
+      <field type="float16_t" name="z" units="m">Z Position</field>
+      <field type="float16_t" name="vx" units="m/s">X Speed</field>
+      <field type="float16_t" name="vy" units="m/s">Y Speed</field>
+      <field type="float16_t" name="vz" units="m/s">Z Speed</field>
+
+      <field type="uint16_t" name="print_freq" default="5"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="7" name="RC_channels_raw">
+      <description>The RAW values of the RC channels received. The standard PPM modulation is as follows: 1000 microseconds: 0%, 2000 microseconds: 100%. A value of UINT16_MAX implies the channel is unused. Individual receivers/transmitters might violate this specification.</description>
+      <field type="uint16_t" name="port">Servo output port (set of 8 outputs = 1 port). Flight stacks running on Pixhawk should use: 0 = MAIN, 1 = AUX.</field>
+      <field type="uint16_t" name="chan1_raw" units="us">RC channel 1 value.</field>
+      <field type="uint16_t" name="chan2_raw" units="us">RC channel 2 value.</field>
+      <field type="uint16_t" name="chan3_raw" units="us">RC channel 3 value.</field>
+      <field type="uint16_t" name="chan4_raw" units="us">RC channel 4 value.</field>
+      <field type="uint16_t" name="chan5_raw" units="us">RC channel 5 value.</field>
+      <field type="uint16_t" name="chan6_raw" units="us">RC channel 6 value.</field>
+      <field type="uint16_t" name="chan7_raw" units="us">RC channel 7 value.</field>
+      <field type="uint16_t" name="chan8_raw" units="us">RC channel 8 value.</field>
+
+      <field type="uint16_t" name="print_freq" default="5"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="8" name="Servo_output_raw">
+      <description>Superseded by ACTUATOR_OUTPUT_STATUS. The RAW values of the servo outputs (for RC input from the remote, use the RC_CHANNELS messages). The standard PPM modulation is as follows: 1000 microseconds: 0%, 2000 microseconds: 100%.</description>
+      <field type="uint16_t" name="servo1_raw" units="us">Servo output 1 value</field>
+      <field type="uint16_t" name="servo2_raw" units="us">Servo output 2 value</field>
+      <field type="uint16_t" name="servo3_raw" units="us">Servo output 3 value</field>
+      <field type="uint16_t" name="servo4_raw" units="us">Servo output 4 value</field>
+      <field type="uint16_t" name="servo5_raw" units="us">Servo output 5 value</field>
+      <field type="uint16_t" name="servo6_raw" units="us">Servo output 6 value</field>
+      <field type="uint16_t" name="servo7_raw" units="us">Servo output 7 value</field>
+      <field type="uint16_t" name="servo8_raw" units="us">Servo output 8 value</field>
+      <field type="uint16_t" name="servo9_raw" units="us">Servo output 9 value</field>
+      <field type="uint16_t" name="servo10_raw" units="us">Servo output 10 value</field>
+      <field type="uint16_t" name="servo11_raw" units="us">Servo output 11 value</field>
+      <field type="uint16_t" name="servo12_raw" units="us">Servo output 12 value</field>
+      <field type="uint16_t" name="servo13_raw" units="us">Servo output 13 value</field>
+      <field type="uint16_t" name="servo14_raw" units="us">Servo output 14 value</field>
+      <field type="uint16_t" name="servo15_raw" units="us">Servo output 15 value</field>
+      <field type="uint16_t" name="servo16_raw" units="us">Servo output 16 value</field>
+
+      <field type="uint16_t" name="print_freq" default="5"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="9" name="Gps_global_origin">
+      <description>Publishes the GPS co-ordinates of the vehicle local origin (0,0,0) position. Emitted whenever a new GPS-Local position mapping is requested or set - e.g. following SET_GPS_GLOBAL_ORIGIN message.</description>
+      <field type="int32_t" name="latitude" units="degE7">Latitude (WGS84)</field>
+      <field type="int32_t" name="longitude" units="degE7">Longitude (WGS84)</field>
+      <field type="int32_t" name="altitude" units="mm">Altitude (MSL). Positive for up.</field>
+    </message>
+    <message id="10" name="AttiTude_quaternion_cov">
+      <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right), expressed as quaternion. Quaternion order is w, x, y, z and a zero rotation would be expressed as (1 0 0 0).</description>
+      <field type="float16_t[9]" name="covariance">Row-major representation of a 3x3 attitude covariance matrix (states: roll, pitch, yaw; first three entries are the first ROW, next three entries are the second row, etc.). If unknown, assign NaN value to first element in the array.</field>
+    </message>
+    <message id="11" name="Nav_controller_output">
+      <description>The state of the fixed wing navigation and position controller.</description>
+      <field type="float16_t" name="nav_roll" units="deg">Current desired roll</field>
+      <field type="float16_t" name="nav_pitch" units="deg">Current desired pitch</field>
+      <field type="int16_t" name="nav_bearing" units="deg">Current desired heading</field>
+      <field type="int16_t" name="target_bearing" units="deg">Bearing to current waypoint/target</field>
+      <field type="uint16_t" name="wp_dist" units="m">Distance to active waypoint</field>
+      <field type="float16_t" name="alt_error" units="m">Current altitude error</field>
+      <field type="float16_t" name="aspd_error" units="m/s">Current airspeed error</field>
+      <field type="float16_t" name="xtrack_error" units="m">Current crosstrack error on x-y plane</field>
+    </message>
+    <message id="12" name="Global_position_int_coV">
+      <description>The filtered global position (e.g. fused GPS and accelerometers). The position is in GPS-frame (right-handed, Z-up). It  is designed as scaled integer message since the resolution of float is not sufficient. NOTE: This message is intended for onboard networks / companion computers and higher-bandwidth links and optimized for accuracy and completeness. Please use the GLOBAL_POSITION_INT message for a minimal subset.</description>
+      <field type="uint16_t" name="estimator_type" enum="MAV_ESTIMATOR_TYPE">Class id of the estimator this estimate originated from.</field>
+      <field type="float[36]" name="covariance">Row-major representation of a 6x6 position and velocity 6x6 cross-covariance matrix (states: lat, lon, alt, vx, vy, vz; first six entries are the first ROW, next six entries are the second row, etc.). If unknown, assign NaN value to first element in the array.</field>
+
+      <field type="uint16_t" name="print_freq" default="1"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="13" name="Command_int">
+      <description>Message encoding a command with parameters as scaled integers. Scaling depends on the actual command value. The command microservice is documented at https://mavlink.io/en/services/command.html</description>
+      <field type="uint16_t" name="command" enum="MAV_CMD">The scheduled action for the mission item.</field>
+      <field type="float16_t" name="param1">PARAM1, see MAV_CMD enum</field>
+      <field type="float16_t" name="param2">PARAM2, see MAV_CMD enum</field>
+      <field type="float16_t" name="param3">PARAM3, see MAV_CMD enum</field>
+      <field type="float16_t" name="param4">PARAM4, see MAV_CMD enum</field>
+      <field type="int32_t" name="x">PARAM5 / local: x position in meters * 1e4, global: latitude in degrees * 10^7</field>
+      <field type="int32_t" name="y">PARAM6 / local: y position in meters * 1e4, global: longitude in degrees * 10^7</field>
+      <field type="float16_t" name="z">PARAM7 / z position: global: altitude in meters (relative or absolute, depending on frame).</field>
+    </message>
+    <message id="14" name="Attitude_target">
+      <description>Reports the current commanded attitude of the vehicle as specified by the autopilot. This should match the commands sent in a SET_ATTITUDE_TARGET message if the vehicle is being controlled this way.</description>
+      <field type="uint16_t" name="type_mask" display="bitmask">Mappings: If any of these bits are set, the corresponding input should be ignored: bit 1: body roll rate, bit 2: body pitch rate, bit 3: body yaw rate. bit 4-bit 7: reserved, bit 8: attitude</field>
+      <field type="float[4]" name="q">Attitude quaternion (w, x, y, z order, zero-rotation is 1, 0, 0, 0)</field>
+      <field type="float16_t" name="body_roll_rate" units="rad/s">Body roll rate</field>
+      <field type="float16_t" name="body_pitch_rate" units="rad/s">Body pitch rate</field>
+      <field type="float16_t" name="body_yaw_rate" units="rad/s">Body yaw rate</field>
+      <field type="float16_t" name="thrust">Collective thrust, normalized to 0 .. 1 (-1 .. 1 for vehicles capable of reverse trust)</field>
+    
+      <field type="uint16_t" name="print_freq" default="1"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="15" name="Position_target_local_ned">
+      <description>Reports the current commanded vehicle position, velocity, and acceleration as specified by the autopilot. This should match the commands sent in SET_POSITION_TARGET_LOCAL_NED if the vehicle is being controlled this way.</description>
+      <field type="uint16_t" name="coordinate_frame" enum="MAV_FRAME">Valid options are: MAV_FRAME_LOCAL_NED = 1, MAV_FRAME_LOCAL_OFFSET_NED = 7, MAV_FRAME_BODY_NED = 8, MAV_FRAME_BODY_OFFSET_NED = 9</field>
+      <field type="uint16_t" name="type_mask" enum="POSITION_TARGET_TYPEMASK" display="bitmask">Bitmap to indicate which dimensions should be ignored by the vehicle.</field>
+      <field type="float16_t" name="x" units="m">X Position in NED frame</field>
+      <field type="float16_t" name="y" units="m">Y Position in NED frame</field>
+      <field type="float16_t" name="z" units="m">Z Position in NED frame (note, altitude is negative in NED)</field>
+      <field type="float16_t" name="vx" units="m/s">X velocity in NED frame</field>
+      <field type="float16_t" name="vy" units="m/s">Y velocity in NED frame</field>
+      <field type="float16_t" name="vz" units="m/s">Z velocity in NED frame</field>
+      <field type="float16_t" name="afx" units="m/s/s">X acceleration or force (if bit 10 of type_mask is set) in NED frame in meter / s^2 or N</field>
+      <field type="float16_t" name="afy" units="m/s/s">Y acceleration or force (if bit 10 of type_mask is set) in NED frame in meter / s^2 or N</field>
+      <field type="float16_t" name="afz" units="m/s/s">Z acceleration or force (if bit 10 of type_mask is set) in NED frame in meter / s^2 or N</field>
+      <field type="float16_t" name="yaw" units="rad">yaw setpoint</field>
+      <field type="float16_t" name="yaw_rate" units="rad/s">yaw rate setpoint</field>
+
+      <field type="uint16_t" name="print_freq" default="1"> record frequency. </filed>  
+      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </filed>  
+    </message>
+    <message id="16" name="Sim_state">
+      <description>Status of simulation environment, if used</description>
+      <field type="float16_t" name="q1">True attitude quaternion component 1, w (1 in null-rotation)</field>
+      <field type="float16_t" name="q2">True attitude quaternion component 2, x (0 in null-rotation)</field>
+      <field type="float16_t" name="q3">True attitude quaternion component 3, y (0 in null-rotation)</field>
+      <field type="float16_t" name="q4">True attitude quaternion component 4, z (0 in null-rotation)</field>
+      <field type="float16_t" name="roll">Attitude roll expressed as Euler angles, not recommended except for human-readable outputs</field>
+      <field type="float16_t" name="pitch">Attitude pitch expressed as Euler angles, not recommended except for human-readable outputs</field>
+      <field type="float16_t" name="yaw">Attitude yaw expressed as Euler angles, not recommended except for human-readable outputs</field>
+      <field type="float16_t" name="xacc" units="m/s/s">X acceleration</field>
+      <field type="float16_t" name="yacc" units="m/s/s">Y acceleration</field>
+      <field type="float16_t" name="zacc" units="m/s/s">Z acceleration</field>
+      <field type="float16_t" name="xgyro" units="rad/s">Angular speed around X axis</field>
+      <field type="float16_t" name="ygyro" units="rad/s">Angular speed around Y axis</field>
+      <field type="float16_t" name="zgyro" units="rad/s">Angular speed around Z axis</field>
+      <field type="float16_t" name="lat" units="deg">Latitude</field>
+      <field type="float16_t" name="lon" units="deg">Longitude</field>
+      <field type="float16_t" name="alt" units="m">Altitude</field>
+      <field type="float16_t" name="std_dev_horz">Horizontal position standard deviation</field>
+      <field type="float16_t" name="std_dev_vert">Vertical position standard deviation</field>
+      <field type="float16_t" name="vn" units="m/s">True velocity in north direction in earth-fixed NED frame</field>
+      <field type="float16_t" name="ve" units="m/s">True velocity in east direction in earth-fixed NED frame</field>
+      <field type="float16_t" name="vd" units="m/s">True velocity in down direction in earth-fixed NED frame</field>
+    </message>
+    <message id="17" name="Power_status">
+      <description>Power supply status</description>
+      <field type="uint16_t" name="Vcc" units="mV">5V rail voltage.</field>
+      <field type="uint16_t" name="Vservo" units="mV">Servo rail voltage.</field>
+      <field type="uint16_t" name="flags" enum="MAV_POWER_STATUS" display="bitmask">Bitmap of power supply status flags.</field>
+    </message>
+  </messages>
+</msg>
