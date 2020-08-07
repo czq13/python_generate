@@ -7,7 +7,15 @@
             "request": "launch",
             "program": "autogenerate.py",
             "console": "integratedTerminal",
-            "args": ["--xml_file", "definition/mavlink/common.xml","--base_dir", "output/mavlink_for_28377"]
+            "args": ["--xml_file", "definition/mavlink/common.xml","--base_dir", "output/mavlink_for_28377","--target","mavlink"]
+        },
+        {
+            "name": "Python: autogenerate msg",
+            "type": "python",
+            "request": "launch",
+            "program": "autogenerate.py",
+            "console": "integratedTerminal",
+            "args": ["--xml_file", "definition/msg/msg.xml","--base_dir", "../","--target","msg"]
         },
         {
             "name": "Python: 当前文件",
@@ -46,15 +54,23 @@
             "args": [
                 "msg_pyutils\\ulog_exam\\test.ulg"
             ]
-        },
-        {
+        },{
             "name": "msg ulog2csv linux",
             "type": "python",
             "request": "launch",
             "program": "msg_pyutils/ulog_exam/ulog2csv.py",
             "args": [
                 "msg_pyutils/ulog_exam/test.ulg"
+            ],
+        },{
+            "name": "msg ulog2csv 010.txt",
+            "type": "python",
+            "request": "launch",
+            "program": "msg_pyutils\\ulog_exam\\ulog2csv.py",
+            "args": [
+                "msg_pyutils\\ulog_exam\\010.txt"
             ]
+        
         }
     ]
 }
