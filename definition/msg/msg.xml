@@ -22,8 +22,8 @@
       <field type="float" name="baro"> baro output. </field>
       <field type="float" name="temperature"> temperature. </field>
 
-      <field type="uint16_t" name="print_freq" default="100"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="100" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="1" name="Corr_imu_16488" module="Logger">
       <description>The output of IMU_16488 after correct by calibration.</description>
@@ -41,9 +41,10 @@
       <field type="float" name="my"> y-axis magnetic output. </field>
       <field type="float" name="mz"> z-axis magnetic output. </field>
 
+      <field type="char" name="baro_init" default="0" nostr="True"> 1 if baro init,0 if baro not init. </field>
       <field type="float" name="baro"> baro output. </field>
-      <field type="uint16_t" name="print_freq" default="30"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="30" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="2" name="Gps_raw_int" module="Logger">
       <description>The global position, as returned by the Global Positioning System (GPS). This is
@@ -63,8 +64,8 @@
       <field type="uint32_t" name="vel_acc" units="mm">Speed uncertainty.</field>
       <field type="uint32_t" name="hdg_acc" units="degE5">Heading / track uncertainty</field>
       <field type="uint16_t" name="yaw" units="cdeg">Yaw in earth frame from north. Use 0 if this GPS does not provide yaw. Use 65535 if this GPS is configured to provide yaw and is currently unable to provide it. Use 36000 for north.</field>
-      <field type="uint16_t" name="print_freq" default="1"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="3" name="Attitude" module="Logger">
       <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right).</description>
@@ -81,8 +82,8 @@
       <field type="float" name="q3">Quaternion component 3, y (0 in null-rotation)</field>
       <field type="float" name="q4">Quaternion component 4, z (0 in null-rotation)</field>
 
-      <field type="uint16_t" name="print_freq" default="100"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="10" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="5" name="Local_position_ned" module="Logger">
       <description>The filtered local position (e.g. fused computer vision and accelerometers). Coordinate frame is right-handed, Z-axis down (aeronautical frame, NED / north-east-down convention)</description>
@@ -94,8 +95,8 @@
       <field type="float" name="vy" units="m/s">Y Speed</field>
       <field type="float" name="vz" units="m/s">Z Speed</field>
 
-      <field type="uint16_t" name="print_freq" default="5"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="7" name="RC_channels_raw" module="Logger">
       <description>The RAW values of the RC channels received. The standard PPM modulation is as follows: 1000 microseconds: 0%, 2000 microseconds: 100%. A value of UINT16_MAX implies the channel is unused. Individual receivers/transmitters might violate this specification.</description>
@@ -110,8 +111,8 @@
       <field type="uint16_t" name="chan7_raw" units="us">RC channel 7 value.</field>
       <field type="uint16_t" name="chan8_raw" units="us">RC channel 8 value.</field>
 
-      <field type="uint16_t" name="print_freq" default="5"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="8" name="Servo_output_raw" module="Logger">
       <description>Superseded by ACTUATOR_OUTPUT_STATUS. The RAW values of the servo outputs (for RC input from the remote, use the RC_CHANNELS messages). The standard PPM modulation is as follows: 1000 microseconds: 0%, 2000 microseconds: 100%.</description>
@@ -133,8 +134,8 @@
       <field type="uint16_t" name="servo15_raw" units="us">Servo output 15 value</field>
       <field type="uint16_t" name="servo16_raw" units="us">Servo output 16 value</field>
 
-      <field type="uint16_t" name="print_freq" default="5"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="9" name="Gps_global_origin" module="Logger">
       <description>Publishes the GPS co-ordinates of the vehicle local origin (0,0,0) position. Emitted whenever a new GPS-Local position mapping is requested or set - e.g. following SET_GPS_GLOBAL_ORIGIN message.</description>
@@ -166,8 +167,8 @@
       <field type="uint16_t" name="estimator_type" enum="MAV_ESTIMATOR_TYPE">Class id of the estimator this estimate originated from.</field>
       <field type="float[36]" name="covariance">Row-major representation of a 6x6 position and velocity 6x6 cross-covariance matrix (states: lat, lon, alt, vx, vy, vz; first six entries are the first ROW, next six entries are the second row, etc.). If unknown, assign NaN value to first element in the array.</field>
 
-      <field type="uint16_t" name="print_freq" default="1"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="13" name="Command_int" module="Logger">
       <description>Message encoding a command with parameters as scaled integers. Scaling depends on the actual command value. The command microservice is documented at https://mavlink.io/en/services/command.html</description>
@@ -191,8 +192,8 @@
       <field type="float" name="body_yaw_rate" units="rad/s">Body yaw rate</field>
       <field type="float" name="thrust">Collective thrust, normalized to 0 .. 1 (-1 .. 1 for vehicles capable of reverse trust)</field>
     
-      <field type="uint16_t" name="print_freq" default="1"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="15" name="Position_target_local_ned" module="Logger">
       <description>Reports the current commanded vehicle position, velocity, and acceleration as specified by the autopilot. This should match the commands sent in SET_POSITION_TARGET_LOCAL_NED if the vehicle is being controlled this way.</description>
@@ -211,8 +212,8 @@
       <field type="float" name="yaw" units="rad">yaw setpoint</field>
       <field type="float" name="yaw_rate" units="rad/s">yaw rate setpoint</field>
 
-      <field type="uint16_t" name="print_freq" default="1"> record frequency. </field>  
-      <field type="uint16_t" name="disp_freq" default="0"> display frequency. </field>  
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="16" name="Sim_state" module="Logger">
       <description>Status of simulation environment, if used</description>
@@ -245,6 +246,14 @@
       <field type="uint16_t" name="Vcc" units="mV">5V rail voltage.</field>
       <field type="uint16_t" name="Vservo" units="mV">Servo rail voltage.</field>
       <field type="uint16_t" name="flags" enum="MAV_POWER_STATUS" display="bitmask">Bitmap of power supply status flags.</field>
+    </message>
+    <message id="18" name="share_default" module="Logger">
+      <description> this is the common variable shared by all messages. </description>
+      <field type="uint64_t" name="print_timestamp" default="0"> Print timestamp, last timestamp after print. </field>
+      <field type="uint64_t" name="disp_timestamp" default="0"> Disp timestamp, last timestamp after disp. </field>
+      <field type="uint16_t" name="print_freq" default="0"> Print frequency. </field>
+      <field type="uint16_t" name="disp_freq" default="0"> Disp frequency. </field>
+      <field type="uint16_t" name="msg_id" default="0"> Msg id, generated automatic. </field>
     </message>
   </messages>
 </msg>

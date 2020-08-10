@@ -9,6 +9,7 @@ import os
 import sys
 import time
 import xml.parsers.expat
+import copy
 
 class MSGParseError(Exception):
     def __init__(self, message, inner_exception=None):
@@ -17,56 +18,6 @@ class MSGParseError(Exception):
         self.exception_info = sys.exc_info()
     def __str__(self):
         return self.message
-
-class MSGField(object):
-    def __init__(self, name, type, print_format, xml,default_value, description='', enum='', display='', units=''):
-        self.name = name
-        self.name_upper = name.upper()
-        self.description = description
-        self.array_length = 0
-        self.enum = enum
-        self.display = display
-        self.units = units
-        self.omit_arg = False
-        self.const_value = None
-        self.print_format = print_format
-        self.default_value = default_value
-        lengths = {
-        'float'    : 4,
-        'double'   : 4,
-        'char'     : 2,
-        'int8_t'   : 2,
-        'uint8_t'  : 2,
-        'int16_t'  : 2,
-        'uint16_t' : 2,
-        'int32_t'  : 4,
-        'uint32_t' : 4,
-        'int64_t'  : 8,
-        'uint64_t' : 8,
-        }
-
-        aidx = type.find("[")
-        self.array_suffix = ''
-        if aidx != -1:
-            assert type[-1:] == ']'
-            self.array_length = int(type[aidx+1:-1])
-            type = type[0:aidx]
-            if type == 'array':
-                type = 'int8_t'
-            self.array_suffix = ('[%d]'%self.array_length)
-        if type in lengths:
-            self.type_length = lengths[type]
-            self.type = type
-        elif (type+"_t") in lengths:
-            self.type_length = lengths[type+"_t"]
-            self.type = type+'_t'
-        else:
-            raise MSGParseError("unknown type '%s'" % type)
-        if self.array_length != 0:
-            self.wire_length = self.array_length * self.type_length
-        else:
-            self.wire_length = self.type_length
-        self.type_upper = self.type.upper()
 
     def gen_test_value(self, i):
         '''generate a testsuite value for a MAVField'''
@@ -103,7 +54,60 @@ class MSGField(object):
                 v += c
             self.test_value = v[:-1]
 
+class CMSGField(object):
+    def __init__(self, attrs):
+        self.name = attrs['name']
+        self.name_upper = self.name.upper()
+        self.description = ''
+        self.array_length = 0
+        self.enum = attrs.get('enum','')
+        self.display = attrs.get('display','')
+        self.units = attrs.get('units','')
+        self.omit_arg = False
+        self.const_value = None
+        self.print_format = attrs.get('print_format',None)
+        self.default_value = attrs.get('default','')
+        self.nostr = eval(attrs.get('nostr','False'))
+        self.nodecl = eval(attrs.get('nodecl','False'))
+        if self.units:
+            self.units = '[' + self.units + ']'
+        type = attrs['type']
+        lengths = {
+        'float'    : 4,
+        'double'   : 4,
+        'char'     : 2,
+        'int8_t'   : 2,
+        'uint8_t'  : 2,
+        'int16_t'  : 2,
+        'uint16_t' : 2,
+        'int32_t'  : 4,
+        'uint32_t' : 4,
+        'int64_t'  : 8,
+        'uint64_t' : 8,
+        }
 
+        aidx = type.find("[")
+        self.array_suffix = ''
+        if aidx != -1:
+            assert type[-1:] == ']'
+            self.array_length = int(type[aidx+1:-1])
+            type = type[0:aidx]
+            if type == 'array':
+                type = 'int8_t'
+            self.array_suffix = ('[%d]'%self.array_length)
+        if type in lengths:
+            self.type_length = lengths[type]
+            self.type = type
+        elif (type+"_t") in lengths:
+            self.type_length = lengths[type+"_t"]
+            self.type = type+'_t'
+        else:
+            raise MSGParseError("unknown type '%s'" % type)
+        if self.array_length != 0:
+            self.wire_length = self.array_length * self.type_length
+        else:
+            self.wire_length = self.type_length
+        self.type_upper = self.type.upper()
 class MSGType(object):
     def __init__(self, name, id, module_name, linenumber , description=''):
         self.name = name
@@ -114,6 +118,7 @@ class MSGType(object):
         self.id = int(id)
         self.description = description
         self.fields = []
+        self.cfields = []
         self.fieldnames = []
         self.default_fields = []
         self.extensions_start = None
@@ -204,18 +209,8 @@ class MSGXML(object):
                 self.message[-1].extensions_start = len(self.message[-1].fields)
             elif in_element == "msg.messages.message.field":
                 check_attrs(attrs, ['name', 'type'], 'field')
-                print_format = attrs.get('print_format', None)
-                enum = attrs.get('enum', '')
-                display = attrs.get('display', '')
-                units = attrs.get('units', '')
-                dvalue = attrs.get('default','')
-                if units:
-                    units = '[' + units + ']'
-                new_field = MSGField(attrs['name'], attrs['type'], print_format, self,dvalue, enum=enum, display=display, units=units)
-                if dvalue == '':
-                    self.message[-1].fields.append(new_field)
-                else:
-                    self.message[-1].default_fields.append(new_field)
+                new_cfield = CMSGField(attrs)
+                self.message[-1].cfields.append(new_cfield)
             elif in_element == "msg.enums.enum":
                 check_attrs(attrs, ['name'], 'enum')
                 self.enum.append(MAVEnum(attrs['name'], p.CurrentLineNumber))
@@ -262,7 +257,7 @@ class MSGXML(object):
                 self.message[-1].description += data
             elif in_element == "msg.messages.message.field":
                 if self.message[-1].extensions_start is None or self.allow_extensions:
-                    self.message[-1].fields[-1].description += data
+                    self.message[-1].cfields[-1].description += data
             elif in_element == "msg.enums.enum.description":
                 self.enum[-1].description += data
             elif in_element == "msg.enums.enum.entry.description":
@@ -298,28 +293,45 @@ class MSGXML(object):
                 for a_param in enum_entry.param:
                     params_dict[int(a_param.index)] = a_param
                 enum_entry.param=params_dict.values()
+        
+        #get share_default
+        self.share_default = None
+        for m in self.message:
+            if m.name == 'share_default':
+                self.share_default = copy.deepcopy(m)
+                self.message.remove(m)
 
         for m in self.message:
             m.wire_length = 0
             m.wire_min_length = 0
+            m.fields = []
             m.fieldnames = []
             m.fieldlengths = []
             m.ordered_fieldnames = []
             m.ordered_fieldtypes = []
-            m.fieldtypes = []
-            m.message_flags = 0
-            m.target_system_ofs = 0
-            m.target_component_ofs = 0
             m.class_string = ''
-            m.default_value=[]
             m.array_fields = []
             m.scalar_fields = []
-            m.default_value.append({'dtype':'uint64_t','dname':'print_timestamp','dvalue':'0'})
-            m.default_value.append({'dtype':'uint64_t','dname':'disp_timestamp','dvalue':'0'})
-            m.default_value.append({'dtype':'uint16_t','dname':'print_freq','dvalue':'0'})
-            m.default_value.append({'dtype':'uint16_t','dname':'disp_freq','dvalue':'0'})
-            m.default_value.append({'dtype':'uint16_t','dname':'msg_id','dvalue':m.id})
+            m.decl_fields = []
+            m.default_fields = []
+            #classify the fields
+            for f in m.cfields:
+                if not f.nodecl:
+                    m.decl_fields.append(f)
+                if not f.nostr:
+                    m.fields.append(f)
+                if f.default_value != '':
+                    m.default_fields.append(f)
+            for f in self.share_default.cfields:
+                field = copy.deepcopy(f)
+                for ft in m.cfields:
+                    if field.name == ft.name:
+                        field.default_value = ft.default_value
+                if field.name == 'msg_id':
+                    field.default_value = m.id
+                m.default_fields.append(field)
              
+            #first sort the fields
             if self.sort_fields:
                 # when we have extensions we only sort up to the first extended field
                 sort_end = m.base_fields()
@@ -329,6 +341,8 @@ class MSGXML(object):
                 m.ordered_fields.extend(m.fields[sort_end:])
             else:
                 m.ordered_fields = m.fields
+
+            #classify the fields into array_fields or scalar_fields
             for f in m.fields:
                 m.fieldnames.append(f.name)
                 L = f.array_length
@@ -338,12 +352,12 @@ class MSGXML(object):
                     m.fieldlengths.append(1)
                 else:
                     m.fieldlengths.append(L)
-                m.fieldtypes.append(f.type)
                 if f.array_length != 0:
                     m.array_fields.append(f)
                 else:
                     m.scalar_fields.append(f)
                 
+            #third, set wire_offset,wire_lenght,class_string
             for i in range(len(m.ordered_fields)):
                 f = m.ordered_fields[i]
                 f.wire_offset = m.wire_length
@@ -359,7 +373,7 @@ class MSGXML(object):
                 m.ordered_fieldnames.append(f.name)
                 m.ordered_fieldtypes.append(f.type)
                 m.class_string += (f.type+' '+f.name+f.array_suffix+';')
-                f.set_test_value()
+                #f.set_test_value()
                 if f.name.find('[') != -1:
                     raise MSGParseError("invalid field name with array descriptor %s" % f.name)
                 # having flags for target_system and target_component helps a lot for routing code
@@ -368,12 +382,7 @@ class MSGXML(object):
                 elif f.name == 'target_component':
                     m.target_component_ofs = f.wire_offset
             
-            for f in m.default_fields:
-                for de in m.default_value:
-                    if de['dname'] == f.name:
-                        de['dvalue'] = f.default_value
             m.num_fields = len(m.fieldnames)
-            m.crc_extra = message_checksum(m)
 
     def __str__(self):
         return "MAVXML for %s from %s (%u message, %u enums)" % (

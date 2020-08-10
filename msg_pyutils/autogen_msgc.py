@@ -25,10 +25,10 @@ def generate_msg_x_header(directory, xml):
 
 class ${class_name} : public Class_Base_Msg {
 public:
-    ${{ordered_fields:${type} ${name}${array_suffix}; /*< ${units} ${description}*/
+    ${{decl_fields:${type} ${name}${array_suffix}; /*< ${units} ${description}*/
     }}
     ${class_name}() {
-        ${{default_value:${dname}=${dvalue};
+        ${{default_fields:${name}=${default_value};
         }}
     }
     int get_str() {
