@@ -97,7 +97,7 @@ void msg_print_check() {
     int pos = 0,len = 0;
     while(msg_points[pos] != NULL) {
         if (msg_points[pos]->print_freq > 0) {
-            uint32_t timegap = 1e7 / msg_points[pos]->print_freq;
+            uint32_t timegap = 1e5 / msg_points[pos]->print_freq;
             if (clk.time()-msg_points[pos]->print_timestamp > timegap) {
                 msg_points[pos]->print_timestamp = clk.time();
                 public_buffer_pos = 5;

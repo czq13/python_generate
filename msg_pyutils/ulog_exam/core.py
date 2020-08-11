@@ -660,12 +660,12 @@ class ULog(object):
                 header.initialize(data)
                 data = self._file_handle.read(header.msg_size)
                 curr_file_pos += len(data)
-                str = ''
+                '''str = ''
                 for i in tmp_data:
                     str += '%d ' % (i)
                 for i in data:
                     str += '%d ' % (i)
-                print(str)
+                print(str)'''
                 if len(data) < header.msg_size:
                     break # less data than expected. File is most likely cut
 

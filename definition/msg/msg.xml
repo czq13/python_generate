@@ -43,29 +43,52 @@
 
       <field type="char" name="baro_init" default="0" nostr="True"> 1 if baro init,0 if baro not init. </field>
       <field type="float" name="baro"> baro output. </field>
+      <field type="float" name="baro_h_inter"> baro height, calculate by interpolate. </field>
+      <field type="float" name="baro_h_func"> baro height, calculate by function directly. </field>
       <field type="uint16_t" name="print_freq" default="30" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
     <message id="2" name="Gps_raw_int" module="Logger">
       <description>The global position, as returned by the Global Positioning System (GPS). This is
                 NOT the global position estimate of the system, but rather a RAW sensor value. See message GLOBAL_POSITION for the global position estimate.</description>
-      <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
-      <field type="int32_t" name="lat" units="degE7">Latitude (WGS84, EGM96 ellipsoid)</field>
+      <field type="uint32_t" name="iTOW" units="ms"> GPS time of week of the navigation epoch.See the description of iTOW for details.</field>
+      <field type="uint16_t" name="year"> Year (UTC) </field>
+      <field type="char" name="month">  Month, range 1..12 (UTC) </field>
+      <field type="char" name="day">  Day of month, range 1..31 (UTC) </field>
+      <field type="char" name="hour">  Hour of day, range 0..23 (UTC) </field>
+      <field type="char" name="min">  Minute of hour, range 0..59 (UTC) </field>
+      <field type="char" name="sec">  Seconds of minute, range 0..60 (UTC)) </field>
+      <field type="char" name="valid">  Validity flags (see graphic below) </field>
+      <field type="uint32_t" name="tAcc" units="ns"> Time accuracy estimate (UTC) </field>
+      <field type="int32_t" name="nano" units="ns"> Fraction of second, range -1e9 .. 1e9 (UTC) </field>
+      <field type="char" name="fixType"> GNSSfix Type:0: no fix.1: dead reckoning only.2: 2D-fix.3: 3D-fix.4: GNSS + dead reckoning combined.5: time only fix </field>
+      <field type="char" name="flags"> Fix status flags (see graphic below). </field>
+      <field type="char" name="flags2"> Additional flags (see graphic below). </field>
+      <field type="char" name="numSV"> Number of satellites used in Nav Solution. </field>
       <field type="int32_t" name="lon" units="degE7">Longitude (WGS84, EGM96 ellipsoid)</field>
-      <field type="int32_t" name="alt" units="mm">Altitude (MSL). Positive for up. Note that virtually all GPS modules provide the MSL altitude in addition to the WGS84 altitude.</field>
-      <field type="uint16_t" name="eph">GPS HDOP horizontal dilution of position (unitless). If unknown, set to: UINT16_MAX</field>
-      <field type="uint16_t" name="epv">GPS VDOP vertical dilution of position (unitless). If unknown, set to: UINT16_MAX</field>
-      <field type="uint16_t" name="vel" units="cm/s">GPS ground speed. If unknown, set to: UINT16_MAX</field>
-      <field type="uint16_t" name="cog" units="cdeg">Course over ground (NOT heading, but direction of movement) in degrees * 100, 0.0..359.99 degrees. If unknown, set to: UINT16_MAX</field>
-      <field type="uint16_t" name="satellites_visible">Number of satellites visible. If unknown, set to 255</field>
-      <field type="int32_t" name="alt_ellipsoid" units="mm">Altitude (above WGS84, EGM96 ellipsoid). Positive for up.</field>
-      <field type="uint32_t" name="h_acc" units="mm">Position uncertainty.</field>
-      <field type="uint32_t" name="v_acc" units="mm">Altitude uncertainty.</field>
-      <field type="uint32_t" name="vel_acc" units="mm">Speed uncertainty.</field>
-      <field type="uint32_t" name="hdg_acc" units="degE5">Heading / track uncertainty</field>
-      <field type="uint16_t" name="yaw" units="cdeg">Yaw in earth frame from north. Use 0 if this GPS does not provide yaw. Use 65535 if this GPS is configured to provide yaw and is currently unable to provide it. Use 36000 for north.</field>
+      <field type="int32_t" name="lat" units="degE7">Latitude (WGS84, EGM96 ellipsoid)</field>
+      <field type="int32_t" name="height" units="mm">Height above ellipsoid.</field>
+      <field type="int32_t" name="hMSL" units="mm">Height above mean sea level.</field>
+      <field type="uint32_t" name="hAcc"> Horizontal accuracy estimate. </field>
+      <field type="uint32_t" name="vAcc"> Vertical accuracy estimate.</field>
+      <field type="int32_t" name="velN" units="mm/s"> NED north velocity. </field>
+      <field type="int32_t" name="velE" units="mm/s"> NED east velocity. </field>
+      <field type="int32_t" name="velD" units="mm/s"> NED down velocity. </field>
+      <field type="int32_t" name="gSpeed" units="mm/s"> Ground Speed (2-D). </field>
+      <field type="int32_t" name="headMot" units="1e5deg"> Heading of motion (2-D). </field>
+      <field type="uint32_t" name="sAcc" units="mm/s"> Speed accuracy estimate. </field>
+      <field type="uint32_t" name="headAcc" units="1e5deg"> Heading accuracy estimate (both motion
+and vehicle). </field>
+      <field type="uint16_t" name="pDOP" units="100"> Position DOP. </field>
+      <field type="char[6]" name="reserved1"> reserved. </field>
+      <field type="int32_t" name="headVeh" units="1e5deg"> Heading of vehicle (2-D). </field>
+      <field type="int16_t" name="magDec" units="1e2deg"> Magnetic declination. </field>
+      <field type="uint16_t" name="magAcc" units="1e2deg"> Magnetic declination accuracy. </field>
+
       <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
+
+      <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
     </message>
     <message id="3" name="Attitude" module="Logger">
       <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right).</description>
@@ -85,15 +108,19 @@
       <field type="uint16_t" name="print_freq" default="10" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
     </message>
-    <message id="5" name="Local_position_ned" module="Logger">
+    <message id="5" name="Local_position" module="Logger">
       <description>The filtered local position (e.g. fused computer vision and accelerometers). Coordinate frame is right-handed, Z-axis down (aeronautical frame, NED / north-east-down convention)</description>
       <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
-      <field type="float" name="x" units="m">X Position</field>
-      <field type="float" name="y" units="m">Y Position</field>
-      <field type="float" name="z" units="m">Z Position</field>
-      <field type="float" name="vx" units="m/s">X Speed</field>
-      <field type="float" name="vy" units="m/s">Y Speed</field>
-      <field type="float" name="vz" units="m/s">Z Speed</field>
+      <field type="float" name="x" units="m">X Position, N</field>
+      <field type="float" name="y" units="m">Y Position, S</field>
+      <field type="float" name="z" units="m">Z Position, D</field>
+      <field type="float" name="vx" units="m/s">X Speed, earth frame</field>
+      <field type="float" name="vy" units="m/s">Y Speed, earth frame</field>
+      <field type="float" name="vz" units="m/s">Z Speed, earth frame</field>
+      <field type="float[3]" name="vb" units="m/s"> Speed in body frame. </field>
+      <field type="float" name="accelx" unites="m/s^2" default="0"> x-accelerometer in body frame. </field>
+      <field type="float" name="accely" unites="m/s^2" defualt="0"> y-accelerometer in body frame. </field>
+      <field type="float" name="accelz" unites="m/s^2" default="0"> z-accelerometer in body frame. </field>
 
       <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
@@ -161,7 +188,7 @@
       <field type="float" name="aspd_error" units="m/s">Current airspeed error</field>
       <field type="float" name="xtrack_error" units="m">Current crosstrack error on x-y plane</field>
     </message>
-    <message id="12" name="Global_position_int_coV" module="Logger">
+    <message id="12" name="Global_position_cov" module="Logger">
       <description>The filtered global position (e.g. fused GPS and accelerometers). The position is in GPS-frame (right-handed, Z-up). It  is designed as scaled integer message since the resolution of float is not sufficient. NOTE: This message is intended for onboard networks / companion computers and higher-bandwidth links and optimized for accuracy and completeness. Please use the GLOBAL_POSITION_INT message for a minimal subset.</description>
       <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
       <field type="uint16_t" name="estimator_type" enum="MAV_ESTIMATOR_TYPE">Class id of the estimator this estimate originated from.</field>

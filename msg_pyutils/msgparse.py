@@ -372,7 +372,7 @@ class MSGXML(object):
                     m.wire_min_length = m.wire_length
                 m.ordered_fieldnames.append(f.name)
                 m.ordered_fieldtypes.append(f.type)
-                m.class_string += (f.type+' '+f.name+f.array_suffix+';')
+                m.class_string += (f.type+f.array_suffix+' '+f.name+';')
                 #f.set_test_value()
                 if f.name.find('[') != -1:
                     raise MSGParseError("invalid field name with array descriptor %s" % f.name)
