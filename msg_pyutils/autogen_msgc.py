@@ -33,18 +33,17 @@ public:
     }
     int get_str() {
         char * str = &(public_buffer[public_buffer_pos]);
-        ${{scalar_fields:_msg_put_${type}(str, ${wire_offset}, ${name});
+        ${{get_fields_scalar:_msg_put_${type}(str, ${wire_offset}, ${name});
         }}
-        ${{array_fields:_msg_put_${type}_array(str, ${wire_offset}, ${name}, ${array_length});
+        ${{get_fields_array:_msg_put_${type}_array(str, ${wire_offset}, ${name}, ${array_length});
         }}
-        return ${wire_length};
+        return ${get_wire};
     }
     void set_str(const char * buffer) {
-        ${{scalar_fields:${name} = _MSG_RETURN_${type}(buffer,${wire_offset});
+        ${{set_fields_scalar:${name} = _MSG_RETURN_${type}(buffer,${wire_offset});
         }}
-        ${{array_fields:_MSG_RETURN_${type}_array(buffer,${name},${array_length},${wire_offset});
+        ${{set_fields_array:_MSG_RETURN_${type}_array(buffer,${name},${array_length},${wire_offset});
         }}
-
     }
 };
 extern char ${class_name}_char[];

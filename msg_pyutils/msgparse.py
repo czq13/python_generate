@@ -69,15 +69,17 @@ class CMSGField(object):
         self.default_value = attrs.get('default','')
         self.nostr = eval(attrs.get('nostr','False'))
         self.nodecl = eval(attrs.get('nodecl','False'))
+        self.noset = eval(attrs.get('noset','False'))
+        self.noget = eval(attrs.get('noget','False'))
         if self.units:
             self.units = '[' + self.units + ']'
         type = attrs['type']
         lengths = {
         'float'    : 4,
         'double'   : 4,
-        'char'     : 2,
-        'int8_t'   : 2,
-        'uint8_t'  : 2,
+        'char'     : 1,
+        'int8_t'   : 1,
+        'uint8_t'  : 1,
         'int16_t'  : 2,
         'uint16_t' : 2,
         'int32_t'  : 4,
@@ -314,14 +316,27 @@ class MSGXML(object):
             m.scalar_fields = []
             m.decl_fields = []
             m.default_fields = []
+            m.set_fields = []
+            m.get_fields = []
+            m.set_fields_scalar = []
+            m.set_fields_array = []
+            m.get_fields_scalar = []
+            m.get_fields_array = []
+            m.set_wire = 0
+            m.get_wire = 0
             #classify the fields
             for f in m.cfields:
                 if not f.nodecl:
                     m.decl_fields.append(f)
                 if not f.nostr:
+                    if not f.noset:
+                        m.set_fields.append(copy.deepcopy(f))
+                    if not f.noget:
+                        m.get_fields.append(copy.deepcopy(f))
                     m.fields.append(f)
                 if f.default_value != '':
                     m.default_fields.append(f)
+                
             for f in self.share_default.cfields:
                 field = copy.deepcopy(f)
                 for ft in m.cfields:
@@ -331,57 +346,23 @@ class MSGXML(object):
                     field.default_value = m.id
                 m.default_fields.append(field)
              
-            #first sort the fields
-            if self.sort_fields:
-                # when we have extensions we only sort up to the first extended field
-                sort_end = m.base_fields()
-                m.ordered_fields = sorted(m.fields[:sort_end],
-                                                   key=operator.attrgetter('type_length'),
-                                                   reverse=True)
-                m.ordered_fields.extend(m.fields[sort_end:])
-            else:
-                m.ordered_fields = m.fields
-
-            #classify the fields into array_fields or scalar_fields
-            for f in m.fields:
-                m.fieldnames.append(f.name)
-                L = f.array_length
-                if L == 0:
-                    m.fieldlengths.append(1)
-                elif L > 1 and f.type == 'char':
-                    m.fieldlengths.append(1)
-                else:
-                    m.fieldlengths.append(L)
+            #first deal the set fields
+            for f in m.set_fields:
                 if f.array_length != 0:
-                    m.array_fields.append(f)
+                    m.set_fields_array.append(f)
                 else:
-                    m.scalar_fields.append(f)
-                
-            #third, set wire_offset,wire_lenght,class_string
-            for i in range(len(m.ordered_fields)):
-                f = m.ordered_fields[i]
-                f.wire_offset = m.wire_length
-                m.wire_length += f.wire_length
-                field_el_length = f.wire_length
-                if f.array_length > 1:
-                    field_el_length = f.wire_length / f.array_length
-                if f.wire_offset % field_el_length != 0:
-                    # misaligned field, structure will need packing in C
-                    m.needs_pack = True
-                if m.extensions_start is None or i < m.extensions_start:
-                    m.wire_min_length = m.wire_length
-                m.ordered_fieldnames.append(f.name)
-                m.ordered_fieldtypes.append(f.type)
+                    m.set_fields_scalar.append(f)
+                f.wire_offset = m.set_wire
+                m.set_wire += f.wire_length
+            for f in m.get_fields:
+                if f.array_length != 0:
+                    m.get_fields_array.append(f)
+                else:
+                    m.get_fields_scalar.append(f)
+                f.wire_offset = m.get_wire
+                m.get_wire += f.wire_length
                 m.class_string += (f.type+f.array_suffix+' '+f.name+';')
-                #f.set_test_value()
-                if f.name.find('[') != -1:
-                    raise MSGParseError("invalid field name with array descriptor %s" % f.name)
-                # having flags for target_system and target_component helps a lot for routing code
-                if is_target_system_field(m, f):
-                    m.target_system_ofs = f.wire_offset
-                elif f.name == 'target_component':
-                    m.target_component_ofs = f.wire_offset
-            
+                
             m.num_fields = len(m.fieldnames)
 
     def __str__(self):

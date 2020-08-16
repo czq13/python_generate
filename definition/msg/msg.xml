@@ -51,19 +51,20 @@
     <message id="2" name="Gps_raw_int" module="Logger">
       <description>The global position, as returned by the Global Positioning System (GPS). This is
                 NOT the global position estimate of the system, but rather a RAW sensor value. See message GLOBAL_POSITION for the global position estimate.</description>
-      <field type="uint32_t" name="iTOW" units="ms"> GPS time of week of the navigation epoch.See the description of iTOW for details.</field>
-      <field type="uint16_t" name="year"> Year (UTC) </field>
-      <field type="char" name="month">  Month, range 1..12 (UTC) </field>
-      <field type="char" name="day">  Day of month, range 1..31 (UTC) </field>
-      <field type="char" name="hour">  Hour of day, range 0..23 (UTC) </field>
-      <field type="char" name="min">  Minute of hour, range 0..59 (UTC) </field>
-      <field type="char" name="sec">  Seconds of minute, range 0..60 (UTC)) </field>
+      <field type="uint64_t" name="timestamp" noset="True"> The timestamp of last update. </field>
+      <field type="uint32_t" name="iTOW" units="ms" noget="True"> GPS time of week of the navigation epoch.See the description of iTOW for details.</field>
+      <field type="uint16_t" name="year" noget="True"> Year (UTC) </field>
+      <field type="uint8_t" name="month" noget="True">  Month, range 1..12 (UTC) </field>
+      <field type="uint8_t" name="day" noget="True">  Day of month, range 1..31 (UTC) </field>
+      <field type="uint8_t" name="hour" noget="True">  Hour of day, range 0..23 (UTC) </field>
+      <field type="uint8_t" name="min" noget="True">  Minute of hour, range 0..59 (UTC) </field>
+      <field type="uint8_t" name="sec" noget="True">  Seconds of minute, range 0..60 (UTC)) </field>
       <field type="char" name="valid">  Validity flags (see graphic below) </field>
-      <field type="uint32_t" name="tAcc" units="ns"> Time accuracy estimate (UTC) </field>
-      <field type="int32_t" name="nano" units="ns"> Fraction of second, range -1e9 .. 1e9 (UTC) </field>
-      <field type="char" name="fixType"> GNSSfix Type:0: no fix.1: dead reckoning only.2: 2D-fix.3: 3D-fix.4: GNSS + dead reckoning combined.5: time only fix </field>
-      <field type="char" name="flags"> Fix status flags (see graphic below). </field>
-      <field type="char" name="flags2"> Additional flags (see graphic below). </field>
+      <field type="uint32_t" name="tAcc" units="ns" noget="True"> Time accuracy estimate (UTC) </field>
+      <field type="int32_t" name="nano" units="ns" noget="True"> Fraction of second, range -1e9 .. 1e9 (UTC) </field>
+      <field type="char" name="fixType" noget="True"> GNSSfix Type:0: no fix.1: dead reckoning only.2: 2D-fix.3: 3D-fix.4: GNSS + dead reckoning combined.5: time only fix </field>
+      <field type="char" name="flags" noget="True"> Fix status flags (see graphic below). </field>
+      <field type="char" name="flags2" noget="True"> Additional flags (see graphic below). </field>
       <field type="char" name="numSV"> Number of satellites used in Nav Solution. </field>
       <field type="int32_t" name="lon" units="degE7">Longitude (WGS84, EGM96 ellipsoid)</field>
       <field type="int32_t" name="lat" units="degE7">Latitude (WGS84, EGM96 ellipsoid)</field>
@@ -77,10 +78,9 @@
       <field type="int32_t" name="gSpeed" units="mm/s"> Ground Speed (2-D). </field>
       <field type="int32_t" name="headMot" units="1e5deg"> Heading of motion (2-D). </field>
       <field type="uint32_t" name="sAcc" units="mm/s"> Speed accuracy estimate. </field>
-      <field type="uint32_t" name="headAcc" units="1e5deg"> Heading accuracy estimate (both motion
-and vehicle). </field>
-      <field type="uint16_t" name="pDOP" units="100"> Position DOP. </field>
-      <field type="char[6]" name="reserved1"> reserved. </field>
+      <field type="uint32_t" name="headAcc" units="1e5deg"> Heading accuracy estimate (both motion and vehicle). </field>
+      <field type="uint16_t" name="pDOP" units="100" noget="True"> Position DOP. </field>
+      <field type="char[6]" name="reserved1" noget="True"> reserved. </field>
       <field type="int32_t" name="headVeh" units="1e5deg"> Heading of vehicle (2-D). </field>
       <field type="int16_t" name="magDec" units="1e2deg"> Magnetic declination. </field>
       <field type="uint16_t" name="magAcc" units="1e2deg"> Magnetic declination accuracy. </field>
@@ -88,7 +88,26 @@ and vehicle). </field>
       <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
 
-      <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
+    </message>
+    <message id="4" name="Gps_data" module="Logger">
+      <field type="uint64_t" name="timestamp"> timestampe. </field>
+      <field type="float" name="lat" units="rad"> latitude in rad. </field>
+      <field type="float" name="lon" units="rad"> longitude in rad. </field>
+      <field type="float" name="alt" units="m"> Altitude (MSL). </field>
+      <field type="float" name="vn" units="m/s">GPS velocity in north direction in earth-fixed NED frame</field>
+      <field type="float" name="ve" units="m/s">GPS velocity in east direction in earth-fixed NED frame</field>
+      <field type="float" name="vd" units="m/s">GPS velocity in down direction in earth-fixed NED frame</field>
+      <field type="float" name="speed_accuracy" units="m/s">GPS speed accuracy</field>
+      <field type="float" name="horiz_accuracy" units="m">GPS horizontal accuracy</field>
+      <field type="float" name="vert_accuracy" units="m">GPS vertical accuracy</field>
+      <field type="float" name="hdop" units="m">GPS HDOP horizontal dilution of position</field>
+      <field type="float" name="vdop" units="m">GPS VDOP vertical dilution of position</field>
+      <field type="int16_t" name="nSat"> Sat number. </field>
+
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
+      <field type="char" name="new_data" default="0" nostr="True"> 1,if there is new gps data. </field>
+      <field type="char" name="valid" default="0"> 1,if the gps data is valid. </field>
     </message>
     <message id="3" name="Attitude" module="Logger">
       <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right).</description>
@@ -137,6 +156,7 @@ and vehicle). </field>
       <field type="uint16_t" name="chan6_raw" units="us">RC channel 6 value.</field>
       <field type="uint16_t" name="chan7_raw" units="us">RC channel 7 value.</field>
       <field type="uint16_t" name="chan8_raw" units="us">RC channel 8 value.</field>
+      <field type="char" name="new_data"> 1,if there is new data. </field>
 
       <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
