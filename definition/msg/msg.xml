@@ -308,20 +308,25 @@
       <field type="float" name="ax"> ax </field>
       <field type="float" name="ay"> ay </field>
       <field type="float" name="az"> az </field>
-      <fleld type="uint16_t" name="calibrate" default="0" nostr="True" nodecl="True"> 1, if calibrated;0, if not. </field>
+      <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
     </message>
     <message id="20" name="Calibrate_gyro" module="Logger">
       <description> this calibrate the imu output. </description>
       <field type="float" name="gx"> gx </field>
       <field type="float" name="gy"> gy </field>
       <field type="float" name="gz"> gz </field>
-      <fleld type="uint16_t" name="calibrate" default="0" nostr="True" nodecl="True"> 1, if calibrated;0, if not. </field>
+      <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
     </message>
     <message id="21" name="Calibrate_mag" module="Logger">
       <description> this calibrate the imu output. </description>
       <field type="float" name="magx[72]"> magx </field>
       <field type="float" name="magy[72]"> magy </field>
-      <fleld type="uint16_t" name="calibrate" default="0" nostr="True" nodecl="True"> 1, if calibrated;0, if not. </field>
+      <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
+    </message>
+    <message id="22" name="Range_finder" module="Logger">
+      <description> range finder output </description>
+      <field type="float" name="height_rfinder"> height_rfinder </field>
+      <field type="uint64_t" name="update_timestamp"> update time stamp </field>
     </message>
   </messages>
 </msg>
