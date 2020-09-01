@@ -220,7 +220,8 @@
     <message id="13" name="Command_int" module="Logger">
       <description>Message encoding a command with parameters as scaled integers. Scaling depends on the actual command value. The command microservice is documented at https://mavlink.io/en/services/command.html</description>
       <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
-      <field type="uint16_t" name="command" enum="MAV_CMD">The scheduled action for the mission item.</field>
+      <field type="uint16_t" name="cmd_type">The scheduled action for the mission item.</field>
+      <field type="uint16_t" name="cmd_subtype">The scheduled action for the mission item.</field>
       <field type="float" name="param1">PARAM1, see MAV_CMD enum</field>
       <field type="float" name="param2">PARAM2, see MAV_CMD enum</field>
       <field type="float" name="param3">PARAM3, see MAV_CMD enum</field>
@@ -301,6 +302,41 @@
       <field type="uint16_t" name="print_freq" default="0"> Print frequency. </field>
       <field type="uint16_t" name="disp_freq" default="0"> Disp frequency. </field>
       <field type="uint16_t" name="msg_id" default="0"> Msg id, generated automatic. </field>
+    </message>
+    <message id="19" name="Calibrate_gravity" module="Logger">
+      <description> this calibrate the imu output. </description>
+      <field type="float" name="ax"> ax </field>
+      <field type="float" name="ay"> ay </field>
+      <field type="float" name="az"> az </field>
+
+      <field type="uint64_t" name="print_timestamp" default="0" nostr="True" nodecl="True"> Print timestamp, last timestamp after print. </field>
+      <field type="uint64_t" name="disp_timestamp" default="0" nostr="True" nodecl="True"> Disp timestamp, last timestamp after disp. </field>
+      <field type="uint16_t" name="print_freq" default="0" nostr="True" nodecl="True"> Print frequency. </field>
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> Disp frequency. </field>
+      <field type="uint16_t" name="msg_id" default="0" nostr="True" nodecl="True"> Msg id, generated automatic. </field>
+    </message>
+    <message id="20" name="Calibrate_gyro" module="Logger">
+      <description> this calibrate the imu output. </description>
+      <field type="float" name="gx"> gx </field>
+      <field type="float" name="gy"> gy </field>
+      <field type="float" name="gz"> gz </field>
+
+      <field type="uint64_t" name="print_timestamp" default="0" nostr="True" nodecl="True"> Print timestamp, last timestamp after print. </field>
+      <field type="uint64_t" name="disp_timestamp" default="0" nostr="True" nodecl="True"> Disp timestamp, last timestamp after disp. </field>
+      <field type="uint16_t" name="print_freq" default="0" nostr="True" nodecl="True"> Print frequency. </field>
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> Disp frequency. </field>
+      <field type="uint16_t" name="msg_id" default="0" nostr="True" nodecl="True"> Msg id, generated automatic. </field>
+    </message>
+    <message id="21" name="Calibrate_mag" module="Logger">
+      <description> this calibrate the imu output. </description>
+      <field type="float" name="magx[72]"> magx </field>
+      <field type="float" name="magy[72]"> magy </field>
+
+      <field type="uint64_t" name="print_timestamp" default="0" nostr="True" nodecl="True"> Print timestamp, last timestamp after print. </field>
+      <field type="uint64_t" name="disp_timestamp" default="0" nostr="True" nodecl="True"> Disp timestamp, last timestamp after disp. </field>
+      <field type="uint16_t" name="print_freq" default="0" nostr="True" nodecl="True"> Print frequency. </field>
+      <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> Disp frequency. </field>
+      <field type="uint16_t" name="msg_id" default="0" nostr="True" nodecl="True"> Msg id, generated automatic. </field>
     </message>
   </messages>
 </msg>
