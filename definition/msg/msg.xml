@@ -319,8 +319,9 @@
     </message>
     <message id="21" name="Calibrate_mag" module="Logger">
       <description> this calibrate the imu output. </description>
-      <field type="float" name="magx[72]"> magx </field>
-      <field type="float" name="magy[72]"> magy </field>
+      <field type="float[80]" name="magx"> magx </field>
+      <field type="float[80]" name="magy"> magy </field>
+      <field type="uint16_t" name="num"> number of magx use. </field>
       <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
     </message>
     <message id="22" name="Range_finder" module="Logger">
