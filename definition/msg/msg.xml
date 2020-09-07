@@ -303,21 +303,17 @@
       <field type="uint16_t" name="disp_freq" default="0"> Disp frequency. </field>
       <field type="uint16_t" name="msg_id" default="0"> Msg id, generated automatic. </field>
     </message>
-    <message id="19" name="Calibrate_gravity" module="Logger">
+    <message id="20" name="Calibrate_gyro_grav_16488" module="Logger">
       <description> this calibrate the imu output. </description>
+      <field type="float" name="gx"> gx </field>
+      <field type="float" name="gy"> gy </field>
+      <field type="float" name="gz"> gz </field>
       <field type="float" name="ax"> ax </field>
       <field type="float" name="ay"> ay </field>
       <field type="float" name="az"> az </field>
       <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
     </message>
-    <message id="20" name="Calibrate_gyro" module="Logger">
-      <description> this calibrate the imu output. </description>
-      <field type="float" name="gx"> gx </field>
-      <field type="float" name="gy"> gy </field>
-      <field type="float" name="gz"> gz </field>
-      <field type="uint16_t" name="calibrate" default="0" nostr="True"> 1, if calibrated;0, if not. </field>
-    </message>
-    <message id="21" name="Calibrate_mag" module="Logger">
+    <message id="21" name="Calibrate_mag_16488" module="Logger">
       <description> this calibrate the imu output. </description>
       <field type="float[80]" name="magx"> magx </field>
       <field type="float[80]" name="magy"> magy </field>

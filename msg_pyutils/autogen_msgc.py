@@ -71,7 +71,7 @@ def generate_msg_header(directory,xml):
 extern void msg_init();
 extern void msg_print_check();
 extern void msg_disp_check();
-extern char public_buffer[512];
+extern char public_buffer[800];
 extern int public_buffer_pos;
 ${{message:#include "Modules/Logger/headers/${class_name}.h"
 }}
@@ -89,7 +89,7 @@ def generate_msg_src(directory,xml):
 #include "Modules/Clock/Clock.h"
 #include "Modules/SD/SD_Driver.h"
 #include "string.h"
-char public_buffer[512];
+char public_buffer[800];
 int public_buffer_pos;
 Class_Base_Msg * msg_points[${class_num}+1];
 void msg_print_check() {
