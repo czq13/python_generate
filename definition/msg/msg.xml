@@ -235,9 +235,15 @@
       <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
       <field type="uint16_t" name="type_mask" display="bitmask">Mappings: If any of these bits are set, the corresponding input should be ignored: bit 1: body roll rate, bit 2: body pitch rate, bit 3: body yaw rate. bit 4-bit 7: reserved, bit 8: attitude</field>
       <field type="float[4]" name="q">Attitude quaternion (w, x, y, z order, zero-rotation is 1, 0, 0, 0)</field>
+      <field type="float" name="roll"> roll. </field>
+      <field type="float" name="pitch"> pitch. </field>
+      <field type="float" name="yaw"> yaw. </field>
       <field type="float" name="body_roll_rate" units="rad/s">Body roll rate</field>
       <field type="float" name="body_pitch_rate" units="rad/s">Body pitch rate</field>
       <field type="float" name="body_yaw_rate" units="rad/s">Body yaw rate</field>
+      <field type="float" name="body_roll_accel" units="rad/s/s">Body roll acceleration</field>
+      <field type="float" name="body_pitch_accel" units="rad/s/s">Body pitch acceleration</field>
+      <field type="float" name="body_yaw_accel" units="rad/s/s">Body yaw acceleration</field>
       <field type="float" name="thrust">Collective thrust, normalized to 0 .. 1 (-1 .. 1 for vehicles capable of reverse trust)</field>
     
       <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
@@ -324,6 +330,13 @@
       <description> range finder output </description>
       <field type="float" name="height_rfinder"> height_rfinder </field>
       <field type="uint64_t" name="update_timestamp"> update time stamp </field>
+    </message>
+    <message id="23" name="Vehicle_status" module="Logger">
+      <description> critical vechicle status. </description>
+      <field type="uint16_t" name="vehicle_type"> define the vehicle type. </field>
+      <field type="uint16_t" name="vehicle_arm"> 0,if not arm.1, if arm. </field>
+      <field type="uint16_t" name="controller_type"> hover,transition,level flight. </field>
+      <field type="uint16_t" name="controller_status"> the particular status of controller. </field> 
     </message>
   </messages>
 </msg>
