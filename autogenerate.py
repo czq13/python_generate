@@ -32,7 +32,8 @@ if __name__ == '__main__':
         xml = []
         for fname in file_list:
             xml.append(msgparse.MSGXML(fname))
-        basedir = 'D:\\chWorkSpace\\code\\AutoPilot\\Modules\\Logger'
+        #basedir = 'D:\\chWorkSpace\\code\\AutoPilot\\Modules\\Logger'
+        basedir = os.path.abspath('..\\..\\Modules\\Logger')
         autogen_msgc.generate(basedir,xml)
     print('successfully generated headers')
 

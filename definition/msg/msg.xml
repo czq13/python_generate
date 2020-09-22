@@ -190,6 +190,10 @@
       <field type="int32_t" name="latitude" units="degE7">Latitude (WGS84)</field>
       <field type="int32_t" name="longitude" units="degE7">Longitude (WGS84)</field>
       <field type="int32_t" name="altitude" units="mm">Altitude (MSL). Positive for up.</field>
+      <field type="float" name="x" units="m"> x position after initialize. </field>
+      <field type="float" name="y" units="m"> y position after initialize. </field>
+      <field type="float" name="z" units="m"> z position after initialize. </field>
+      <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
     </message>
     <message id="10" name="Attitude_quaternion_cov" module="Logger">
       <description>The attitude in the aeronautical frame (right-handed, Z-down, X-front, Y-right), expressed as quaternion. Quaternion order is w, x, y, z and a zero rotation would be expressed as (1 0 0 0).</description>
@@ -212,7 +216,7 @@
       <description>The filtered global position (e.g. fused GPS and accelerometers). The position is in GPS-frame (right-handed, Z-up). It  is designed as scaled integer message since the resolution of float is not sufficient. NOTE: This message is intended for onboard networks / companion computers and higher-bandwidth links and optimized for accuracy and completeness. Please use the GLOBAL_POSITION_INT message for a minimal subset.</description>
       <field type="uint64_t" name="timestamp"> The timestamp of last update. </field>
       <field type="uint16_t" name="estimator_type" enum="MAV_ESTIMATOR_TYPE">Class id of the estimator this estimate originated from.</field>
-      <field type="float[36]" name="covariance">Row-major representation of a 6x6 position and velocity 6x6 cross-covariance matrix (states: lat, lon, alt, vx, vy, vz; first six entries are the first ROW, next six entries are the second row, etc.). If unknown, assign NaN value to first element in the array.</field>
+      <field type="float[100]" name="covariance">Row-major representation of a 6x6 position and velocity 6x6 cross-covariance matrix (states: lat, lon, alt, vx, vy, vz; first six entries are the first ROW, next six entries are the second row, etc.). If unknown, assign NaN value to first element in the array.</field>
 
       <field type="uint16_t" name="print_freq" default="1" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
@@ -337,6 +341,23 @@
       <field type="uint16_t" name="vehicle_arm"> 0,if not arm.1, if arm. </field>
       <field type="uint16_t" name="controller_type"> hover,transition,level flight. </field>
       <field type="uint16_t" name="controller_status"> the particular status of controller. </field> 
+      <field type="uint16_t" name="program_cmd"> for zhu's protocol.  </field>
+      <field type="uint64_t" name="program_timestamp"> for zhu's protocol. </field>
+    </message>
+    <message id="24" name="Radio_input" module="Logger">
+      <description> Radio input, from ppm. </description>
+      <field type="float" name="roll" default="0"> radio roll. </field>
+      <field type="float" name="pitch" default="0"> radio pitch. </field>
+      <field type="float" name="yaw" default="0"> radio yaw. </field>
+      <field type="float" name="throttle" default="0"> radio throttle. </field>
+      <field type="float" name="knob_1"> radio knob. </field>
+      <field type="float" name="knob_2"> radio knob. </field>
+      <field type="int16_t" name="switch_1"> radio switch. </field>
+      <field type="int16_t" name="switch_2"> radio switch. </field>
+      <field type="int16_t" name="switch_3"> radio switch. </field>
+      <field type="int16_t" name="switch_4"> radio switch. </field>
+      <field type="int16_t" name="switch_5"> radio switch. </field>
+      <field type="int16_t" name="switch_6"> radio switch. </field>
     </message>
   </messages>
 </msg>
