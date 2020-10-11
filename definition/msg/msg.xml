@@ -359,5 +359,9 @@
       <field type="int16_t" name="switch_5"> radio switch. </field>
       <field type="int16_t" name="switch_6"> radio switch. </field>
     </message>
+    <message id="25" name="Sim_controller_output" module="Logger">
+      <description> Sim_state send the state from simulink, Sim_controller_ouptut send the output from controller. </description>
+      <field type="float[16]" name="ctrl_output"> ctrl_output. </field>
+    </message>
   </messages>
 </msg>
