@@ -346,6 +346,7 @@
     </message>
     <message id="24" name="Radio_input" module="Logger">
       <description> Radio input, from ppm. </description>
+      <field type="uint16_t" name="status" default="0"> radio status. 0 means no radio input, 1 means radio input. </field>
       <field type="float" name="roll" default="0"> radio roll. </field>
       <field type="float" name="pitch" default="0"> radio pitch. </field>
       <field type="float" name="yaw" default="0"> radio yaw. </field>
