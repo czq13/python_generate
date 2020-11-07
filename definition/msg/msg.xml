@@ -364,5 +364,20 @@
       <description> Sim_state send the state from simulink, Sim_controller_ouptut send the output from controller. </description>
       <field type="float[16]" name="ctrl_output"> ctrl_output. </field>
     </message>
+    <message id="26" name="Sim_simple_state" module="Logger">
+      <description> for simple sim state. </description>
+      <field type="float" name="vxg"> vxg. </field>
+      <field type="float" name="vyg"> vyg. </field>
+      <field type="float" name="vzg"> vzg. </field>
+      <field type="float" name="p"> p. </field>
+      <field type="float" name="q"> q. </field>
+      <field type="float" name="r"> r. </field>
+      <field type="float" name="phi"> phi. </field>
+      <field type="float" name="theta"> theta. </field>
+      <field type="float" name="psi"> psi. </field>
+      <field type="float" name="xg"> x. </field>
+      <field type="float" name="yg"> y. </field>
+      <field type="float" name="zg"> z. </field>
+    </message>
   </messages>
 </msg>
