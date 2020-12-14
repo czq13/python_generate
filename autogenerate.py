@@ -35,6 +35,12 @@ if __name__ == '__main__':
         #basedir = 'D:\\chWorkSpace\\code\\AutoPilot\\Modules\\Logger'
         basedir = os.path.abspath('..\\..\\Modules\\Logger')
         autogen_msgc.generate(basedir,xml)
+    elif args.target == 'parameter':
+        from param_pyutils import param_generate
+        file_name = os.path.join(os.path.abspath('.'),args.xml_file)
+        #target_name = os.path.join(os.path.abspath('.'),'output\\parameter_for_28377')
+        target_name = os.path.abspath('..\\..\\Modules\\Parameters')
+        param_generate.generate(target_name,file_name)
     print('successfully generated headers')
 
     print(args)

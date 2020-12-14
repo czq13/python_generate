@@ -71,6 +71,13 @@
                 "msg_pyutils\\ulog_exam\\058.txt"
             ]
         
+        },{
+            "name": "generate parameters",
+            "type": "python",
+            "request": "launch",
+            "program": "autogenerate.py",
+            "console": "integratedTerminal",
+            "args": ["--xml_file", "definition/parameters/MockLink.Parameter.MetaData.json","--base_dir", "../","--target","parameter"]
         }
     ]
 }

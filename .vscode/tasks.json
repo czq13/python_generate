@@ -16,6 +16,12 @@
             "args": ["autogenerate.py","--xml","definitions/mavlink/common.xml","--base_dir","output/mavlink_for_28377"]
         },
         {
+            "label": "execute autogenerate for parameter in windows",
+            "type": "shell",
+            "command": "F:/anaconda/python.exe autogenerate.py",
+            "args": ["--xml","definitions/parameters/MockLink.Parameter.MetaData.json","--base_dir","output/parameter_for_28377"]
+        },
+        {
             "label": "compile mavlink_udp.c",
             "type": "shell",
             "command": "make",

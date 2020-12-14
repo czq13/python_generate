@@ -379,5 +379,10 @@
       <field type="float" name="yg"> y. </field>
       <field type="float" name="zg"> z. </field>
     </message>
+    <message id="27" name="Parameters" module="Logger">
+      <description> this can be repository of parameters. </description>
+      <field type="float[100]" name="parameters"> parameters. </field>
+      <field type="uint16_t" name="params_num"> the total number of parameters. </field>
+    </message>
   </messages>
 </msg>
