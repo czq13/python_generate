@@ -384,5 +384,18 @@
       <field type="float[100]" name="parameters"> parameters. </field>
       <field type="uint16_t" name="params_num"> the total number of parameters. </field>
     </message>
+    <message id="28" name="FTP_Request" module="Logger">
+      <description> this is FTP Request tool for communication. </description>
+      <field type="uint16_t" name="seqNumber"> sequence number. </field>
+      <field type="uint8_t" name="session"> session,maybe only 0. </field>
+      <field type="uint8_t" name="opcode"> operation code. </field>
+      <field type="uint8_t" name="size"> size of data. </field>
+      <field type="uint8_t" name="req_opcode"> request opcode returned in kRspAck, kRspNak message </field>
+      <field type="uint8_t" name="burstComplete"> Only used if req_opcode*kCmdBusrtReadFile -1: set of burst packets complete,0: More burst packets coming. </field>
+      <field type="uint8_t" name="padding"> 32 bit aligment padding</field>
+      <field type="uint32_t" name="offset"> offsets for list and read commands </field>
+      <field type="uint8_t[239]" name="data"> data,239. </field>
+      <field type="uint16_t" name="data_len" default="239" nostr="True"> default deta len. </field>
+    </message>
   </messages>
 </msg>
