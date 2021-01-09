@@ -28,7 +28,7 @@ def generate_repository_def(directory,ret_dict):
             param_str += '"\n'
         f.write(param_str)
     f.write('};\n')
-    f.write('void init_parameters_defualt(){\n')
+    f.write('void init_parameters_default(){\n')
     for i,param in enumerate(params_list):
         f.write('  parameters.parameters[%s]=%f;\n' % (param['name'],param['default']))
     f.write('}\n')
