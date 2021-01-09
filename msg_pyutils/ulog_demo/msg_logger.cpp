@@ -31,8 +31,8 @@ void msg_logger::write_add_logged_msg(const char * name,int msg_id,int multi_id)
     msg.msg_size = 3 + len;
     fwrite((void*) &msg,msg.msg_size+3,1,file);
     char * point = (char*) &msg;
-    for (int i = 0;i < msg.msg_size+3;i++) printf("%x ",point[i]);
-    printf("\n");
+    //for (int i = 0;i < msg.msg_size+3;i++) printf("%x ",point[i]);
+    //printf("\n");
 }
 void msg_logger::write_header() {
     ulog_file_header_s header;
