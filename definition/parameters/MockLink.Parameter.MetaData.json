@@ -1034,6 +1034,17 @@
       "decimalPlaces": 3,
       "minValue": -1,
       "maxValue": 1
-    }
+    },
+    {"name": "RC_JOY",
+    "type": "Float",
+    "group": "Pos_Ctrl",
+    "category":"Standard",
+    "shortDesc": "parameter to choose RC or Joystick,-1 for RC,+1 for Joystick",
+    "longDesc": "parameter to choose RC or Joystick,-1 for RC,+1 for Joystick",
+    "units" : "SD",
+    "default" : -1,
+    "decimalPlaces": 3,
+    "minValue":-1,
+    "maxValue":1}
   ]
 }
