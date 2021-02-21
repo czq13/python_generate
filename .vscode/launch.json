@@ -68,7 +68,7 @@
             "request": "launch",
             "program": "msg_pyutils\\ulog_exam\\ulog2csv.py",
             "args": [
-                "SD_Dir\\2021_01_06_20_44_47.txt"
+                "SD_Dir\\2021_02_20_21_45_45.txt"
             ]
         
         },{

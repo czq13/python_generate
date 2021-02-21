@@ -140,6 +140,8 @@
       <field type="float" name="accelx" unites="m/s^2" default="0"> x-accelerometer in body frame. </field>
       <field type="float" name="accely" unites="m/s^2" defualt="0"> y-accelerometer in body frame. </field>
       <field type="float" name="accelz" unites="m/s^2" default="0"> z-accelerometer in body frame. </field>
+      <filed type="uint16_t" name="xy_flag"> 1 if the xy position or velocity estimator works. </filed>
+      <filed type="uint16_t" name="z_flag"> 1 if the z position or velocity estimator works. </filed>
 
       <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
@@ -341,6 +343,7 @@
       <field type="uint16_t" name="vehicle_arm"> 0,if not arm.1, if arm. </field>
       <field type="uint16_t" name="controller_type"> hover,transition,level flight. </field>
       <field type="uint16_t" name="controller_status"> the particular status of controller. </field> 
+      <field type="uint32_t" name="sensor_status" default="0"> the status of sensors bitmap, the definition is same with mav. </field>
       <field type="uint16_t" name="program_cmd"> for zhu's protocol.  </field>
       <field type="uint64_t" name="program_timestamp"> for zhu's protocol. </field>
     </message>
