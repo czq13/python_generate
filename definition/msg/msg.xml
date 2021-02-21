@@ -138,10 +138,10 @@
       <field type="float" name="vz" units="m/s">Z Speed, earth frame</field>
       <field type="float[3]" name="vb" units="m/s"> Speed in body frame. </field>
       <field type="float" name="accelx" unites="m/s^2" default="0"> x-accelerometer in body frame. </field>
-      <field type="float" name="accely" unites="m/s^2" defualt="0"> y-accelerometer in body frame. </field>
+      <field type="float" name="accely" unites="m/s^2" default="0"> y-accelerometer in body frame. </field>
       <field type="float" name="accelz" unites="m/s^2" default="0"> z-accelerometer in body frame. </field>
-      <field type="uint16_t" name="xy_flag"> 1 if the xy position or velocity estimator works. </field>
-      <field type="uint16_t" name="z_flag"> 1 if the z position or velocity estimator works. </field>
+      <field type="uint16_t" name="xy_flag" default="0"> 1 if the xy position or velocity estimator works. </field>
+      <field type="uint16_t" name="z_flag" default="0"> 1 if the z position or velocity estimator works. </field>
 
       <field type="uint16_t" name="print_freq" default="5" nostr="True" nodecl="True"> record frequency. </field>  
       <field type="uint16_t" name="disp_freq" default="0" nostr="True" nodecl="True"> display frequency. </field>  
